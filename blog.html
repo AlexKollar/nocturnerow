@@ -8,6 +8,7 @@ permalink: /blog.html
 <h1>Dispatches</h1>
 <p class="sub">Notes from the work — verification gates, pooled inference, founding stances — written as it happens and filed from the night shift.</p>
 </div>
+  <hr>
 {% for post in site.posts %}
 <div class="post"><a href="{{ post.url }}">{{ post.title }}</a><div class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags %} · {{ post.tags | join: " · " }}{% endif %}</div><p style="color:var(--muted);margin:8px 0 0">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p></div>
 {% endfor %}

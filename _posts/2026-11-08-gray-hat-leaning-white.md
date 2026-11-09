@@ -10,6 +10,6 @@ And we leave the light on. Anyone can check the work, any time they like. That's
 
 Open source. Local first. Proven in the light. Not a slogan — a habit, kept nightly.
 
-Walk with shadows.
+Walk with the shadows.
 
 — The Row

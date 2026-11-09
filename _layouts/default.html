@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}</title>
+<meta name="description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
+<link rel="icon" href="/logo.png">
+<style>
+:root{--bg:#0b0f14;--panel:#111823;--line:#1f2c3d;--text:#e6edf3;--muted:#9fb0c1;--accent:#2dd4bf}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);padding:18px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.wordmark{font-weight:700;letter-spacing:.18em}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 40px}
+h1{font-size:44px;line-height:1.15;margin:0 0 16px}
+.sub{color:var(--muted);font-size:19px;max-width:640px}
+.chip{display:inline-block;margin-top:22px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:14px}
+.chip b{color:var(--accent);font-weight:600}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 12px}
+h3{margin:0 0 6px}
+p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:18px}
+.tile,.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.tile p,.card p{margin:0;font-size:15px}
+.stats{margin-top:18px;padding:14px 18px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+.stats b{color:var(--text)}
+.btn{display:inline-block;margin:14px 10px 0 0;padding:10px 18px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);text-decoration:none}
+.btn.solid{background:var(--accent);color:#06251f;font-weight:600}
+.post{padding:16px 0;border-bottom:1px solid var(--line)}
+.post:last-child{border-bottom:0}
+.post .meta{color:var(--muted);font-size:14px}
+.post a{color:var(--text);text-decoration:none;font-weight:600;font-size:18px}
+.post a:hover{color:var(--accent)}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:18px}
+.card .role{color:var(--accent);font-size:14px;margin:0 0 8px}
+.portrait{width:100%;height:210px;object-fit:cover;object-position:center 20%;border-radius:8px;display:block;margin:0 0 14px;border:1px solid var(--line)}
+.tagline-cursor::after{content:"▌";margin-left:2px;color:var(--accent);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.tagline-cursor::after{animation:none}}
+.post-full{padding-bottom:8px}
+.post-full .meta{color:var(--muted);font-size:14px;margin:6px 0 18px}
+.post-full a{color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);font-size:14px;margin-top:12px}
+@media (max-width:560px){h1{font-size:32px}.hero{padding:48px 0 30px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="wordmark"><img src="/logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px">NOCTURNE ROW</div>
+<nav><a href="/">Home</a><a href="/#apex">Apex</a><a href="/blog.html">Field Notes</a><a href="/#people">People</a></nav>
+</div>
+</header>
+{{ content }}
+<footer>
+<div class="wrap">© 2026 Nocturne Row · nocturnerow.com — hosted on GitHub Pages, built with Jekyll. Walk with the shadows.</div>
+</footer>
+</body>
+</html>

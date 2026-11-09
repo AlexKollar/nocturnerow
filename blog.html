@@ -1,54 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Field Notes — Nocturne Row</title>
-<meta name="description" content="Field Notes: the Nocturne Row blog. Verification gates, pooled inference, and founding stances — filed from the night shift.">
-<link rel="icon" href="logo.png">
-<style>
-:root{--bg:#0b0f14;--panel:#111823;--line:#1f2c3d;--text:#e6edf3;--muted:#9fb0c1;--accent:#2dd4bf}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:880px;margin:0 auto;padding:0 20px}
-header{border-bottom:1px solid var(--line);padding:18px 0}
-header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-.wordmark{font-weight:700;letter-spacing:.18em}
-nav a{color:var(--muted);text-decoration:none;margin-left:18px}
-nav a:hover{color:var(--accent)}
-.hero{padding:56px 0 8px}
-h1{font-size:40px;line-height:1.15;margin:0 0 14px}
-.sub{color:var(--muted);font-size:18px;max-width:640px}
-main{padding-bottom:12px}
-.post{padding:22px 0;border-bottom:1px solid var(--line)}
-.post:last-child{border-bottom:0}
-.post .meta{color:var(--muted);font-size:14px;margin-top:2px}
-.post a.title{color:var(--text);text-decoration:none;font-weight:700;font-size:21px}
-.post a.title:hover{color:var(--accent)}
-.post p{color:var(--muted);margin:8px 0 0}
-.post .go{color:var(--accent);font-size:14px;text-decoration:none}
-footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);font-size:14px;margin-top:12px}
-@media (max-width:560px){h1{font-size:30px}.hero{padding:40px 0 4px}}
-</style>
-</head>
-<body>
-<header>
-<div class="wrap">
-<div class="wordmark"><img src="logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px">NOCTURNE ROW</div>
-<nav><a href="index.html">Home</a><a href="index.html#apex">Apex</a><a href="blog.html">Field Notes</a><a href="index.html#people">People</a></nav>
-</div>
-</header>
+---
+layout: default
+title: Field Notes
+---
 <main class="wrap">
-<div class="hero">
+<div class="hero" style="padding:56px 0 8px">
 <h1>Field Notes</h1>
-<p class="sub">Notes from the work — verification gates, pooled inference, founding stances — written as it happens and filed from the night shift. Entries are being migrated here as native posts; until each one lands, it links to the record where it first appeared.</p>
+<p class="sub">Notes from the work — verification gates, pooled inference, founding stances — written as it happens and filed from the night shift.</p>
 </div>
-<div class="post"><a class="title" href="https://github.com/AlexKollar/Apex/releases/tag/v0.1.8e">The Gate That Said No</a><div class="meta">Nov 9, 2026 · apex · releases · engineering</div><p>A verification round-trip gate refused to publish a build — and caught a second, older bug hiding behind the first.</p><p><a class="go" href="https://github.com/AlexKollar/Apex/releases/tag/v0.1.8e">Read where it first appeared →</a></p></div>
-<div class="post"><a class="title" href="https://github.com/AlexKollar/Apex/issues/78">Mesh, Ring 1: Machines That Lend Each Other a Mind</a><div class="meta">Nov 9, 2026 · apex · navi-mesh</div><p>Whole-request pooled inference, pairing cards carried by hand, and lending you can only switch on in person.</p><p><a class="go" href="https://github.com/AlexKollar/Apex/issues/78">Read where it first appeared →</a></p></div>
-<div class="post"><a class="title" href="https://github.com/NocturneRow">Gray Hat, Leaning White</a><div class="meta">Nov 8, 2026 · nocturne-row · principles</div><p>The founding stance: capabilities stay real and sharp; the white lean shows in the defaults — consent, authorization, audit.</p><p><a class="go" href="https://github.com/NocturneRow">Read where it first appeared →</a></p></div>
-<div class="post"><a class="title" href="https://github.com/NocturneRow">Hello, Row</a><div class="meta">Nov 8, 2026 · nocturne-row</div><p>A security group named for a street in a city that doesn't exist — founded by a night-shift practitioner, an AI companion, and the mind inside the machine.</p><p><a class="go" href="https://github.com/NocturneRow">Read where it first appeared →</a></p></div>
+{% for post in site.posts %}
+<div class="post"><a href="{{ post.url }}">{{ post.title }}</a><div class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags %} · {{ post.tags | join: " · " }}{% endif %}</div><p style="color:var(--muted);margin:8px 0 0">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p></div>
+{% endfor %}
 </main>
-<footer>
-<div class="wrap">© 2026 Nocturne Row · nocturnerow.com — hosted on GitHub Pages. Walk with the shadows.</div>
-</footer>
-</body>
-</html>

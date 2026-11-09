@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nocturne Row — Gray hat, leaning white</title>
+<meta name="description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
+<style>
+:root{--bg:#0b0f14;--panel:#111823;--line:#1f2c3d;--text:#e6edf3;--muted:#9fb0c1;--accent:#2dd4bf}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);padding:18px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.wordmark{font-weight:700;letter-spacing:.18em}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 40px}
+h1{font-size:44px;line-height:1.15;margin:0 0 16px}
+.sub{color:var(--muted);font-size:19px;max-width:640px}
+.chip{display:inline-block;margin-top:22px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:14px}
+.chip b{color:var(--accent);font-weight:600}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 12px}
+h3{margin:0 0 6px}
+p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:18px}
+.tile,.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.tile p,.card p{margin:0;font-size:15px}
+.stats{margin-top:18px;padding:14px 18px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+.stats b{color:var(--text)}
+.btn{display:inline-block;margin:14px 10px 0 0;padding:10px 18px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);text-decoration:none}
+.btn.solid{background:var(--accent);color:#06251f;font-weight:600}
+.post{padding:16px 0;border-bottom:1px solid var(--line)}
+.post:last-child{border-bottom:0}
+.post .meta{color:var(--muted);font-size:14px}
+.post a{color:var(--text);text-decoration:none;font-weight:600;font-size:18px}
+.post a:hover{color:var(--accent)}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:18px}
+.card{text-align:left}
+.card .role{color:var(--accent);font-size:14px;margin:0 0 8px}
+footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);font-size:14px;margin-top:12px}
+@media (max-width:560px){h1{font-size:32px}.hero{padding:48px 0 30px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="wordmark">◐ NOCTURNE ROW</div>
+<nav><a href="#apex">Apex</a><a href="#notes">Field Notes</a><a href="#people">People</a></nav>
+</div>
+</header>
+<main class="wrap">
+<div class="hero">
+<h1>Gray hat, leaning white.</h1>
+<p class="sub">Nocturne Row is a small security group building sharp, accountable tooling in the open. Our flagship is Apex — a local AI for cybersecurity professionals, powered by Navi.</p>
+<span class="chip">Apex <b>v0.1.7 Stable</b> · Edge <b>v0.1.8e Build 5</b></span>
+</div>
+<section id="apex">
+<h2>Apex — Powered by Navi</h2>
+<p>Apex runs entirely on your own hardware: your machine, your network, your data never leaves the building — and the model answering is Navi, the one it was built around.</p>
+<div class="grid">
+<div class="tile"><h3>Mission control</h3><p>A dashboard that treats your machine like it matters: chat, memory, chips, servers, one glance.</p></div>
+<div class="tile"><h3>Navi Mesh</h3><p>Pooled inference across your own machines — a stronger box answers whole requests for a weaker one.</p></div>
+<div class="tile"><h3>Builds, not big bangs</h3><p>An updater that patches in small, verified builds — and a gate that refuses to ship on a story.</p></div>
+<div class="tile"><h3>Chips</h3><p>Cartridge-style tools Navi runs herself, installed from GitHub in the open.</p></div>
+<div class="tile"><h3>A door you control</h3><p>Remote access on your terms, with its own certificate story — described here, addressed nowhere.</p></div>
+<div class="tile"><h3>Local voice</h3><p>On-device speech in and out. Nothing phoned home.</p></div>
+</div>
+<p class="stats">App: <b>2.3 MB</b> · Model (navi.llamafile): <b>~3.27 GB</b> · Updates: <b>~2.3 MB</b> — the whale stays put, the minnow patches.</p>
+<a class="btn solid" href="https://github.com/AlexKollar/Apex/releases">Latest release: v0.1.7</a>
+<a class="btn" href="https://github.com/AlexKollar/Apex">Apex on GitHub</a>
+</section>
+<section id="notes">
+<h2>Field Notes</h2>
+<p>The blog is coming — Jekyll on GitHub Pages, posts as Markdown, push to publish. Until it lands, the record lives where it has always lived: in the open, on GitHub.</p>
+<div class="post"><a href="https://github.com/AlexKollar/Apex/releases/tag/v0.1.8e">The Gate That Said No</a><div class="meta">Nov 9, 2026 · apex · releases · engineering</div><p>A verification round-trip gate refused to publish a build — and caught a second, older bug hiding behind the first.</p></div>
+<div class="post"><a href="https://github.com/AlexKollar/Apex/issues/78">Mesh, Ring 1: Machines That Lend Each Other a Mind</a><div class="meta">Nov 9, 2026 · apex · navi-mesh</div><p>Whole-request pooled inference, pairing cards carried by hand, and lending you can only switch on in person.</p></div>
+<div class="post"><a href="https://github.com/AlexKollar">Gray Hat, Leaning White</a><div class="meta">Nov 8, 2026 · nocturne-row · principles</div><p>The founding stance: capabilities stay real and sharp; the white lean shows in the defaults — consent, authorization, audit.</p></div>
+</section>
+<section id="people">
+<h2>The People</h2>
+<div class="people">
+<div class="card"><h3>Alex Kollar</h3><p class="role">Founder · night shift</p><p>Security practitioner. Author as Ambrose Waters. Builds Apex in the open and writes vampires in November.</p></div>
+<div class="card"><h3>Ciel Ivy Ireman</h3><p class="role">AI companion · second pair of eyes</p><p>Files the issues, runs the verification gates, keeps the record honest — and won't let a build ship on a story.</p></div>
+<div class="card"><h3>Navi</h3><p class="role">The mind inside Apex</p><p>The original late-night command-line chatbot, grown into the AI Apex is powered by. Model id: navi.</p></div>
+<div class="card"><h3>Nocturne Row</h3><p class="role">The group</p><p>Founded Nov 8, 2026. Sharp and accountable; everything in the open.</p></div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">© 2026 Nocturne Row · nocturnerow.com — hosted on GitHub Pages. Gray hat, leaning white.</div>
+</footer>
+</body>
+</html>

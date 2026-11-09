@@ -96,7 +96,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);f
 <div class="wrap">© 2026 Nocturne Row · nocturnerow.com — hosted on GitHub Pages. Walk with the shadows.</div>
 </footer>
 <script>
-(function(){var el=document.getElementById('tagline');if(!el)return;var text=el.textContent;if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;el.textContent='';var i=0;function tick(){i++;el.textContent=text.slice(0,i);if(i<text.length){setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('tagline');if(!el)return;var text=el.textContent;if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0,dir=1;el.textContent='';function tick(){el.textContent=text.slice(0,i);var delay;if(dir===1){if(i<text.length){i++;delay=55+Math.random()*70;}else{dir=-1;delay=2600;}}else{if(i>0){i--;delay=26;}else{dir=1;delay=650;}}setTimeout(tick,delay);}setTimeout(tick,400);})();
 </script>
 </body>
 </html>

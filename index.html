@@ -23,15 +23,15 @@ layout: default
 <a class="btn" href="https://github.com/AlexKollar/Apex">Apex on GitHub</a>
 </section>
 <section id="notes">
-<h2>Field Notes</h2>
+<h2>Dispatches</h2>
 <p>The blog is now native — Jekyll on GitHub Pages, posts as Markdown, push to publish. The latest entries:</p>
 {% for post in site.posts limit:3 %}
 <div class="post"><a href="{{ post.url }}">{{ post.title }}</a><div class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags %} · {{ post.tags | join: " · " }}{% endif %}</div><p style="color:var(--muted);margin:8px 0 0">{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p></div>
 {% endfor %}
-<p style="margin-top:18px"><a href="/blog.html" style="color:var(--accent);text-decoration:none;font-weight:600">All Field Notes →</a></p>
+<p style="margin-top:18px"><a href="/blog.html" style="color:var(--accent);text-decoration:none;font-weight:600">All Dispatches →</a></p>
 </section>
 <section id="people">
-<h2>The People</h2>
+<h2>The Rogues</h2>
 <div class="people">
 <div class="card"><h3>Nocturne Row</h3><p class="role">The group</p><p>Founded Nov 8, 2026, and named for the EdenWire street. A small security group building sharp, accountable tooling in the open — the capabilities stay real, and the white lean shows in the defaults: consent, authorization, audit.</p></div>
 <div class="card"><img class="portrait" src="/alex-landscape.jpg" alt="Alex Kollar"><h3>Alex Kollar</h3><p class="role">Founder · night shift</p><p>Security practitioner and founder of Nocturne Row. Author as Ambrose Waters — Forever in His Veins is being rewritten for NaNoWriMo 2026. The original Navi got him into conference speaking; Apex is what he's building now, in the open, on the night shift.</p></div>
@@ -41,5 +41,5 @@ layout: default
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('tagline');if(!el)return;var phrases=["Walk with the shadows.","Sharp tools. Clean hands.","Built in the dark. Run in the open.","Night work, done right."];var current=0;var text=phrases[current];if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0,dir=1;el.textContent='';function tick(){el.textContent=text.slice(0,i);var delay;if(dir===1){if(i<text.length){i++;delay=55+Math.random()*70;}else{dir=-1;delay=2600;}}else{if(i>0){i--;delay=26;}else{var next=current;while(next===current){next=1+Math.floor(Math.random()*3);}current=next;text=phrases[current];dir=1;delay=650;}}setTimeout(tick,delay);}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('tagline');if(!el)return;var phrases=["Walk with the shadows.","We move where the light doesn't","Leave no trace but a whisper"];var current=0;var text=phrases[current];if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0,dir=1;el.textContent='';function tick(){el.textContent=text.slice(0,i);var delay;if(dir===1){if(i<text.length){i++;delay=55+Math.random()*70;}else{dir=-1;delay=2600;}}else{if(i>0){i--;delay=26;}else{var next=current;while(next===current){next=Math.floor(Math.random()*3);}current=next;text=phrases[current];dir=1;delay=650;}}setTimeout(tick,delay);}setTimeout(tick,400);})();
 </script>

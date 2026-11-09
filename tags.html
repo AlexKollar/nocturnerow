@@ -1,0 +1,19 @@
+---
+layout: default
+title: Topics
+permalink: /tags.html
+---
+<main class="wrap">
+<div class="hero" style="padding:56px 0 8px">
+<h1>Topics</h1>
+<p class="sub">Every Dispatch, filed by topic.</p>
+</div>
+<hr>
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+<h2 id="{{ tag[0] }}" style="margin-top:36px">{{ tag[0] }}</h2>
+{% for post in tag[1] %}
+<div class="post"><a href="{{ post.url }}">{{ post.title }}</a><div class="meta">{{ post.date | date: "%b %-d, %Y" }}</div></div>
+{% endfor %}
+{% endfor %}
+</main>

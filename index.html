@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nocturne Row — Gray hat, leaning white</title>
+<title>Nocturne Row — Walk with the shadows</title>
 <meta name="description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
+<link rel="icon" href="logo.png">
 <style>
 :root{--bg:#0b0f14;--panel:#111823;--line:#1f2c3d;--text:#e6edf3;--muted:#9fb0c1;--accent:#2dd4bf}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -41,18 +42,21 @@ p{color:var(--muted)}
 .portrait{width:100%;height:210px;object-fit:cover;object-position:center 20%;border-radius:8px;display:block;margin:0 0 14px;border:1px solid var(--line)}
 footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);font-size:14px;margin-top:12px}
 @media (max-width:560px){h1{font-size:32px}.hero{padding:48px 0 30px}}
+.tagline-cursor::after{content:"▌";margin-left:2px;color:var(--accent);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.tagline-cursor::after{animation:none}}
 </style>
 </head>
 <body>
 <header>
 <div class="wrap">
-<div class="wordmark">◐ NOCTURNE ROW</div>
+<div class="wordmark"><img src="logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px">NOCTURNE ROW</div>
 <nav><a href="#apex">Apex</a><a href="#notes">Field Notes</a><a href="#people">People</a></nav>
 </div>
 </header>
 <main class="wrap">
 <div class="hero">
-<h1>Gray hat, leaning white.</h1>
+<h1><span id="tagline" class="tagline-cursor">Walk with the shadows.</span></h1>
 <p class="sub">Nocturne Row is a small security group building sharp, accountable tooling in the open. Our flagship is Apex — a local AI for cybersecurity professionals, powered by Navi.</p>
 <span class="chip">Apex <b>v0.1.7 Stable</b> · Edge <b>v0.1.8e Build 5</b></span>
 </div>
@@ -89,7 +93,10 @@ footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);f
 </section>
 </main>
 <footer>
-<div class="wrap">© 2026 Nocturne Row · nocturnerow.com — hosted on GitHub Pages. Gray hat, leaning white.</div>
+<div class="wrap">© 2026 Nocturne Row · nocturnerow.com — hosted on GitHub Pages. Walk with the shadows.</div>
 </footer>
+<script>
+(function(){var el=document.getElementById('tagline');if(!el)return;var text=el.textContent;if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;el.textContent='';var i=0;function tick(){i++;el.textContent=text.slice(0,i);if(i<text.length){setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+</script>
 </body>
 </html>

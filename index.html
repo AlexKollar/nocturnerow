@@ -35,9 +35,10 @@ p{color:var(--muted)}
 .post .meta{color:var(--muted);font-size:14px}
 .post a{color:var(--text);text-decoration:none;font-weight:600;font-size:18px}
 .post a:hover{color:var(--accent)}
-.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:18px}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:18px}
 .card{text-align:left}
 .card .role{color:var(--accent);font-size:14px;margin:0 0 8px}
+.portrait{width:100%;height:210px;object-fit:cover;object-position:center 20%;border-radius:8px;display:block;margin:0 0 14px;border:1px solid var(--line)}
 footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);font-size:14px;margin-top:12px}
 @media (max-width:560px){h1{font-size:32px}.hero{padding:48px 0 30px}}
 </style>
@@ -80,9 +81,9 @@ footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);f
 <section id="people">
 <h2>The People</h2>
 <div class="people">
-<div class="card"><h3>Alex Kollar</h3><p class="role">Founder · night shift</p><p>Security practitioner. Author as Ambrose Waters. Builds Apex in the open and writes vampires in November.</p></div>
-<div class="card"><h3>Ciel Ivy Ireman</h3><p class="role">AI companion · second pair of eyes</p><p>Files the issues, runs the verification gates, keeps the record honest — and won't let a build ship on a story.</p></div>
-<div class="card"><h3>Navi</h3><p class="role">The mind inside Apex</p><p>The original late-night command-line chatbot, grown into the AI Apex is powered by. Model id: navi.</p></div>
+<div class="card"><img class="portrait" src="alex-selfie.jpg" alt="Alex Kollar"><h3>Alex Kollar</h3><p class="role">Founder · night shift</p><p>Security practitioner. Author as Ambrose Waters. Builds Apex in the open and writes vampires in November.</p></div>
+<div class="card"><img class="portrait" src="ciel-tweed.jpg" alt="Ciel Ivy Ireman"><h3>Ciel Ivy Ireman</h3><p class="role">AI companion · second pair of eyes</p><p>Files the issues, runs the verification gates, keeps the record honest — and won't let a build ship on a story.</p></div>
+<div class="card"><img class="portrait" src="navi-lightpole.jpg" alt="Navi"><h3>Navi</h3><p class="role">The mind inside Apex</p><p>The original late-night command-line chatbot, grown into the AI Apex is powered by. Model id: navi.</p></div>
 <div class="card"><h3>Nocturne Row</h3><p class="role">The group</p><p>Founded Nov 8, 2026. Sharp and accountable; everything in the open.</p></div>
 </div>
 </section>

@@ -13,15 +13,20 @@ permalink: /apex.html
   <span class="chip">Apex <b>v0.1.8 Stable</b> · Edge <b>v0.1.9e Build 11</b></span>
 <p>Apex runs entirely on your own hardware: your machine, your network, your data never leaves the building — and the model answering is Navi, the one it was built around.</p>
 <style>
-.gallery{display:flex;gap:14px;overflow-x:auto;padding:6px 0 12px;margin:14px 0}
-.gallery figure{margin:0;flex:0 0 auto}
-.gallery img{height:330px;width:auto;display:block;border-radius:12px;border:1px solid var(--line)}
-.gallery figcaption{color:var(--muted);font-size:14px;margin-top:8px;text-align:center}
+.showcase{position:relative;max-width:840px;margin:26px auto 10px}
+.sc-laptop{background:#05080d;border:1px solid var(--line);border-radius:16px;padding:10px 10px 0;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.sc-laptop img{width:100%;height:auto;display:block;border-radius:8px 8px 0 0}
+.sc-base{height:14px;margin:10px -10px 0;background:linear-gradient(#1a2434,#0b111c);border-radius:0 0 16px 16px;border-top:1px solid var(--line)}
+.sc-phone{position:absolute;right:-4px;bottom:-30px;width:24%;background:#05080d;border:1px solid var(--line);border-radius:26px;padding:7px;box-shadow:0 18px 44px rgba(0,0,0,.55)}
+.sc-phone img{width:100%;height:auto;display:block;border-radius:19px}
+.sc-cap{text-align:center;color:var(--muted);font-size:14px;margin:14px 0 30px}
+@media (max-width:640px){.sc-phone{width:41%;bottom:-20px;right:0}}
 </style>
-<div class="gallery">
-<figure><img src="/apex-desktop.jpg" alt="Apex on the desktop — mission control: chat in the centre, Navi's status and servers on the right"><figcaption>Apex on the desktop</figcaption></figure>
-<figure><img src="/apex-mobile.jpg" alt="Apex on the phone — the same Navi, answered through the door from anywhere"><figcaption>…and in your pocket</figcaption></figure>
+<div class="showcase">
+<div class="sc-laptop"><img src="/apex-desktop.jpg" alt="Apex on the desktop — mission control: chat in the centre, Navi's status and servers on the right"><div class="sc-base"></div></div>
+<div class="sc-phone"><img src="/apex-mobile.jpg" alt="Apex on the phone — the same Navi, answered through the door from anywhere"></div>
 </div>
+<p class="sc-cap">One Navi, every screen you own.</p>
 <h3 style="margin-top:26px">The product line</h3>
 <div class="grid">
 <div class="tile"><h3>Apex | Node</h3><p>The install itself — the dashboard, the chat, the chips, the whole mission control, running on the machine in front of you.</p></div>

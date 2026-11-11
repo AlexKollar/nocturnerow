@@ -9,28 +9,38 @@ layout: default
 <section id="apex">
 <h2>Apex — Powered by Navi</h2>
 <p>Apex runs entirely on your own hardware — your machine, your network, your data never leaves the building — and with its door open, your Navi answers from wherever you are.</p>
+<style>
+.showcase{position:relative;max-width:840px;margin:22px auto 6px}
+.sc-laptop{background:#05080d;border:1px solid var(--line);border-radius:16px;padding:10px 10px 0;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.sc-laptop img{width:100%;height:auto;display:block;border-radius:8px 8px 0 0}
+.sc-base{height:14px;margin:10px -10px 0;background:linear-gradient(#1a2434,#0b111c);border-radius:0 0 16px 16px;border-top:1px solid var(--line)}
+.sc-phone{position:absolute;right:-4px;bottom:-30px;width:24%;background:#05080d;border:1px solid var(--line);border-radius:26px;padding:7px;box-shadow:0 18px 44px rgba(0,0,0,.55)}
+.sc-phone img{width:100%;height:auto;display:block;border-radius:19px}
+.sc-cap{text-align:center;color:var(--muted);font-size:14px;margin:14px 0 8px}
+@media (max-width:640px){.sc-phone{width:41%;bottom:-20px;right:0}}
+</style>
+<div class="showcase">
+<div class="sc-laptop"><img src="/apex-desktop.jpg" alt="Apex on the desktop — mission control: chat in the centre, Navi's status and servers on the right"><div class="sc-base"></div></div>
+<div class="sc-phone"><img src="/apex-mobile.jpg" alt="Apex on the phone — the same Navi, answered through the door from anywhere"></div>
+</div>
+<p class="sc-cap">One Navi, every screen you own.</p>
 <a class="btn solid" href="/apex.html">Explore Apex</a>
 <a class="btn" href="https://github.com/AlexKollar/Apex/releases">Latest release: v0.1.8</a>
 </section>
 <section id="nur">
 <style>
-.cart{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--line);margin:0 0 14px}
+.nur-strip{display:flex;gap:12px;overflow-x:auto;padding:4px 0 10px;margin-top:14px}
+.nur-strip a{flex:0 0 auto}
+.nur-strip img{height:190px;width:auto;display:block;border-radius:10px;border:1px solid var(--line)}
 </style>
 <h2>Latest from the NUR</h2>
-<p style="color:var(--muted)">The NUR — the <b>Navi User Repository</b> — is where Apex keeps its add-ons: tools and knowledge that anyone can make, fold into a picture, and pass around. A <b style="color:var(--text)">chip</b> is a tool Navi runs herself — a scanner, a log reader, a subnet calculator — folded into a single picture. A <b style="color:var(--text)">knowledge pack</b> is a library she thinks with: study material she can answer from, carried the same way. No installers, no app store — the picture <i>is</i> the program. Lift one, drop it into Apex, and it works before your coffee cools.</p>
-<p style="color:var(--muted)">The three freshest off the bench:</p>
-<details style="margin:0 0 18px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px">
-<summary style="cursor:pointer;color:var(--accent);font-weight:600">How to install one</summary>
-<div style="margin-top:12px">
-<p>Download the picture, then drop it in: <b>chips</b> go to Apex's <b>ChipDeck</b> — drop the picture there to install it (then run it from Local Chips, or with <span style="font-family:ui-monospace,Menlo,Consolas,monospace">./chipname</span> in chat); <b>knowledge packs</b> go to the <b>RAG</b> view, where Apex builds the index locally. Full instructions live on <a href="/nur.html" style="color:#2dd4bf">the NUR page</a>.</p>
+<p style="color:var(--muted)">The NUR — the <b>Navi User Repository</b> — is where Apex keeps its add-ons: chips Navi runs herself and knowledge packs she thinks with, each folded into a single picture. No installers, no app store — the picture <i>is</i> the program.</p>
+<div class="nur-strip">
+<a href="/nur.html"><img src="/windows-linux-admin-core.png" alt="Windows &amp; Linux Admin Core cartridge"></a>
+<a href="/nur.html"><img src="/aplus-core.png" alt="A+ Hardware Core cartridge"></a>
+<a href="/nur.html"><img src="/navi-syskit.png" alt="Navi Syskit cartridge"></a>
 </div>
-</details>
-  <div class="people">
-<div class="card"><img class="cart" src="/windows-linux-admin-core.png" alt="Windows &amp; Linux Admin Core cartridge"><h3>Windows &amp; Linux Admin Core</h3><p class="role">Knowledge pack · v1.0.0 · Nov 11, 2026</p><p>Windows Server, Active Directory, and Linux administration core: AD DS and FSMO, AGDLP and LSDOU policy order, Windows client admin, Linux foundations, users and permissions, networking and hardening, A+ hardware, filesystems and RAID.</p><a class="btn solid" href="/windows-linux-admin-core.png" download>Download .png</a><a class="btn" href="https://github.com/AlexKollar/windows-linux-admin-core">GitHub</a></div>
-<div class="card"><img class="cart" src="/aplus-core.png" alt="A+ Hardware Core cartridge"><h3>A+ Hardware Core</h3><p class="role">Knowledge pack · v1.0.0 · Nov 11, 2026</p><p>CompTIA A+ (Core 1 + Core 2) hardware and operating-systems study pack: motherboards, CPU and RAM, storage and power, displays and printers, laptops and mobile, Windows, and operational procedures — plus a high-frequency acronym glossary.</p><a class="btn solid" href="/aplus-core.png" download>Download .png</a><a class="btn" href="https://github.com/AlexKollar/aplus-core">GitHub</a></div>
-<div class="card"><img class="cart" src="/navi-syskit.png" alt="Navi Syskit cartridge"><h3>Navi Syskit</h3><p class="role">Chip · v1.0.0 · Nov 11, 2026</p><p>A hardware and Windows Server workbench: A+ hardware reference, symptom-to-cause diagnostics, server admin cheat pages and planning drills — fully offline, standard library only.</p><a class="btn solid" href="/navi-syskit.png" download>Download .png</a><a class="btn" href="https://github.com/AlexKollar/navi-syskit">GitHub</a></div>
-<div class="card" style="display:flex;flex-direction:column;justify-content:center"><h3>View all</h3><p>The full catalogue — every chip and every knowledge pack on the shelf.</p><a class="btn solid" href="/nur.html">The NUR page →</a></div>
-</div>
+<p style="margin-top:10px"><a class="btn solid" href="/nur.html">Browse the NUR →</a></p>
 </section>
 <section id="notes">
 <h2>Dispatches</h2>

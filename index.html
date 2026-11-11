@@ -17,6 +17,9 @@ layout: default
 .sc-phone{position:absolute;right:-4px;bottom:-30px;width:24%;background:#05080d;border:1px solid var(--line);border-radius:26px;padding:7px;box-shadow:0 18px 44px rgba(0,0,0,.55)}
 .sc-phone img{width:100%;height:auto;display:block;border-radius:19px}
 .sc-cap{text-align:center;color:var(--muted);font-size:14px;margin:14px 0 8px}
+.btn-row{display:flex;gap:10px;flex-wrap:nowrap;align-items:stretch}
+.btn-row .btn{margin:0;text-align:center}
+@media (max-width:640px){.btn-row .btn{padding:10px 8px;font-size:15px;flex:1 1 0}}
 @media (max-width:640px){.sc-phone{width:41%;bottom:-20px;right:0}}
 </style>
 <div class="showcase">
@@ -24,8 +27,7 @@ layout: default
 <div class="sc-phone"><img src="/apex-mobile.jpg" alt="Apex on the phone — the same Navi, answered through the door from anywhere"></div>
 </div>
 <p class="sc-cap">One Navi, every screen you own.</p>
-<a class="btn solid" href="/apex.html">Explore Apex</a>
-<a class="btn" href="https://github.com/AlexKollar/Apex/releases">Latest release: v0.1.8</a>
+<p class="btn-row"><a class="btn solid" href="/apex.html">Explore Apex</a><a class="btn" href="https://github.com/AlexKollar/Apex/releases">Latest release: v0.1.8</a></p>
 </section>
 <section id="nur">
 <style>

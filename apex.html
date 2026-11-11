@@ -5,7 +5,7 @@ permalink: /apex.html
 ---
 <main class="wrap">
 <div class="hero">
-<h1>Apex — Powered by Navi</h1>
+<h1><span id="apex-tagline" class="tagline-cursor">Apex: Powered by Navi...</span></h1>
 <p class="sub">Apex is a local AI that lives on your own hardware — your machine, your network, your data never leaves the building.</p>
 </div>
 <section id="apex">
@@ -68,4 +68,8 @@ permalink: /apex.html
 <div class="tile"><h3>This site</h3><p><a href="https://github.com/AlexKollar/nocturnerow" style="color:var(--accent)">AlexKollar/nocturnerow</a> — yes, even the page you're reading.</p></div>
 </div>
 </section>
+
+<script>
+(function(){var el=document.getElementById('apex-tagline');if(!el)return;var text='Apex: Powered by Navi...';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+</script>
 </main>

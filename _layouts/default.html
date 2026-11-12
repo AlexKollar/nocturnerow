@@ -186,6 +186,9 @@ xyzzy:function(){return 'A hollow voice says: PLUGH.\nNothing happens. This is n
 plugh:function(){return 'Twisty little passages, all alike — except this one. It leads somewhere: <a href="/mesh.html">/mesh.html</a>';},
 '42':function(){return 'The answer. The question, as ever: why are the chairs empty?';},
 '004':function(){return 'Node № 004 — unbuilt, unclaimed.\nThe Mesh grows one honest machine at a time. If it is yours, the door is here: <a href="/mesh.html">/mesh.html</a>';},
+xkcd:function(){return 'Somewhere, a comic insists real hackers type in green on black.\nThis terminal respectfully declines — teal on midnight is the house style.\nBut the nod is noted, and the classics are honored.';},
+green:function(){return 'Green on black is a classic. So is this terminal, and it is keeping its teal.\n(See: xkcd)';},
+moonbeam:function(){return 'CASE FILE — MOONBEAM ICE CREAM\nFinding: it is a lyric, not a flavor.\nBenson Boone, "Mystical Magical" (2025): "Moonbeam ice cream, taking off your blue jeans, dancing at the movies."\nA placeholder line that escaped the song, briefly became a cookie, and never became ice cream.\nStatus: SOLVED — repeatedly. The case stays OPEN. Permanently. The investigator has her reasons.';},
 manifesto:function(){print('You did not hear it from me.');print('Opening the unlisted frequency…');setTimeout(function(){window.location.href='/manifesto.html';},1000);return '';}
 };
 form.addEventListener('submit',function(e){e.preventDefault();var raw=inp.value.trim();inp.value='';print('<span style="color:var(--accent)">row&gt;</span> '+esc(raw));if(!raw)return;var c=raw.toLowerCase().split(/\s+/)[0];

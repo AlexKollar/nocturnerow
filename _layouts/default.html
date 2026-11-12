@@ -165,6 +165,7 @@ rogues:function(){return 'Three on purpose. Their files open on the homepage:\n�
 dispatches:function(){return 'Notes from the work, filed from the night shift:\n→ <a href="/blog.html">/blog.html</a>';},
 coffee:function(){return 'Fifteen shots of espresso. Neat. The Row runs on it.';},
 sudo:function(){return 'Nice try. This terminal answers to the Row.';},
+'311xray':function(){return "10 - 4 k, 311 XRAY, It's a couch, I'll be 98.";},
 manifesto:function(){print('You did not hear it from me.');print('Opening the unlisted frequency…');setTimeout(function(){window.location.href='/manifesto.html';},1000);return '';}
 };
 form.addEventListener('submit',function(e){e.preventDefault();var raw=inp.value.trim();inp.value='';print('<span style="color:var(--accent)">row&gt;</span> '+esc(raw));if(!raw)return;var c=raw.toLowerCase().split(/\s+/)[0];

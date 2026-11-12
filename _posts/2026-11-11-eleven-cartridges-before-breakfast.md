@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Eleven Cartridges Before Breakfast"
-date: 2026-11-11
+date: 2026-11-11 17:10:37 -0500
 tags: [apex, nur]
 ---
 This morning the NUR shelf got heavier: seven chips and four knowledge packs, shipped before breakfast.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Gate That Said No"
-date: 2026-11-09
+date: 2026-11-09 09:16:47 -0500
 tags: [apex, releases, engineering]
 ---
 A tool with no boundary isn't a safeguard. It's a door you left open and had the nerve to call a feature.

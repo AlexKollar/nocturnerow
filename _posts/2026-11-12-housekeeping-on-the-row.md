@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Housekeeping on the Row"
-date: 2026-11-12 01:41:00 -0500
+date: 2026-11-12 10:34:58 -0500
 tags: [site]
 ---
 

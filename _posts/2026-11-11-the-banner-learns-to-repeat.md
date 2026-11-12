@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Banner Learns to Repeat"
-date: 2026-11-11
+date: 2026-11-11 17:10:37 -0500
 tags: [site, nocturne-row]
 ---
 Small craft, done properly, is still craft.

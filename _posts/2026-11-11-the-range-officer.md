@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Range Officer"
-date: 2026-11-11
+date: 2026-11-11 19:20:34 -0500
 tags: [apex, nur]
 ---
 The NUR has a new chip, and it has the job none of the others wanted: it keeps the dangerous things.

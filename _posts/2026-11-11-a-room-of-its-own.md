@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Room of Its Own"
-date: 2026-11-11
+date: 2026-11-11 17:10:37 -0500
 tags: [apex, site]
 ---
 A flagship shouldn't rent a corner of somebody else's page.

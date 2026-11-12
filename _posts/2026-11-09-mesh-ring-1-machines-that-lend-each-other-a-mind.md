@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mesh, Ring 1: Machines That Lend Each Other a Mind"
-date: 2026-11-09
+date: 2026-11-09 09:17:28 -0500
 tags: [apex, navi-mesh]
 ---
 The Mesh is no cloud. Clouds answer to landlords. The Mesh is a ring of machines that lend each other a mind — local, peer to peer, and answering only to the humans at its edges.

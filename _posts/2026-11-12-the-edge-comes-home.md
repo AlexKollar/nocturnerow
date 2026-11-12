@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Edge Comes Home"
-date: 2026-11-12
+date: 2026-11-12 07:09:12 -0500
 tags: [apex]
 ---
 

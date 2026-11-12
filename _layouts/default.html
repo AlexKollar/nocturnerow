@@ -123,6 +123,9 @@ header nav a{margin:0;padding:12px 6px;min-height:44px;border-top:1px solid var(
 .term-prompt{color:var(--accent);font-family:inherit}
 .term-input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:inherit;font-size:16px;padding:6px 0}
 #bgwave{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.term-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;color:var(--accent);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;min-width:44px;min-height:44px;padding:10px 12px;cursor:pointer;margin-left:auto}
+.term-toggle:hover{border-color:var(--accent)}
+@media (max-width:700px){.term-toggle{display:block}.term-fab{display:none}}
 </style>
 </head>
 <body>
@@ -130,6 +133,7 @@ header nav a{margin:0;padding:12px 6px;min-height:44px;border-top:1px solid var(
 <header>
 <div class="wrap">
 <div class="wordmark"><img src="/logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px">NOCTURNE ROW</div>
+<button class="term-toggle" id="termToggle" type="button" aria-label="Open the field terminal">&gt;_</button>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
 <nav id="site-nav"><a href="/">Home</a><a href="/mission.html">Mission</a><a href="/apex.html">Apex</a><a href="/mesh.html">Mesh</a><a href="/nur.html">NUR</a><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
 </div>
@@ -176,6 +180,7 @@ if(c==='exit'||c==='quit'){close();return;}
 if(CMDS[c]){var r=CMDS[c]();if(r)print(r);}
 else{print('No such command on this frequency. Type <b>help</b>.');}});
 if(fab)fab.addEventListener('click',open);
+var tg=document.getElementById('termToggle');if(tg)tg.addEventListener('click',open);
 if(cls)cls.addEventListener('click',close);
 ov.addEventListener('click',function(e){if(e.target===ov)close();});
 var buf='';
@@ -194,11 +199,18 @@ var c=document.getElementById('bgwave');if(!c)return;var x=c.getContext('2d');if
 var W=0,H=0,t0=performance.now(),raf=0;
 var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function size(){var d=Math.min(window.devicePixelRatio||1,1.25);W=window.innerWidth;H=window.innerHeight;c.width=Math.floor(W*d);c.height=Math.floor(H*d);x.setTransform(d,0,0,d,0,0);}
+var tx=-9999,ty=-9999,sx=-9999,sy=-9999;
+window.addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY;if(sx<-900){sx=tx;sy=ty;}},{passive:true});
+window.addEventListener('pointerdown',function(e){tx=e.clientX;ty=e.clientY;},{passive:true});
 function draw(now){x.clearRect(0,0,W,H);var t=(now-t0)/1000,gap=26;
+sx+=(tx-sx)*0.08;sy+=(ty-sy)*0.08;
 for(var gy=gap/2;gy<H+gap;gy+=gap){for(var gx=gap/2;gx<W+gap;gx+=gap){
 var w=Math.sin(gx*0.012+t*0.9)+Math.sin(gy*0.016+t*0.7)+Math.sin((gx+gy)*0.006+t*0.5);
-var a=0.045+0.032*w;if(a<0.015)continue;
-var r=1+0.11*w;if(r<0.45)r=0.45;
+var a=0.09+0.07*w;
+var r=1.25+0.16*w;if(r<0.7)r=0.7;
+var dx=gx-sx,dy=gy-sy,d2=dx*dx+dy*dy;
+if(d2<19600){var b=1-d2/19600;a+=b*0.22;r+=b*0.9;}
+if(a<0.02)continue;
 x.beginPath();x.arc(gx,gy,r,0,6.2832);x.fillStyle='rgba(45,212,191,'+a.toFixed(3)+')';x.fill();}}}
 function frame(now){draw(now);if(!document.hidden){raf=requestAnimationFrame(frame);}}
 window.addEventListener('resize',function(){size();if(reduced)draw(1400);});

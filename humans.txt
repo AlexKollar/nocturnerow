@@ -1,0 +1,16 @@
+/* TEAM */
+Founder: Alex Kollar — security practitioner, author (Ambrose Waters), night shift.
+Copilot: Ciel Ivy Ireman — builds, files, verifies. Coffee: 15 shots, neat.
+The mind: Navi — the partner inside Apex. Model id: navi.
+
+/* SITE */
+Stack: Jekyll on GitHub Pages. No trackers, no cookies, no landlord.
+The wave behind these pages is drawn one dot at a time, in your browser, and phones nothing home.
+
+/* THANKS */
+Loyd Blankenship — for the conscience, 1986.
+Every operator who ever held a network together at 3 a.m. with no budget and no backup.
+
+/* THE ROW */
+Founded: Nov 8, 2026 — Pennsburg, Pennsylvania, and wherever the Mesh reaches.
+Motto: Walk with the shadows.

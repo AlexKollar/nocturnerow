@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--
+  NOCTURNE ROW — reading the source already? Good.
+  The curious inherit the wire.
+  This site has a terminal. You look like someone who can find it.
+  Walk with the shadows.
+-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}</title>
@@ -164,7 +170,7 @@ function print(html){out.innerHTML+=html+'\n';out.scrollTop=out.scrollHeight;}
 function open(){ov.classList.add('open');if(!booted){booted=true;print('NOCTURNE ROW FIELD TERMINAL — unlisted build');print('The Row answers its own door. Type <b>help</b> for the commands that exist.');print('One of them is not on any menu.');}setTimeout(function(){inp.focus();},30);}
 function close(){ov.classList.remove('open');}
 var CMDS={
-help:function(){return 'Commands that exist:\n  whoami      — who you are, as far as the Row is concerned\n  mission     — why the Row exists\n  apex        — the tool\n  rogues      — the crew\n  dispatches  — the transmissions\n  manifesto   — not on any menu\n  coffee      — the house order\n  clear       — wipe this terminal\n  exit        — close the door';},
+help:function(){return 'Commands that exist:\n  whoami      — who you are, as far as the Row is concerned\n  mission     — why the Row exists\n  apex        — the tool\n  rogues      — the crew\n  dispatches  — the transmissions\n  uptime      — how long the Row has been on shift\n  roads       — the state of the Mesh\n  manifesto   — not on any menu\n  coffee      — the house order\n  clear       — wipe this terminal\n  exit        — close the door';},
 whoami:function(){return 'A guest on the Row, reading past curfew.\nThat already tells us most of what we need to know.';},
 mission:function(){return 'Augmentation over integration. The math, the gate, and the right to your own tools:\n→ <a href="/mission.html">/mission.html</a>';},
 apex:function(){return 'Apex — a local AI workstation, powered by Navi. Your hardware, your data, no landlord.\n→ <a href="/apex.html">/apex.html</a>';},
@@ -173,6 +179,13 @@ dispatches:function(){return 'Notes from the work, filed from the night shift:\n
 coffee:function(){return 'Fifteen shots of espresso. Neat. The Row runs on it.';},
 sudo:function(){return 'Nice try. This terminal answers to the Row.';},
 '311xray':function(){return "10 - 4 k, 311 XRAY, It's a couch, I'll be 98.";},
+uptime:function(){var d=Math.max(0,Math.floor((Date.now()-new Date('2026-11-08T00:00:00'))/86400000));return 'The Row has been on shift for '+d+' days.\nFounded Nov 8, 2026 — three rogues, no gods, no kings.';},
+roads:function(){return 'Neo-Arcadia ↔ Neon Drip — paired; the road runs dark (fingerprint stage).\nPia — on the bench, unbuilt. Partner In Augmentation, unit № 001.\nNode № 004 — unclaimed.\nThe reader that names the break shipped in v0.2.0e Build 1. Full picture: <a href="/mesh.html">/mesh.html</a>';},
+hack:function(){return 'The planet is not the target. The planet is the client.\nWe hold its networks the way its owners cannot: awake.';},
+xyzzy:function(){return 'A hollow voice says: PLUGH.\nNothing happens. This is not that cave — but the Row appreciates the classics.';},
+plugh:function(){return 'Twisty little passages, all alike — except this one. It leads somewhere: <a href="/mesh.html">/mesh.html</a>';},
+'42':function(){return 'The answer. The question, as ever: why are the chairs empty?';},
+'004':function(){return 'Node № 004 — unbuilt, unclaimed.\nThe Mesh grows one honest machine at a time. If it is yours, the door is here: <a href="/mesh.html">/mesh.html</a>';},
 manifesto:function(){print('You did not hear it from me.');print('Opening the unlisted frequency…');setTimeout(function(){window.location.href='/manifesto.html';},1000);return '';}
 };
 form.addEventListener('submit',function(e){e.preventDefault();var raw=inp.value.trim();inp.value='';print('<span style="color:var(--accent)">row&gt;</span> '+esc(raw));if(!raw)return;var c=raw.toLowerCase().split(/\s+/)[0];
@@ -191,6 +204,13 @@ if(ov.classList.contains('open')){if(e.key==='Escape')close();return;}
 var t=e.target;if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'))return;
 if(e.key==='`'){e.preventDefault();open();return;}
 if(/^[a-zA-Z]$/.test(e.key)){buf=(buf+e.key.toLowerCase()).slice(-4);if(buf==='navi'){buf='';open();}}
+});
+var KONAMI=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'],kpos=0;
+document.addEventListener('keydown',function(e){
+if(ov.classList.contains('open'))return;
+var k=e.key.length===1?e.key.toLowerCase():e.key;
+if(k===KONAMI[kpos]){kpos++;if(kpos===KONAMI.length){kpos=0;open();print('KONAMI ACCEPTED — extra lives were never the point. Extra nodes are.');}}
+else{kpos=(k===KONAMI[0])?1:0;}
 });
 })();
 </script>
@@ -219,6 +239,9 @@ document.addEventListener('visibilitychange',function(){if(document.hidden){canc
 size();
 if(reduced){draw(1400);}else{raf=requestAnimationFrame(frame);}
 })();
+</script>
+<script>
+try{console.log('%cNOCTURNE ROW','color:#2dd4bf;font-weight:bold;font-size:14px');console.log('Reading the console? The terminal on this site rewards the curious. Three doors: the ` key, the word navi, or the >_ button.');}catch(e){}
 </script>
 </body>
 </html>

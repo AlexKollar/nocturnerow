@@ -5,3 +5,5 @@ permalink: /notes/:title/
 markdown: kramdown
 exclude:
   - README.md
+include:
+  - .well-known

@@ -1,0 +1,8 @@
+# Nocturne Row — security contact
+# Found something? We would rather hear it from you than read it from someone else.
+Contact: https://github.com/AlexKollar/nocturnerow/issues
+Expires: 2027-11-12T05:00:00Z
+Preferred-Languages: en
+Canonical: https://nocturnerow.com/.well-known/security.txt
+Policy: https://nocturnerow.com/mission.html
+# Walk with the shadows.

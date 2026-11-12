@@ -10,19 +10,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}</title>
-<meta name="description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
+{% assign pagedesc = page.description %}{% if page.url contains '/notes/' %}{% unless pagedesc %}{% assign pagedesc = page.excerpt | strip_html | strip_newlines | truncate: 200 %}{% endunless %}{% endif %}
+<meta name="description" content="{{ pagedesc | default: 'Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.' }}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Nocturne Row">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}">
-<meta property="og:description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
+<meta property="og:description" content="{{ pagedesc | default: 'Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.' }}">
 <meta property="og:url" content="https://nocturnerow.com{{ page.url }}">
-<meta property="og:image" content="https://nocturnerow.com{{ page.share_image | default: '/logo.png' }}">
-{% if page.share_image %}<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{% endif %}
+{% assign shareimg = page.share_image %}{% if page.url contains '/notes/' %}{% assign shareimg = '/share-' | append: page.slug | append: '.png' %}{% endif %}
+<meta property="og:image" content="https://nocturnerow.com{{ shareimg | default: '/logo.png' }}">
+{% if shareimg %}<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{% endif %}
 <meta property="og:image:alt" content="Nocturne Row">
-<meta name="twitter:card" content="{% if page.share_image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:card" content="{% if shareimg %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}">
-<meta name="twitter:description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
-<meta name="twitter:image" content="https://nocturnerow.com{{ page.share_image | default: '/logo.png' }}">
+<meta name="twitter:description" content="{{ pagedesc | default: 'Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.' }}">
+<meta name="twitter:image" content="https://nocturnerow.com{{ shareimg | default: '/logo.png' }}">
 {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 <link rel="icon" href="/logo.png">
 <style>

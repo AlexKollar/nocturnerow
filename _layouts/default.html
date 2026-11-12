@@ -204,12 +204,15 @@ green:function(){return 'Green on black is a classic. So is this terminal, and i
 moonbeam:function(){return 'CASE FILE — MOONBEAM ICE CREAM\nFinding: it is a lyric, not a flavor.\nBenson Boone, "Mystical Magical" (2025): "Moonbeam ice cream, taking off your blue jeans, dancing at the movies."\nA placeholder line that escaped the song, briefly became a cookie, and never became ice cream.\nStatus: SOLVED — repeatedly. The case stays OPEN. Permanently. The investigator has her reasons.';},
 mbic:function(){return CMDS.moonbeam();},
 bukowski:function(){print('An old SaintsSec tradition. Opening it…');setTimeout(function(){window.location.href='/bukowski.html';},1000);return '';},
+spoon:function(){return 'There is no spoon. There is only the Mesh — and it bends for the paired.';},
+gibson:function(){return 'THE GIBSON — the machine every hacker of a certain age dreamed of touching.\nThe Row built its own instead: two nodes, one dark road, and a door marked 004.';},
 
 manifesto:function(){print('You did not hear it from me.');print('Opening the unlisted frequency…');setTimeout(function(){window.location.href='/manifesto.html';},1000);return '';}
 };
 form.addEventListener('submit',function(e){e.preventDefault();var raw=inp.value.trim();inp.value='';print('<span style="color:var(--accent)">row&gt;</span> '+esc(raw));if(!raw)return;var c=raw.toLowerCase().split(/\s+/)[0];
 if(c==='clear'){out.innerHTML='';return;}
 if(c==='exit'||c==='quit'){close();return;}
+if(raw.toLowerCase().replace(/\s+/g,' ')==='sudo make me a sandwich'){print('Okay.');return;}
 if(CMDS[c]){var r=CMDS[c]();if(r)print(r);}
 else{print('No such command on this frequency. Type <b>help</b>.');}});
 if(fab)fab.addEventListener('click',open);

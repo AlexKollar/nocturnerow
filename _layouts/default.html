@@ -16,6 +16,7 @@
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}">
 <meta name="twitter:description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
 <meta name="twitter:image" content="https://nocturnerow.com/logo.png">
+{% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 <link rel="icon" href="/logo.png">
 <style>
 :root{--bg:#0b0f14;--panel:#111823;--line:#1f2c3d;--text:#e6edf3;--muted:#9fb0c1;--accent:#2dd4bf}
@@ -87,6 +88,40 @@ header nav.open{display:flex}
 header nav a{margin:0;padding:12px 6px;min-height:44px;border-top:1px solid var(--line);display:flex;align-items:center}
 }
 @media (prefers-reduced-motion: reduce){.nav-toggle .bar{transition:none}}
+.flip{padding:0;cursor:pointer;perspective:1200px}
+.flip:hover{transform:none}
+.flip-inner{position:relative;display:grid;transform-style:preserve-3d;transition:transform .55s ease}
+.flip.flipped .flip-inner{transform:rotateY(180deg)}
+.flip-face{grid-area:1/1;padding:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.flip-back{transform:rotateY(180deg)}
+.filehint{margin-top:12px;color:var(--accent);font-size:12.5px;letter-spacing:.14em}
+.dossier .drow{margin:0 0 10px;font-size:14.5px}
+.dossier .dk{color:var(--accent);font-size:11.5px;letter-spacing:.14em;display:block}
+@media (prefers-reduced-motion: reduce){.flip-inner{transition:none}}
+.rowstatus{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.rowstatus .rs{flex:1 1 200px;border:1px dashed var(--line);border-radius:12px;padding:10px 14px;color:var(--muted);font-size:14.5px}
+.rowstatus .rs b{color:var(--text)}
+.rowstatus .rs .k{color:var(--accent);letter-spacing:.12em;font-size:11.5px;display:block;margin-bottom:2px}
+.rowstatus a{color:var(--accent);text-decoration:none}
+.tx{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11.5px;letter-spacing:.14em;margin-bottom:8px}
+.tx .sig{color:var(--accent);letter-spacing:3px;font-size:12px}
+.txhead{color:var(--accent);font-size:12px;letter-spacing:.16em;margin:26px 0 4px}
+.reveal{opacity:0;transform:translateY(10px);animation:rise .7s ease forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;animation:none}}
+.term-fab{position:fixed;right:14px;bottom:14px;z-index:55;background:var(--panel);border:1px solid var(--line);color:var(--accent);border-radius:10px;padding:10px 13px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px;cursor:pointer;opacity:.55;min-width:44px;min-height:44px}
+.term-fab:hover{opacity:1;border-color:var(--accent)}
+.term-overlay{position:fixed;inset:0;background:rgba(3,6,10,.85);display:none;z-index:60;align-items:flex-start;justify-content:center;padding:6vh 14px 14px}
+.term-overlay.open{display:flex}
+.term{background:#05080d;border:1px solid var(--accent);border-radius:12px;max-width:720px;width:100%;max-height:84vh;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.65);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.term-head{display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 14px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;letter-spacing:.1em}
+.term-close{background:none;border:1px solid var(--line);border-radius:8px;color:var(--text);min-width:44px;min-height:44px;font-size:17px;cursor:pointer}
+.term-close:hover{border-color:var(--accent);color:var(--accent)}
+.term-out{padding:14px;overflow-y:auto;font-size:14px;line-height:1.6;color:#c9e8e1;white-space:pre-wrap;word-break:break-word}
+.term-out a{color:var(--accent)}
+.term-line{display:flex;gap:9px;align-items:center;padding:10px 14px;border-top:1px solid var(--line)}
+.term-prompt{color:var(--accent);font-family:inherit}
+.term-input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:inherit;font-size:16px;padding:6px 0}
 </style>
 </head>
 <body>
@@ -103,6 +138,51 @@ header nav a{margin:0;padding:12px 6px;min-height:44px;border-top:1px solid var(
 </footer>
 <script>
 (function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');if(!b||!n)return;b.addEventListener('click',function(){var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
+</script>
+<button class="term-fab" id="termFab" type="button" aria-label="Open the field terminal">&gt;_</button>
+<div class="term-overlay" id="termOverlay" role="dialog" aria-modal="true" aria-label="Nocturne Row field terminal">
+<div class="term">
+<div class="term-head"><span>NOCTURNE ROW // FIELD TERMINAL</span><button class="term-close" id="termClose" type="button" aria-label="Close terminal">×</button></div>
+<div class="term-out" id="termOut"></div>
+<form class="term-line" id="termForm"><span class="term-prompt">row&gt;</span><input class="term-input" id="termInput" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Terminal command"></form>
+</div>
+</div>
+<script>
+(function(){
+var ov=document.getElementById('termOverlay'),out=document.getElementById('termOut'),inp=document.getElementById('termInput'),form=document.getElementById('termForm'),fab=document.getElementById('termFab'),cls=document.getElementById('termClose');
+if(!ov||!out||!inp||!form)return;
+var booted=false;
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function print(html){out.innerHTML+=html+'\n';out.scrollTop=out.scrollHeight;}
+function open(){ov.classList.add('open');if(!booted){booted=true;print('NOCTURNE ROW FIELD TERMINAL — unlisted build');print('The Row answers its own door. Type <b>help</b> for the commands that exist.');print('One of them is not on any menu.');}setTimeout(function(){inp.focus();},30);}
+function close(){ov.classList.remove('open');}
+var CMDS={
+help:function(){return 'Commands that exist:\n  whoami      — who you are, as far as the Row is concerned\n  mission     — why the Row exists\n  apex        — the tool\n  rogues      — the crew\n  dispatches  — the transmissions\n  manifesto   — not on any menu\n  coffee      — the house order\n  clear       — wipe this terminal\n  exit        — close the door';},
+whoami:function(){return 'A guest on the Row, reading past curfew.\nThat already tells us most of what we need to know.';},
+mission:function(){return 'Augmentation over integration. The math, the gate, and the right to your own tools:\n→ <a href="/mission.html">/mission.html</a>';},
+apex:function(){return 'Apex — a local AI workstation, powered by Navi. Your hardware, your data, no landlord.\n→ <a href="/apex.html">/apex.html</a>';},
+rogues:function(){return 'Three on purpose. Their files open on the homepage:\n→ <a href="/#people">/#people</a>';},
+dispatches:function(){return 'Notes from the work, filed from the night shift:\n→ <a href="/blog.html">/blog.html</a>';},
+coffee:function(){return 'Fifteen shots of espresso. Neat. The Row runs on it.';},
+sudo:function(){return 'Nice try. This terminal answers to the Row.';},
+manifesto:function(){print('You did not hear it from me.');print('Opening the unlisted frequency…');setTimeout(function(){window.location.href='/manifesto.html';},1000);return '';}
+};
+form.addEventListener('submit',function(e){e.preventDefault();var raw=inp.value.trim();inp.value='';print('<span style="color:var(--accent)">row&gt;</span> '+esc(raw));if(!raw)return;var c=raw.toLowerCase().split(/\s+/)[0];
+if(c==='clear'){out.innerHTML='';return;}
+if(c==='exit'||c==='quit'){close();return;}
+if(CMDS[c]){var r=CMDS[c]();if(r)print(r);}
+else{print('No such command on this frequency. Type <b>help</b>.');}});
+if(fab)fab.addEventListener('click',open);
+if(cls)cls.addEventListener('click',close);
+ov.addEventListener('click',function(e){if(e.target===ov)close();});
+var buf='';
+document.addEventListener('keydown',function(e){
+if(ov.classList.contains('open')){if(e.key==='Escape')close();return;}
+var t=e.target;if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'))return;
+if(e.key==='`'){e.preventDefault();open();return;}
+if(/^[a-zA-Z]$/.test(e.key)){buf=(buf+e.key.toLowerCase()).slice(-4);if(buf==='navi'){buf='';open();}}
+});
+})();
 </script>
 </body>
 </html>

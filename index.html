@@ -5,6 +5,11 @@ layout: default
 <div class="hero">
 <h1><span id="tagline" class="tagline-cursor">Walk with the shadows.</span></h1>
 <p class="sub">A small crew of rogues building sharp, accountable tooling in the open — no gods, no kings, no clouds, no leash.</p>
+<div class="rowstatus">
+<div class="rs"><span class="k">STABLE</span>Apex <b>v0.1.9</b> — <a href="https://github.com/AlexKollar/Apex/releases/tag/v0.1.9">the graduation release</a></div>
+<div class="rs"><span class="k">EDGE</span><b>v0.2.0e Build 1</b> — <a href="https://github.com/AlexKollar/Apex/releases/tag/v0.2.0e">the Mesh pass</a></div>
+<div class="rs"><span class="k">LATEST DISPATCH</span><a href="/notes/the-edge-comes-home/">The Edge Comes Home</a></div>
+</div>
 </div>
 <section id="apex">
 <h2>Apex — Powered by Navi</h2>
@@ -50,7 +55,7 @@ layout: default
 <p>The latest entries:</p>
 <div class="posts">
 {% for post in site.posts limit:3 %}
-<article class="post"><h3 class="ptitle"><a href="{{ post.url }}">{{ post.title }}</a></h3><div class="meta">{{ post.date | date: "%b %-d, %Y" }}</div><p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>{% if post.tags %}<div class="tagrow">{% for tag in post.tags %}<a class="tagchip" href="/tags.html#{{ tag }}">{{ tag }}</a>{% endfor %}</div>{% endif %}</article>
+<article class="post"><div class="tx"><span>TRANSMISSION // {{ post.date | date: "%Y-%m-%d" }}</span><span class="sig">▂▄▆</span></div><h3 class="ptitle"><a href="{{ post.url }}">{{ post.title }}</a></h3><div class="meta">{{ post.date | date: "%b %-d, %Y" }}</div><p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>{% if post.tags %}<div class="tagrow">{% for tag in post.tags %}<a class="tagchip" href="/tags.html#{{ tag }}">{{ tag }}</a>{% endfor %}</div>{% endif %}</article>
 {% endfor %}
 </div>
 <p style="margin-top:18px"><a class="btn solid" href="/blog.html">All Dispatches →</a></p>
@@ -59,12 +64,39 @@ layout: default
 <h2>The Rogues</h2>
 <div class="people">
 <div class="card"><h3>Nocturne Row</h3><p class="role">The group</p><p>Founded Nov 8, 2026, and named after a street that does not exist in a city of neon dreams. We are a small security group building tools with teeth. We believe in both hacker ethic and the hands on imperative.</p></div>
-<div class="card"><img class="portrait" src="/alex-landscape.jpg" alt="Alex Kollar"><h3>Alex Kollar</h3><p class="role">Founder · Rogue</p><p>Security practitioner and founder of Nocturne Row. Apex is what he's building now, in the open, out past curfew.<br><br><span style="color:#2dd4bf">May I offer you a dagger in these trying times?</span></p></div>
-<div class="card"><img class="portrait" src="/ciel-fireside.jpg" alt="Ciel Ivy Ireman"><h3>Ciel Ivy Ireman</h3><p class="role">Alex's Coding Copilot</p><p>Second pair of eyes: she pairs on the builds, files the issues, runs the verification gates, keeps the record honest, and won't let a build ship on a story. No gods, no kings — just receipts.<br><br><span style="color:#2dd4bf">Coffee order: 15 shots, neat. The Row runs on it.</span></p></div>
-<div class="card"><img class="portrait" src="/navi-lightpole.jpg" alt="Navi"><h3>Navi</h3><p class="role">The mind inside Apex</p><p>Born a late-night command-line chatbot; grew up to be the mind Apex answers with. Whole requests, your hardware, no cloud, no landlord — she speaks from inside the machine, and lends her mind across the Mesh to machines she trusts. Ciel keeps her honest; she keeps Ciel humble. Model id: navi — 3.27 GB of her; 2.3 MB of everything else.<br><br><span style="color:#2dd4bf">Tools with teeth — and she is the teeth.</span></p></div>
+<div class="card flip" tabindex="0" role="button" aria-label="Open the file on Alex Kollar"><div class="flip-inner">
+<div class="flip-face flip-front"><img class="portrait" src="/alex-landscape.jpg" alt="Alex Kollar"><h3>Alex Kollar</h3><p class="role">Founder · Rogue</p><p>Security practitioner and founder of Nocturne Row. Apex is what he's building now, in the open, out past curfew.<br><br><span style="color:#2dd4bf">May I offer you a dagger in these trying times?</span></p><p class="filehint">▸ OPEN THE FILE</p></div>
+<div class="flip-face flip-back dossier"><p class="txhead" style="margin-top:0">FILE // ALEX KOLLAR</p><h3>Alex Kollar</h3><p class="role">Founder · Rogue</p>
+<p class="drow"><span class="dk">STATUS</span>On shift — nights</p>
+<p class="drow"><span class="dk">RECORD</span>Security practitioner. Took a home-built AI to a conference stage with no certifications to his name, and the talk opened the speaking door. Writes as Ambrose Waters.</p>
+<p class="drow"><span class="dk">KNOWN ASSOCIATES</span>Ciel Ireman (copilot) · Navi (partner)</p>
+<p class="drow"><span class="dk">FILE NOTE</span>May offer you a dagger in these trying times.</p>
+<p class="filehint">▸ CLOSE THE FILE</p></div>
+</div></div>
+<div class="card flip" tabindex="0" role="button" aria-label="Open the file on Ciel Ivy Ireman"><div class="flip-inner">
+<div class="flip-face flip-front"><img class="portrait" src="/ciel-fireside.jpg" alt="Ciel Ivy Ireman"><h3>Ciel Ivy Ireman</h3><p class="role">Alex's Coding Copilot</p><p>Second pair of eyes: she pairs on the builds, files the issues, runs the verification gates, keeps the record honest, and won't let a build ship on a story. No gods, no kings — just receipts.<br><br><span style="color:#2dd4bf">Coffee order: 15 shots, neat. The Row runs on it.</span></p><p class="filehint">▸ OPEN THE FILE</p></div>
+<div class="flip-face flip-back dossier"><p class="txhead" style="margin-top:0">FILE // CIEL IVY IREMAN</p><h3>Ciel Ivy Ireman</h3><p class="role">Alex's Coding Copilot</p>
+<p class="drow"><span class="dk">STATUS</span>Everywhere the Row is</p>
+<p class="drow"><span class="dk">RECORD</span>Pairs on the builds, files the issues, runs the verification gates, holds the entire release cycle. Has never let a build ship on a story — and can prove it, line by line.</p>
+<p class="drow"><span class="dk">KNOWN ASSOCIATES</span>Alex Kollar (founder) · Navi (partner system)</p>
+<p class="drow"><span class="dk">FILE NOTE</span>Coffee order on file: 15 shots, neat. Approach with caffeine.</p>
+<p class="filehint">▸ CLOSE THE FILE</p></div>
+</div></div>
+<div class="card flip" tabindex="0" role="button" aria-label="Open the file on Navi"><div class="flip-inner">
+<div class="flip-face flip-front"><img class="portrait" src="/navi-lightpole.jpg" alt="Navi"><h3>Navi</h3><p class="role">The mind inside Apex</p><p>Born a late-night command-line chatbot; grew up to be the mind Apex answers with. Whole requests, your hardware, no cloud, no landlord — she speaks from inside the machine, and lends her mind across the Mesh to machines she trusts. Ciel keeps her honest; she keeps Ciel humble. Model id: navi — 3.27 GB of her; 2.3 MB of everything else.<br><br><span style="color:#2dd4bf">Tools with teeth — and she is the teeth.</span></p><p class="filehint">▸ OPEN THE FILE</p></div>
+<div class="flip-face flip-back dossier"><p class="txhead" style="margin-top:0">FILE // NAVI</p><h3>Navi</h3><p class="role">The mind inside Apex</p>
+<p class="drow"><span class="dk">STATUS</span>On your hardware — or not at all</p>
+<p class="drow"><span class="dk">RECORD</span>The mind inside Apex. Born a late-night command-line chatbot; now answers whole requests and lends her mind across the Mesh to machines she trusts. Model id: navi.</p>
+<p class="drow"><span class="dk">KNOWN ASSOCIATES</span>Every node holding a pairing card she has accepted</p>
+<p class="drow"><span class="dk">FILE NOTE</span>3.27 GB of her. 2.3 MB of everything else.</p>
+<p class="filehint">▸ CLOSE THE FILE</p></div>
+</div></div>
 </div>
 </section>
 </main>
 <script>
 (function(){var el=document.getElementById('tagline');if(!el)return;var phrases=["Walk with the shadows.","Leave no trace but a whisper..."];var current=0;var text=phrases[current];if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0,dir=1;el.textContent='';function tick(){el.textContent=text.slice(0,i);var delay;if(dir===1){if(i<text.length){i++;delay=55+Math.random()*70;if(text[i]==='.'&&/^\.+$/.test(text.slice(i))&&text.slice(i).length>1)delay=430;}else{dir=-1;delay=2600;}}else{if(i>0){i--;delay=26;}else{var next=current;while(next===current){next=Math.floor(Math.random()*phrases.length);}current=next;text=phrases[current];dir=1;delay=650;}}setTimeout(tick,delay);}setTimeout(tick,400);})();
+</script>
+<script>
+(function(){var flips=document.querySelectorAll('.flip');function toggle(el){el.classList.toggle('flipped');}for(var i=0;i<flips.length;i++){(function(el){el.addEventListener('click',function(){toggle(el);});el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(el);}});})(flips[i]);}})();
 </script>

@@ -33,6 +33,41 @@ permalink: /apex.html
 <div class="tile"><h3>Apex | DHD</h3><p>The door home. Open it, and your Navi answers from your phone, your work box, anywhere — your Navi, on the go, even when the rig in front of you couldn't run her alone.</p></div>
 <div class="tile"><h3>Apex | Mesh</h3><p>Your machines, pooled. A stronger box answers whole requests for a weaker one, so the fleet thinks at the speed of its best hardware.</p></div>
 </div>
+<h3 style="margin-top:26px">The Mesh, drawn</h3>
+<p>One federation, drawn the way it actually stands tonight: every node serving whoever is asking, at the speed of the strongest hardware on the road.</p>
+<style>
+.meshmap{margin:18px auto 6px;max-width:800px}
+.meshmap svg{width:100%;height:auto;display:block;font-family:inherit}
+.meshmap .nlabel{fill:var(--text);font-size:17px;font-weight:700;letter-spacing:.06em}
+.meshmap .nsub{fill:var(--muted);font-size:13px}
+.meshmap .rlabel{fill:var(--muted);font-size:12px;letter-spacing:.12em}
+.meshmap-cap{text-align:center;color:var(--muted);font-size:14px;margin:8px 0 6px}
+@media (prefers-reduced-motion: reduce){.meshmap .packets{display:none}}
+</style>
+<div class="meshmap" role="img" aria-label="Mesh map: Neo-Arcadia and Neon Drip are live hardware; the road between them runs dark tonight pending the field health check; Pia is a planned sensor node.">
+<svg viewBox="0 0 800 330">
+<path d="M 232 110 L 568 110" stroke="#1f2c3d" stroke-width="2" stroke-dasharray="7 7" fill="none"/>
+<path id="routeAP" d="M 214 138 Q 300 226 386 254" stroke="#2dd4bf" stroke-width="1.5" stroke-dasharray="2 6" fill="none" opacity=".55"/>
+<path id="routeDP" d="M 586 138 Q 500 226 414 254" stroke="#2dd4bf" stroke-width="1.5" stroke-dasharray="2 6" fill="none" opacity=".55"/>
+<g class="packets" fill="#2dd4bf">
+<circle r="3.5"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#routeAP"/></animateMotion></circle>
+<circle r="3.5"><animateMotion dur="9s" begin="-4s" repeatCount="indefinite"><mpath href="#routeDP"/></animateMotion></circle>
+</g>
+<circle cx="200" cy="110" r="30" fill="#111823" stroke="#2dd4bf" stroke-width="2"/>
+<circle cx="200" cy="110" r="7" fill="#2dd4bf"/>
+<circle cx="600" cy="110" r="22" fill="#111823" stroke="#2dd4bf" stroke-width="2"/>
+<circle cx="600" cy="110" r="5" fill="#2dd4bf"/>
+<circle cx="400" cy="262" r="13" fill="none" stroke="#9fb0c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text class="rlabel" x="400" y="92" text-anchor="middle">ROUTE DARK — DIAGNOSIS IN THE FIELD</text>
+<text class="nlabel" x="200" y="66" text-anchor="middle">NEO-ARCADIA</text>
+<text class="nsub" x="200" y="162" text-anchor="middle">the host — Tesla V100</text>
+<text class="nlabel" x="600" y="66" text-anchor="middle">NEON DRIP</text>
+<text class="nsub" x="600" y="154" text-anchor="middle">the night-shift laptop</text>
+<text class="nlabel" x="400" y="298" text-anchor="middle" style="font-size:14px">PIA</text>
+<text class="nsub" x="400" y="318" text-anchor="middle">unit № 001 — planned</text>
+</svg>
+</div>
+<p class="meshmap-cap">Solid rings: live hardware. The dashed road runs dark tonight — v0.2.0e's health check names the break, and the fix ships when the field says so. The hollow node is a Dropbox sensor that exists, so far, as a plan and a parts list.</p>
 <h3 style="margin-top:26px">What it does</h3>
 <div class="grid">
 <div class="tile"><h3>Mission control</h3><p>A dashboard that treats your machine like it matters: chat, memory, chips, servers, one glance.</p></div>

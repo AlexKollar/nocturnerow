@@ -5,7 +5,7 @@ permalink: /mission.html
 ---
 <main class="wrap">
 <div class="hero">
-<h1>The enemy is not waiting for permission.</h1>
+<h1><span id="mission-tagline" class="tagline-cursor">The enemy is not waiting for permission.</span></h1>
 <p class="sub">Threat actors use every tool on the table — AI first among them. The defense does not have a people problem. It has a math problem, and math does not care about our hesitation.</p>
 </div>
 
@@ -93,3 +93,6 @@ permalink: /mission.html
 <p class="btn-row"><a class="btn solid" href="/apex.html">Explore Apex</a><a class="btn" href="/blog.html">Read the Dispatches</a></p>
 </section>
 </main>
+<script>
+(function(){var el=document.getElementById('mission-tagline');if(!el)return;var text='The enemy is not waiting for permission.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){var delay=55+Math.random()*70;if(i===text.length-1)delay=600;i++;setTimeout(tick,delay);}}setTimeout(tick,400);})();
+</script>

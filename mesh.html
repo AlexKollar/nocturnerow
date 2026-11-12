@@ -9,6 +9,7 @@ share_image: /share-mesh.png
 <p class="txhead">APEX | MESH — THE ROADS BETWEEN THE MACHINES</p>
 <h1><span id="mesh-tagline" class="tagline-cursor">Many machines. One mind.</span></h1>
 <p class="sub">The Mesh is one federated whole: every device attached to it serves the goal of whoever is using Apex, in whatever form factor. A distributed network that functions like a neural net — the more nodes on it, the faster the smallest, least powerful system on it can think.</p>
+<p style="margin-top:20px"><button class="btn solid" id="doctrineBtn" type="button" style="cursor:pointer;font:inherit">Read the Mesh Doctrine</button></p>
 </div>
 <section>
 <h2>The Mesh, drawn</h2>
@@ -23,6 +24,14 @@ share_image: /share-mesh.png
 .meshmap-cap .ask{color:#2dd4bf}
 .meshmap-cap .ans{color:#f59e0b}
 @media (prefers-reduced-motion: reduce){.meshmap .packets{display:none}}
+.doc-overlay{position:fixed;inset:0;background:rgba(3,6,10,.86);display:none;z-index:60;align-items:flex-start;justify-content:center;padding:5vh 14px 14px}
+.doc-overlay.open{display:flex}
+.doc-panel{background:var(--panel);border:1px solid var(--accent);border-radius:12px;max-width:760px;width:100%;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.65)}
+.doc-head{display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;letter-spacing:.1em}
+.doc-body{padding:8px 24px 26px;overflow-y:auto}
+.doc-body h3{margin:22px 0 4px;color:var(--text)}
+.doc-body blockquote{border-left:3px solid var(--accent);margin:16px 0;padding:4px 0 4px 16px;color:var(--text);font-size:17px;line-height:1.65}
+.doc-body blockquote .attrib{display:block;margin-top:8px;color:var(--muted);font-size:14px}
 </style>
 <div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends a prompt out in teal; Neo-Arcadia and Neon Drip both contribute, and their answers flow back to Pia in amber. A fourth node is drawn hollow — not yet built. Field status: two nodes are paired tonight and the road between them runs dark, with the diagnosis in the field.">
 <svg viewBox="0 0 800 440">
@@ -94,6 +103,39 @@ share_image: /share-mesh.png
 <p><a class="btn solid" href="/apex.html">Explore Apex</a><a class="btn" href="https://github.com/AlexKollar/Apex/issues/154">The Mesh doctrine — issue #154</a></p>
 </section>
 </main>
+<div class="doc-overlay" id="docOverlay" role="dialog" aria-modal="true" aria-label="The Mesh Doctrine">
+<div class="doc-panel">
+<div class="doc-head"><span>APEX | MESH — THE DOCTRINE</span><button class="term-close" id="docClose" type="button" aria-label="Close the doctrine">×</button></div>
+<div class="doc-body">
+<p style="color:var(--muted);font-size:13.5px;letter-spacing:.04em">Filed on issue #154 — the Row's working doctrine for the Mesh, designed and built in the open.</p>
+<blockquote>"All devices attached to it serve the goal of producing results for whoever is using Apex, in whatever form factor. A distributed, federated network that functions like a massive neural network. The more nodes on it, the faster smaller, less powerful systems will be able to generate responses."<span class="attrib">— the founder, pinning the doctrine · 2026-11-12</span></blockquote>
+<h3>I. One federation</h3>
+<p>Form factors are separate products — Node, DHD, Mesh, Dropbox. The Mesh itself is one whole. A node does not ask which product is speaking; it asks who is asking, and serves.</p>
+<h3>II. The unit of work is whole</h3>
+<p>Requests and tasks travel whole. The Mesh does not split a mind across a wire: literal token- and layer-splitting buys capacity, not speed, and chains every answer to the weakest link. Speed comes from placement — the work goes where it is cheapest to run well.</p>
+<h3>III. Trust is a handshake</h3>
+<p>Nodes pair by cards, in person or by hand. Trust is pairwise and never transitive by default: my friend is not automatically yours. Consent is per task class and written into the pairing card itself — the card is the ceiling on what a peer may ever ask. Revocation is unpairing, and it is total.</p>
+<h3>IV. Every class keeps its contract</h3>
+<p>Five task classes ride the signed door — <b>generate</b>, <b>collect</b>, <b>report</b>, <b>peek</b>, <b>lookup</b> — each with its own failure semantics, never spliced. A dropped generation is answered fresh and locally. A sensor's reports are stored and forwarded until the home node wakes. A stale peek is worse than none, so peeks are never queued.</p>
+<h3>V. The smallest node is the point</h3>
+<p>A Dropbox sensor holds the narrowest trust on the Mesh: it publishes what it sees, it answers its home node, and it does not borrow against the house fleet by default. The fleet exists so the least powerful device on it can produce results like the most powerful one.</p>
+<h3>VI. No landlord, ever</h3>
+<p>No cloud directory. No account. No telemetry home. Node keys are never backed up, and lending is switched on in person — never through a remote door. If the internet vanished tomorrow, the Mesh would not notice.</p>
+<p style="margin-top:24px;color:var(--text);font-size:17px"><b>Many machines. One mind.</b></p>
+<p style="color:var(--muted);font-size:14px">A living document — the design record lives on <a href="https://github.com/AlexKollar/Apex/issues/154" style="color:var(--accent)">issue #154</a>, and the implementation is the 0.2.0e line's work.</p>
+</div>
+</div>
+</div>
+<script>
+(function(){var ov=document.getElementById('docOverlay'),btn=document.getElementById('doctrineBtn'),cls=document.getElementById('docClose');if(!ov||!btn)return;
+function open(){ov.classList.add('open');if(cls)cls.focus();}
+function close(){ov.classList.remove('open');btn.focus();}
+btn.addEventListener('click',open);
+if(cls)cls.addEventListener('click',close);
+ov.addEventListener('click',function(e){if(e.target===ov)close();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('open'))close();});
+})();
+</script>
 <script>
 (function(){var el=document.getElementById('mesh-tagline');if(!el)return;var text='Many machines. One mind.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
 </script>

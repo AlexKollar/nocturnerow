@@ -1,0 +1,98 @@
+---
+layout: default
+title: The Mesh
+permalink: /mesh.html
+---
+<main class="wrap">
+<div class="hero">
+<p class="txhead">APEX | MESH — THE ROADS BETWEEN THE MACHINES</p>
+<h1><span id="mesh-tagline" class="tagline-cursor">Many machines. One mind.</span></h1>
+<p class="sub">The Mesh is one federated whole: every device attached to it serves the goal of whoever is using Apex, in whatever form factor. A distributed network that functions like a neural net — the more nodes on it, the faster the smallest, least powerful system on it can think.</p>
+</div>
+<section>
+<h2>The Mesh, drawn</h2>
+<p>Watch the smallest node in the house: Pia asks a question she could never answer alone — and the fleet answers it together.</p>
+<style>
+.meshmap{margin:18px auto 6px;max-width:800px}
+.meshmap svg{width:100%;height:auto;display:block;font-family:inherit}
+.meshmap .nlabel{fill:var(--text);font-size:17px;font-weight:700;letter-spacing:.06em}
+.meshmap .nsub{fill:var(--muted);font-size:13px}
+.meshmap .rlabel{fill:var(--muted);font-size:11.5px;letter-spacing:.12em}
+.meshmap-cap{text-align:center;color:var(--muted);font-size:14px;margin:8px 0 6px}
+.meshmap-cap .ask{color:#2dd4bf}
+.meshmap-cap .ans{color:#f59e0b}
+@media (prefers-reduced-motion: reduce){.meshmap .packets{display:none}}
+</style>
+<div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends a prompt out in teal; Neo-Arcadia and Neon Drip both contribute, and their answers flow back to Pia in amber. A fourth node is drawn hollow — not yet built. Field status: two nodes are paired tonight and the road between them runs dark, with the diagnosis in the field.">
+<svg viewBox="0 0 800 440">
+<path id="rPiaNa" d="M 162 284 Q 250 165 372 122" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
+<path id="rNaPia" d="M 372 122 Q 250 165 162 284" stroke="none" fill="none"/>
+<path id="rPiaNd" d="M 164 308 Q 400 306 628 226" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
+<path id="rNdPia" d="M 628 226 Q 400 306 164 308" stroke="none" fill="none"/>
+<path id="rNaNd" d="M 430 122 Q 545 118 630 196" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
+<path id="rNdNa" d="M 630 196 Q 545 118 430 122" stroke="none" fill="none"/>
+<path d="M 424 132 Q 560 235 636 338" stroke="#9fb0c1" stroke-width="1.5" stroke-dasharray="2 6" fill="none" opacity=".5"/>
+<path d="M 655 240 L 655 338" stroke="#9fb0c1" stroke-width="1.5" stroke-dasharray="2 6" fill="none" opacity=".5"/>
+<g class="packets">
+<g fill="#2dd4bf">
+<circle r="4"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#rPiaNa"/></animateMotion></circle>
+<circle r="4"><animateMotion dur="7s" begin="-1s" repeatCount="indefinite"><mpath href="#rPiaNd"/></animateMotion></circle>
+<circle r="3.5"><animateMotion dur="6s" begin="-.5s" repeatCount="indefinite"><mpath href="#rNaNd"/></animateMotion></circle>
+</g>
+<g fill="#f59e0b">
+<circle r="4"><animateMotion dur="6.5s" begin="-2s" repeatCount="indefinite"><mpath href="#rNaPia"/></animateMotion></circle>
+<circle r="4"><animateMotion dur="8s" begin="-3.5s" repeatCount="indefinite"><mpath href="#rNdPia"/></animateMotion></circle>
+<circle r="3.5"><animateMotion dur="7.5s" begin="-2.8s" repeatCount="indefinite"><mpath href="#rNdNa"/></animateMotion></circle>
+</g>
+</g>
+<circle cx="400" cy="105" r="32" fill="#111823" stroke="#2dd4bf" stroke-width="2"/>
+<circle cx="400" cy="105" r="8" fill="#2dd4bf"/>
+<circle cx="655" cy="215" r="22" fill="#111823" stroke="#2dd4bf" stroke-width="2"/>
+<circle cx="655" cy="215" r="5" fill="#2dd4bf"/>
+<circle cx="145" cy="298" r="14" fill="#111823" stroke="#2dd4bf" stroke-width="2"/>
+<circle cx="145" cy="298" r="4" fill="#2dd4bf"/>
+<circle cx="655" cy="358" r="16" fill="none" stroke="#9fb0c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text class="rlabel" x="22" y="30">FIELD STATUS: TWO NODES PAIRED — THE ROAD RUNS DARK TONIGHT</text>
+<text class="nlabel" x="400" y="58" text-anchor="middle">NEO-ARCADIA</text>
+<text class="nsub" x="400" y="158" text-anchor="middle">the host — Tesla V100</text>
+<text class="nlabel" x="655" y="170" text-anchor="middle">NEON DRIP</text>
+<text class="nsub" x="655" y="256" text-anchor="middle">the night-shift laptop</text>
+<text class="nlabel" x="145" y="262" text-anchor="middle" style="font-size:15px">PIA</text>
+<text class="nsub" x="145" y="334" text-anchor="middle">unit № 001 — the sensor that asks</text>
+<text class="nlabel" x="655" y="398" text-anchor="middle" style="font-size:14px">NODE № 004</text>
+<text class="nsub" x="655" y="418" text-anchor="middle">not yet built — maybe yours</text>
+</svg>
+</div>
+<p class="meshmap-cap"><span class="ask">●</span> <b style="color:var(--text)">the ask</b> — a prompt leaves the smallest node &nbsp;·&nbsp; <span class="ans">●</span> <b style="color:var(--text)">the answer</b> — the fleet's work comes home. The drawing is the design target; the status line at the top is tonight's truth.</p>
+</section>
+<section>
+<h2>How the Mesh works</h2>
+<div class="grid">
+<div class="tile"><h3>A handshake, not an account</h3><p>Nodes pair by exchanging cards — a picture, carried by hand. No cloud directory, no account, no landlord in the middle. Each node keeps its own ledger of exactly who it trusts, and trust is pairwise: my friend is not automatically yours.</p></div>
+<div class="tile"><h3>The ask goes out whole</h3><p>When a node needs more muscle than it has, it sends the whole request to a stronger peer it trusts, and the answer comes back the same road. That is borrow, and it already ships: a small box thinks at the speed of the biggest machine on the Mesh.</p></div>
+<div class="tile"><h3>The answer is a federation</h3><p>Ring 2 — designed in the open, building now in the 0.2.0e line — splits work into tasks the fleet shares. A sensor like Pia can put a prompt to the whole Mesh at once: Neo-Arcadia and Neon Drip each contribute, and she receives one composed answer. The more nodes join, the faster the smallest node in the house gets.</p></div>
+</div>
+</section>
+<section>
+<h2>The state of the roads</h2>
+<div class="stats">
+<ul>
+<li>Nodes paired tonight — <b>2</b>: Neo-Arcadia and Neon Drip</li>
+<li>The road between them — <b>dark</b>: the handshake fails at the fingerprint stage; each box's own certificate checks out, so the break is between them, not in them</li>
+<li>The reader that names the break — <b>shipped</b> in Apex v0.2.0e Build 1: the Mesh health check, on both machines' Mesh views</li>
+<li>The field verdict — <b>pending</b>: install Build 1 on both nodes and run the check; the fix ships when the field says so</li>
+<li>Ring 2, the federation — <b>designed</b> in the open (issue #154); implementation is the 0.2.0e line's work</li>
+<li>Pia, the first Dropbox sensor — <b>costed, gated</b> on her software (issue #152); the Pi 5 on the bench is her test bed</li>
+</ul>
+</div>
+</section>
+<section>
+<h2>Bring a node</h2>
+<p>Node № 004 is deliberately empty. The Mesh grows the way trust actually grows: one machine at a time, paired by hand. Run Apex on a box you own, exchange pairing cards with a node whose operator you trust, and your smallest hardware stops being your ceiling — every stronger machine on your roads answers for it.</p>
+<p>No account to open. No subscription to keep. Nothing to phone home to, because home is the address.</p>
+<p><a class="btn solid" href="/apex.html">Explore Apex</a><a class="btn" href="https://github.com/AlexKollar/Apex/issues/154">The Mesh doctrine — issue #154</a></p>
+</section>
+</main>
+<script>
+(function(){var el=document.getElementById('mesh-tagline');if(!el)return;var text='Many machines. One mind.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+</script>

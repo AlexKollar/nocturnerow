@@ -122,14 +122,16 @@ header nav a{margin:0;padding:12px 6px;min-height:44px;border-top:1px solid var(
 .term-line{display:flex;gap:9px;align-items:center;padding:10px 14px;border-top:1px solid var(--line)}
 .term-prompt{color:var(--accent);font-family:inherit}
 .term-input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:inherit;font-size:16px;padding:6px 0}
+#bgwave{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
 </style>
 </head>
 <body>
+<canvas id="bgwave" aria-hidden="true"></canvas>
 <header>
 <div class="wrap">
 <div class="wordmark"><img src="/logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px">NOCTURNE ROW</div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
-<nav id="site-nav"><a href="/">Home</a><a href="/mission.html">Mission</a><a href="/apex.html">Apex</a><a href="/nur.html">NUR</a><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
+<nav id="site-nav"><a href="/">Home</a><a href="/mission.html">Mission</a><a href="/apex.html">Apex</a><a href="/mesh.html">Mesh</a><a href="/nur.html">NUR</a><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
 </div>
 </header>
 {{ content }}
@@ -178,11 +180,31 @@ if(cls)cls.addEventListener('click',close);
 ov.addEventListener('click',function(e){if(e.target===ov)close();});
 var buf='';
 document.addEventListener('keydown',function(e){
+
 if(ov.classList.contains('open')){if(e.key==='Escape')close();return;}
 var t=e.target;if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'))return;
 if(e.key==='`'){e.preventDefault();open();return;}
 if(/^[a-zA-Z]$/.test(e.key)){buf=(buf+e.key.toLowerCase()).slice(-4);if(buf==='navi'){buf='';open();}}
 });
+})();
+</script>
+<script>
+(function(){
+var c=document.getElementById('bgwave');if(!c)return;var x=c.getContext('2d');if(!x)return;
+var W=0,H=0,t0=performance.now(),raf=0;
+var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function size(){var d=Math.min(window.devicePixelRatio||1,1.25);W=window.innerWidth;H=window.innerHeight;c.width=Math.floor(W*d);c.height=Math.floor(H*d);x.setTransform(d,0,0,d,0,0);}
+function draw(now){x.clearRect(0,0,W,H);var t=(now-t0)/1000,gap=26;
+for(var gy=gap/2;gy<H+gap;gy+=gap){for(var gx=gap/2;gx<W+gap;gx+=gap){
+var w=Math.sin(gx*0.012+t*0.9)+Math.sin(gy*0.016+t*0.7)+Math.sin((gx+gy)*0.006+t*0.5);
+var a=0.045+0.032*w;if(a<0.015)continue;
+var r=1+0.11*w;if(r<0.45)r=0.45;
+x.beginPath();x.arc(gx,gy,r,0,6.2832);x.fillStyle='rgba(45,212,191,'+a.toFixed(3)+')';x.fill();}}}
+function frame(now){draw(now);if(!document.hidden){raf=requestAnimationFrame(frame);}}
+window.addEventListener('resize',function(){size();if(reduced)draw(1400);});
+document.addEventListener('visibilitychange',function(){if(document.hidden){cancelAnimationFrame(raf);}else if(!reduced){raf=requestAnimationFrame(frame);}});
+size();
+if(reduced){draw(1400);}else{raf=requestAnimationFrame(frame);}
 })();
 </script>
 </body>

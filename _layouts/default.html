@@ -74,18 +74,35 @@ h2[id]{scroll-margin-top:20px}
 .post-full a{color:var(--accent)}
 footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);font-size:14px;margin-top:12px}
 @media (max-width:560px){h1{font-size:32px}.hero{padding:48px 0 30px}}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer;min-width:44px;min-height:44px}
+.nav-toggle .bar{display:block;width:20px;height:2px;background:var(--text);margin:4px auto;transition:transform .18s ease,opacity .18s ease}
+.nav-toggle:hover{border-color:var(--accent)}
+.nav-toggle[aria-expanded="true"] .bar:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .bar:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] .bar:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:700px){
+.nav-toggle{display:block}
+header nav{display:none;width:100%;flex-direction:column;padding-top:10px}
+header nav.open{display:flex}
+header nav a{margin:0;padding:12px 6px;min-height:44px;border-top:1px solid var(--line);display:flex;align-items:center}
+}
+@media (prefers-reduced-motion: reduce){.nav-toggle .bar{transition:none}}
 </style>
 </head>
 <body>
 <header>
 <div class="wrap">
 <div class="wordmark"><img src="/logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px">NOCTURNE ROW</div>
-<nav><a href="/">Home</a><a href="/apex.html">Apex</a><a href="/mission.html">Mission</a><a href="/nur.html">NUR</a><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+<nav id="site-nav"><a href="/">Home</a><a href="/apex.html">Apex</a><a href="/mission.html">Mission</a><a href="/nur.html">NUR</a><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
 </div>
 </header>
 {{ content }}
 <footer>
 <div class="wrap">© 2026 Nocturne Row · nocturnerow.com — hosted on GitHub Pages, built with Jekyll. Walk with the shadows.</div>
 </footer>
+<script>
+(function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');if(!b||!n)return;b.addEventListener('click',function(){var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
+</script>
 </body>
 </html>

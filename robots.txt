@@ -4,6 +4,7 @@
 User-agent: *
 Allow: /
 Disallow: /manifesto.html
+Disallow: /bukowski.html
 
 # The manifesto is not unlisted because it is secret.
 # It is unlisted because it is earned. Find the terminal.

@@ -6,7 +6,7 @@ layout: default
 <p style="margin-top:36px"><a href="/blog.html" style="text-decoration:none">← All Dispatches</a></p>
 <p class="txhead">TRANSMISSION // NOCTURNE ROW — FILED FROM THE NIGHT SHIFT</p>
 <h1 style="font-size:34px;line-height:1.2;margin-bottom:0">{{ page.title }}</h1>
-<div class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.tags %} · {{ page.tags | join: " · " }}{% endif %}</div>
+<div class="meta">{{ page.date | date: "%d %b %Y" | upcase }} · ZULU{% if page.tags %} · {{ page.tags | join: " · " }}{% endif %}</div>
 {{ content }}
 </article>
 </main>

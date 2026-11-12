@@ -40,7 +40,8 @@ if(!list.length){box.appendChild(el('article','post')).appendChild(el('p','excer
 list.forEach(function(r){
 var a=el('article','post');
 var tx=el('div','tx');
-tx.appendChild(el('span',null,'TRANSMISSION // '+(r.published_at||'').slice(0,10)));
+var dtg='';if(r.published_at){var d=new Date(r.published_at),M=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],p=function(n){return (n<10?'0':'')+n;};dtg=p(d.getUTCDate())+p(d.getUTCHours())+p(d.getUTCMinutes())+'Z '+M[d.getUTCMonth()]+' '+String(d.getUTCFullYear()).slice(2);}
+tx.appendChild(el('span',null,'TRANSMISSION // '+dtg));
 var sig=el('span','sig',r.prerelease?'EDGE':'STABLE');tx.appendChild(sig);a.appendChild(tx);
 var h=el('h3','ptitle');var link=el('a',null,r.name||r.tag_name);link.href=r.html_url;h.appendChild(link);a.appendChild(h);
 var body=(r.body||'').replace(/[#>*`_]/g,'').replace(/\s+/g,' ').trim();

@@ -10,12 +10,13 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}">
 <meta property="og:description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
 <meta property="og:url" content="https://nocturnerow.com{{ page.url }}">
-<meta property="og:image" content="https://nocturnerow.com/logo.png">
+<meta property="og:image" content="https://nocturnerow.com{{ page.share_image | default: '/logo.png' }}">
+{% if page.share_image %}<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{% endif %}
 <meta property="og:image:alt" content="Nocturne Row">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{% if page.share_image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}">
 <meta name="twitter:description" content="Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.">
-<meta name="twitter:image" content="https://nocturnerow.com/logo.png">
+<meta name="twitter:image" content="https://nocturnerow.com{{ page.share_image | default: '/logo.png' }}">
 {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 <link rel="icon" href="/logo.png">
 <style>

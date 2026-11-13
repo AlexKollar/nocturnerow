@@ -36,7 +36,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 .doc-body blockquote{border-left:3px solid var(--accent);margin:16px 0;padding:4px 0 4px 16px;color:var(--text);font-size:17px;line-height:1.65}
 .doc-body blockquote .attrib{display:block;margin-top:8px;color:var(--muted);font-size:14px}
 </style>
-<div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends one prompt out in teal along two roads, landing on Neo-Arcadia and Neon Drip at the same moment; their answers flow back in amber, converge into a single line, and reach Pia as one composed response. Neon Drip also borrows directly from Neo-Arcadia: its ask travels up in teal, the answer comes back down in amber. A fourth node is drawn hollow — not yet built. Field status: two nodes are paired, and the road between them is lit — the first whole-request borrow was served across the open internet on 13 November 2026.">
+<div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends one prompt out in teal along two roads, landing on Neo-Arcadia and Neon Drip at the same moment; their answers flow back in amber, converge into a single line, and reach Pia as one composed response. Neon Drip also borrows directly from Neo-Arcadia, one exchange at a time: its ask travels up in teal, and only once it has arrived does the answer come back down in amber — the road never carries both at once. A fourth node is drawn hollow — not yet built. Field status: two nodes are paired, and the road between them is lit — the first whole-request borrow was served across the open internet on 13 November 2026.">
 <svg viewBox="0 0 800 440">
 <path id="rPiaNa" d="M 162 284 Q 250 165 372 122" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
 <path id="rPiaNd" d="M 164 308 Q 400 306 628 226" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
@@ -58,10 +58,10 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <circle r="6.5"><animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.54;0.72;1"><mpath href="#rMergePia"/></animateMotion><animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.53;0.55;0.70;0.72;1"/></circle>
 </g>
 <g fill="#2dd4bf">
-<circle r="3.5"><animateMotion dur="7s" begin="-2s" repeatCount="indefinite"><mpath href="#rNdNa"/></animateMotion></circle>
+<circle r="3.5"><animateMotion dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.30;1"><mpath href="#rNdNa"/></animateMotion><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.285;0.30;1"/></circle>
 </g>
 <g fill="#f59e0b">
-<circle r="3.5"><animateMotion dur="7s" begin="-5.2s" repeatCount="indefinite"><mpath href="#rNaNd"/></animateMotion></circle>
+<circle r="3.5"><animateMotion dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.42;0.72;1"><mpath href="#rNaNd"/></animateMotion><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.41;0.43;0.705;0.72;1"/></circle>
 </g>
 <circle cx="400" cy="105" r="40" fill="none" stroke="#2dd4bf" stroke-width="1.5"><animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;0.9;0;0" keyTimes="0;0.21;0.245;0.31;1"/></circle>
 <circle cx="655" cy="215" r="30" fill="none" stroke="#2dd4bf" stroke-width="1.5"><animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;0.9;0;0;0" keyTimes="0;0.21;0.245;0.31;0.99;1"/></circle>

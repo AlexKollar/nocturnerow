@@ -219,7 +219,7 @@ if(c==='clear'){out.innerHTML='';return;}
 if(c==='exit'||c==='quit'){close();return;}
 if(raw.toLowerCase().replace(/\s+/g,' ')==='sudo make me a sandwich'){print('Okay.');return;}
 var low=raw.toLowerCase().replace(/\s+/g,' ');
-if(low.indexOf('flag=')===0){if(raw===FLAG){print('FLAG ACCEPTED.');print('Some doors were never locked — only unlisted, and waiting for the right sentence.');print('Opening the unlisted frequency…');setTimeout(function(){window.location.href='/manifesto.html';},1200);}else{print('That flag opens nothing on the Row. Flags are exact — the Row wrote this one once, in one place.');}return;}
+if(low.indexOf('flag=')===0){if(raw===FLAG){print('FLAG ACCEPTED.');print('Some doors were never locked — only unlisted, and waiting for the right sentence.');print('Opening the unlisted frequency in a new tab — this terminal stays yours.');setTimeout(function(){window.open('/manifesto.html','_blank');},1200);}else{print('That flag opens nothing on the Row. Flags are exact — the Row wrote this one once, in one place.');}return;}
 if(low==='cat .secrets.txt'){print(SECRETS);return;}
 if(c==='cat'){print('cat: the Row admits to keeping exactly one file where guests can reach it — .secrets.txt');return;}
 if(CMDS[c]){var r=CMDS[c]();if(r)print(r);}

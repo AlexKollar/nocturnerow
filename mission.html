@@ -168,5 +168,5 @@ description: "Why the Row exists: the math of the empty chairs, the gate that ke
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('mission-tagline');if(!el)return;var text='The enemy is not waiting for permission.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){var delay=55+Math.random()*70;if(i===text.length-1)delay=600;i++;setTimeout(tick,delay);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('mission-tagline');if(!el)return;var text='The enemy is not waiting for permission.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){var delay=55+Math.random()*70;if(i===text.length-1)delay=600;i++;setTimeout(tick,delay);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
 </script>

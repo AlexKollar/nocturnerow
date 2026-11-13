@@ -26,5 +26,5 @@ maybe your mind.<br>
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('bukowski-tagline');if(!el)return;var text="if you're going to try, go all the way.";if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,60+Math.random()*70);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('bukowski-tagline');if(!el)return;var text="if you're going to try, go all the way.";if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,60+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
 </script>

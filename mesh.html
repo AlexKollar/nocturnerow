@@ -29,6 +29,9 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 @media (prefers-reduced-motion: reduce){.meshmap .packets{display:none}}
 .doc-overlay{position:fixed;inset:0;background:rgba(3,6,10,.86);display:none;z-index:60;align-items:flex-start;justify-content:center;padding:5vh 14px 14px}
 .doc-overlay.open{display:flex}
+.doc-overlay.open{animation:ovIn var(--open-time) var(--ease-open)}
+.doc-overlay.open .doc-panel{animation:panelIn var(--open-time) var(--ease-open)}
+@media (prefers-reduced-motion:reduce){.doc-overlay.open,.doc-overlay.open .doc-panel{animation:none}}
 .doc-panel{background:var(--panel);border:1px solid var(--accent);border-radius:12px;max-width:760px;width:100%;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.65)}
 .doc-head{display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;letter-spacing:.1em}
 .doc-body{padding:8px 24px 26px;overflow-y:auto}

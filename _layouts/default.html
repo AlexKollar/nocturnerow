@@ -28,7 +28,7 @@
 {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 <link rel="icon" href="/logo.png">
 <style>
-:root{--bg:#0b0f14;--panel:#111823;--line:#1f2c3d;--text:#e6edf3;--muted:#9fb0c1;--accent:#2dd4bf}
+:root{--bg:#0b0f14;--panel:#111823;--line:#1f2c3d;--text:#e6edf3;--muted:#9fb0c1;--accent:#2dd4bf;--ease-open:cubic-bezier(.22,.8,.3,1);--open-time:.65s}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:880px;margin:0 auto;padding:0 20px}
 header{border-bottom:1px solid var(--line);padding:18px 0}
@@ -42,7 +42,7 @@ nav a:hover{color:var(--accent)}
 .navdrop-menu{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:180px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px;z-index:70;box-shadow:0 14px 34px rgba(0,0,0,.45)}
 .navdrop.open .navdrop-menu{display:block}
 @media (hover:hover){.navdrop:hover .navdrop-menu{display:block}}
-@media (min-width:701px){.navdrop-menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}}
+@media (min-width:701px){.navdrop-menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}.navdrop:hover .navdrop-menu,.navdrop.open .navdrop-menu{animation:menuIn var(--open-time) var(--ease-open)}}
 .navdrop-menu a{display:flex;align-items:center;margin:0;padding:11px 10px;min-height:44px;border-radius:8px}
 .navdrop-menu a:hover{background:rgba(45,212,191,.08)}
 .hero{padding:72px 0 40px}
@@ -116,9 +116,9 @@ header nav .navdrop-menu a{padding-left:24px}
 @media (prefers-reduced-motion: reduce){.nav-toggle .bar{transition:none}}
 .flip{padding:0;cursor:pointer;perspective:1200px}
 .flip:hover{transform:none}
-.flip-inner{position:relative;display:grid;transform-style:preserve-3d;transition:transform .55s ease}
+.flip-inner{position:relative;display:grid;transform-style:preserve-3d;transition:transform var(--open-time) var(--ease-open)}
 .flip.flipped .flip-inner{transform:rotateY(180deg)}
-.flip-face{grid-area:1/1;padding:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;transition:visibility 0s linear .27s}
+.flip-face{grid-area:1/1;padding:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;transition:visibility 0s linear .32s}
 .flip-back{transform:rotateY(180deg);visibility:hidden}
 .flip.flipped .flip-front{visibility:hidden}
 .flip.flipped .flip-back{visibility:visible}
@@ -134,13 +134,19 @@ header nav .navdrop-menu a{padding-left:24px}
 .tx{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11.5px;letter-spacing:.14em;margin-bottom:8px}
 .tx .sig{color:var(--accent);letter-spacing:3px;font-size:12px}
 .txhead{color:var(--accent);font-size:12px;letter-spacing:.16em;margin:26px 0 4px}
-.reveal{opacity:0;transform:translateY(10px);animation:rise .7s ease forwards}
+.reveal{opacity:0;transform:translateY(10px);animation:rise var(--open-time) var(--ease-open) forwards}
 @keyframes rise{to{opacity:1;transform:none}}
+@keyframes ovIn{from{opacity:0}to{opacity:1}}
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes menuIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;animation:none}}
 .term-fab{position:fixed;right:14px;bottom:14px;z-index:55;background:var(--panel);border:1px solid var(--line);color:var(--accent);border-radius:10px;padding:10px 13px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px;cursor:pointer;opacity:.55;min-width:44px;min-height:44px}
 .term-fab:hover{opacity:1;border-color:var(--accent)}
 .term-overlay{position:fixed;inset:0;background:rgba(3,6,10,.85);display:none;z-index:60;align-items:flex-start;justify-content:center;padding:6vh 14px 14px}
 .term-overlay.open{display:flex}
+.term-overlay.open{animation:ovIn var(--open-time) var(--ease-open)}
+.term-overlay.open .term{animation:panelIn var(--open-time) var(--ease-open)}
+@media (prefers-reduced-motion: reduce){.term-overlay.open,.term-overlay.open .term,.navdrop:hover .navdrop-menu,.navdrop.open .navdrop-menu{animation:none}}
 .term{background:#05080d;border:1px solid var(--accent);border-radius:12px;max-width:720px;width:100%;max-height:84vh;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.65);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .term-head{display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 14px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;letter-spacing:.1em}
 .term-close{background:none;border:1px solid var(--line);border-radius:8px;color:var(--text);min-width:44px;min-height:44px;font-size:17px;cursor:pointer}

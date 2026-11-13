@@ -185,7 +185,7 @@ function print(html){out.innerHTML+=html+'\n';out.scrollTop=out.scrollHeight;}
 function open(){ov.classList.add('open');if(!booted){booted=true;print('NOCTURNE ROW FIELD TERMINAL — unlisted build');print('The Row answers its own door. Type <b>help</b> for the commands that exist.');print('One of them is not on any menu.');}setTimeout(function(){inp.focus();},30);}
 function close(){ov.classList.remove('open');}
 var CMDS={
-help:function(){return 'Commands that exist:\n  whoami      — who you are, as far as the Row is concerned\n  mission     — why the Row exists\n  apex        — the tool\n  rogues      — the crew\n  dispatches  — the transmissions\n  uptime      — how long the Row has been on shift\n  roads       — the state of the Mesh\n  manifesto   — not on any menu\n  cat         — the Row keeps one file for the curious\n  coffee      — the house order\n  clear       — wipe this terminal\n  exit        — close the door';},
+help:function(){return 'Commands that exist:\n  whoami      — who you are, as far as the Row is concerned\n  mission     — why the Row exists\n  apex        — the tool\n  rogues      — the crew\n  dispatches  — the transmissions\n  uptime      — how long the Row has been on shift\n  roads       — the state of the Mesh\n  cat         — the Row keeps one file for the curious\n  coffee      — the house order\n  clear       — wipe this terminal\n  exit        — close the door';},
 whoami:function(){return 'A guest on the Row, reading past curfew.\nThat already tells us most of what we need to know.';},
 mission:function(){return 'Augmentation over integration. The math, the gate, and the right to your own tools:\n→ <a href="/mission.html">/mission.html</a>';},
 apex:function(){return 'Apex — a local AI workstation, powered by Navi. Your hardware, your data, no landlord.\n→ <a href="/apex.html">/apex.html</a>';},
@@ -210,7 +210,6 @@ spoon:function(){return 'There is no spoon. There is only the Mesh — and it be
 gibson:function(){return 'THE GIBSON — the machine every hacker of a certain age dreamed of touching.\nThe Row built its own instead: two nodes, one dark road, and a door marked 004.';},
 pia:function(){print('Unit № 001 answers to her name. Opening her file…');setTimeout(function(){window.location.href='/pia.html';},1000);return '';},
 
-manifesto:function(){return 'That door does not open for its name anymore.\nThe Row moved it behind a flag — and left a list for the curious:\n  cat .secrets.txt';}
 };
 var FLAG='flag=w3_4r3_4lr34dy_0n_sh1ft';
 var SECRETS='.secrets.txt\n\nYou found the list. That is the list\'s whole confession:\nsomething on this site is hidden the way the Row hides things —\nin plain sight, for the ones who look.\n\nNo map. No legend. Just this: it is here, and it is findable.\n\n— the Row';

@@ -22,6 +22,8 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 .meshmap .nsub{fill:var(--muted);font-size:13px}
 .meshmap .rlabel{fill:var(--muted);font-size:11.5px;letter-spacing:.12em}
 .meshmap-cap{text-align:center;color:var(--muted);font-size:14px;margin:8px 0 6px}
+.meshmap-cap .capline{display:block}
+.meshmap-cap .meshmap-note{display:block;margin-top:10px;font-size:13.5px}
 .meshmap-cap .ask{color:#2dd4bf}
 .meshmap-cap .ans{color:#f59e0b}
 @media (prefers-reduced-motion: reduce){.meshmap .packets{display:none}}
@@ -85,7 +87,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <text class="nsub" x="655" y="418" text-anchor="middle">not yet built — maybe yours</text>
 </svg>
 </div>
-<p class="meshmap-cap"><span class="ask">●</span> <b style="color:var(--text)">the ask</b> — one prompt, landing on both machines in the same moment &nbsp;·&nbsp; <span class="ans">●</span> <b style="color:var(--text)">the answer</b> — the contributions converge into a single line, and Pia receives one response. The drawing is the design target; the status line at the top is tonight's truth.</p>
+<p class="meshmap-cap"><span class="capline"><span class="ask">●</span> <b style="color:var(--text)">the ask</b> — one prompt, landing on both machines in the same moment</span><span class="capline"><span class="ans">●</span> <b style="color:var(--text)">the answer</b> — the contributions converge into a single line, and Pia receives one response</span><span class="meshmap-note">The drawing is the design target; the status line at the top is tonight's truth.</span></p>
 </section>
 <section>
 <h2>How the Mesh works</h2>
@@ -153,6 +155,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 function open(){ov.classList.add('open');if(cls)cls.focus();}
 function close(){ov.classList.remove('open');btn.focus();}
 btn.addEventListener('click',open);
+if(location.hash==='#doctrine')open();
 if(cls)cls.addEventListener('click',close);
 ov.addEventListener('click',function(e){if(e.target===ov)close();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('open'))close();});

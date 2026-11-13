@@ -66,6 +66,7 @@ p{color:var(--muted)}
 .stats li::marker{color:var(--accent)}
 .btn{display:inline-block;margin:14px 10px 0 0;padding:10px 18px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);text-decoration:none}
 .btn.solid{background:var(--accent);color:#06251f;font-weight:600}
+.btn.sm{padding:7px 13px;font-size:14px;margin:8px 8px 0 0}
 .posts{display:grid;gap:14px;margin-top:18px}
 .post{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:inset 3px 0 0 var(--accent);transition:border-color .18s ease,transform .18s ease}
 .post:hover{border-color:var(--accent);transform:translateY(-2px)}
@@ -166,6 +167,10 @@ header nav .navdrop-menu a{padding-left:24px}
 <script>
 (function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');if(!b||!n)return;b.addEventListener('click',function(){var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
 (function(){var d=document.querySelector('.navdrop'),btn=document.querySelector('.navdrop-btn');if(!d||!btn)return;function close(){d.classList.remove('open');btn.setAttribute('aria-expanded','false');}btn.addEventListener('click',function(e){e.stopPropagation();var open=d.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('click',function(e){if(!d.contains(e.target))close();});document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});})();
+(function(){function mark(a){try{var u=new URL(a.href,location.href);if(u.protocol.indexOf('http')===0&&u.host!==location.host){a.target='_blank';a.rel='noopener';}}catch(e){}}
+function sweep(){document.querySelectorAll('a[href^="http"]').forEach(mark);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sweep);else sweep();
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[href^="http"]'):null;if(a)mark(a);},true);})();
 </script>
 <button class="term-fab" id="termFab" type="button" aria-label="Open the field terminal">&gt;_</button>
 <div class="term-overlay" id="termOverlay" role="dialog" aria-modal="true" aria-label="Nocturne Row field terminal">

@@ -34,7 +34,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 .doc-body blockquote{border-left:3px solid var(--accent);margin:16px 0;padding:4px 0 4px 16px;color:var(--text);font-size:17px;line-height:1.65}
 .doc-body blockquote .attrib{display:block;margin-top:8px;color:var(--muted);font-size:14px}
 </style>
-<div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends a prompt out in teal; Neo-Arcadia and Neon Drip both contribute, and their answers flow back to Pia in amber. A fourth node is drawn hollow — not yet built. Field status: two nodes are paired tonight and the road between them runs dark, with the diagnosis in the field.">
+<div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends a prompt out in teal; Neo-Arcadia and Neon Drip both contribute, and their answers flow back to Pia in amber. A fourth node is drawn hollow — not yet built. Field status: two nodes are paired, and the road between them is lit — the first whole-request borrow was served across the open internet on 13 November 2026.">
 <svg viewBox="0 0 800 440">
 <path id="rPiaNa" d="M 162 284 Q 250 165 372 122" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
 <path id="rNaPia" d="M 372 122 Q 250 165 162 284" stroke="none" fill="none"/>
@@ -63,7 +63,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <circle cx="145" cy="298" r="14" fill="#111823" stroke="#2dd4bf" stroke-width="2"/>
 <circle cx="145" cy="298" r="4" fill="#2dd4bf"/>
 <circle cx="655" cy="358" r="16" fill="none" stroke="#9fb0c1" stroke-width="1.5" stroke-dasharray="4 4"/>
-<text class="rlabel" x="22" y="30">FIELD STATUS: TWO NODES PAIRED — THE ROAD RUNS DARK TONIGHT</text>
+<text class="rlabel" x="22" y="30">FIELD STATUS: TWO NODES PAIRED — THE ROAD IS LIT · FIRST BORROW SERVED 13 NOV 2026</text>
 <text class="nlabel" x="400" y="58" text-anchor="middle">NEO-ARCADIA</text>
 <text class="nsub" x="400" y="158" text-anchor="middle">the host — Tesla V100</text>
 <text class="nlabel" x="655" y="170" text-anchor="middle">NEON DRIP</text>
@@ -85,13 +85,23 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 </div>
 </section>
 <section>
+<h2>What it means to be federated</h2>
+<p>Federated is not a synonym for connected. A cable connects; a handshake federates. A node joins the Mesh by a pairing its operator performs by hand, with a peer its operator chose, on terms written into the pairing card — and the card is the ceiling on what that peer may ever ask.</p>
+<div class="grid">
+<div class="tile"><h3>Membership without surrender</h3><p>A federated node keeps its own keys, its own ledger of who it trusts, its own off switch. It can refuse a request, revoke a pairing, or go dark at its owner's word — and none of that breaks the federation. That <i>is</i> the federation.</p></div>
+<div class="tile"><h3>Strength shared, ownership unchanged</h3><p>Lending transfers nothing but the work. The strong machine answers; the small machine remains its owner's, the strong machine remains its owner's — and the answer arrives signed with the name of the machine that wrote it.</p></div>
+<div class="tile"><h3>Trust is pairwise</h3><p>My friend is not automatically yours. Every road on the Mesh is a relationship between two named machines and the two operators who introduced them. The federation is the sum of those handshakes; there is no other membership list. Leave, and you take nothing with you but your own machine — which was always the point.</p></div>
+</div>
+</section>
+<section>
 <h2>The state of the roads</h2>
 <div class="stats">
 <ul>
 <li>Nodes paired tonight — <b>2</b>: Neo-Arcadia and Neon Drip</li>
-<li>The road between them — <b>dark</b>: the handshake fails at the fingerprint stage; each box's own certificate checks out, so the break is between them, not in them</li>
-<li>The reader that names the break — <b>shipped</b> in Apex v0.2.0e Build 1: the Mesh health check, on both machines' Mesh views</li>
-<li>The field verdict — <b>pending</b>: install Build 1 on both nodes and run the check; the fix ships when the field says so</li>
+<li>The road between them — <b>lit</b>: the first whole-request borrow was served across the open internet on 13 Nov 2026 — a question asked on the night-shift laptop, answered by the home server, and badged <i>via Neo-Arcadia</i> on its way back</li>
+<li>The break, named — the pairing cards had been carrying harvested junk addresses (Docker bridges, loopback, VPN ghosts) instead of the way home; both machines' keys and pins were <b>true all along</b></li>
+<li>The reader that named it — <b>shipped</b> in Apex v0.2.0e Build 1: the Mesh health check, on both machines' Mesh views — it proved both nodes innocent and pointed at the cards</li>
+<li>The permanent road — <b>building</b> in Apex v0.2.0e Build 4: per-address ports, clean card generation, operator-declared public endpoints, a door that listens on 8765, 8443 and 2475, and a backup tunnel Apex keeps itself. Tonight the road rides a hand-built tunnel while it bakes</li>
 <li>Ring 2, the federation — <b>designed</b> in the open (issue #154); implementation is the 0.2.0e line's work</li>
 <li>Pia, the first Dropbox sensor — <b>costed, gated</b> on her software (issue #152); the Pi 5 on the bench is her test bed</li>
 </ul>

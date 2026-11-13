@@ -28,6 +28,15 @@ description: "The whole Row on one line — every milestone a stop on a vertical
 .tl-links a:hover{color:var(--accent);border-color:var(--accent)}
 .tl-break{position:relative;color:var(--accent);letter-spacing:.16em;font-size:12px;margin:24px 0 14px}
 .tl-break:before{content:"";position:absolute;left:-34px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--muted)}
+@keyframes tlIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.tl-item[open ] .tl-body{animation:tlIn .38s cubic-bezier(.22,.8,.3,1)}
+@supports (interpolate-size:allow-keywords){
+.tl-item{interpolate-size:allow-keywords}
+.tl-item::details-content{block-size:0;opacity:0;overflow:hidden;transition:block-size .38s cubic-bezier(.22,.8,.3,1),opacity .3s ease}
+.tl-item[open ]::details-content{block-size:auto;opacity:1}
+.tl-item[open ] .tl-body{animation:none}
+}
+@media (prefers-reduced-motion:reduce){.tl-item[open ] .tl-body{animation:none}.tl-item::details-content{transition:none}}
 @media (max-width:560px){.tl{padding-left:28px}.tl:before{left:7px}.tl-item:before{left:-26px}.tl-break:before{left:-26px}.tl-tag{margin-left:0}}
 </style>
 <main class="wrap">

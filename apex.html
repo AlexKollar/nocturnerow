@@ -7,7 +7,7 @@ description: "Apex | Powered by Navi — a local-first AI partner for security w
 ---
 <main class="wrap">
 <div class="hero">
-<h1><span id="apex-tagline" class="tagline-cursor">Apex | Powered by Navi</span></h1>
+<h1><span class="hglitch" data-text="Apex | Powered by Navi"><span id="apex-tagline" class="tagline-cursor">Apex | Powered by Navi</span></span></h1>
 </div>
 <section id="apex">
   <span class="chip">Apex <b>v0.1.9 Stable</b> · Edge <b>v0.2.0e Build 5</b></span>
@@ -99,6 +99,6 @@ fetch('https://api.github.com/repos/AlexKollar/Apex/releases?per_page=5').then(f
 </section>
 
 <script>
-(function(){var el=document.getElementById('apex-tagline');if(!el)return;var text='Apex | Powered by Navi';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('apex-tagline');if(!el)return;var text='Apex | Powered by Navi';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
 </script>
 </main>

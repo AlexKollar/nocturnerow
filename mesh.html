@@ -8,7 +8,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <main class="wrap">
 <div class="hero">
 <p class="txhead">APEX | MESH — THE ROADS BETWEEN THE MACHINES</p>
-<h1><span id="mesh-tagline" class="tagline-cursor">Many machines. One mind.</span></h1>
+<h1><span class="hglitch" data-text="Many machines. One mind."><span id="mesh-tagline" class="tagline-cursor">Many machines. One mind.</span></span></h1>
 <p class="sub">The Mesh is one federated whole: every device attached to it serves the goal of whoever is using Apex, in whatever form factor. A distributed network that functions like a neural net — the more nodes on it, the faster the smallest, least powerful system on it can think.</p>
 <p style="margin-top:20px"><button class="btn solid" id="doctrineBtn" type="button" style="cursor:pointer;font:inherit">Read the Mesh Doctrine</button></p>
 </div>
@@ -166,5 +166,5 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classLis
 })();
 </script>
 <script>
-(function(){var el=document.getElementById('mesh-tagline');if(!el)return;var text='Many machines. One mind.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('mesh-tagline');if(!el)return;var text='Many machines. One mind.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
 </script>

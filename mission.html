@@ -7,7 +7,7 @@ description: "Why the Row exists: the math of the empty chairs, the gate that ke
 ---
 <main class="wrap">
 <div class="hero">
-<h1><span id="mission-tagline" class="tagline-cursor">The enemy is not waiting for permission.</span></h1>
+<h1><span class="hglitch" data-text="The enemy is not waiting for permission."><span id="mission-tagline" class="tagline-cursor">The enemy is not waiting for permission.</span></span></h1>
 <p class="sub">Threat actors use every tool on the table — AI first among them. The defense does not have a people problem. It has a math problem, and math does not care about our hesitation.</p>
 </div>
 
@@ -168,5 +168,5 @@ description: "Why the Row exists: the math of the empty chairs, the gate that ke
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('mission-tagline');if(!el)return;var text='The enemy is not waiting for permission.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){var delay=55+Math.random()*70;if(i===text.length-1)delay=600;i++;setTimeout(tick,delay);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('mission-tagline');if(!el)return;var text='The enemy is not waiting for permission.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){var delay=55+Math.random()*70;if(i===text.length-1)delay=600;i++;setTimeout(tick,delay);}}setTimeout(tick,400);})();
 </script>

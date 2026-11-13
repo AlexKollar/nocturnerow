@@ -7,7 +7,7 @@ noindex: true
 <main class="wrap">
 <div class="hero" style="padding-bottom:10px">
 <p class="txhead">TRANSMISSION // UNLISTED — UNIT № 001</p>
-<h1><span id="pia-tagline" class="tagline-cursor">Pia.</span></h1>
+<h1><span class="hglitch" data-text="Pia."><span id="pia-tagline" class="tagline-cursor">Pia.</span></span></h1>
 <p class="sub">Partner In Augmentation · Unit № 001 · Apex | Dropbox</p>
 </div>
 <section style="border-top:none;padding-top:6px">
@@ -19,5 +19,5 @@ noindex: true
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('pia-tagline');if(!el)return;var text='Pia.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,120+Math.random()*90);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('pia-tagline');if(!el)return;var text='Pia.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,120+Math.random()*90);}}setTimeout(tick,400);})();
 </script>

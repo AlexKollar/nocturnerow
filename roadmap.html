@@ -42,7 +42,7 @@ description: "The whole Row on one line — every milestone a stop on a vertical
 <main class="wrap">
 <div class="hero" style="padding-bottom:10px">
 <p class="txhead">NOCTURNE ROW — THE ROADMAP</p>
-<h1><span id="roadmap-tagline" class="tagline-cursor">The road so far.</span></h1>
+<h1><span class="hglitch" data-text="The road so far."><span id="roadmap-tagline" class="tagline-cursor">The road so far.</span></span></h1>
 <p class="sub">One line, every milestone — the whole Row in a single view. Each stop opens to show its papers: the GitHub record on one side, the Dispatch that filed it on the other. What is done reads as done. What is coming is marked as horizon, never dressed as fact.</p>
 </div>
 <section style="border-top:none;padding-top:6px">
@@ -130,5 +130,5 @@ description: "The whole Row on one line — every milestone a stop on a vertical
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('roadmap-tagline');if(!el)return;var text='The road so far.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('roadmap-tagline');if(!el)return;var text='The road so far.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
 </script>

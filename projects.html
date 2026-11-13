@@ -8,7 +8,7 @@ description: "Everything the Row builds, filed in one place — Apex, the Mesh, 
 <main class="wrap">
 <div class="hero" style="padding-bottom:10px">
 <p class="txhead">NOCTURNE ROW — THE PROJECTS</p>
-<h1><span id="projects-tagline" class="tagline-cursor">Projects.</span></h1>
+<h1><span class="hglitch" data-text="Projects."><span id="projects-tagline" class="tagline-cursor">Projects.</span></span></h1>
 <p class="sub">Everything the Row builds, filed in one place — each with its papers in order. New doors open here as the work earns them.</p>
 </div>
 <section style="border-top:none;padding-top:6px">
@@ -43,5 +43,5 @@ description: "Everything the Row builds, filed in one place — Apex, the Mesh, 
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('projects-tagline');if(!el)return;var text='Projects.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('projects-tagline');if(!el)return;var text='Projects.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
 </script>

@@ -6,7 +6,7 @@ description: "Nocturne Row — a small security group building sharp, accountabl
 <main class="wrap">
 <!-- INTERCEPTED FRAGMENT // origin unverified // the wire keeps what it catches: ZmxhZz13M180cjNfNGxyMzRkeV8wbl9zaDFmdA== -->
 <div class="hero">
-<h1><span id="tagline" class="tagline-cursor">Walk with the shadows.</span></h1>
+<h1><span class="hglitch" data-text="Walk with the shadows."><span id="tagline" class="tagline-cursor">Walk with the shadows.</span></span><br><span class="hglitch" data-text="Leave no trace but a whisper..."><span id="tagline2">Leave no trace but a whisper...</span></span></h1>
 <p class="sub">A small crew of rogues building sharp, accountable tooling in the open — no gods, no kings, no clouds, no leash.</p>
 <div class="rowstatus">
 <div class="rs"><span class="k">STABLE</span>Apex <b>v0.1.9</b> — <a href="https://github.com/AlexKollar/Apex/releases/tag/v0.1.9">the graduation release</a></div>
@@ -98,7 +98,7 @@ description: "Nocturne Row — a small security group building sharp, accountabl
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('tagline');if(!el)return;var phrases=["Walk with the shadows.","Leave no trace but a whisper..."];var current=0;var text=phrases[current];if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0,dir=1;el.textContent='';function tick(){el.textContent=text.slice(0,i);var delay;if(dir===1){if(i<text.length){i++;delay=55+Math.random()*70;if(text[i]==='.'&&/^\.+$/.test(text.slice(i))&&text.slice(i).length>1)delay=430;}else{dir=-1;delay=2600;}}else{if(i>0){i--;delay=26;}else{var next=current;while(next===current){next=Math.floor(Math.random()*phrases.length);}current=next;text=phrases[current];dir=1;delay=650;}}setTimeout(tick,delay);}setTimeout(tick,400);})();
+(function(){var l1=document.getElementById('tagline'),l2=document.getElementById('tagline2');if(!l1||!l2)return;var t1='Walk with the shadows.',t2='Leave no trace but a whisper...';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;function set(el,s){el.textContent=s;el.parentNode.setAttribute('data-text',s);}set(l1,'');set(l2,'');var i=0;function tick(){set(l1,t1.slice(0,i));if(i<t1.length){i++;setTimeout(tick,55+Math.random()*70);}else{l1.classList.remove('tagline-cursor');l2.classList.add('tagline-cursor');setTimeout(type2,650);}}function type2(){var j=0;function tick2(){set(l2,t2.slice(0,j));if(j<t2.length){j++;var d=55+Math.random()*70;if(t2[j]==='.'&&/^\.+$/.test(t2.slice(j))&&t2.slice(j).length>1)d=430;setTimeout(tick2,d);}}tick2();}setTimeout(tick,400);})();
 </script>
 <script>
 (function(){var flips=document.querySelectorAll('.flip');function toggle(el){el.classList.toggle('flipped');}for(var i=0;i<flips.length;i++){(function(el){el.addEventListener('click',function(){toggle(el);});el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(el);}});})(flips[i]);}})();

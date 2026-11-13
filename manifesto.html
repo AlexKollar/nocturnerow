@@ -7,7 +7,7 @@ noindex: true
 <main class="wrap">
 <div class="hero" style="padding-bottom:10px">
 <p class="txhead">TRANSMISSION // UNLISTED FREQUENCY — YOU FOUND THIS BECAUSE YOU WENT LOOKING</p>
-<h1><span id="manifesto-tagline" class="tagline-cursor">The Conscience of a Hacker, Rewritten</span></h1>
+<h1><span class="hglitch" data-text="The Conscience of a Hacker, Rewritten"><span id="manifesto-tagline" class="tagline-cursor">The Conscience of a Hacker, Rewritten</span></span></h1>
 <p class="sub">after Loyd Blankenship, 1986 — rewritten on the Row, 2026</p>
 </div>
 <section style="border-top:none;padding-top:6px">
@@ -24,5 +24,5 @@ noindex: true
 </section>
 </main>
 <script>
-(function(){var el=document.getElementById('manifesto-tagline');if(!el)return;var text='The Conscience of a Hacker, Rewritten';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,60+Math.random()*70);}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('manifesto-tagline');if(!el)return;var text='The Conscience of a Hacker, Rewritten';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,60+Math.random()*70);}}setTimeout(tick,400);})();
 </script>

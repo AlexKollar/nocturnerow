@@ -176,7 +176,8 @@ header nav .navdrop-menu a{padding-left:24px}
 .term-head{display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 14px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;letter-spacing:.1em}
 .term-close{background:none;border:1px solid var(--line);border-radius:8px;color:var(--text);min-width:44px;min-height:44px;font-size:17px;cursor:pointer}
 .term-close:hover{border-color:var(--accent);color:var(--accent)}
-.term-out{padding:14px;overflow-y:auto;font-size:14px;line-height:1.6;color:#c9e8e1;white-space:pre-wrap;word-break:break-word}
+.term-out{padding:14px;overflow-y:auto;font-size:14px;line-height:1.6;color:#c9e8e1;white-space:pre-wrap;overflow-wrap:break-word}
+@media (max-width:700px){.term-out{font-size:13px;padding:12px}}
 .term-out a{color:var(--accent)}
 .term-line{display:flex;gap:9px;align-items:center;padding:10px 14px;border-top:1px solid var(--line)}
 .term-prompt{color:var(--accent);font-family:inherit}
@@ -230,7 +231,16 @@ apex:function(){return 'Apex — a local AI workstation, powered by Navi. Your h
 rogues:function(){return 'Three on purpose. Their files open on the homepage:\n→ <a href="/#people">/#people</a>';},
 dispatches:function(){return 'Notes from the work, filed from the night shift:\n→ <a href="/blog.html">/blog.html</a>';},
 coffee:function(){return 'Fifteen shots of espresso. Neat. The Row runs on it.';},
-sudo:function(){var rows=[['bukowski','an old SaintsSec tradition, kept'],['pia','unit № 001 answers to her name'],['moonbeam','the case file that never closes (mbic works too)'],['311xray','a frequency the Row monitors'],['hack','for the planet'],['xyzzy','and plugh, for the cave-minded'],['42','the answer'],['004','the empty chair on the Mesh'],['spoon','there isn\'t one'],['gibson','a hat-tip to the old machine'],['choom','Night City for the family you choose'],['nova','the shortest review in Night City (preem, too)'],['nightcity','the other city (nc works too)'],['samurai','wake up'],['arasaka','a landlord with an army'],['silverhand','a ghost with opinions (johnny, too)'],['2077','Night City\'s year; Rockport keeps 2475'],['edgerunner','the ones who run the edge'],['flatline','failures name their stage here'],['delta','out — Night City style'],['gonk','act first, read never'],['xkcd','green on black, discussed (green, too)'],['cat .secrets.txt','the list that admits almost nothing'],['flag=...','If you find one, type it into the terminal'],['sudo make me a sandwich','try it']];var s='sudo: permission granted. The Row was never worried about you.\n\nUNLISTED COMMANDS — the ones that exist anyway:\n';rows.forEach(function(r){s+='  '+r[0].padEnd(24)+'— '+r[1]+'\n';});return s+'\nAnd this terminal itself answers to the backtick, the word navi typed anywhere, and ↑↑↓↓←→←→ B A.';},
+sudo:function(arg){var sheets={
+'2077':{title:'NIGHT CITY — 2077',pad:12,rows:[['choom','Night City for the family you choose'],['nova','the shortest review in Night City (preem, too)'],['nightcity','the other city (nc works too)'],['samurai','wake up'],['arasaka','a landlord with an army'],['silverhand','a ghost with opinions (johnny, too)'],['2077','Night City\'s year; Rockport keeps 2475'],['edgerunner','the ones who run the edge'],['flatline','failures name their stage here'],['delta','out — Night City style'],['gonk','act first, read never']]},
+'hacker':{title:'HACKER CULTURE',pad:8,rows:[['hack','for the planet'],['gibson','a hat-tip to the old machine'],['xkcd','green on black, discussed (green, too)'],['xyzzy','and plugh, for the cave-minded'],['42','the answer'],['spoon','there isn\'t one']]},
+'personal':{title:'THE ROW\'S OWN — personal references',pad:18,rows:[['bukowski','an old SaintsSec tradition, kept'],['pia','unit № 001 answers to her name'],['moonbeam','the case file that never closes (mbic works too)'],['311xray','a frequency the Row monitors'],['004','the empty chair on the Mesh'],['cat .secrets.txt','the list that admits almost nothing'],['flag=...','If you find one, type it into the terminal']]}};
+var head='sudo: permission granted. The Row was never worried about you.\n';
+function sheet(k){var sh=sheets[k];var s=head+'\n'+sh.title+'\n';sh.rows.forEach(function(r){s+='  '+r[0].padEnd(sh.pad)+'— '+r[1]+'\n';});if(k==='personal')s+='  sudo make me a sandwich — try it\n';return s+'\nAnother sheet: sudo 2077 · sudo hacker · sudo personal.';}
+if(!arg){var s=head+'\nUNLISTED COMMANDS — filed by reference. Open a sheet:\n';s+='  '+('sudo 2077').padEnd(18)+'— Night City ('+sheets['2077'].rows.length+')\n';s+='  '+('sudo hacker').padEnd(18)+'— hacker culture ('+sheets['hacker'].rows.length+')\n';s+='  '+('sudo personal').padEnd(18)+'— the Row\'s own ('+(sheets['personal'].rows.length+1)+')\n';return s+'\nAnd this terminal itself answers to the backtick, the word navi typed anywhere, and ↑↑↓↓←→←→ B A.';}
+if(arg==='cyberpunk')arg='2077';if(arg==='culture')arg='hacker';if(arg==='row'||arg==='misc')arg='personal';
+if(sheets[arg])return sheet(arg);
+return head+'\nsudo: no sheet by that name. The sheets are 2077, hacker, and personal.';},
 '311xray':function(){return "10 - 4 k, 311 XRAY, It's a couch, I'll be 98.";},
 uptime:function(){var d=Math.max(0,Math.floor((Date.now()-new Date('2026-11-08T00:00:00'))/86400000));return 'The Row has been on shift for '+d+' days.\nFounded Nov 8, 2026 — three rogues, no gods, no kings.';},
 roads:function(){return 'Neo-Arcadia ↔ Neon Drip — paired; the road runs dark (fingerprint stage).\nPia — on the bench, unbuilt. Partner In Augmentation, unit № 001.\nNode № 004 — unclaimed.\nThe reader that names the break shipped in v0.2.0e Build 1. Full picture: <a href="/mesh.html">/mesh.html</a>';},
@@ -273,7 +283,7 @@ var low=raw.toLowerCase().replace(/\s+/g,' ');
 if(low.indexOf('flag=')===0){if(raw===FLAG){print('FLAG ACCEPTED.');print('Some doors were never locked — only unlisted, and waiting for the right sentence.');print('Opening the unlisted frequency in a new tab — this terminal stays yours.');setTimeout(function(){window.open('/manifesto.html','_blank');},1200);}else{print('That flag opens nothing on the Row. Flags are exact — the Row wrote this one once, in one place.');}return;}
 if(low==='cat .secrets.txt'){print(SECRETS);return;}
 if(c==='cat'){print('cat: the Row admits to keeping exactly one file where guests can reach it — .secrets.txt');return;}
-if(CMDS[c]){var r=CMDS[c]();if(r)print(r);}
+if(CMDS[c]){var r=CMDS[c](low.split(' ').slice(1).join(' '));if(r)print(r);}
 else{print('No such command on this frequency. Type <b>help</b>.');}});
 if(fab)fab.addEventListener('click',open);
 var tg=document.getElementById('termToggle');if(tg)tg.addEventListener('click',open);

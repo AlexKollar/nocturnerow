@@ -166,17 +166,15 @@ header nav .navdrop-menu a{padding-left:24px}
 .term-prompt{color:var(--accent);font-family:inherit}
 .term-input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:inherit;font-size:16px;padding:6px 0}
 #bgwave{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
-.term-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;color:var(--accent);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;min-width:44px;min-height:44px;padding:10px 12px;cursor:pointer;margin-left:auto}
-.term-toggle:hover{border-color:var(--accent)}
-@media (max-width:700px){.term-toggle{display:block}.term-fab{display:none}}
+.term-toggle{display:inline-flex;align-items:center;justify-content:center;background:none;border:none;color:var(--accent);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:17px;font-weight:700;min-width:44px;min-height:44px;padding:6px 6px;margin-left:4px;cursor:pointer;vertical-align:middle}
+@media (max-width:700px){.term-fab{display:none}}
 </style>
 </head>
 <body>
 <canvas id="bgwave" aria-hidden="true"></canvas>
 <header>
 <div class="wrap">
-<div class="wordmark"><img src="/logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px"><span class="glitch" data-text="NOCTURNE ROW">NOCTURNE ROW</span></div>
-<button class="term-toggle" id="termToggle" type="button" aria-label="Open the field terminal">&gt;_</button>
+<div class="wordmark"><img src="/logo.png" alt="Nocturne Row logo" style="width:34px;height:34px;border-radius:8px;vertical-align:-9px;margin-right:10px"><span class="glitch" data-text="NOCTURNE ROW">NOCTURNE ROW</span><button class="term-toggle" id="termToggle" type="button" aria-label="Open the field terminal"><span class="glitch" data-text=">_">&gt;_</span></button></div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
 <nav id="site-nav"><a href="/">Home</a><a href="/mission.html">Mission</a><span class="navdrop"><a href="/projects.html">Projects</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the projects menu">▾</button><span class="navdrop-menu"><a href="/apex.html">Apex</a><a href="/mesh.html">Mesh</a><a href="/nur.html">NUR</a><a href="/roadmap.html">Roadmap</a></span></span><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
 </div>

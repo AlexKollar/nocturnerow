@@ -42,6 +42,7 @@ nav a:hover{color:var(--accent)}
 .navdrop-menu{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:180px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px;z-index:70;box-shadow:0 14px 34px rgba(0,0,0,.45)}
 .navdrop.open .navdrop-menu{display:block}
 @media (hover:hover){.navdrop:hover .navdrop-menu{display:block}}
+@media (min-width:701px){.navdrop-menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}}
 .navdrop-menu a{display:flex;align-items:center;margin:0;padding:11px 10px;min-height:44px;border-radius:8px}
 .navdrop-menu a:hover{background:rgba(45,212,191,.08)}
 .hero{padding:72px 0 40px}

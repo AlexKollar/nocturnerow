@@ -164,6 +164,8 @@ header nav .navdrop-menu a{padding-left:24px}
 .glitch-img .g1{filter:brightness(0) invert(1) sepia(1) saturate(6) hue-rotate(2deg) brightness(1.05);animation:ph-g1 9s steps(1,end) 1.3s infinite}
 .glitch-img .g2{filter:brightness(0) invert(1) sepia(1) saturate(6) hue-rotate(305deg) brightness(.95);animation:ph-g2 9s steps(1,end) 1.3s infinite}
 @keyframes ph-base{0%,70%{opacity:1;transform:none;filter:none}72%{opacity:.85;transform:translate(1px,0)}75%{opacity:.25;transform:translate(-2px,0);filter:blur(.6px) brightness(1.3)}78%{opacity:.9;transform:translate(2px,0);filter:none}81%{opacity:.45;transform:translate(-1px,0)}84%,100%{opacity:1;transform:none;filter:none}}
+.glitch-img .glyph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;font-weight:700;color:var(--accent);text-shadow:0 0 6px rgba(45,212,191,.8);opacity:0;pointer-events:none;animation:ph-glyph 9s steps(1,end) 1.3s infinite}
+@keyframes ph-glyph{0%,71%{opacity:0}73%{opacity:.45}75%{opacity:1}78%{opacity:.85}80%{opacity:1}82%,100%{opacity:0}}
 @keyframes ph-g1{0%,70%{opacity:0}72%{opacity:.85;transform:translate(-3px,0);clip-path:inset(12% 0 58% 0)}75%{opacity:.9;transform:translate(3px,0);clip-path:inset(52% 0 8% 0)}78%{opacity:.7;transform:translate(-2px,0);clip-path:inset(30% 0 40% 0)}81%{opacity:.5;transform:translate(2px,0);clip-path:inset(66% 0 4% 0)}84%,100%{opacity:0}}
 @keyframes ph-g2{0%,70%{opacity:0}72%{opacity:.8;transform:translate(3px,0);clip-path:inset(60% 0 10% 0)}75%{opacity:.9;transform:translate(-3px,0);clip-path:inset(6% 0 64% 0)}78%{opacity:.65;transform:translate(2px,0);clip-path:inset(42% 0 28% 0)}81%{opacity:.45;transform:translate(-2px,0);clip-path:inset(18% 0 60% 0)}84%,100%{opacity:0}}
 .term-overlay{position:fixed;inset:0;background:rgba(3,6,10,.85);display:none;z-index:60;align-items:flex-start;justify-content:center;padding:6vh 14px 14px}
@@ -181,14 +183,14 @@ header nav .navdrop-menu a{padding-left:24px}
 .term-prompt{color:var(--accent);font-family:inherit}
 .term-input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:inherit;font-size:16px;padding:6px 0}
 #bgwave{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
-@media (prefers-reduced-motion:reduce){.glitch-img .base{animation:none}.glitch-img .g1,.glitch-img .g2{animation:none;opacity:0}}
+@media (prefers-reduced-motion:reduce){.glitch-img .base{animation:none}.glitch-img .g1,.glitch-img .g2{animation:none;opacity:0}.glitch-img .glyph{animation:none;opacity:0}}
 </style>
 </head>
 <body>
 <canvas id="bgwave" aria-hidden="true"></canvas>
 <header>
 <div class="wrap">
-<div class="wordmark"><button class="brand-term" id="termToggle" type="button" aria-label="Open the field terminal"><span class="glitch-img"><img class="base" src="/logo.png" alt=""><img class="g1" src="/logo.png" alt="" aria-hidden="true"><img class="g2" src="/logo.png" alt="" aria-hidden="true"></span></button><span class="glitch" data-text="NOCTURNE ROW">NOCTURNE ROW</span></div>
+<div class="wordmark"><button class="brand-term" id="termToggle" type="button" aria-label="Open the field terminal"><span class="glitch-img"><img class="base" src="/logo.png" alt=""><img class="g1" src="/logo.png" alt="" aria-hidden="true"><img class="g2" src="/logo.png" alt="" aria-hidden="true"><span class="glyph" aria-hidden="true">&gt;_</span></span></button><span class="glitch" data-text="NOCTURNE ROW">NOCTURNE ROW</span></div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
 <nav id="site-nav"><a href="/">Home</a><a href="/mission.html">Mission</a><span class="navdrop"><a href="/projects.html">Projects</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the projects menu">▾</button><span class="navdrop-menu"><a href="/apex.html">Apex</a><a href="/mesh.html">Mesh</a><a href="/nur.html">NUR</a><a href="/roadmap.html">Roadmap</a></span></span><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
 </div>

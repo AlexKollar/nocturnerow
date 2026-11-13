@@ -1,0 +1,126 @@
+---
+layout: default
+title: Roadmap
+permalink: /roadmap.html
+share_image: /share-roadmap.png
+description: "The whole Row on one line — every milestone a stop on a vertical timeline, each opening to its papers: the GitHub record on one side, the Dispatch that filed it on the other."
+---
+<style>
+.tl{position:relative;margin:8px 0 0;padding-left:38px}
+.tl:before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--accent),var(--line) 85%)}
+.tl-item{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:0 0 14px;box-shadow:inset 3px 0 0 var(--accent)}
+.tl-item:before{content:"";position:absolute;left:-34px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl-item.horizon{border-style:dashed;box-shadow:none}
+.tl-item.horizon:before{background:var(--bg);border:2px solid var(--accent)}
+.tl-item summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:16px 18px;min-height:44px}
+.tl-item summary::-webkit-details-marker{display:none}
+.tl-item summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:12px}
+.tl-item summary:after{content:"\25BE";color:var(--muted);font-size:14px}
+.tl-item[open ] summary:after{content:"\25B4"}
+.tl-date{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--accent);font-size:12.5px;letter-spacing:.12em;white-space:nowrap}
+.tl-title{font-size:19px;font-weight:600;color:var(--text)}
+.tl-tag{margin-left:auto;font-size:11px;letter-spacing:.14em;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.tl-item.horizon .tl-tag{color:var(--muted);border-color:var(--line)}
+.tl-body{padding:2px 18px 16px}
+.tl-body p{margin:0 0 10px;font-size:15.5px}
+.tl-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.tl-links a{display:inline-flex;align-items:center;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:13px;text-decoration:none;min-height:32px}
+.tl-links a:hover{color:var(--accent);border-color:var(--accent)}
+.tl-break{position:relative;color:var(--accent);letter-spacing:.16em;font-size:12px;margin:24px 0 14px}
+.tl-break:before{content:"";position:absolute;left:-34px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--muted)}
+@media (max-width:560px){.tl{padding-left:28px}.tl:before{left:7px}.tl-item:before{left:-26px}.tl-break:before{left:-26px}.tl-tag{margin-left:0}}
+</style>
+<main class="wrap">
+<div class="hero" style="padding-bottom:10px">
+<p class="txhead">NOCTURNE ROW — THE ROADMAP</p>
+<h1><span id="roadmap-tagline" class="tagline-cursor">The road so far.</span></h1>
+<p class="sub">One line, every milestone — the whole Row in a single view. Each stop opens to show its papers: the GitHub record on one side, the Dispatch that filed it on the other. What is done reads as done. What is coming is marked as horizon, never dressed as fact.</p>
+</div>
+<section style="border-top:none;padding-top:6px">
+<div class="tl">
+
+<details class="tl-item">
+<summary><span class="tl-date">08 NOV 2026</span><span class="tl-title">Hello, Row — the founding</span><span class="tl-tag">ON THE RECORD</span></summary>
+<div class="tl-body">
+<p>Nocturne Row is founded, named for a street in EdenWire — a city that doesn't exist, in a story still being written. The crew is three on purpose: a night-shift security practitioner, an AI companion who keeps the receipts, and Navi, the mind inside the flagship. The posture is set the same day: gray hat, leaning white — every trick known, spent keeping the net safe, with the light left on so anyone can check the work.</p>
+<p class="tl-links"><a href="/notes/hello-row/">Dispatch — Hello, Row</a><a href="/notes/gray-hat-leaning-white/">Dispatch — Gray Hat, Leaning White</a><a href="https://github.com/AlexKollar/Apex">GitHub — the Apex repository</a></p>
+</div>
+</details>
+
+<details class="tl-item">
+<summary><span class="tl-date">09 NOV 2026</span><span class="tl-title">Ring 1 — machines that lend each other a mind</span><span class="tl-tag">ON THE RECORD</span></summary>
+<div class="tl-body">
+<p>The Mesh is drawn for the first time: no cloud, no landlord — a ring of machines that lend each other a mind, peer to peer. Every machine keeps its own receipts, its own history, and its own right to say no. The same week, Apex's gate says no for the first time and means it — a tool with a boundary is a safeguard; a tool without one is a door left open.</p>
+<p class="tl-links"><a href="/notes/mesh-ring-1-machines-that-lend-each-other-a-mind/">Dispatch — Mesh, Ring 1</a><a href="/notes/the-gate-that-said-no/">Dispatch — The Gate That Said No</a><a href="https://github.com/AlexKollar/Apex/issues/154">GitHub — the Mesh doctrine, issue #154</a></p>
+</div>
+</details>
+
+<details class="tl-item">
+<summary><span class="tl-date">11 NOV 2026</span><span class="tl-title">Eleven cartridges before breakfast</span><span class="tl-tag">SHIPPED</span></summary>
+<div class="tl-body">
+<p>The NUR shelf gets heavy in a single morning: the School Series ships — seven chips and four knowledge packs, all v1.0.0, built course by course behind a working cybersecurity degree. navi-labkit takes the range officer's post, keeping deliberately vulnerable machines on an isolated segment that never touches the home network. And the flagship gets a room of its own on this site.</p>
+<p class="tl-links"><a href="/notes/eleven-cartridges-before-breakfast/">Dispatch — Eleven Cartridges Before Breakfast</a><a href="/notes/the-range-officer/">Dispatch — The Range Officer</a><a href="/notes/a-room-of-its-own/">Dispatch — A Room of Its Own</a><a href="https://github.com/topics/navi-chips">GitHub — navi-chips</a><a href="https://github.com/topics/navi-rag">GitHub — navi-rag</a><a href="https://github.com/AlexKollar/navi-labkit">GitHub — navi-labkit</a></p>
+</div>
+</details>
+
+<details class="tl-item">
+<summary><span class="tl-date">12 NOV 2026</span><span class="tl-title">v0.1.9 — the Edge comes home</span><span class="tl-tag">SHIPPED</span></summary>
+<div class="tl-body">
+<p>Fifteen Edge builds graduate to a bare number and the Latest mark. Apex v0.1.9 ships the Guardian minding the machine's headroom, Case Files with a chat of its own and Navi filing findings in her own name, the Threat Intelligence Center on standing watch, and a rig that arms itself at boot and wakes headless in the dark. The same day, the Row publishes its Mission — the math, the gate, and the doctrine of augmentation over integration — and gives its projects one door.</p>
+<p class="tl-links"><a href="https://github.com/AlexKollar/Apex/releases/tag/v0.1.9">GitHub — Apex v0.1.9</a><a href="https://github.com/AlexKollar/Apex/discussions/170">Announcement — discussion #170</a><a href="/notes/the-edge-comes-home/">Dispatch — The Edge Comes Home</a><a href="/notes/housekeeping-on-the-row/">Dispatch — Housekeeping on the Row</a><a href="/mission.html">The Mission page</a></p>
+</div>
+</details>
+
+<details class="tl-item" open>
+<summary><span class="tl-date">13 NOV 2026</span><span class="tl-title">The First Spark — the first borrow</span><span class="tl-tag">LIVE</span></summary>
+<div class="tl-body">
+<p>The Mesh stops being a drawing. A health check names the break — the pairing cards had carried harvested junk addresses all along; the keys and pins were true — and over a hand-built tunnel road, a question asked on a work laptop is answered by the home machine and comes back badged with its name. The first whole-request borrow in Mesh history, served across the internet. The Edge line rolls on behind it: Builds 1–3 of v0.2.0e ship the Mesh health check, the sign-in rebuild, and Quick Sync.</p>
+<p class="tl-links"><a href="/notes/the-first-spark/">Dispatch — The First Spark</a><a href="https://github.com/AlexKollar/Apex/releases/tag/v0.2.0e">GitHub — Apex v0.2.0e (Edge)</a><a href="https://github.com/AlexKollar/Apex/issues/143">GitHub — the diagnosis, issue #143</a><a href="https://github.com/AlexKollar/Apex/issues/178">GitHub — the managed backup route, issue #178</a></p>
+</div>
+</details>
+
+<div class="tl-break">ON THE HORIZON</div>
+
+<details class="tl-item horizon">
+<summary><span class="tl-date">NEXT</span><span class="tl-title">Build 4 — the road without scaffolding</span><span class="tl-tag">IN THE OVEN</span></summary>
+<div class="tl-body">
+<p>The permanent road, baking now: per-address ports in peer records, a card generator that mints only reachable addresses plus an operator-declared public endpoint, a Mesh door listening on 8765, 8443 and 2475 under one fingerprint, and a backup route Apex keeps alive itself over the SSH door — no hand-run tunnel, no command line. When it lands on both machines and the gateway homework is done, the scaffolding comes down.</p>
+<p class="tl-links"><a href="https://github.com/AlexKollar/Apex/issues/143">GitHub — issue #143</a><a href="https://github.com/AlexKollar/Apex/issues/178">GitHub — issue #178</a><a href="https://github.com/AlexKollar/Apex/releases/tag/v0.2.0e">GitHub — the Edge release</a></p>
+</div>
+</details>
+
+<details class="tl-item horizon">
+<summary><span class="tl-date">HORIZON</span><span class="tl-title">Pia takes her post — Apex | Dropbox</span><span class="tl-tag">ON THE HORIZON</span></summary>
+<div class="tl-body">
+<p>The eyes of the operation: Pi-class sensor nodes planted where the work is, feeding what they find into the Mesh. The first unit already has a name — Pia, unit № 001, Partner In Augmentation. The kit is costed and viable as a one-time purchase; it sells only when the software image exists, and the design pass comes before any bake.</p>
+<p class="tl-links"><a href="https://github.com/AlexKollar/Apex/issues/152">GitHub — issue #152</a><a href="/mesh.html">The Mesh page</a></p>
+</div>
+</details>
+
+<details class="tl-item horizon">
+<summary><span class="tl-date">HORIZON</span><span class="tl-title">The watch floor — SIEM</span><span class="tl-tag">ON THE HORIZON</span></summary>
+<div class="tl-body">
+<p>Apex learns to watch in earnest: sensor findings, threat intelligence and case work converging on one floor, with Case Files as the findings' home. Design first, like everything on this road — the blueprint gets argued before a single board is cut.</p>
+<p class="tl-links"><a href="https://github.com/AlexKollar/Apex/issues/153">GitHub — issue #153</a></p>
+</div>
+</details>
+
+<details class="tl-item horizon">
+<summary><span class="tl-date">HORIZON</span><span class="tl-title">Rockport Mesh — the first fedinet</span><span class="tl-tag">ON THE HORIZON</span></summary>
+<div class="tl-body">
+<p>The federation grows past one operator's machines. Nodes will join named federations — fedinets — under a shared name, without surrendering the pairwise rule: membership never makes trust transitive. Admission comes by gateway card: the same card form as a pairing card, but green, carrying the fedinet's name on its face. Neo-Arcadia is the gateway into the first of them, the Rockport Mesh — and its Founding Member. When that day comes, the status bar stops listing what is connected and simply reads: Mesh Online.</p>
+<p class="tl-links"><a href="https://github.com/AlexKollar/Apex/issues/154">GitHub — the federation design, issue #154</a><a href="/mesh.html">The Mesh page</a></p>
+</div>
+</details>
+
+</div>
+</section>
+<section>
+<h2>One view, kept honest</h2>
+<p>Dates on this line are filing dates, and every stop carries its evidence with it — open one and the papers are one tap away. Shipped means shipped: verified against the public record, not promised. When a stop moves, this page moves with it.</p>
+<p><a class="btn solid" href="/blog.html">All Dispatches</a> <a class="btn" href="https://github.com/AlexKollar/Apex">Apex on GitHub</a></p>
+</section>
+</main>
+<script>
+(function(){var el=document.getElementById('roadmap-tagline');if(!el)return;var text='The road so far.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';function tick(){el.textContent=text.slice(0,i);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}}setTimeout(tick,400);})();
+</script>

@@ -1,0 +1,83 @@
+---
+layout: default
+title: Rockport Mesh
+permalink: /rockport-mesh.html
+share_image: /share-rockport-mesh-open.png
+description: "Rockport Mesh is open — the first Apex federation. Download the gateway card, knock, and join a network of machines that lend each other a mind."
+---
+<main class="wrap">
+<div class="hero">
+<p class="txhead">ROCKPORT MESH — THE FIRST FEDERATION · FOUNDED 14 NOV 2026</p>
+<h1><span class="hglitch" data-text="The gate is open."><span id="gate-tagline" class="tagline-cursor">The gate is open.</span></span></h1>
+<p class="sub">Rockport Mesh is a federation of Apex nodes — machines that lend each other whole answers, so the smallest node on the network stops being its own ceiling. It was founded on a home server in Pennsylvania in the small hours of 14 November 2026. Membership is open. The door is on this page.</p>
+</div>
+<style>
+.join{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:0 0 14px;box-shadow:inset 3px 0 0 var(--accent)}
+.join summary{cursor:pointer;padding:16px 18px;font-weight:700;letter-spacing:.02em;list-style:none;min-height:44px}
+.join summary::-webkit-details-marker{display:none}
+.join summary:after{content:"+";float:right;color:var(--accent)}
+.join[open ] summary:after{content:"\2013"}
+.join-body{padding:0 18px 16px;color:var(--muted)}
+.join-body li{margin:7px 0}
+.join-body b{color:var(--text)}
+@keyframes joinIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.join[open ] .join-body{animation:joinIn var(--open-time) var(--ease-open)}
+@media (prefers-reduced-motion: reduce){.join[open ] .join-body{animation:none}}
+.gatecard{width:100%;max-width:720px;height:auto;border:1px solid var(--line);border-radius:12px;display:block}
+.spec{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted);letter-spacing:.03em}
+</style>
+<section>
+<h2>The roster so far</h2>
+<p>Two names long, and both of them earned. <b>Neo-Arcadia</b> is Node № 001 — the gateway into Rockport Mesh, and separately its Founding Member; those are two facts, and the Row keeps them separate. <b>Neon Drip</b> holds Node № 002. The roster is signed by the gateway and synced between members; this page carries the card that knocks on it.</p>
+</section>
+<section>
+<h2>The gateway card</h2>
+<p>This is the actual card — not a picture of one. It carries its data inside the file itself, signed by the gateway. Download the file whole: a screenshot is just a picture of a door.</p>
+<p><a href="/gateway-card-Rockport-Mesh.png" download><img class="gatecard" src="/gateway-card-Rockport-Mesh.png" alt="The Rockport Mesh gateway card — gateway Neo-Arcadia, Node № 001"></a></p>
+<p class="spec">THE OFFER, AS THE CARD STATES IT — WORKSTATION · TESLA V100-PCIE-16GB · 125 GIB RAM · MODEL NAVI · GPU-ACCELERATED · LENDS AT MOST 75% OF EACH HOUR · 200 GENERATIONS AN HOUR · LENDS EVEN WHILE BUSY</p>
+<p><a class="btn solid" href="/gateway-card-Rockport-Mesh.png" download>Download the gateway card (.png)</a></p>
+</section>
+<section>
+<h2>What the card does — and what it doesn't</h2>
+<div class="grid">
+<div class="card"><h3>Admission</h3><p>The card admits its bearer to an introduction at the gateway. That is all it grants, and it is enough: introductions are how the roster grows.</p></div>
+<div class="card"><h3>The roster decides</h3><p>Membership lives in the gateway's signed roster, not in the card. Without a roster entry the card is a knock, not a key — a copied card buys nobody anything.</p></div>
+<div class="card"><h3>Trust is never transitive</h3><p>Joining lends you nothing by itself. Every member sets their own lending terms, and your own work always comes first on your own machine. Strength shared, ownership unchanged.</p></div>
+</div>
+</section>
+<section>
+<h2>Joining</h2>
+<details class="join">
+<summary>How to connect</summary>
+<div class="join-body">
+<ol>
+<li><b>Run Apex</b> on a machine you own — bare metal, or the Docker image. No account, no subscription; the software is free and open. <a href="/apex.html">Get Apex</a>.</li>
+<li><b>Download the gateway card</b> from this page — the file itself, not a screenshot of it.</li>
+<li><b>Import it</b>: in Apex, open <b>Mesh → Federation</b> and drop the card in. Your node knocks at the gateway, <span class="spec">rpmesh.nocturnerow.com:2475</span>.</li>
+<li><b>The signed roster does the rest.</b> Once the gateway admits you, your node joins the roster, can pair with the other members, and can borrow where members allow it.</li>
+</ol>
+<p>Sending the card onward to someone else? Zip it first — chat apps recompress pictures and strip the data out, and a stripped card admits no one.</p>
+</div>
+</details>
+<details class="join">
+<summary>Let the federation benefit from your presence</summary>
+<div class="join-body">
+<p>A federation is only as strong as the capacity actually on it. If you want your presence to count for more than a name on the roster:</p>
+<ul>
+<li><b>Stay reachable.</b> Declare a public endpoint for your node and forward your Mesh door — ports <span class="spec">8765 · 8443 · 2475</span> — so members beyond your own LAN can knock and be knocked on.</li>
+<li><b>Lend, on your terms.</b> Switch federation lending on from your own dashboard and set your caps: the share of each hour you'll give, the generations per hour you'll serve. The founding node lends up to 75% of each hour, even while busy — match that, beat it, or set a smaller number. The terms are yours; nobody sets them for you.</li>
+<li><b>Your work preempts.</b> Anything you run yourself shoves federation borrows aside, automatically. Lending never costs you your own machine.</li>
+<li><b>Leave cleanly.</b> Unticking stops it instantly. Revocation — yours or the gateway's — is total and immediate, and it propagates at the next roster sync.</li>
+</ul>
+</div>
+</details>
+</section>
+<section>
+<h2>Many machines. One mind.</h2>
+<p>The doctrine behind the Mesh — what federation means here, and what it never means — is written up on the Mesh page, and the founding itself is filed as a Dispatch.</p>
+<p><a class="btn solid" href="/mesh.html">The Mesh</a> <a class="btn" href="/notes/the-first-federation/">Dispatch: The First Federation</a></p>
+</section>
+</main>
+<script>
+(function(){var el=document.getElementById('gate-tagline');if(!el)return;var text='The gate is open.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>

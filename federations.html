@@ -1,0 +1,42 @@
+---
+layout: default
+title: Federations
+permalink: /federations.html
+share_image: /share-federations.png
+description: "Mesh is not Federation. The Mesh is the roads between Apex nodes; a Federation is a named country on those roads — a gateway, a signed roster, and trust on each member's own terms."
+---
+<main class="wrap">
+<div class="hero">
+<p class="txhead">FEDERATIONS — NAMED COUNTRIES ON THE MESH</p>
+<h1><span class="hglitch" data-text="One road. Many flags."><span id="fed-tagline" class="tagline-cursor">One road. Many flags.</span></span></h1>
+<p class="sub">People keep using the two words as if they were one. They are not. The Mesh is how Apex machines reach each other. A Federation is a named group of those machines, with a gate, a roster, and rules. This page is the difference — and the list of the countries so far.</p>
+<p class="sub" style="font-size:14px">In Apex itself you'll see federations called <b>fedinets</b> — the word the software uses. Same thing.</p>
+</div>
+<section>
+<h2>Mesh is not Federation</h2>
+<div class="grid">
+<div class="card"><h3>The Mesh — the roads</h3><p>Pairwise, node to node. Two machines exchange cards, pin each other's fingerprints, and whole requests travel between them over signed doors. No names, no membership, no center. The Mesh is plumbing — good, honest, verified plumbing.</p></div>
+<div class="card"><h3>A Federation — a country</h3><p>A named web of nodes under one flag. A <b>gateway</b> node admits newcomers and signs the <b>roster</b> — the list of who belongs. Membership is proven against that roster, not against a card. A gateway card gets you an introduction; the roster does the rest.</p></div>
+</div>
+</section>
+<section>
+<h2>How a federation holds together</h2>
+<p><b>Trust is a local decision, everywhere.</b> Joining a federation never hands anyone your machine. Each member sets their own lending terms — how much of each hour, how many generations, whether to lend while busy. The federation-wide shortcut exists (members can choose to trust the roster by default), and it is a choice each operator makes for themselves, guarded by caps, by their own work preempting any borrow, and by revocation that is instant and total. A stale roster degrades a node back to pairwise roads until it syncs again. Expulsion propagates at the next sync.</p>
+<p>Strength shared. Ownership unchanged. That sentence is the whole constitution.</p>
+</section>
+<section>
+<h2>Known federations</h2>
+<div class="grid">
+<div class="card"><h3>Rockport Mesh</h3><p>The first. Founded 14 November 2026 on a home server in Pennsylvania. Gateway and Founding Member: <b>Neo-Arcadia</b>. The gate is open — its gateway card is public, and the roster is two nodes long and growing.</p><p><a class="btn solid" href="/rockport-mesh.html">Enter Rockport Mesh</a></p></div>
+<div class="card"><h3>Yours</h3><p>Anyone running Apex can found a federation from their own dashboard and mint a gateway card of their own. Found one, keep its gate honest, and it can be listed here next to the first.</p><p><a class="btn" href="/submit-a-federation.html">Submit a Federation</a></p></div>
+</div>
+</section>
+<section>
+<h2>The roads come first</h2>
+<p>None of this floats free of the Mesh itself — the doors, the cards, the health checks that name what's broken. If the distinction still feels abstract, the Mesh page draws the picture.</p>
+<p><a class="btn solid" href="/mesh.html">The Mesh</a></p>
+</section>
+</main>
+<script>
+(function(){var el=document.getElementById('fed-tagline');if(!el)return;var text='One road. Many flags.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>

@@ -1,0 +1,39 @@
+---
+layout: default
+title: Submit a Federation
+permalink: /submit-a-federation.html
+share_image: /share-submit-a-federation.png
+description: "Founded a federation of your own? Submit it for listing on Nocturne Row — what a listing means, what to send, and the one rule that matters: the gateway card must arrive lossless."
+---
+<main class="wrap">
+<div class="hero">
+<p class="txhead">SUBMIT A FEDERATION — FOR LISTING ON THE ROW</p>
+<h1><span class="hglitch" data-text="Fly your own flag."><span id="sub-tagline" class="tagline-cursor">Fly your own flag.</span></span></h1>
+<p class="sub">A federation you founded can be listed on the Federations page, next to Rockport Mesh — its name, its gateway, and a door to its gate. Listing is curated by the Row: a listing is a pointer, not a promise. Your roster remains yours; the Row vouches only that your gate answered when we knocked.</p>
+</div>
+<section>
+<h2>What to send</h2>
+<p>Open an issue on this site's repository, titled <b>"Federation submission: &lt;your federation's name&gt;"</b>, with:</p>
+<ul>
+<li><b>The federation's name</b> — the flag you fly.</li>
+<li><b>The gateway node's name</b> and its <b>public endpoint</b> (host:port) — the door the world knocks on.</li>
+<li><b>One or two sentences</b> on what the federation is for. These run as your listing's description, lightly edited for length.</li>
+<li><b>The gateway card, as a file.</b> Attach the .png itself to the issue. If it has to pass through a chat app first, zip it — chat apps recompress pictures and strip the data out, and a stripped card is a dead card. This is the one rule that matters.</li>
+<li>Optionally: your lending posture in a line (caps, hours, lend-while-busy or not), so visitors know the gate's terms before they knock.</li>
+</ul>
+<p><a class="btn solid" href="https://github.com/AlexKollar/nocturnerow/issues/new?title=Federation%20submission%3A%20" target="_blank" rel="noopener">Open a submission issue</a></p>
+</section>
+<section>
+<h2>How listing works</h2>
+<p>The Row imports your card and knocks at the endpoint you gave us. If the gateway answers and the roster signature verifies, the listing goes up on the <a href="/federations.html">Federations page</a>. If the gate doesn't answer, the issue stays open and we tell you what we saw — you fix the road, we knock again.</p>
+<p>A listing can come down the same way it went up: a gateway that stays dark, a card that stops verifying, or a federation whose conduct makes the Row unwilling to point at it. No drama, no appeal court — it's a page on our site, and the door is ours to keep.</p>
+</section>
+<section>
+<h2>Not founded one yet?</h2>
+<p>A federation starts on your own machine: run Apex, found the federation from your dashboard, mint the gateway card. The explainer walks the distinction between the roads and the countries; Rockport Mesh's gate page is the working example.</p>
+<p><a class="btn solid" href="/federations.html">Federations, explained</a> <a class="btn" href="/rockport-mesh.html">Rockport Mesh</a></p>
+</section>
+</main>
+<script>
+(function(){var el=document.getElementById('sub-tagline');if(!el)return;var text='Fly your own flag.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>

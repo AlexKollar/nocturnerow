@@ -3,30 +3,38 @@ layout: default
 title: Submit a Federation
 permalink: /submit-a-federation.html
 share_image: /share-submit-a-federation.png
-description: "Founded a federation of your own? Submit it for listing on Nocturne Row — what a listing means, what to send, and the one rule that matters: the gateway card must arrive lossless."
+description: "Founded a federation of your own? Submit it for the Directory — drop your gateway card here first; the page reads it, shows you your listing, and hands you a prefilled submission."
 ---
 <main class="wrap">
 <div class="hero">
-<p class="txhead">SUBMIT A FEDERATION — FOR LISTING ON THE ROW</p>
+<p class="txhead">SUBMIT A FEDERATION — FOR LISTING IN THE DIRECTORY</p>
 <h1><span class="hglitch" data-text="Fly your own flag."><span id="sub-tagline" class="tagline-cursor">Fly your own flag.</span></span></h1>
-<p class="sub">A federation you founded can be listed on the Federations page, next to Rockport Mesh — its name, its gateway, and a door to its gate. Listing is curated by the Row: a listing is a pointer, not a promise. Your roster remains yours; the Row vouches only that your gate answered when we knocked.</p>
+<p class="sub">A federation you founded can be listed in the Directory, next to Rockport Mesh — its name, its gateway, and a door to its gate. It starts here, with the card itself: this page reads your gateway card in your own browser, shows you the listing it would print, and hands you a submission with every field already filled from the card. Nothing typed, nothing to typo.</p>
 </div>
+<style>
+.spec{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted);letter-spacing:.03em}
+#drop{border:1.5px dashed var(--line);border-radius:12px;padding:28px 18px;text-align:center;cursor:pointer;background:var(--panel)}
+#drop.over{border-color:var(--accent)}
+#drop p{margin:4px 0}
+#blurb{width:100%;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:10px 12px;font:inherit;margin-top:8px}
+</style>
 <section>
-<h2>What to send</h2>
-<p>Open an issue on this site's repository, titled <b>"Federation submission: &lt;your federation's name&gt;"</b>, with:</p>
-<ul>
-<li><b>The federation's name</b> — the flag you fly.</li>
-<li><b>The gateway node's name</b> and its <b>public endpoint</b> (host:port) — the door the world knocks on.</li>
-<li><b>One or two sentences</b> on what the federation is for. These run as your listing's description, lightly edited for length.</li>
-<li><b>The gateway card, as a file.</b> Attach the .png itself to the issue. If it has to pass through a chat app first, zip it — chat apps recompress pictures and strip the data out, and a stripped card is a dead card. This is the one rule that matters.</li>
-<li>Optionally: your lending posture in a line (caps, hours, lend-while-busy or not), so visitors know the gate's terms before they knock.</li>
-</ul>
-<p><a class="btn solid" href="https://github.com/AlexKollar/nocturnerow/issues/new?title=Federation%20submission%3A%20" target="_blank" rel="noopener">Open a submission issue</a></p>
+<h2>Step 1 — Let the card speak</h2>
+<div id="drop" role="button" tabindex="0" aria-label="Choose or drop your gateway card PNG">
+<p style="font-size:17px"><b>Drop your gateway card (.png) here</b> — or click to choose the file.</p>
+<p style="color:var(--muted);font-size:14px">The file itself, not a screenshot of it. Your browser reads it locally; nothing is uploaded by this page.</p>
+</div>
+<input type="file" id="cardfile" accept=".png,image/png" style="display:none">
+<div id="verdict" style="margin-top:14px"></div>
+<label for="blurb" style="display:block;margin-top:16px"><b>Your federation in a sentence or two</b> <span style="color:var(--muted)">(runs as your listing's description)</span></label>
+<textarea id="blurb" rows="2" maxlength="280" placeholder="What is this federation for? Who is it for?"></textarea>
+<p><button class="btn solid" id="go" type="button" style="display:none;cursor:pointer;font:inherit">Step 2 — Continue to the submission</button></p>
 </section>
 <section>
-<h2>How listing works</h2>
-<p>The Row imports your card and knocks at the endpoint you gave us. If the gateway answers and the roster signature verifies, the listing goes up on the <a href="/federations.html">Federations page</a>. If the gate doesn't answer, the issue stays open and we tell you what we saw — you fix the road, we knock again.</p>
-<p>A listing can come down the same way it went up: a gateway that stays dark, a card that stops verifying, or a federation whose conduct makes the Row unwilling to point at it. No drama, no appeal court — it's a page on our site, and the door is ours to keep.</p>
+<h2>What happens next</h2>
+<p>The button opens a GitHub issue with everything prefilled from your card. <b>Drag the same .png into that issue</b> — uploading the card to GitHub is the submission; the issue is the knock at the Row's door.</p>
+<p>Then the gauntlet, the same three checks for everyone: the card's data parses · its signature verifies against the gateway it names · the gateway's door answers and presents the fingerprint the card promises. A pass adds you to the <a href="/federations.html">Directory</a> with the verified date stamped under your name. A failure gets a comment on your issue naming the stage that refused you — never silence, and you can fix the road and knock again. Submissions are processed in batches; expect the verdict within a day, usually much faster.</p>
+<p>A listing is a pointer, not a promise. Your roster remains yours; the Row vouches only that your gate answered when we knocked. A listing can come down the way it went up: a gate that stays dark, a card that stops verifying, or conduct that makes the Row unwilling to point at it.</p>
 </section>
 <section>
 <h2>Not founded one yet?</h2>
@@ -36,4 +44,84 @@ description: "Founded a federation of your own? Submit it for listing on Nocturn
 </main>
 <script>
 (function(){var el=document.getElementById('sub-tagline');if(!el)return;var text='Fly your own flag.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+<script>
+(function(){
+  var drop=document.getElementById('drop'), fileIn=document.getElementById('cardfile'),
+      out=document.getElementById('verdict'), go=document.getElementById('go'), parsed=null;
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function fail(msg){ parsed=null; go.style.display='none'; out.innerHTML='<div class="card" style="box-shadow:inset 3px 0 0 #ff2a6d"><h3>That file will not do</h3><p>'+msg+'</p></div>'; }
+  function parseCard(buf){
+    var b=new Uint8Array(buf);
+    if(b.length<8||b[0]!==137||b[1]!==80||b[2]!==78||b[3]!==71) return {err:'That file is not a PNG at all. A gateway card is a .png — the data rides inside the picture.'};
+    var i=8, found=null;
+    while(i+8<=b.length){
+      var len=((b[i]<<24)|(b[i+1]<<16)|(b[i+2]<<8)|b[i+3])>>>0;
+      var type=String.fromCharCode(b[i+4],b[i+5],b[i+6],b[i+7]);
+      if(type==='tEXt'){
+        var data=b.subarray(i+8,Math.min(i+8+len,b.length)), z=data.indexOf(0);
+        if(z>0){ var key=''; for(var k=0;k<z;k++)key+=String.fromCharCode(data[k]);
+          if(key==='navi-gateway-card'||key==='navi-mesh-card'){
+            var raw=data.subarray(z+1), txt='';
+            try{ txt=new TextDecoder('utf-8').decode(raw); }catch(e){ for(var m=0;m<raw.length;m++)txt+=String.fromCharCode(raw[m]); }
+            found={kind:key,text:txt};
+          } }
+      }
+      if(type==='IEND') break;
+      i+=12+len;
+    }
+    if(!found) return {err:'This picture carries no card data. That is exactly what a screenshot — or a card that passed through a chat app — looks like from the inside: the image survived, the data did not. Go back to the original .png (if it has to travel through chat, send it inside a .zip) and drop that file here.'};
+    if(found.kind==='navi-mesh-card') return {err:'That is a pairing card — node to node. This directory lists federations, and federations arrive on the gateway card. Found your federation in Apex, mint its gateway card, and drop that one here.'};
+    var p=null; try{ p=JSON.parse(found.text); }catch(e){ return {err:'The card data inside that file does not parse — the file is damaged. Re-export the gateway card from Apex and drop the fresh copy.'}; }
+    var gw=(p&&p.gateway)||{};
+    if(!p||!p.name||!gw.name) return {err:'The card data parses, but its federation or gateway is missing — the file is damaged. Re-export the gateway card from Apex and drop the fresh copy.'};
+    return {p:p,gw:gw};
+  }
+  function offerLine(gw){
+    var cap=gw.capabilities||{}, c=cap.caps||{}, bits=[];
+    if(cap.hardwareClass) bits.push(cap.hardwareClass);
+    if(c.maxSharePercent) bits.push('lends at most '+c.maxSharePercent+'% of each hour');
+    if(c.maxGenerationsPerHour) bits.push(c.maxGenerationsPerHour+' generations an hour');
+    if(cap.idleOnly===false) bits.push('lends even while busy');
+    return bits.join(' · ');
+  }
+  function handle(file){
+    if(!file) return;
+    var r=new FileReader();
+    r.onload=function(){
+      var res=parseCard(r.result);
+      if(res.err){ fail(res.err); return; }
+      parsed=res;
+      var p=res.p, gw=res.gw;
+      var ep=gw.publicEndpoint||(((gw.addresses&&gw.addresses[0])||'')+((gw.port)?':'+gw.port:''));
+      parsed.endpoint=ep;
+      var h='<div class="card"><h3>'+esc(p.name)+'</h3>';
+      h+='<p class="spec">GATEWAY '+esc(String(gw.name).toUpperCase())+' · '+esc(ep)+'</p>';
+      var off=offerLine(gw); if(off) h+='<p>'+esc(off)+'</p>';
+      h+='<p style="font-size:13.5px;color:var(--muted)">That is your listing, read straight out of the card. Add your sentence above, then continue — the submission opens with every field already filled from this card.</p></div>';
+      out.innerHTML=h; go.style.display='';
+    };
+    r.readAsArrayBuffer(file);
+  }
+  drop.addEventListener('click',function(){ fileIn.click(); });
+  drop.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); fileIn.click(); } });
+  drop.addEventListener('dragover',function(e){ e.preventDefault(); drop.classList.add('over'); });
+  drop.addEventListener('dragleave',function(){ drop.classList.remove('over'); });
+  drop.addEventListener('drop',function(e){ e.preventDefault(); drop.classList.remove('over'); if(e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0]) handle(e.dataTransfer.files[0]); });
+  fileIn.addEventListener('change',function(){ if(fileIn.files&&fileIn.files[0]) handle(fileIn.files[0]); });
+  go.addEventListener('click',function(){
+    if(!parsed) return;
+    var p=parsed.p, gw=parsed.gw;
+    var blurb=(document.getElementById('blurb').value||'').trim();
+    var title='Federation submission: '+p.name;
+    var body=['<!-- federation-submission v1 | fedinetId: '+(p.fedinetId||'')+' -->',
+      '**Federation:** '+p.name,
+      '**Gateway:** '+gw.name,
+      '**Endpoint:** '+parsed.endpoint,
+      '**About:** '+(blurb||'(no line supplied)'),
+      '',
+      '⬇️ **Attach the gateway card file to this issue** — drag the same .png into the comment box. The file itself, not a screenshot. ⬇️'].join('\n');
+    window.open('https://github.com/AlexKollar/nocturnerow/issues/new?title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body),'_blank','noopener');
+  });
+})();
 </script>

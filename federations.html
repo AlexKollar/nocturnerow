@@ -24,12 +24,16 @@ description: "Mesh is not Federation. The Mesh is the roads between Apex nodes; 
 <p><b>Trust is a local decision, everywhere.</b> Joining a federation never hands anyone your machine. Each member sets their own lending terms — how much of each hour, how many generations, whether to lend while busy. The federation-wide shortcut exists (members can choose to trust the roster by default), and it is a choice each operator makes for themselves, guarded by caps, by their own work preempting any borrow, and by revocation that is instant and total. A stale roster degrades a node back to pairwise roads until it syncs again. Expulsion propagates at the next sync.</p>
 <p>Strength shared. Ownership unchanged. That sentence is the whole constitution.</p>
 </section>
+<style>
+.spec{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted);letter-spacing:.03em}
+</style>
 <section>
-<h2>Known federations</h2>
-<div class="grid">
-<div class="card"><h3>Rockport Mesh</h3><p>The first. Founded 14 November 2026 on a home server in Pennsylvania. Gateway and Founding Member: <b>Neo-Arcadia</b>. The gate is open — its gateway card is public, and the roster is two nodes long and growing.</p><p><a class="btn solid" href="/rockport-mesh.html">Enter Rockport Mesh</a></p></div>
-<div class="card"><h3>Yours</h3><p>Anyone running Apex can found a federation from their own dashboard and mint a gateway card of their own. Found one, keep its gate honest, and it can be listed here next to the first.</p><p><a class="btn" href="/submit-a-federation.html">Submit a Federation</a></p></div>
+<h2>The Directory</h2>
+<p>Every federation listed here arrived the same way: a gateway card was submitted, its signature verified against the gateway it names, and its gate knocked on and answering. A listing is a pointer, not a promise — it proves the country is real and its door works. What its roster does with a knock is its own business.</p>
+<div class="grid" id="directory-grid">
+<div class="card"><h3>Reading the directory…</h3><p>The list is a small file on this site; your browser is fetching it now.</p></div>
 </div>
+<noscript><p>The Directory renders with JavaScript. The founding entry needs no script to be found: <a href="/rockport-mesh.html">Rockport Mesh</a>.</p></noscript>
 </section>
 <section>
 <h2>The roads come first</h2>
@@ -39,4 +43,25 @@ description: "Mesh is not Federation. The Mesh is the roads between Apex nodes; 
 </main>
 <script>
 (function(){var el=document.getElementById('fed-tagline');if(!el)return;var text='One road. Many flags.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+(function(){
+  var grid=document.getElementById('directory-grid'); if(!grid) return;
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function card(f){
+    var h='<div class="card"><h3>'+esc(f.name)+'</h3>';
+    h+='<p class="spec">GATEWAY '+esc(String(f.gateway||'').toUpperCase())+' · '+esc(f.endpoint||'')+'</p>';
+    if(f.blurb)h+='<p>'+esc(f.blurb)+'</p>';
+    h+='<p style="font-size:13px;color:var(--muted)">Founded '+esc(f.founded||'—')+' · Gate verified '+esc(f.verified||'—')+'</p>';
+    h+='<p>';
+    if(f.page)h+='<a class="btn solid" href="'+esc(f.page)+'">Visit the gate</a> ';
+    if(f.card)h+='<a class="btn" href="'+esc(f.card)+'" download>Gateway card</a>';
+    return h+'</p></div>';
+  }
+  var yours='<div class="card"><h3>Yours</h3><p>Anyone running Apex can found a federation from their own dashboard and mint a gateway card of their own. Found one, keep its gate honest, and it can be listed here next to the first.</p><p><a class="btn" href="/submit-a-federation.html">Submit a Federation</a></p></div>';
+  fetch('/federations.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+    var list=(d&&d.federations)||[];
+    grid.innerHTML=(list.length?list.map(card).join(''):'<div class="card"><h3>The directory is empty</h3><p>No federation has been listed yet — which cannot be right, because the first one is public. Try again in a moment.</p></div>')+yours;
+  }).catch(function(){
+    grid.innerHTML='<div class="card"><h3>The directory could not be read</h3><p>Your browser could not fetch the list just now. The founding gate is real regardless:</p><p><a class="btn solid" href="/rockport-mesh.html">Rockport Mesh</a></p></div>'+yours;
+  });
+})();
 </script>

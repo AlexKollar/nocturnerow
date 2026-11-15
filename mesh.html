@@ -39,7 +39,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 .doc-body blockquote{border-left:3px solid var(--accent);margin:16px 0;padding:4px 0 4px 16px;color:var(--text);font-size:17px;line-height:1.65}
 .doc-body blockquote .attrib{display:block;margin-top:8px;color:var(--muted);font-size:14px}
 </style>
-<div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends one prompt out in teal along two roads, landing on Neo-Arcadia and Neon Drip at the same moment; their answers flow back in amber, converge into a single line, and reach Pia as one composed response. Neon Drip also borrows directly from Neo-Arcadia, one exchange at a time: its ask travels up in teal, and only once it has arrived does the answer come back down in amber — the road never carries both at once. A fourth node is drawn hollow — not yet built. Field status: two nodes are paired, and the road between them is lit — the first whole-request borrow was served across the open internet on 13 November 2026.">
+<div class="meshmap" role="img" aria-label="Mesh constellation: Pia, a small sensor node, sends one prompt out in teal along two roads, landing on Neo-Arcadia and Neon Drip at the same moment; their answers flow back in amber, converge into a single line, and reach Pia as one composed response. Neon Drip also borrows directly from Neo-Arcadia, one exchange at a time: its ask travels up in teal, and only once it has arrived does the answer come back down in amber — the road never carries both at once. A fourth node is drawn hollow — not yet built. Field status: Rockport Mesh was founded on 14 November 2026 — Neo-Arcadia is Node № 001 and the gateway, Neon Drip is Node № 002 — and the first whole-request borrow was served across the open internet on 13 November 2026.">
 <svg viewBox="0 0 800 440">
 <path id="rPiaNa" d="M 162 284 Q 250 165 372 122" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
 <path id="rPiaNd" d="M 164 308 Q 400 306 628 226" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity=".4"/>
@@ -80,7 +80,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <circle cx="145" cy="298" r="14" fill="#111823" stroke="#2dd4bf" stroke-width="2"/>
 <circle cx="145" cy="298" r="4" fill="#2dd4bf"/>
 <circle cx="655" cy="358" r="16" fill="none" stroke="#9fb0c1" stroke-width="1.5" stroke-dasharray="4 4"/>
-<text class="rlabel" x="22" y="30">FIELD STATUS: TWO NODES PAIRED — THE ROAD IS LIT · FIRST BORROW SERVED 13 NOV 2026</text>
+<text class="rlabel" x="22" y="30">FIELD STATUS: ROCKPORT MESH FOUNDED — 14 NOV 2026 · THE ROAD IS LIT</text>
 <text class="nlabel" x="400" y="58" text-anchor="middle">NEO-ARCADIA</text>
 <text class="nsub" x="400" y="158" text-anchor="middle">the host — Tesla V100</text>
 <text class="nlabel" x="655" y="170" text-anchor="middle">NEON DRIP</text>
@@ -98,7 +98,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <div class="grid">
 <div class="tile"><h3>A handshake, not an account</h3><p>Nodes pair by exchanging cards — a picture, carried by hand. No cloud directory, no account, no landlord in the middle. Each node keeps its own ledger of exactly who it trusts, and trust is pairwise: my friend is not automatically yours.</p></div>
 <div class="tile"><h3>The ask goes out whole</h3><p>When a node needs more muscle than it has, it sends the whole request to a stronger peer it trusts, and the answer comes back the same road. That is borrow, and it already ships: a small box thinks at the speed of the biggest machine on the Mesh.</p></div>
-<div class="tile"><h3>The answer is a federation</h3><p>Ring 2 — designed in the open, building now in the 0.2.0e line — splits work into tasks the fleet shares. A sensor like Pia can put a prompt to the whole Mesh at once: Neo-Arcadia and Neon Drip each contribute, and she receives one composed answer. The more nodes join, the faster the smallest node in the house gets.</p></div>
+<div class="tile"><h3>The answer is a federation</h3><p>Ring 2 — the federation — shipped in Apex v0.2.0: nodes gather into fedinets under a gateway's signed roster, and a member's ask can ride the net to the strongest machine on it. Its first fedinet, Rockport Mesh, was founded on 14 Nov 2026. A sensor like Pia can put a prompt to the whole Mesh at once — and the more nodes join, the faster the smallest node in the house gets.</p></div>
 </div>
 </section>
 <section>
@@ -107,19 +107,21 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <div class="grid">
 <div class="tile"><h3>Membership without surrender</h3><p>A federated node keeps its own keys, its own ledger of who it trusts, its own off switch. It can refuse a request, revoke a pairing, or go dark at its owner's word — and none of that breaks the federation. That <i>is</i> the federation.</p></div>
 <div class="tile"><h3>Strength shared, ownership unchanged</h3><p>Lending transfers nothing but the work. The strong machine answers; the small machine remains its owner's, the strong machine remains its owner's — and the answer arrives signed with the name of the machine that wrote it.</p></div>
-<div class="tile"><h3>Trust is pairwise</h3><p>My friend is not automatically yours. Every road on the Mesh is a relationship between two named machines and the two operators who introduced them. The federation is the sum of those handshakes; there is no other membership list. Leave, and you take nothing with you but your own machine — which was always the point.</p></div>
+<div class="tile"><h3>Trust is pairwise</h3><p>My friend is not automatically yours. Every road on the Mesh is a relationship between two named machines and the two operators who introduced them. A fedinet's roster is a list of introductions, not of trusts — every lend is still a handshake between two machines. Leave, and you take nothing with you but your own machine — which was always the point.</p></div>
+<div class="tile"><h3>A gateway introduces</h3><p>A fedinet's gateway card — green, signed, carrying the net's name — admits a node and introduces it to the roster. Admission is not trust: the card grants an introduction, never a lend. What a member may ask of you is still set by your own pairing, on your own terms.</p></div>
 </div>
 </section>
 <section>
 <h2>The state of the roads</h2>
 <div class="stats">
 <ul>
-<li>Nodes paired tonight — <b>2</b>: Neo-Arcadia and Neon Drip</li>
+<li>Rockport Mesh — <b>founded</b> 14 Nov 2026: Neo-Arcadia is Node № 001, the gateway and Founding Member; Neon Drip is Node № 002</li>
 <li>The road between them — <b>lit</b>: the first whole-request borrow was served across the open internet on 13 Nov 2026 — a question asked on the night-shift laptop, answered by the home server, and badged <i>via Neo-Arcadia</i> on its way back</li>
 <li>The break, named — the pairing cards had been carrying harvested junk addresses (Docker bridges, loopback, VPN ghosts) instead of the way home; both machines' keys and pins were <b>true all along</b></li>
-<li>The reader that named it — <b>shipped</b> in Apex v0.2.0e Build 1: the Mesh health check, on both machines' Mesh views — it proved both nodes innocent and pointed at the cards</li>
-<li>The permanent road — <b>building</b> in Apex v0.2.0e Build 4: per-address ports, clean card generation, operator-declared public endpoints, a door that listens on 8765, 8443 and 2475, and a backup tunnel Apex keeps itself. Tonight the road rides a hand-built tunnel while it bakes</li>
-<li>Ring 2, the federation — <b>designed</b> in the open (issue #154); implementation is the 0.2.0e line's work</li>
+<li>The reader that named it — <b>shipped</b> in Apex v0.2.0e — Build 1: the Mesh health check, on both machines' Mesh views — it proved both nodes innocent and pointed at the cards</li>
+<li>The permanent road — <b>shipped</b> in Apex v0.2.0e — Build 4 and proven across the open internet: clean cards that carry only the way home, a door that listens on 8765, 8443 and 2475 under one key, and a backup tunnel Apex keeps itself — the hand-built tunnel is retired</li>
+<li>Ring 2, the federation — <b>shipped</b> in Apex v0.2.0e — Builds 8 and 9, and graduated with Apex v0.2.0 on 14 Nov 2026: fedinets with gateway-signed rosters, green gateway cards, and lending between members under each member's own terms</li>
+<li>One Navi, all the screens — <b>shipped</b> in Apex v0.3.0e — Build 1: chats, Case Files, the ChipDeck and memory ride the Mesh between an operator's own machines, anchored to their account — the road now carries her, not just her questions</li>
 <li>Pia, the first Dropbox sensor — <b>costed, gated</b> on her software (issue #152); the Pi 5 on the bench is her test bed</li>
 </ul>
 </div>
@@ -150,7 +152,7 @@ description: "Apex | Mesh — many machines, one mind. A federation of your own 
 <h3>VI. No landlord, ever</h3>
 <p>No cloud directory. No account. No telemetry home. Node keys are never backed up, and lending is switched on in person — never through a remote door. If the internet vanished tomorrow, the Mesh would not notice.</p>
 <p style="margin-top:24px;color:var(--text);font-size:17px"><b>Many machines. One mind.</b></p>
-<p style="color:var(--muted);font-size:14px">A living document — the design record lives on <a href="https://github.com/AlexKollar/Apex/issues/154" style="color:var(--accent)">issue #154</a>, and the implementation is the 0.2.0e line's work.</p>
+<p style="color:var(--muted);font-size:14px">A living document — the design record lives on <a href="https://github.com/AlexKollar/Apex/issues/154" style="color:var(--accent)">issue #154</a>, and the implementation shipped in the 0.2.0e line and graduated with Apex v0.2.0.</p>
 </div>
 </div>
 </div>

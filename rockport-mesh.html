@@ -52,9 +52,12 @@ description: "Rockport Mesh is open — the first Apex federation. Download the 
 <div class="join-body">
 <ol>
 <li><b>Run Apex</b> on a machine you own — bare metal, or the Docker image. No account, no subscription; the software is free and open. <a href="/apex.html">Get Apex</a>.</li>
+<li><b>Turn the Mesh on.</b> Open the <b>Mesh</b> page and flip the master switch — a fresh install ships with the Mesh off, and nothing below works until it's on. (The Docker image starts with it on.)</li>
+<li><b>Name your node.</b> On the same Mesh page, set <b>This machine's name</b> — the name the roster, and the gateway's admit list, will know you by. Do it before you knock: your knock carries the name with it. Skip it, and you'll be listed under your machine's hostname.</li>
 <li><b>Download the gateway card</b> from this page — the file itself, not a screenshot of it.</li>
-<li><b>Import it</b>: in Apex, open <b>Mesh → Federation</b> and drop the card in. Your node knocks at the gateway, <span class="spec">rpmesh.nocturnerow.com:2475</span>.</li>
-<li><b>The signed roster does the rest.</b> Once the gateway admits you, your node joins the roster, can pair with the other members, and can borrow where members allow it.</li>
+<li><b>Import it</b>: in Apex, open <b>Mesh → Federation</b> and drop the card in. The import pairs the gateway as an introduction; it grants no trust by itself.</li>
+<li><b>Knock.</b> Press <b>Knock</b> on the fedinet's card. Your node presents itself at the gateway, <span class="spec">rpmesh.nocturnerow.com:2475</span>, and lands in the gateway operator's pending list.</li>
+<li><b>Wait to be admitted.</b> Admission is a person's act, not a machine's: the gateway's operator sees your name in their pending list and admits you by hand. It isn't instant, and nothing is broken while you wait. Once you're in, sync from the same tab — the signed roster lands, and you can pair with the other members and borrow where members allow it. Renamed your node after knocking? Knock again; the fresh knock replaces the old one in the pending list.</li>
 </ol>
 <p>Sending the card onward to someone else? Zip it first — chat apps recompress pictures and strip the data out, and a stripped card admits no one.</p>
 </div>

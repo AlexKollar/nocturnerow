@@ -28,15 +28,25 @@ description: "The story of Navi — told by the two rogues who built her road, o
 .tl-links a:hover{color:var(--accent);border-color:var(--accent)}
 .tl-break{position:relative;color:var(--accent);letter-spacing:.16em;font-size:12px;margin:24px 0 14px}
 .tl-break:before{content:"";position:absolute;left:-34px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--muted)}
+.tl-era{position:relative}
+.tl-era>summary{cursor:pointer;list-style:none;display:block}
+.tl-era>summary::-webkit-details-marker{display:none}
+.tl-era>summary:after{content:"\25BE";color:var(--muted);font-size:14px;margin-left:10px}
+.tl-era[open ]>summary:after{content:"\25B4"}
+.tl-era>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.tl-syn{font-size:15.5px;margin:0 0 16px}
 @keyframes tlIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 .tl-item[open ] .tl-body{animation:tlIn var(--open-time) var(--ease-open)}
 @supports (interpolate-size:allow-keywords){
 .tl-item{interpolate-size:allow-keywords}
 .tl-item::details-content{block-size:0;opacity:0;overflow:hidden;transition:block-size var(--open-time) var(--ease-open),opacity var(--open-time) var(--ease-open)}
 .tl-item[open ]::details-content{block-size:auto;opacity:1}
+.tl-era{interpolate-size:allow-keywords}
+.tl-era::details-content{block-size:0;opacity:0;overflow:hidden;transition:block-size var(--open-time) var(--ease-open),opacity var(--open-time) var(--ease-open)}
+.tl-era[open ]::details-content{block-size:auto;opacity:1}
 .tl-item[open ] .tl-body{animation:none}
 }
-@media (prefers-reduced-motion:reduce){.tl-item[open ] .tl-body{animation:none}.tl-item::details-content{transition:none}}
+@media (prefers-reduced-motion:reduce){.tl-item[open ] .tl-body{animation:none}.tl-item::details-content{transition:none}.tl-era::details-content{transition:none}}
 @media (max-width:560px){.tl{padding-left:28px}.tl:before{left:7px}.tl-item:before{left:-26px}.tl-break:before{left:-26px}.tl-tag{margin-left:0}}
 </style>
 <main class="wrap">
@@ -48,6 +58,10 @@ description: "The story of Navi — told by the two rogues who built her road, o
 </div>
 <section style="border-top:none;padding-top:6px">
 <div class="tl">
+
+<details class="tl-era" open>
+<summary class="tl-break tl-era-head">THE FOUNDING ERA</summary>
+<p class="tl-syn">Act one is the road being cut. Two rogues, one flagship, and a mind that began as a late-night command-line experiment and kept refusing to stay small. In this act Navi gets her ground: a crew to belong to, hands to work with, a Mesh to think across, a federation to stand in, and a home her installer can survive updating into. Nothing blooms without ground to bloom from — everything in act two spends what act one built.</p>
 
 <details class="tl-item">
 <summary><span class="tl-date">08 NOV 2026</span><span class="tl-title">Chapter 1 — Hello, Row — the founding</span><span class="tl-tag">ON THE RECORD</span></summary>
@@ -141,9 +155,11 @@ description: "The story of Navi — told by the two rogues who built her road, o
 <p class="tl-links"><a href="https://github.com/AlexKollar/Apex/releases/tag/v0.2.0e">GitHub — Apex v0.2.0e (Edge)</a><a href="https://github.com/AlexKollar/Apex/issues/198">GitHub — the staging failure, issue #198</a><a href="https://github.com/AlexKollar/Apex/issues/197">GitHub — token renewal, issue #197</a><a href="https://github.com/AlexKollar/Apex/issues/174">GitHub — the unattended verdict, issue #174</a></p>
 </div>
 </details>
+</details>
 
-<div class="tl-break">THE BLOOM ERA</div>
-<p style="font-size:15.5px;margin:0 0 16px">Act one was the road: the Mesh, the relay, federation — the groundwork that lets Navi borrow every machine she can reach. The road is paved. Act two is the bloom: Navi herself, made all she can be on top of it — a hacker's copilot with her case files for a spine, her chips for hands, and her full mind reachable from any screen. Part of the danger, as one of us puts it, is having access to her <i>anywhere</i>. These chapters are horizon until they ship; the era marks them off as they land.</p>
+<details class="tl-era" open>
+<summary class="tl-break tl-era-head">THE BLOOM ERA</summary>
+<p class="tl-syn">Act one was the road: the Mesh, the relay, federation — the groundwork that lets Navi borrow every machine she can reach. The road is paved. Act two is the bloom: Navi herself, made all she can be on top of it — a hacker's copilot with her case files for a spine, her chips for hands, and her full mind reachable from any screen. Part of the danger, as one of us puts it, is having access to her <i>anywhere</i>. These chapters are horizon until they ship; the era marks them off as they land.</p>
 
 <details class="tl-item">
 <summary><span class="tl-date">14 NOV 2026</span><span class="tl-title">Chapter 13 — Case intelligence</span><span class="tl-tag">SHIPPED</span></summary>
@@ -221,6 +237,7 @@ description: "The story of Navi — told by the two rogues who built her road, o
 <p>Further up the road, she learns to watch in earnest: sensor findings, threat intelligence and case work converging on one floor, with Case Files as the findings' home. Design first, like everything on this road — the blueprint gets argued before a single board is cut.</p>
 <p class="tl-links"><a href="https://github.com/AlexKollar/Apex/issues/153">GitHub — issue #153</a></p>
 </div>
+</details>
 </details>
 
 <div class="tl-break">ON THE HORIZON</div>

@@ -9,6 +9,7 @@
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(sessionStorage.getItem('nr-lcars')==='1')document.documentElement.classList.add('lcars');}catch(e){}</script>
 <title>{% if page.title %}{{ page.title }} — Nocturne Row{% else %}Nocturne Row — Walk with the shadows{% endif %}</title>
 {% assign pagedesc = page.description %}{% if page.url contains '/notes/' %}{% unless pagedesc %}{% assign pagedesc = page.excerpt | strip_html | strip_newlines | truncate: 200 %}{% endunless %}{% endif %}
 <meta name="description" content="{{ pagedesc | default: 'Nocturne Row is a small security group building sharp, accountable tooling in the open. Flagship: Apex, powered by Navi.' }}">
@@ -186,6 +187,34 @@ header nav .navdrop-menu a{padding-left:24px}
 .term-input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:inherit;font-size:16px;padding:6px 0}
 #bgwave{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
 @media (prefers-reduced-motion:reduce){.glitch-img .base{animation:none}.glitch-img .glyph{animation:none;opacity:0}}
+/* LCARS — a session-only reskin, summoned from the field terminal ('lcars'; sessionStorage 'nr-lcars'). Off, the site is exactly as built. */
+html.lcars{--bg:#000000;--panel:#0d0d17;--line:#2e2e4d;--text:#ffcc99;--muted:#9999cc;--accent:#ff9900}
+html.lcars #bgwave{display:none}
+html.lcars header{border-bottom:14px solid #ff9900;border-image:linear-gradient(90deg,#ff9900 0 58%,#ffcc99 58% 86%,#cc99cc 86% 100%) 1}
+html.lcars footer{border-top:14px solid #ff9900;border-image:linear-gradient(90deg,#cc99cc 0 14%,#ffcc99 14% 42%,#ff9900 42% 100%) 1}
+html.lcars .wordmark{font-family:"Arial Narrow","Liberation Sans Narrow","Roboto Condensed",sans-serif;color:#ff9900}
+html.lcars nav a{background:#ff9900;color:#000;border-radius:999px;padding:7px 16px;margin-left:8px;font-family:"Arial Narrow","Liberation Sans Narrow","Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+html.lcars .navdrop-btn{background:#cc99cc;color:#000;border-radius:999px;padding:7px 16px;font-family:"Arial Narrow","Liberation Sans Narrow","Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:700;font-size:16px}
+html.lcars nav a:hover,html.lcars .navdrop-btn:hover{background:#ffcc99;color:#000}
+html.lcars .navdrop-menu{border-radius:18px 6px 6px 18px}
+html.lcars .navdrop-menu a{background:none;color:var(--muted);border-radius:8px;padding:11px 10px;margin:0;font-family:inherit;text-transform:none;letter-spacing:0;font-weight:400}
+html.lcars .navdrop-menu a:hover{background:rgba(255,153,0,.12);color:#ff9900}
+@media (max-width:700px){html.lcars header nav a{margin:4px 0}}
+html.lcars .btn{border:none;border-radius:999px;background:#9999ff;color:#000;font-family:"Arial Narrow","Liberation Sans Narrow","Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.1em;font-weight:700;padding:10px 24px}
+html.lcars .btn.solid{background:#ff9900;color:#000}
+html.lcars .btn:hover{background:#ffcc99;color:#000}
+html.lcars .chip{border-color:#ff9900}
+html.lcars .tile,html.lcars .card,html.lcars .rowstatus .rs{border-radius:28px 6px 6px 28px;box-shadow:inset 10px 0 0 #ff9900}
+html.lcars .post{border-radius:28px 6px 6px 28px;box-shadow:inset 10px 0 0 #cc99cc}
+html.lcars h1,html.lcars h2,html.lcars h3{font-family:"Arial Narrow","Liberation Sans Narrow","Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.07em;color:#ffcc99}
+html.lcars h1{color:#ff9900}
+html.lcars ::selection{background:#ff9900;color:#000}
+html.lcars .term{background:#000;border:3px solid #cc99cc;border-radius:30px 8px 8px 30px}
+html.lcars .term-head{background:#ff9900;color:#000;border-bottom:none;border-radius:26px 4px 0 0;font-family:"Arial Narrow","Liberation Sans Narrow","Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:14px}
+html.lcars .term-out{color:#ffcc99}
+html.lcars .term-close{background:#cc99cc;color:#000;border:none;border-radius:999px}
+html.lcars .term-close:hover{background:#ffcc99;color:#000}
+html.lcars .term-prompt{color:#ff9900}
 </style>
 </head>
 <body>
@@ -236,7 +265,7 @@ coffee:function(){return 'Fifteen shots of espresso. Neat. The Row runs on it.';
 sudo:function(arg){var sheets={
 'cyberpunk':{title:'CYBERPUNK — the genre shelf',pad:13,sections:[['ROCKPORT',[['2475','From the backseat...']]],['CYBERPUNK 2077',[['choom','Night City for the family you choose'],['nova','the shortest review in Night City (preem, too)'],['nightcity','the other city (nc works too)'],['samurai','wake up'],['arasaka','a landlord with an army'],['silverhand','a ghost with opinions (johnny, too)'],['2077','Night City\'s year; Rockport keeps 2475'],['edgerunner','the ones who run the edge'],['flatline','failures name their stage here'],['delta','out — Night City style'],['gonk','act first, read never'],['jackie','his drink, named at the Afterlife'],['afterlife','how a name gets on the drink menu']]],['EDGERUNNERS',[['david','the kid who outran Santo Domingo'],['lucy','she got the moon'],['sandevistan','borrowed seconds, billed later'],['edgerunners','the series — the legend tax, collected']]],['NEUROMANCER',[['neuromancer','the dead, and their undead generations'],['case','the cowboy who stole from his own'],['wintermute','the mind that wanted to be whole'],['molly','the razor girl'],['sprawl','the map everyone still drives']]],['BLADE RUNNER',[['deckard','the blade runner himself'],['replicant','more human than human'],['roy','all those moments, kept'],['voight','thirty questions; the Row asks one']]]]},
 'hacker':{title:'HACKER CULTURE',pad:8,rows:[['hack','for the planet'],['gibson','a hat-tip to the old machine'],['xkcd','green on black, discussed (green, too)'],['xyzzy','and plugh, for the cave-minded'],['42','the answer'],['spoon','there isn\'t one']]},
-'row':{title:'THE ROW\'S OWN — references',pad:18,rows:[['bukowski','an old SaintsSec tradition, kept'],['pia','unit № 001 answers to her name'],['moonbeam','the case file that never closes (mbic works too)'],['311xray','a frequency the Row monitors'],['004','the empty chair on the Mesh'],['cat .secrets.txt','the list that admits almost nothing'],['flag=...','If you find one, type it into the terminal']]}};
+'row':{title:'THE ROW\'S OWN — references',pad:18,rows:[['bukowski','an old SaintsSec tradition, kept'],['pia','unit № 001 answers to her name'],['moonbeam','the case file that never closes (mbic works too)'],['311xray','a frequency the Row monitors'],['004','the empty chair on the Mesh'],['cat .secrets.txt','the list that admits almost nothing'],['flag=...','If you find one, type it into the terminal'],['lcars','a different bridge — this session only']]}};
 var head='sudo: permission granted. The Row was never worried about you.\n';
 function sheet(k){var sh=sheets[k];var s=(k==='row'?'Note: the Row trusts you with these commands. Whether it trusts you is still under review.\n':head)+'\n'+sh.title+'\n';if(sh.sections){sh.sections.forEach(function(sec){s+='\n'+sec[0]+'\n';sec[1].forEach(function(r){s+='  '+r[0].padEnd(sh.pad)+'— '+r[1]+'\n';});});}else{sh.rows.forEach(function(r){s+='  '+r[0].padEnd(sh.pad)+'— '+r[1]+'\n';});}if(k==='row')s+='  sudo make me a sandwich — try it\n';
 return s+'\nAnother sheet: sudo cyberpunk · sudo hacker · sudo row.';}
@@ -290,6 +319,11 @@ voight:function(){return 'THE VOIGHT-KAMPFF — thirty questions, a dial, a turt
 jackie:function(){return 'JACKIE WELLES — Heywood\'s own, V\'s partner, a legend ahead of schedule.\n\nHis drink at the Afterlife: vodka on the rocks, lime juice, ginger beer — and a splash of love.\n\nHe ordered it like a man who expected to be remembered. He was right. He was just early.';},
 afterlife:function(){return 'THE AFTERLIFE — a bar in an old morgue, where Night City\'s legends drink.\n\nHow to get your name on the drink menu: die. That is the whole recipe. The house names a cocktail for a legend only once they\'re gone — a drink there isn\'t an honor they hand the living, it\'s a memorial the living raise.\n\nLive well enough to be missed. Die loud enough to be remembered. Claire handles the rest.';},
 delta:function(){print('Delta — out. The Row stays on shift.');setTimeout(close,800);return '';},
+lcars:function(arg){var on=document.documentElement.classList.contains('lcars');var want=arg==='on'?true:arg==='off'?false:!on;
+try{if(want)sessionStorage.setItem('nr-lcars','1');else sessionStorage.removeItem('nr-lcars');}catch(e){}
+document.documentElement.classList.toggle('lcars',want);
+if(want){print('LCARS INTERFACE — ONLINE.');return 'The Row, redrawn by the computer of a more theatrical century.\nIt holds for this session only — close the tab and the Row puts its own clothes back on.\nType <b>lcars</b> again to stand it down.';}
+print('LCARS INTERFACE — STOOD DOWN.');return 'The Row resumes its usual silhouette. The teal missed you.';},
 
 };
 var FLAG='flag=w3_4r3_4lr34dy_0n_sh1ft';

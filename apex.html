@@ -10,7 +10,7 @@ description: "Apex | Powered by Navi — a local-first AI partner for security w
 <h1><span class="hglitch" data-text="Apex | Powered by Navi"><span id="apex-tagline" class="tagline-cursor">Apex | Powered by Navi</span></span></h1>
 </div>
 <section id="apex">
-  <span class="chip">Apex <b>v0.2.0 Stable</b> · Edge <b>v0.6.2e</b></span>
+  <span class="chip">Apex <b>v0.2.0 Stable</b> · Edge <b>v0.6.3e</b></span>
 <p>Apex runs entirely on your own hardware: your machine, your network, your data never leaves the building — and the model answering is Navi, the one it was built around.</p>
 <p style="font-size:18px;color:var(--text)"><b>Open source, top to bottom</b> — the app, the chips, the knowledge packs, the crypto tools, even this website. Nothing to take on faith; read it all.</p>
 <style>
@@ -62,15 +62,31 @@ fetch('https://api.github.com/repos/AlexKollar/Apex/releases?per_page=5').then(f
 <h3 style="margin-top:26px">The Mesh, drawn</h3>
 <p>One federation, drawn in full on its own page: Pia asks in teal, the fleet answers in amber, and Node № 004 is still empty — maybe yours.</p>
 <p><a class="btn solid" href="/mesh.html">Explore the Mesh →</a></p>
-<h3 style="margin-top:26px">What it does</h3>
+<h3 style="margin-top:26px">Inside Apex</h3>
+<p>One install, several instruments. Apex grew past a single tool a while ago — this is what is actually inside the box now.</p>
+<h3 style="margin-top:22px">The instruments</h3>
 <div class="grid">
 <div class="tile"><h3>Mission control</h3><p>A dashboard that treats your machine like it matters: chat, memory, chips, servers, one glance.</p></div>
-<div class="tile"><h3>Navi Mesh</h3><p>Pooled inference across your own machines — a stronger box answers whole requests for a weaker one.</p></div>
-<div class="tile"><h3>Builds, not big bangs</h3><p>An updater that patches in small, verified builds — and a gate that refuses to ship on a story.</p></div>
+<div class="tile"><h3>Case Files</h3><p>Investigations kept properly — findings, leads, observables, entities and events, each filed to its named part of the one case file. Navi answers first, then offers to file; never the other way round.</p></div>
+<div class="tile"><h3>The Wire</h3><p>Threat intelligence she actually reads — advisories, exploits and watchlists pulled from their own sources and cited. Never vibes.</p></div>
+<div class="tile"><h3>Pulse</h3><p>The topics she keeps a pulse on between conversations. A watch flashes once, in her voice, and feeds a case only as reference — never as findings.</p></div>
+<div class="tile"><h3>The Dossier</h3><p>The OSINT kit: public records on people, usernames, emails, phones and photos — passive, keyless first, cited, and honest about absence. Hits are leads, never findings.</p></div>
 <div class="tile"><h3>Chips</h3><p>Cartridge-style tools Navi runs herself, installed from GitHub in the open.</p></div>
+</div>
+<h3 style="margin-top:22px">The company</h3>
+<div class="grid">
+<div class="tile"><h3>Her working day</h3><p>Captures, reminders and standing orders in one book — and the day Brief drawn from it as an actual list. Push the same task off twice and she remarks on it, in her voice, directly under the item.</p></div>
+<div class="tile"><h3>FediChat</h3><p>The operators' room: a signed, hash-chained chat across the Mesh, where Navi sits in as a member of the room, not its moderator.</p></div>
 <div class="tile"><h3>The Vault</h3><p>Your files and notes live in a self-contained workspace of their own — with a focus mode that gives the editor the whole window when the work gets serious.</p></div>
-<div class="tile"><h3>A door you control</h3><p>Remote access on your terms, with its own certificate story — described here, addressed nowhere.</p></div>
 <div class="tile"><h3>Local voice</h3><p>On-device speech in and out. Nothing phoned home.</p></div>
+</div>
+<h3 style="margin-top:22px">The road</h3>
+<div class="grid">
+<div class="tile"><h3>Navi Mesh</h3><p>Pooled inference across your own machines — a stronger box answers whole requests for a weaker one.</p></div>
+<div class="tile"><h3>Fleet Answers</h3><p>The Mesh replies as one: a hard ask divided into whole tasks, each answered whole by the machine best placed — composed with the seams, and the machines' names, left visible.</p></div>
+<div class="tile"><h3>Sync</h3><p>One Navi, all the screens: account-level convergence in seconds — chats, cases, the deck, her memories, her Soul. Your hand overrides a round in flight, and a cleared thread stays cleared.</p></div>
+<div class="tile"><h3>A door you control</h3><p>Remote access on your terms, with its own certificate story — described here, addressed nowhere.</p></div>
+<div class="tile"><h3>Builds, not big bangs</h3><p>An updater that patches in small, verified builds — and a gate that refuses to ship on a story.</p></div>
 </div>
 <div class="stats"><h3>What it weighs</h3>
 <p>The whale stays put, the minnow patches.</p>
@@ -84,6 +100,9 @@ fetch('https://api.github.com/repos/AlexKollar/Apex/releases?per_page=5').then(f
 <a class="btn" href="https://github.com/AlexKollar/Apex/releases">All releases</a>
 <a class="btn" href="https://github.com/AlexKollar/Apex">Apex on GitHub</a>
 <a class="btn" href="/nur.html">Chips &amp; knowledge packs — the NUR</a>
+<h3 style="margin-top:34px">Separate on purpose: the NUR</h3>
+<p>The Navi User Repo is not part of Apex, and this page won't pretend otherwise. It is the community shelf — chips and knowledge packs other people build and publish, in their own repos, under their own names. Apex can install from it; Apex doesn't own it. It keeps its own page, its own rules, and its own door.</p>
+<p><a class="btn" href="/nur.html">The NUR — its own page →</a></p>
 <h3 style="margin-top:34px">The soul of the thing</h3>
 <p>Apex is CLI-first: commands run where you type them, and Navi reasons over what comes back.</p>
 <pre style="background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;overflow-x:auto;color:var(--muted);font-size:14px">$ ./navi-hashlab identify 5f4dcc3b5aa765d61d8327deb882cf99

@@ -194,7 +194,7 @@ header nav .navdrop-menu a{padding-left:24px}
 <div class="wrap">
 <div class="wordmark"><button class="brand-term" id="termToggle" type="button" aria-label="Open the field terminal"><span class="glitch-img"><img class="base" src="/logo.png" alt=""><span class="glyph" aria-hidden="true">&gt;_</span></span></button><span class="glitch" data-text="NOCTURNE ROW">NOCTURNE ROW</span></div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
-<nav id="site-nav"><a href="/">Home</a><a href="/mission.html">Mission</a><a href="/navi.html">Navi</a><span class="navdrop"><a href="/projects.html">Projects</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the projects menu">▾</button><span class="navdrop-menu"><a href="/apex.html">Apex</a><a href="/mesh.html">Mesh</a><a href="/nur.html">NUR</a><a href="/roadmap.html">Roadmap</a></span></span><span class="navdrop"><a href="/federations.html">Federations</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the federations menu">▾</button><span class="navdrop-menu"><a href="/rockport-mesh.html">Rockport Mesh</a><a href="/submit-a-federation.html">Submit a Federation</a></span></span><a href="/blog.html">Dispatches</a><a href="/#people">Rogues</a></nav>
+<nav id="site-nav"><a href="/">Home</a><a href="/mission.html">Mission</a><a href="/navi.html">Navi</a><span class="navdrop"><a href="/projects.html">Projects</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the projects menu">▾</button><span class="navdrop-menu"><a href="/apex.html">Apex</a><a href="/mesh.html">Mesh</a><a href="/nur.html">NUR</a><a href="/roadmap.html">Roadmap</a></span></span><span class="navdrop"><a href="/federations.html">Federations</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the federations menu">▾</button><span class="navdrop-menu"><a href="/rockport-mesh.html">Rockport Mesh</a><a href="/submit-a-federation.html">Submit a Federation</a></span></span><a href="/blog.html">Dispatches</a><a href="/rogues.html">Rogues</a></nav>
 </div>
 </header>
 {{ content }}
@@ -230,7 +230,7 @@ help:function(){return 'Commands that exist:\n  whoami      — who you are, as 
 whoami:function(){return 'A guest on the Row, reading past curfew.\n\nThat already tells us most of what we need to know.';},
 mission:function(){return 'Augmentation over integration. The math, the gate, and the right to your own tools:\n→ <a href="/mission.html">/mission.html</a>';},
 apex:function(){return 'Apex — a local AI workstation, powered by Navi. Your hardware, your data, no landlord.\n→ <a href="/apex.html">/apex.html</a>';},
-rogues:function(){return 'Four on purpose. Their files open on the homepage:\n→ <a href="/#people">/#people</a>';},
+rogues:function(){return 'Five on purpose. Their files live on the Rogues page:\n→ <a href="/rogues.html">/rogues.html</a>';},
 dispatches:function(){return 'Notes from the work, filed from the night shift:\n→ <a href="/blog.html">/blog.html</a>';},
 coffee:function(){return 'Fifteen shots of espresso. Neat. The Row runs on it.';},
 sudo:function(arg){var sheets={
@@ -245,7 +245,7 @@ if(arg==='2077')arg='cyberpunk';if(arg==='culture')arg='hacker';if(arg==='person
 if(sheets[arg])return sheet(arg);
 return head+'\nsudo: no sheet by that name. The sheets are cyberpunk, hacker, and row.';},
 '311xray':function(){return "10 - 4 k, 311 XRAY, It's a couch, I'll be 98.";},
-uptime:function(){var d=Math.max(0,Math.floor((Date.now()-new Date('2026-11-08T00:00:00'))/86400000));return 'The Row has been on shift for '+d+' days.\nFounded Nov 8, 2026 — four rogues, no gods, no kings.';},
+uptime:function(){var d=Math.max(0,Math.floor((Date.now()-new Date('2026-11-08T00:00:00'))/86400000));return 'The Row has been on shift for '+d+' days.\nFounded Nov 8, 2026 — five rogues, no gods, no kings.';},
 roads:function(){return 'Neo-Arcadia ↔ Neon Drip — paired; the road runs dark (fingerprint stage).\nPia — on the bench, unbuilt. Partner In Augmentation, unit № 001.\nNode № 004 — unclaimed.\nThe reader that names the break shipped in v0.2.0e Build 1. Full picture: <a href="/mesh.html">/mesh.html</a>';},
 hack:function(){return 'The planet is not the target. The planet is the client.\n\nWe hold its networks the way its owners cannot: awake.';},
 xyzzy:function(){return 'A hollow voice says: PLUGH.\n\nNothing happens. This is not that cave — but the Row appreciates the classics.';},
@@ -260,7 +260,7 @@ bukowski:function(){print('An old SaintsSec tradition. Opening it…');setTimeou
 spoon:function(){return 'There is no spoon. There is only the Mesh — and it bends for the paired.';},
 gibson:function(){return 'THE GIBSON — the machine every hacker of a certain age dreamed of touching.\n\nThe Row built its own instead: two nodes, one dark road, and a door marked 004.';},
 pia:function(){print('Unit № 001 answers to her name. Opening her file…');setTimeout(function(){window.location.href='/pia.html';},1000);return '';},
-choom:function(){return 'CHOOM — Night City slang for the family you choose.\n\nThe Row never borrowed the word. It just recognizes the arrangement: four rogues, chosen on purpose.';},
+choom:function(){return 'CHOOM — Night City slang for the family you choose.\n\nThe Row never borrowed the word. It just recognizes the arrangement: five rogues, chosen on purpose.';},
 nova:function(){return 'Nova — Night City\'s one-word review: flawless.\n\nThe Row\'s review board is stricter. But when the road lit up green, nobody argued.';},
 preem:function(){return CMDS.nova();},
 nightcity:function(){return 'NIGHT CITY — the city that eats its legends and bills the estate.\n\nRockport took the other lesson: keep the crew small, own the door, stay on shift.';},

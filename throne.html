@@ -1,0 +1,53 @@
+---
+layout: default
+title: Throne
+permalink: /throne.html
+share_image: /share-throne.png
+description: "Throne — the SOC of Apex's SIEM line, on the horizon as the line's v3. Navi's seat beside her operator: triage, response plays, standing defensive orders. Nothing on this page is shipped yet."
+---
+<main class="wrap">
+<div class="hero">
+<h1><span class="hglitch" data-text="Throne."><span id="throne-tagline" class="tagline-cursor">Throne.</span></span></h1>
+<p class="sub">The SOC — the seat where what Seraph sees gets judged, and where the line learns to defend.</p>
+  <span class="chip">Throne <b>ON THE HORIZON</b> · the SIEM line's <b>v3</b></span>
+</div>
+<section style="border-top:none;padding-top:6px">
+<div class="stats" style="margin:0">
+<h3>Status — on the horizon</h3>
+<p><b>Nothing on this page is shipped.</b> Throne is the design for the SIEM line's third build (v3): named, scoped, and argued on paper — the way everything on this Row starts. What <i>is</i> live today is the watcher it will sit beside: <a href="/seraph.html" style="color:var(--accent)">Seraph, shipped in Apex v0.6.8e</a>. Read everything below as the plan, in the future tense it deserves.</p>
+</div>
+<h3 style="margin-top:26px">Her seat</h3>
+<p>Throne is Navi's seat beside her human operator. Seraph watches and reports; Throne is the console where her detections arrive to be <b>judged</b> — triaged, answered, filed, or stood down — and where the response is decided by the partnership at that console, not by an automation working alone. The SOC consumes Seraph's detections the way a case consumes findings. Seraph watches; the Throne judges.</p>
+<h3 style="margin-top:26px">The triage queue</h3>
+<p>Every detection Seraph raises lands in one queue on the console, carrying its evidence with it. Each item waits for a judgment: acknowledge it, file it as a case, answer it with a play, or dismiss it with a reason the record keeps. Nothing ages out unjudged, and the queue's state — what is open, what is aging, what was decided and by whom — stands on the console's face. The queue is the SOC's unit of work, the way the case is the investigation's.</p>
+<h3 style="margin-top:26px">Response plays</h3>
+<p>One tap from a judged detection, executed by the bridge and <b>receipted</b> — in the tray, and in the case when one stands:</p>
+<div class="grid">
+<div class="tile"><h3>Block</h3><p>Drop the remote at the sensor's own firewall. Time-boxed by default — a block expires; nothing becomes permanent by accident.</p></div>
+<div class="tile"><h3>Sinkhole</h3><p>The domain stops resolving for the segment, at the sensor's own resolver. The call goes nowhere, and the attempt is on the record.</p></div>
+<div class="tile"><h3>Watch-and-log</h3><p>Escalate instead of acting: the subject goes under a named watch, every further touch recorded and reported.</p></div>
+</div>
+<p style="margin-top:14px">Every play is <b>reversible</b>, and its receipt says what was done, where, and when it lapses.</p>
+<h3 style="margin-top:26px">Standing defensive orders</h3>
+<p>A SOC that only answers when its operator is awake is a daytime SOC. So the operator sets policy <i>in advance</i>, in a bounded vocabulary — <b>block, sinkhole, watch, alert, file</b> — and the seat executes within it while he sleeps: <i>an auth-burst from outside → block at the edge for 24 hours, and receipt me.</i> Every execution is receipted and reversible, and the policy itself never modifies itself. This is what makes "24/7" honest on the response side too: the watching is continuous, and the responses are pre-authorized human policy, carried out by the machine — never the machine's own idea.</p>
+<h3 style="margin-top:26px">Intel-driven defense</h3>
+<p>The Wire's watchlist already matches on the sensor, locally, the list never leaving the machine. Under Throne, on a gateway-shaped sensor, a match can <i>act</i> locally under the standing orders: a watched domain sinkholes, a watched remote blocks. Outside-in intelligence, answered inside-out — with the same never-leaves-the-machine discipline the matching already keeps.</p>
+<h3 style="margin-top:26px">Response power, stated honestly</h3>
+<p>Vantage limits response exactly the way it limits sight. A sensor that is also its segment's gateway can sinkhole DNS and drop egress at its own firewall. A passive observer sensor cannot — its plays are alert, file, and instruct, and it says so. The dashboard will state its response power the same way Seraph states her gaps: on its face, before anyone relies on it.</p>
+<h3 style="margin-top:26px">The watch report</h3>
+<p>For the managed watch — the small-business shape of the line — the console produces the per-client report: detections, plays executed, inventory deltas, sensor health, for the period, segregated per client like everything else in the console. One client's evidence never surfaces in another's report. It is the artifact the watching is bought for: proof, on paper, that someone was on shift.</p>
+<h3 style="margin-top:26px">The lines that hold</h3>
+<div class="stats">
+<ul>
+<li><b>Defensive only.</b> No retaliation, no hack-back, nothing that touches anyone else's iron — in any version.</li>
+<li><b>The operator's policy, or the operator's tap.</b> Throne never originates an act on its own policy; standing orders are human decisions made in advance, and plays are human decisions made in the moment.</li>
+<li><b>Its own segment only.</b> Anything reaching beyond the operator's own segment crosses the LOWC line, in the open, like every active act in Apex.</li>
+<li><b>Receipted and reversible.</b> An act that cannot be shown and cannot be undone does not ship.</li>
+</ul>
+</div>
+<p style="margin-top:18px"><a class="btn solid" href="/seraph.html">Seraph — the watcher, shipped today</a><a class="btn" href="/siem.html">The SIEM line</a></p>
+</section>
+<script>
+(function(){var el=document.getElementById('throne-tagline');if(!el)return;var text='Throne.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+</main>

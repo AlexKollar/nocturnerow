@@ -1,0 +1,62 @@
+---
+layout: default
+title: Seraph
+permalink: /seraph.html
+share_image: /share-seraph.png
+description: "Seraph — the watcher of Apex's SIEM line, shipped in Apex v0.6.8e. Passive sight over one segment, seven detections, alerts in Navi's voice, cases born with custody of their evidence."
+---
+<main class="wrap">
+<div class="hero">
+<h1><span class="hglitch" data-text="Seraph."><span id="seraph-tagline" class="tagline-cursor">Seraph.</span></span></h1>
+<p class="sub">The watcher — Navi in her watching role, named for the seraphim: the burning, watching order. She reads the segment she sits on, names what she cannot see, and speaks every detection in her own voice.</p>
+  <span class="chip">Seraph <b>SHIPPED</b> · Apex Edge <b>v0.6.8e</b></span>
+</div>
+<section>
+<h3>A role she takes</h3>
+<p>Seraph is not a tool Navi uses. It is a role she takes — set on the Seraph page inside Apex, no config surgery, no second product. Any seat can be her <b>console</b> (the registry, the incoming pictures, the detections — the default), her <b>sensor</b> (watching its own segment, reporting home), or <b>both</b> at once. Her seat settings are the operator's: retention (30 days on-box by default), the collection cycle (300 seconds), and the sleep window the impossible-hours detection reads.</p>
+<h3 style="margin-top:26px">What she sees</h3>
+<p>Collection is <b>passive</b> — Seraph reads what the box already knows, and captures no payloads, ever:</p>
+<div class="grid">
+<div class="tile"><h3>Inventory</h3><p>The ARP table and DHCP leases — who is on the segment, by MAC, IP and lease name.</p></div>
+<div class="tile"><h3>Flows</h3><p>The connection tables — which outside addresses the segment talks to, and how often. Metadata only.</p></div>
+<div class="tile"><h3>Listeners</h3><p>The segment's open doors, read from the same tables.</p></div>
+<div class="tile"><h3>Sign-ins</h3><p>sshd lines from the auth log — successes and failures, with their sources.</p></div>
+</div>
+<p style="margin-top:14px">Every snapshot carries its <b>gaps</b>: the sources it could not read. An unreadable auth log blinds the sign-in picture, and the dashboard says so. The unit of sight is the segment — she never claims a wider view than her vantage.</p>
+<h3 style="margin-top:26px">What she detects</h3>
+<div class="grid">
+<div class="tile"><h3>Watchlist</h3><p>A flow or sign-in touches a watched term. Matching happens <b>on the sensor</b>, against the Wire's declared list merged with Seraph's own additions — the list never leaves the machine; only matches travel.</p></div>
+<div class="tile"><h3>New face</h3><p>A MAC the sensor has never inventoried appears on the segment.</p></div>
+<div class="tile"><h3>Beaconing</h3><p>A remote called on a metronome — regular intervals over a sustained span.</p></div>
+<div class="tile"><h3>Impossible hours</h3><p>A successful sign-in inside the sleep window the operator set.</p></div>
+<div class="tile"><h3>Auth burst</h3><p>A run of failed sign-ins from one source.</p></div>
+<div class="tile"><h3>Scan</h3><p>One source knocking on many of the sensor's ports at once — the pattern seen from the receiving end.</p></div>
+<div class="tile"><h3>New listener</h3><p>A known host grows a listening service that was not in its baseline.</p></div>
+</div>
+<h3 style="margin-top:26px">Alerts in her voice — and cases with custody</h3>
+<p>An open detection rides the standing alert spine — tray, phone push, and Navi's own voice in chat — aimed at the Seraph view. From the page, a detection can be <b>filed as a case</b>: the bridge computes the detection record's SHA-256 and carries it into the case's summary, so the case is born with custody of its evidence, and runs as a conversation from there. Dismissing is one tap; either act retires the alert. Open and filed detections never age out silently — only dismissed ones retire, at the seat's retention.</p>
+<h3 style="margin-top:26px">How sensors report</h3>
+<p>A sensor is registered on its console — name, address, SSH user, Mesh node id, and its vantage in words. Registration is what lets its reports in: the Mesh door authenticates the caller as a paired peer, and the registry binds that peer to the sensor's record. Unknown sensors, revoked sensors, and reports claiming a node that is not the sensor's own are <b>refused by name</b>. Revocation is a <b>tombstone</b> — the record stays, marked, and a late report is refused; a decommissioned sensor cannot quietly keep talking. When the road home is dark, a sensor <b>spools</b> its reports on disk and drains them when the Mesh returns: a sensor on a bad link loses nothing. A client sensor in a federation is a limited citizen — it reports its own network's picture to its operator and holds no borrow rights and no sight of any other network.</p>
+<h3 style="margin-top:26px">The sensor's page</h3>
+<p>Each sensor carries its whole picture — detections, inventory, listeners, top talkers, the named gaps — with an <b>SSH tab</b> beside the dashboard: your own key, your own session, opened by hand each time in the seat's shell machinery. There is no standing session, and the tab never rides the bridge's own door. The whole suite is manageable from DHD — from the phone alone. That was an acceptance criterion, and it was benched at a phone's width before it shipped.</p>
+<h3 style="margin-top:26px">Her marks</h3>
+<p>Seraph carries her own icon family, two marks split by job. The <b>working glyph</b> — two rings, a gold flame, gold wings, redrawn clean so it reads at nav size — re-skins with every theme and both of Apex's layouts. The <b>ceremonial winged eye</b> is for full-size surfaces: sensor page heroes today, the sensor edition's splash when it comes. Each tool inside the suite — Registration, Discovery, Flows, Logs, Watchlist, Detections, Dashboard, SSH — carries its own icon drawn from the same geometry.</p>
+<p><a class="btn solid" href="https://github.com/AlexKollar/Apex/releases/tag/v0.6.8e">The v0.6.8e release</a><a class="btn" href="https://github.com/AlexKollar/Apex/wiki/Seraph">Seraph in the wiki</a><a class="btn" href="/siem.html">The SIEM line</a></p>
+</section>
+<section>
+<p class="txhead">ON THE HORIZON — THE WATCHER DEEPENED (v2)</p>
+<h3>Designed, not built</h3>
+<p>Nothing in this section ships today. It is the watcher's next build, on paper:</p>
+<div class="grid">
+<div class="tile"><h3>The case loop, two-way</h3><p>From a case, attach a sensor watch — a MAC, a remote, a term — and its hits land on the case's reference shelf. From a case's registers, observables are offered as watchlist terms: Wire intel → case → sensor → case, the compounding loop.</p></div>
+<div class="tile"><h3>The asset register</h3><p>Faces get kinds (DHCP fingerprint, OUI vendor), operator-given names that stick, first-seen and last-seen — and a weekly diff of what changed on the segment. Dismiss-with-reason teaches the known-asset list, so a new face means genuinely unknown.</p></div>
+<div class="tile"><h3>Per-host baselines</h3><p>Detections measure deviation from <i>this segment's</i> learned normal — its talkers, its hours, its listeners, per host — not global thresholds alone.</p></div>
+<div class="tile"><h3>Watch the watchers</h3><p>Sensor silence past two cycles is itself a detection. A fleet view carries each sensor's last report, spool depth and gaps — a dead sensor is a loud console.</p></div>
+<div class="tile"><h3>Console push-down</h3><p>Signed config deltas over the Mesh — watchlist terms, retention, cycle — so a remote sensor is manageable from DHD without an SSH session.</p></div>
+<div class="tile"><h3>Navi in the watch</h3><p>An overnight Seraph summary folded into the day brief, conversational reads over sensor state, and every detection carrying its evidence samples one tap from the alert.</p></div>
+</div>
+</section>
+<script>
+(function(){var el=document.getElementById('seraph-tagline');if(!el)return;var text='Seraph.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+</main>

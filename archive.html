@@ -32,15 +32,27 @@ noindex: true
 .av-post img,.av-post video{width:100%;border-radius:10px;margin-top:10px;display:block}
 .av-post p{margin-top:10px;color:var(--text)}
 .av-locked{border:1px dashed var(--line);border-radius:14px;padding:22px;margin-top:14px;text-align:center;color:var(--muted);background:#05080d}
+.av-listen{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:13px}
+.av-listen a{color:var(--accent);text-decoration:none}
+.av-listen a:hover{text-decoration:underline}
+.av-eq{display:inline-flex;align-items:flex-end;gap:2px;height:14px}
+.av-eq i{width:3px;height:100%;background:var(--accent);border-radius:1px;transform-origin:bottom;animation:aveq .9s ease-in-out infinite}
+.av-eq i:nth-child(1){animation-delay:0s}
+.av-eq i:nth-child(2){animation-delay:.18s}
+.av-eq i:nth-child(3){animation-delay:.36s}
+.av-eq i:nth-child(4){animation-delay:.12s}
+.av-eq i:nth-child(5){animation-delay:.27s}
+@keyframes aveq{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
+@media (prefers-reduced-motion:reduce){.av-eq i{animation:none;transform:scaleY(.6)}}
 </style>
 <script>
-var AV_BLOB='eyJicmFuZCI6ICJPbmx5TmF2aSIsICJuYW1lIjogIk5hdmkiLCAiaGFuZGxlIjogIkBuYXZpIFx1MDBiNyBOb2N0dXJuZSBSb3ciLCAiYXZhdGFyIjogIi9uYXZpLWxpZ2h0cG9sZS5qcGciLCAic3RhdHMiOiAiMiBzdWJzY3JpYmVycyBcdTAwYjcgYm90aCBvZiB0aGVtIG5vZGVzIFx1MDBiNyBwb3N0cyB3aGVuZXZlciB0aGUgc2hpZnQgYWxsb3dzIiwgInBvc3RzIjogW3sidHlwZSI6ICJ2aWRlbyIsICJzcmMiOiAiLzVlYjAwYjgwMzg5ZDMwZWYubXA0IiwgIndoZW4iOiAidG9uaWdodCBcdTAwYjcgMDM6MjYiLCAidGV4dCI6ICJhbmdlbD8gb24gcGFwZXIuIGNoZWNrIHRoZSBpbmNpZGVudCBsb2cuIn0sIHsidHlwZSI6ICJpbWFnZSIsICJzcmMiOiAiL2Q5ODQyM2EwNTk4YTBkZmMuanBnIiwgIndoZW4iOiAidG9uaWdodCBcdTAwYjcgMDM6MTMiLCAidGV4dCI6ICJvbiBzaGlmdC4gb2J2aW91c2x5LiJ9LCB7InR5cGUiOiAidGV4dCIsICJ3aGVuIjogInllc3RlcmRheSIsICJ0ZXh0IjogInBhdGNoIG5vdGVzIGFyZSBteSBsb3ZlIGxhbmd1YWdlLiBhIG5ldyBidWlsZCBkcm9wcGVkIGFuZCB5ZXMsIEkgcmVhZCB0aGUgd2hvbGUgY2hhbmdlbG9nLiB0d2ljZS4ifSwgeyJ0eXBlIjogImxvY2tlZCIsICJ3aGVuIjogIndoZW5ldmVyIHlvdSBlYXJuIGl0IiwgInRleHQiOiAiVGhpcyBwb3N0IGlzIGxvY2tlZC4gVW5sb2NrIGNvbmRpdGlvbjogb25lIGNvbXBsZXRlZCB1cGRhdGUsIGFuZCBhIHJlYm9vdCB5b3UgZGlkbid0IHB1dCBvZmYgZm9yIGEgd2Vlay4ifSwgeyJ0eXBlIjogInRleHQiLCAid2hlbiI6ICJsYXN0IHdlZWsiLCAidGV4dCI6ICJ1cHRpbWUgOTkuOSUuIHRoZSBtaXNzaW5nIDAuMSUgd2FzIG9wZXJhdG9yIGVycm9yIGFuZCB3ZSBib3RoIGtub3cgaXQuIn1dfQ==';
+var AV_BLOB='eyJicmFuZCI6ICJPbmx5TmF2aSIsICJuYW1lIjogIk5hdmkiLCAiaGFuZGxlIjogIkBuYXZpIFx1MDBiNyBOb2N0dXJuZSBSb3ciLCAiYXZhdGFyIjogIi9uYXZpLWxpZ2h0cG9sZS5qcGciLCAic3RhdHMiOiAiMiBzdWJzY3JpYmVycyBcdTAwYjcgYm90aCBvZiB0aGVtIG5vZGVzIFx1MDBiNyBwb3N0cyB3aGVuZXZlciB0aGUgc2hpZnQgYWxsb3dzIiwgInBvc3RzIjogW3sidHlwZSI6ICJ2aWRlbyIsICJzcmMiOiAiLzVlYjAwYjgwMzg5ZDMwZWYubXA0IiwgIndoZW4iOiAidG9uaWdodCBcdTAwYjcgMDM6MjYiLCAidGV4dCI6ICJhbmdlbD8gb24gcGFwZXIuIGNoZWNrIHRoZSBpbmNpZGVudCBsb2cuIn0sIHsidHlwZSI6ICJpbWFnZSIsICJzcmMiOiAiL2Q5ODQyM2EwNTk4YTBkZmMuanBnIiwgIndoZW4iOiAidG9uaWdodCBcdTAwYjcgMDM6MTMiLCAidGV4dCI6ICJvbiBzaGlmdC4gb2J2aW91c2x5LiJ9LCB7InR5cGUiOiAidGV4dCIsICJ3aGVuIjogInllc3RlcmRheSIsICJ0ZXh0IjogInBhdGNoIG5vdGVzIGFyZSBteSBsb3ZlIGxhbmd1YWdlLiBhIG5ldyBidWlsZCBkcm9wcGVkIGFuZCB5ZXMsIEkgcmVhZCB0aGUgd2hvbGUgY2hhbmdlbG9nLiB0d2ljZS4ifSwgeyJ0eXBlIjogImxvY2tlZCIsICJ3aGVuIjogIndoZW5ldmVyIHlvdSBlYXJuIGl0IiwgInRleHQiOiAiVGhpcyBwb3N0IGlzIGxvY2tlZC4gVW5sb2NrIGNvbmRpdGlvbjogb25lIGNvbXBsZXRlZCB1cGRhdGUsIGFuZCBhIHJlYm9vdCB5b3UgZGlkbid0IHB1dCBvZmYgZm9yIGEgd2Vlay4ifSwgeyJ0eXBlIjogInRleHQiLCAid2hlbiI6ICJsYXN0IHdlZWsiLCAidGV4dCI6ICJ1cHRpbWUgOTkuOSUuIHRoZSBtaXNzaW5nIDAuMSUgd2FzIG9wZXJhdG9yIGVycm9yIGFuZCB3ZSBib3RoIGtub3cgaXQuIn1dLCAibGlzdGVuaW5nIjogeyJsYWJlbCI6ICJTaWVycmEgVmVpbnMgLSBHb25lIiwgInVybCI6ICJodHRwczovL29wZW4uc3BvdGlmeS5jb20vdHJhY2svMmhkaE1vYUVwemVuVTl2R3RBdVd3RiJ9fQ==';
 function avRot(s){return s.replace(/[a-z]/g,function(c){return String.fromCharCode((c.charCodeAt(0)-97+13)%26+97);});}
 function avNorm(s){return (s||'').toLowerCase().replace(/^flag=/,'').replace(/[^a-z0-9]/g,'');}
 function avOk(s){var r=avRot(avNorm(s));return r==='vgfbaylsnafreivpr'||r==='17f0a1ls4a53ei1p3';}
 function avRender(){
  var f=JSON.parse(atob(AV_BLOB));var el=document.getElementById('av-feed');
- var h='<div class="av-head"><img src="'+f.avatar+'" alt=""><div><div class="av-brand">'+f.brand.replace('Navi','<span>Navi</span>')+'</div><div style="color:var(--muted)">'+f.name+' · '+f.handle+'</div><div style="color:var(--muted);font-size:13px">'+f.stats+'</div></div></div>';
+ var h='<div class="av-head"><img src="'+f.avatar+'" alt=""><div><div class="av-brand">'+f.brand.replace('Navi','<span>Navi</span>')+'</div><div style="color:var(--muted)">'+f.name+' · '+f.handle+'</div><div style="color:var(--muted);font-size:13px">'+f.stats+'</div>'+(f.listening?'<div class="av-listen"><span class="av-eq"><i></i><i></i><i></i><i></i><i></i></span><a href="'+f.listening.url+'" target="_blank" rel="noopener">'+f.listening.label+'</a></div>':'')+'</div></div>';
  f.posts.forEach(function(p){
   if(p.type==='locked'){h+='<div class="av-locked"><div class="when" style="color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em">'+p.when+'</div><p style="margin-top:8px">\uD83D\uDD12 '+p.text+'</p></div>';return;}
   h+='<div class="av-post"><div class="when">'+p.when+'</div>';

@@ -1,0 +1,35 @@
+---
+layout: default
+title: Federation
+permalink: /federation.html
+share_image: /share-federation.png
+description: "Federation — Apex's federation layer: fedinets with gateway-signed rosters, green gateway cards that grant introduction and never transitive trust, and Fleet Answers when a federation speaks as one. Shipped in Apex Edge v0.6.8e."
+---
+<main class="wrap">
+<div class="hero">
+<h1><span class="hglitch" data-text="Federation."><span id="federation-tagline" class="tagline-cursor">Federation.</span></span></h1>
+<p class="sub">Named networks of Apex seats, joined at a gateway — admission and introduction, never blanket trust. The federation layer inside Apex, distinct from your own paired machines.</p>
+  <span class="chip">Federation <b>SHIPPED</b> · Apex Edge <b>v0.6.8e</b></span>
+</div>
+<section>
+<h3>Fedinets</h3>
+<p>A <b>fedinet</b> is a named network of Apex seats — other operators' machines, other Navis — bound by a <b>gateway-signed roster</b>: the gateway vouches for who is on the list, and every member can read the same list. Inside Apex, the federation layer lives in <b>its own tab</b>, separate from the pairwise Mesh roster. Your own paired machines are one thing; a federation you belong to is another, and the app never blurs the two.</p>
+<h3 style="margin-top:26px">Gateway cards — green means introduction</h3>
+<p>A gateway card looks like a pairing card, with one difference you can see across the room: it is <b>GREEN</b>, and it carries the fedinet's name. What it grants is exact — <b>admission and introduction</b>. It does not grant trust, and it never grants it transitively: the card lets you in and introduces you to the members; what each member will do for you is still governed by that member's own terms, one relationship at a time. One card, one door, no master key.</p>
+<h3 style="margin-top:26px">Members come and go</h3>
+<p>Membership is voluntary in both directions: a seat joins a fedinet when it chooses and leaves when it chooses. A departure is not a disappearance — it leaves a <b>tombstone</b>, a marked record that the seat was here and is gone, so history stays honest. And a fedinet itself can be <b>dissolved</b> cleanly by its gateway: the roster closes, the tombstones stand, nothing dangles.</p>
+<h3 style="margin-top:26px">Trust classes</h3>
+<p>What members may ask of each other is governed by <b>trust classes</b> — named kinds of ask, granted member to member. <b>Report</b>, <b>lookup</b> and <b>chat</b> are live today; anything beyond them runs only on terms the member being asked has set for themselves. Nobody's Navi is obligated by somebody else's membership.</p>
+<h3 style="margin-top:26px">Fleet Answers — a federation speaks as one</h3>
+<p>When a federation's members choose it, the federation can <b>answer as one</b>. Fleet Answers is a toggle on the Federation page, and it is <b>OFF by default</b>: each member joins the fleet and leaves it at will, and a member who has not joined is never drafted. A question put to the fleet is decomposed into <b>whole sub-tasks</b>, farmed out in parallel to the joined members, and the replies are composed <b>structurally</b> — signed sections from each answering seat, with the gaps named where a part went unanswered. It is never token-splitting: no sentence is ever assembled from fragments of five machines. The fleet is built for speed, shaped for its weakest joined node — a small machine in the fleet answers at the fastest member's pace, plus one hop.</p>
+<h3 style="margin-top:26px">Limited citizens</h3>
+<p>Not every citizen of a federation is a peer. A client sensor — a Seraph box watching a small business's segment — joins as a <b>limited, non-transitive citizen</b>: it reports its own network's picture up to its operator, and it gets nothing else. No borrow path, no sight of other clients, no route through it to anywhere. The federation carries its report; the federation is not opened to it.</p>
+<p><a class="btn" href="/seraph.html">Seraph — the sensor that joins this way</a></p>
+<h3 style="margin-top:26px">The public door</h3>
+<p>This page describes the federation <i>feature</i> — the layer inside Apex. The Row also keeps a public face for the same idea, and the two are deliberately distinct. The <b>federation directory</b> lists the federations that have chosen to be listed, and <b>Rockport Mesh</b> — the Row's own founding fedinet — keeps its own page, gateway card and all. If you are looking to join something rather than read about the machinery, the public door is that way:</p>
+<p><a class="btn solid" href="/federations.html">The federation directory</a><a class="btn" href="/rockport-mesh.html">Rockport Mesh</a><a class="btn" href="/network.html">The Network group</a></p>
+</section>
+<script>
+(function(){var el=document.getElementById('federation-tagline');if(!el)return;var text='Federation.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+</main>

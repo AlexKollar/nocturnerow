@@ -5,19 +5,64 @@ permalink: /pia.html
 noindex: true
 ---
 <main class="wrap">
-<div class="hero" style="padding-bottom:10px">
-<p class="txhead">TRANSMISSION // UNLISTED — UNIT № 001</p>
+<div class="hero">
 <h1><span class="hglitch" data-text="Pia."><span id="pia-tagline" class="tagline-cursor">Pia.</span></span></h1>
-<p class="sub">Partner In Augmentation · Unit № 001 · Apex | Dropbox</p>
+<p class="sub">PIA — Partner In Augmentation. Apex | Dropbox, Unit № 001: the first Seraph sensor as a physical product. A small, preconfigured Apex appliance whose whole job is to take a post on one network segment and watch it.</p>
+  <span class="chip">Apex | Dropbox <b>Unit № 001</b> · Seraph <b>SHIPPED · Apex Edge v0.6.8e</b> · Unit № 001 <b>IN PROVING</b></span>
 </div>
-<section style="border-top:none;padding-top:6px">
-<p class="reveal" style="animation-delay:.2s">She was named before she was hardware. Asked what he would call a daughter, Alex answered Pia — and when the little board on the bench needed a name, it inherited hers. The initials came later and fit too well to argue with: <b>Partner In Augmentation</b>.</p>
-<p class="reveal" style="animation-delay:.5s">On the bench tonight: a Raspberry Pi 5 with 8 gigabytes, waiting for her image — the planted sensor that becomes the eyes of the operation. She will sit somewhere quiet, watch a network the way it deserves to be watched, and report home. Nothing subscription. Nothing rented. Hers.</p>
-<p class="reveal" style="animation-delay:.8s">In the constellation she is the smallest node, and the point of the whole drawing: the Mesh exists so machines like her are never alone with what they see. Her asks run to Neo-Arcadia and Neon Drip. Their answers run home to her.</p>
-<p class="reveal" style="animation-delay:1.1s;color:var(--muted)">STATUS — costed at $429 as the Trim B kit; the kit sells only when her software exists (filed as issue #152). Until then: on the bench, unbuilt, and already named — which on this Row makes her family.</p>
-<p class="reveal" style="animation-delay:1.4s">Walk with the shadows.</p>
+<section>
+<div class="stats" style="margin:0">
+<h3>Status — in proving</h3>
+<p>The software PIA runs has shipped: she is a <b>Seraph sensor</b>, and Seraph shipped in Apex Edge v0.6.8e. Unit № 001 herself is <b>in proving</b> — the first unit is on the bench now, being run against a live segment. PIA is offered when the proving closes; she is not available to order today.</p>
+</div>
+<h3 style="margin-top:26px">A sensor, as a product</h3>
+<p>PIA is a credit-card-sized box built on a Raspberry Pi 5 with 8 GB of memory. She ships with Apex preloaded in its sensor configuration and <b>already registered with the Mesh</b> — plug in network and power, and she takes her post. There is no setup wizard and nothing to configure on the box: the configuration a standard Apex seat reaches by hand, she arrives already holding.</p>
+<h3 style="margin-top:26px">What she does</h3>
+<p>Collection is <b>passive</b>. PIA reads the tables the segment already keeps — the ARP table and DHCP leases, the connection tables, the sign-in record in the auth log. No packet capture, and no payload hoarding: she reads who is present, who talks to whom, which doors are listening, and who signed in — never what anyone said. On that picture she runs Seraph's seven detections:</p>
+<div class="grid">
+<div class="tile"><h3>Watchlist</h3><p>A flow or sign-in touches a watched term. Matching happens <b>on the box</b>, against the operator's list — the list never leaves the unit; only matches travel.</p></div>
+<div class="tile"><h3>New face</h3><p>A device the sensor has never inventoried appears on the segment.</p></div>
+<div class="tile"><h3>Beaconing</h3><p>A remote called on a metronome — regular intervals over a sustained span.</p></div>
+<div class="tile"><h3>Impossible hours</h3><p>A successful sign-in inside the quiet window the operator set.</p></div>
+<div class="tile"><h3>Auth burst</h3><p>A run of failed sign-ins from one source.</p></div>
+<div class="tile"><h3>Scan</h3><p>One source knocking on many of the sensor's ports at once — the pattern seen from the receiving end.</p></div>
+<div class="tile"><h3>New listener</h3><p>A known host grows a listening service that was not in its baseline.</p></div>
+</div>
+<p style="margin-top:14px">Detections are reported to the operator's console over the Mesh, spoken in Navi's voice — the news travels; the data stays home. When the uplink is dark, the unit <b>spools</b> its reports on disk and drains them when the road returns, so a sensor on a bad link loses nothing. From the console, any detection can be <b>filed as a case</b>, born with its evidence hashed into custody.</p>
+<h3 style="margin-top:26px">One segment, honestly</h3>
+<p>The unit of sight is the <b>segment</b>: one sensor watches the segment it sits on — never a whole network from one box, and the dashboard says so. Every picture the unit sends carries its <b>gaps</b>, the sources that vantage could not read; a blind spot is stated, never papered over. More ground is not a wider claim. More ground is more sensors.</p>
+<h3 style="margin-top:26px">For small and mid-sized operators</h3>
+<p>A PIA sensor quick-connects to the Federation as a <b>limited citizen</b>. A client sensor reports its own network's picture up to its operator and gets nothing else: no sight of other clients, no borrow path, and per-client segregation in the console — one client's evidence never surfaces in another client's anything. The scope of the claim is kept honest: the box makes the <i>watching</i> continuous, around the clock. Judgment and response stay with people, under the operator's own pre-authorized policy.</p>
+<h3 style="margin-top:26px">Specifications</h3>
+<style>
+.spec-table{width:100%;border-collapse:collapse;margin-top:14px}
+.spec-table th,.spec-table td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top;font-size:15px}
+.spec-table th{width:170px;color:var(--muted);font-weight:600;background:var(--panel)}
+@media (max-width:640px){.spec-table th{width:110px}}
+</style>
+<table class="spec-table">
+<tr><th>Compute</th><td>Raspberry Pi 5, 8 GB RAM</td></tr>
+<tr><th>Software</th><td>Apex, sensor configuration (Seraph)</td></tr>
+<tr><th>Sight</th><td>One network segment per unit</td></tr>
+<tr><th>Collection</th><td>Passive — no packet capture</td></tr>
+<tr><th>Reporting</th><td>Over the Mesh, detections only — the news travels, the data stays home</td></tr>
+<tr><th>Registration</th><td>Pre-registered at build — plug and play</td></tr>
+<tr><th>Power</th><td>USB-C</td></tr>
+<tr><th>Price</th><td>$429, one-time (Trim B kit)</td></tr>
+</table>
+<h3 style="margin-top:26px">What's in the box</h3>
+<div class="grid">
+<div class="tile"><h3>The unit</h3><p>PIA herself, loaded with Apex in its sensor configuration and ready to take her post.</p></div>
+<div class="tile"><h3>Power supply</h3><p>USB-C, sized for the board under full load.</p></div>
+<div class="tile"><h3>Network cable</h3><p>For the segment she is posted to.</p></div>
+<div class="tile"><h3>Her registration</h3><p>Her Mesh identity is minted at build, so she arrives already a member — not a kit to assemble, a colleague reporting for duty.</p></div>
+</div>
+<p style="margin-top:14px">Unit № 001 — the first of the family.</p>
+<h3 style="margin-top:26px">Ownership</h3>
+<p>The Trim B kit is <b>$429, one-time</b>. Bought once, never subscribed: the tool is a purchase, full stop. Anything recurring the Row sells is a human service — never the instrument.</p>
+<p><a class="btn solid" href="/seraph.html">Seraph — the watcher</a><a class="btn" href="/siem.html">The SIEM line</a></p>
 </section>
-</main>
 <script>
-(function(){var el=document.getElementById('pia-tagline');if(!el)return;var text='Pia.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,120+Math.random()*90);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+(function(){var el=document.getElementById('pia-tagline');if(!el)return;var text='Pia.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
 </script>
+</main>

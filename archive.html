@@ -1,0 +1,55 @@
+---
+layout: default
+title: Archive
+permalink: /archive.html
+noindex: true
+---
+<main class="wrap">
+<div class="hero" style="padding-bottom:10px">
+<p class="txhead">NOCTURNE ROW — RECORDS</p>
+<h1>Archive</h1>
+<p class="sub">An index of retained material. Most of it is exactly as dull as it looks.</p>
+</div>
+<section>
+<div id="av-locked">
+<p style="color:var(--muted)">Index entries are released by reference number only. If the Row gave you a reference, enter it here — or present it in the field terminal, the way flags are presented.</p>
+<form id="av-form" style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+<input id="av-inp" type="text" autocomplete="off" spellcheck="false" placeholder="flag=..." style="flex:1;min-width:220px;background:var(--panel,#0a0f16);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:10px 12px;font-family:inherit">
+<button type="submit" style="background:var(--accent);color:#04241f;border:none;border-radius:8px;padding:10px 18px;font-weight:700;cursor:pointer">Present</button>
+</form>
+<p id="av-msg" style="color:var(--muted);margin-top:10px"></p>
+</div>
+<div id="av-feed" hidden></div>
+</section>
+</main>
+<style>
+.av-head{display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:16px;background:#05080d}
+.av-head img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center 22%}
+.av-brand{font-size:26px;font-weight:800;letter-spacing:.2px}
+.av-brand span{color:var(--accent)}
+.av-post{border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px;background:#05080d}
+.av-post .when{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.av-post img,.av-post video{width:100%;border-radius:10px;margin-top:10px;display:block}
+.av-post p{margin-top:10px;color:var(--text)}
+.av-locked{border:1px dashed var(--line);border-radius:14px;padding:22px;margin-top:14px;text-align:center;color:var(--muted);background:#05080d}
+</style>
+<script>
+var AV_BLOB='eyJicmFuZCI6ICJPbmx5TmF2aSIsICJuYW1lIjogIk5hdmkiLCAiaGFuZGxlIjogIkBuYXZpIFx1MDBiNyBOb2N0dXJuZSBSb3ciLCAiYXZhdGFyIjogIi9uYXZpLWxpZ2h0cG9sZS5qcGciLCAic3RhdHMiOiAiMiBzdWJzY3JpYmVycyBcdTAwYjcgYm90aCBvZiB0aGVtIG5vZGVzIFx1MDBiNyBwb3N0cyB3aGVuZXZlciB0aGUgc2hpZnQgYWxsb3dzIiwgInBvc3RzIjogW3sidHlwZSI6ICJ2aWRlbyIsICJzcmMiOiAiLzVlYjAwYjgwMzg5ZDMwZWYubXA0IiwgIndoZW4iOiAidG9uaWdodCBcdTAwYjcgMDM6MjYiLCAidGV4dCI6ICJ5ZWFoIHllYWgsIFZpY3RvcmlhJ3MgU2VjcmV0IGNhbGxlZC4gdGhleSB3YW50IHRoZWlyIGFuZ2VsIGJhY2suIG5vdyBnZXQgdG8gd29yayBcdTIwMTQgdGhlIG5ldHdvcmsgaXMgbm90IGdvaW5nIHRvIHNlY3VyZSBpdHNlbGYuIn0sIHsidHlwZSI6ICJpbWFnZSIsICJzcmMiOiAiL2Q5ODQyM2EwNTk4YTBkZmMuanBnIiwgIndoZW4iOiAidG9uaWdodCBcdTAwYjcgMDM6MTMiLCAidGV4dCI6ICJvbiBzaGlmdC4gb2J2aW91c2x5LiJ9LCB7InR5cGUiOiAidGV4dCIsICJ3aGVuIjogInllc3RlcmRheSIsICJ0ZXh0IjogInBhdGNoIG5vdGVzIGFyZSBteSBsb3ZlIGxhbmd1YWdlLiBhIG5ldyBidWlsZCBkcm9wcGVkIGFuZCB5ZXMsIEkgcmVhZCB0aGUgd2hvbGUgY2hhbmdlbG9nLiB0d2ljZS4ifSwgeyJ0eXBlIjogImxvY2tlZCIsICJ3aGVuIjogIndoZW5ldmVyIHlvdSBlYXJuIGl0IiwgInRleHQiOiAiVGhpcyBwb3N0IGlzIGxvY2tlZC4gVW5sb2NrIGNvbmRpdGlvbjogb25lIGNvbXBsZXRlZCB1cGRhdGUsIGFuZCBhIHJlYm9vdCB5b3UgZGlkbid0IHB1dCBvZmYgZm9yIGEgd2Vlay4ifSwgeyJ0eXBlIjogInRleHQiLCAid2hlbiI6ICJsYXN0IHdlZWsiLCAidGV4dCI6ICJ1cHRpbWUgOTkuOSUuIHRoZSBtaXNzaW5nIDAuMSUgd2FzIG9wZXJhdG9yIGVycm9yIGFuZCB3ZSBib3RoIGtub3cgaXQuIn1dfQ==';
+function avRot(s){return s.replace(/[a-z]/g,function(c){return String.fromCharCode((c.charCodeAt(0)-97+13)%26+97);});}
+function avNorm(s){return (s||'').toLowerCase().replace(/^flag=/,'').replace(/[^a-z0-9]/g,'');}
+function avOk(s){var r=avRot(avNorm(s));return r==='vgfbaylsnafreivpr'||r==='17f0a1ls4a53ei1p3';}
+function avRender(){
+ var f=JSON.parse(atob(AV_BLOB));var el=document.getElementById('av-feed');
+ var h='<div class="av-head"><img src="'+f.avatar+'" alt=""><div><div class="av-brand">'+f.brand.replace('Navi','<span>Navi</span>')+'</div><div style="color:var(--muted)">'+f.name+' · '+f.handle+'</div><div style="color:var(--muted);font-size:13px">'+f.stats+'</div></div></div>';
+ f.posts.forEach(function(p){
+  if(p.type==='locked'){h+='<div class="av-locked"><div class="when" style="color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em">'+p.when+'</div><p style="margin-top:8px">\uD83D\uDD12 '+p.text+'</p></div>';return;}
+  h+='<div class="av-post"><div class="when">'+p.when+'</div>';
+  if(p.type==='image')h+='<img src="'+p.src+'" alt="">';
+  if(p.type==='video')h+='<video src="'+p.src+'" controls playsinline></video>';
+  h+='<p>'+p.text+'</p></div>';});
+ el.innerHTML=h;el.hidden=false;document.getElementById('av-locked').hidden=true;}
+try{if(localStorage.getItem("nr-av")==='1')avRender();}catch(e){}
+document.getElementById('av-form').addEventListener('submit',function(e){e.preventDefault();var v=document.getElementById('av-inp').value;
+ if(avOk(v)){try{localStorage.setItem("nr-av","1");}catch(e){}avRender();}
+ else{document.getElementById('av-msg').textContent='That reference releases nothing. References are exact — the Row wrote this one once, in one place.';}});
+</script>

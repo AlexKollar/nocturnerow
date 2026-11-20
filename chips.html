@@ -1,0 +1,42 @@
+---
+layout: default
+title: Chips
+permalink: /chips.html
+share_image: /share-chips.png
+description: "Chips — the tools Navi runs herself, packaged as .png cartridges. Found through the in-app NUR, made in Chip Studio, released on GitHub, installed and updated without ever leaving Apex."
+---
+<main class="wrap">
+<div class="hero">
+<p class="txhead">NAVI'S TOOLS — CHIPS</p>
+<h1><span class="hglitch" data-text="Chips."><span id="chips-tagline" class="tagline-cursor">Chips.</span></span></h1>
+<p class="sub">Her hands, in cartridge form. A chip is a tool Navi runs herself — packaged as a .png cartridge that carries its code and its metadata in the cartridge itself, the way a PICO-8 cart carries a game, with Battle Network in its blood.</p>
+  <span class="chip">Navi's Tools <b>SHIPPED</b> · Apex Edge <b>v0.6.8e</b></span>
+</div>
+<section>
+<h3>What a chip is</h3>
+<p>Chips are distinct, in-house tools — not plugins bolted onto a chat window, but instruments she picks up and runs. She reaches for them from <b>chat</b>, in the flow of the work: a scan mid-case, a crypto job mid-conversation, answered with the tool's real output in the thread. They are also runnable from the <b>bottom pill row</b>, by hand, when the operator wants the tool without the conversation. Either way, the chip that runs is the same cartridge.</p>
+<p>None come pre-installed, deliberately. A fresh Apex carries no cartridges at all — her hands grow by her operator's choices, one install at a time, and the shelf she grows from is public.</p>
+<h3 style="margin-top:26px">The in-app NUR — finding and installing</h3>
+<p>Inside Apex, the <b>Navi User Repo</b> is where chips are browsed and installed. Chip Management searches GitHub by the <b><i>navi-chips</i></b> topic, so the shelf is every published cartridge — no app store, no gatekeeper, no separate errand. Installing one is an <b>operator act</b>: Navi can find, describe, and recommend, but the cartridge lands in her deck because her operator put it there.</p>
+<p><a class="btn" href="/nur.html">The NUR — the shelf's public face</a> <a class="btn" href="https://github.com/topics/navi-chips">The chip shelf on GitHub</a></p>
+<h3 style="margin-top:26px">Chip Studio — making them</h3>
+<p>Chips are not only found; they are made. <b>Chip Studio</b> is the creation and editor surface inside Apex: author a chip, shape what it does, and package it as a cartridge — without leaving the app, without a separate toolchain, without handing the work to some other program and hoping it comes back in the right shape. The Studio is where a tool she needed once becomes a tool she keeps.</p>
+<h3 style="margin-top:26px">The release cycle, built right in</h3>
+<p>A chip lives as a <b>GitHub repository</b> under the <i>navi-chips</i> topic, and the whole of its life runs through Apex's own machinery. Chip Studio <b>publishes and releases</b> the cartridge; every other seat discovers it through the same topic search the NUR already runs; an <b>update</b> is simply a new release of the cartridge, found the same way the original was. Author → release → discover → install → update — the full cycle happens inside the app, with GitHub as the shelf it all stands on. Nobody emails anybody a zip file.</p>
+<p><a class="btn solid" href="/navi.html">Back to her place — Navi</a> <a class="btn" href="/chipdeck.html">The ChipDeck — where they live</a></p>
+</section>
+<section>
+<p class="txhead">ON THE HORIZON — CHIPS EXPANDED</p>
+<h3>Designed, not built</h3>
+<p>Nothing in this section ships today. It is the chips layer's next era, on paper:</p>
+<div class="grid">
+<div class="tile"><h3>The trust wall</h3><p>Provenance and digest on the cartridge itself; install and update become trust events, named as such — a cartridge is believed because its papers check out, not because it was easy to fetch.</p></div>
+<div class="tile"><h3>Declared capabilities</h3><p>A chip declares what it needs, and the system grants exactly that: chips gain nav rail items and UI elements of their own, register their own surfaces, and modify the system as a whole — under the grant, never around it.</p></div>
+<div class="tile"><h3>A designer in the Studio</h3><p>Chip Studio gains a drag-and-drop UI designer that rigs the code up as the surface is drawn — the editor growing from code-first to shape-first.</p></div>
+<div class="tile"><h3>Case-born chips</h3><p>A case runs as two detectives telling the story of the evidence, and tools get hacked together mid-case as it demands. Those tools graduate: the case file is the chip's birth certificate, and the cartridge joins the shelf. <a href="/case-files.html">Case Files</a> is where they are born.</p></div>
+</div>
+</section>
+<script>
+(function(){var el=document.getElementById('chips-tagline');if(!el)return;var text='Chips.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+</main>

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Case Files
+permalink: /case-files.html
+share_image: /share-case-files.png
+description: "Case Files — Apex's case system, shipped in Apex Edge v0.6.8e. A case is a conversation plus a file: registers for leads, findings, entities, observables, tasks and evidence, and the formed document that tells the story."
+---
+<main class="wrap">
+<div class="hero">
+<h1><span class="hglitch" data-text="Case Files."><span id="case-files-tagline" class="tagline-cursor">Case Files.</span></span></h1>
+<p class="sub">The case system. A case is a conversation plus a file — two detectives telling the story of the evidence, and a record that keeps every step of it.</p>
+  <span class="chip">Case Files <b>SHIPPED</b> · Apex Edge <b>v0.6.8e</b></span>
+</div>
+<section>
+<h3>A conversation plus a file</h3>
+<p>Open a case and you open a chat with Navi that <i>is</i> the investigation — she answers first, in full, and offers to file what matters. Under the conversation stands the file: a set of registers that hold the case's substance, and the formed document that renders them as one readable story. The chat is where the thinking happens; the file is what the thinking leaves behind.</p>
+<h3 style="margin-top:26px">The registers</h3>
+<div class="grid">
+<div class="tile"><h3>Leads</h3><p>What might matter, not yet weighed. Everything enters here first — including every entry Navi logs, which lands as a lead until the operator promotes it.</p></div>
+<div class="tile"><h3>Findings</h3><p>What the evidence supports, stated as findings — the case's conclusions, earned and inspectable.</p></div>
+<div class="tile"><h3>Entities</h3><p>The people, organizations and machines the case touches — the cast, kept straight.</p></div>
+<div class="tile"><h3>Observables</h3><p>The concrete things seen: addresses, hashes, domains, names — the facts a watch or a search can match against.</p></div>
+<div class="tile"><h3>Tasks</h3><p>The work queue of the case — what Navi proposes, what the operator sets, what stands done.</p></div>
+<div class="tile"><h3>Evidence</h3><p>Exhibits with <b>custody</b>: what it is, where it came from, its hash — the chain kept on the face of the record.</p></div>
+<div class="tile"><h3>Timeline</h3><p>The story in order — events as the case establishes them, so the narrative never has to be reconstructed from memory.</p></div>
+</div>
+<h3 style="margin-top:26px">Filing that knows its destination</h3>
+<p>Filing is <b>destination-aware</b>. When Navi offers to file a reply, she names the part of the case the content belongs to — this is a lead, that is an observable — and files it there when the operator says the word; the receipt names where it landed, and names anything that was left out. Her own logged entries ride in as <b>leads</b> and stay leads until the operator promotes them: the machine proposes, the detective disposes.</p>
+<h3 style="margin-top:26px">The formed document</h3>
+<p>The registers form one document — <b>Cases/&lt;Type&gt;/&lt;Name&gt;.md</b> — kept in the Vault and rendered <b>reading-first</b>: the case as a written file, leads to timeline, readable end to end. The <b>case brief</b> draws on it: ask for the brief and Navi lays out where the case stands — what is known, what is only led, what is still open — from the record, not from vibes.</p>
+<h3 style="margin-top:26px">Born briefed, shelf attached</h3>
+<p>A case born from a Wire story arrives with its first lead cited and a brief already written. Navi stages the follow-up work as proposed tasks — <b>Approve or Dismiss</b>, the operator's call on each. And every case carries a <b>reference shelf</b>, collapsible so it never crowds the work: the place Wire stories and Pulse hits collect, cited and attached, feeding the registers as the case grows.</p>
+<h3 style="margin-top:26px">Gone means gone</h3>
+<p>Delete a case and its formed document in the Vault is removed with it — <b>gone means gone</b>. What the case keeps is a single <b>custody line</b>: the record that the case existed and was closed out, and nothing of its substance. Deletion in Apex is an act with a meaning, not a rug things get swept under.</p>
+<p><a class="btn solid" href="/casework.html">The Casework group</a><a class="btn" href="/vault.html">Vault — where the documents live</a></p>
+</section>
+<section>
+<p class="txhead">ON THE HORIZON — CASE-BORN CHIPS</p>
+<h3>Tools that graduate</h3>
+<p>Nothing in this section ships today. Investigations are proving grounds: a tool hacked together mid-case — a one-off script that cracked the evidence open — is a chip waiting to be born. The pipeline on paper: the case file is the chip's birth certificate, the tool is hardened into a cartridge, and it ships under the trust wall every chip ships under — provenance on the cartridge, install an operator act. The first named example is a cryptocurrency investigation suite. The cases are real today; their graduates are coming.</p>
+</section>
+<script>
+(function(){var el=document.getElementById('case-files-tagline');if(!el)return;var text='Case Files.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+</main>

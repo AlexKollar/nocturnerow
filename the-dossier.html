@@ -1,0 +1,34 @@
+---
+layout: default
+title: The Dossier
+permalink: /the-dossier.html
+share_image: /share-the-dossier.png
+description: "The Dossier — Apex's OSINT toolkit, shipped in Apex Edge v0.6.8e. People-finding under strict doctrine: public sources, passive first, every result cited, results are leads — never findings."
+---
+<main class="wrap">
+<div class="hero">
+<h1><span class="hglitch" data-text="The Dossier."><span id="the-dossier-tagline" class="tagline-cursor">The Dossier.</span></span></h1>
+<p class="sub">The people-finding kit — the OSINT workbench inside Casework, dedicated to finding people in the public record and honest about everything it cannot do.</p>
+  <span class="chip">The Dossier <b>SHIPPED</b> · Apex Edge <b>v0.6.8e</b></span>
+</div>
+<section>
+<h3>Doctrine first</h3>
+<p>The kit works under rules that stand on its face. <b>Public sources, passive first, keyless first</b> — it is useful with no API keys and no accounts. <b>Every result is cited</b> to the source it came from. <b>Absence is named honestly</b>: "no public record found" is a result; "does not exist" is a claim the kit never makes. Results are <b>leads, not findings</b> — a name match is an unverified lead to disambiguate, never a conclusion about a person. <b>No credential material, ever</b> — breach <i>presence</i> only, never the contents. <b>No face recognition, ever. No plate or DMV lookups.</b> And anything active — probing, scanning, leaning on a target — crosses the <b>LOWC line</b>: lab ranges are free, external targets need the operator's spoken affirmation first, and every run is logged.</p>
+<h3 style="margin-top:26px">The kit — five tabs</h3>
+<div class="grid">
+<div class="tile"><h3>Person</h3><p>The centerpiece. The anchor is the <b>offender-registry check</b> — the public registries searched and linked per hit. On a hit, the registry record becomes the dossier's spine and enrichment fans out from the record's own identity anchors: aliases, locality, public records — with the disambiguation kept on the face of the result, because name collisions are common and a stranger never silently inherits a dossier. Domain and IP facts fold in here as enrichment: a domain the person holds brings its registration facts along.</p></div>
+<div class="tile"><h3>Username</h3><p>The handle sweep: one name across the public platforms, hits cited per platform, misses listed as checked-clean — so a negative is a record, not a shrug.</p></div>
+<div class="tile"><h3>Email</h3><p>An address worked as a person-key: footprint, sending posture, and breach <i>presence</i> — the fact that an address appears, never what was in the breach.</p></div>
+<div class="tile"><h3>Phone</h3><p>Structure facts the number itself states — country, region, line type where a public source says so — plus cited pointers in the number's common formats. The kit cites sources; it does not launder aggregator claims.</p></div>
+<div class="tile"><h3>Photo</h3><p><b>Metadata only.</b> An operator-supplied image gives up its EXIF — where, when, what device — read locally, nothing uploaded. The kit reads a photograph's papers; it never reads a face.</p></div>
+</div>
+<h3 style="margin-top:26px">The plan before the pull</h3>
+<p>The kit's <b>query builder shows its plan before it fires</b> — the keys it will try, the sources it will ask, in the open — and the operator presses go. No silent fan-out, no surprise queries in someone's name. What ran is what the log says ran.</p>
+<h3 style="margin-top:26px">Pivots into cases</h3>
+<p>Every result can <b>pivot into a case</b> — filed as entities and observables, unverified leads with their provenance on the face of the element, under the same custody rules as everything else in Casework. And the page is only one door: <b>Navi runs the same machinery conversationally</b>, holding the dossier as her context — the keys tried, what has landed, what is still open — with the same citations and the same honesty about absence. The page is the deterministic surface; she is the other way in.</p>
+<p><a class="btn solid" href="/casework.html">The Casework group</a><a class="btn" href="/case-files.html">Case Files — where dossiers land</a></p>
+</section>
+<script>
+(function(){var el=document.getElementById('the-dossier-tagline');if(!el)return;var text='The Dossier.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+</main>

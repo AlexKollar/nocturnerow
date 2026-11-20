@@ -1,0 +1,33 @@
+---
+layout: default
+title: The Wire
+permalink: /the-wire.html
+share_image: /share-the-wire.png
+description: "The Wire — Apex's outside-in cyber intelligence, shipped in Apex Edge v0.6.8e. Curated feeds, deep search through named doors, Pulse watches, and a watchlist that never leaves the operator's seat."
+---
+<main class="wrap">
+<div class="hero">
+<h1><span class="hglitch" data-text="The Wire."><span id="the-wire-tagline" class="tagline-cursor">The Wire.</span></span></h1>
+<p class="sub">Outside-in cyber intelligence — what the world is shouting about, worked as a surface instead of scrolled as a feed. The Wire is one half of the Row's intelligence; Seraph, watching your own segment from inside, is the other.</p>
+  <span class="chip">The Wire <b>SHIPPED</b> · Apex Edge <b>v0.6.8e</b></span>
+</div>
+<section>
+<h3>A working surface, not a headline wall</h3>
+<p>The Wire gathers curated threat-intelligence feeds into one surface inside Apex, arranged to be <i>worked</i> — searched, watched, filed from — rather than doomscrolled. A story on the Wire is raw material: it can be read, chased through the deep search, put under a watch, or born as a case. What it never is is decoration.</p>
+<h3 style="margin-top:26px">Deep search, through named doors</h3>
+<p>Beyond the feeds, the Wire searches a <b>registry of doors</b> — named, public sources with known shapes: <b>NVD</b> for the vulnerability record, <b>KEV</b> for what is known to be exploited, <b>EPSS</b> for the odds a flaw gets used. Every answer arrives cited to the door it came through. And a source with no door is <b>refused by name</b> — never scraped around, never laundered through a mirror. The refusal is on the record like everything else.</p>
+<h3 style="margin-top:26px">Search that forgives</h3>
+<p>Each Wire tab carries its own <b>fuzzy search</b> — close spellings, partial names, the half-remembered CVE from a headline at 3 a.m. The surface meets the operator's memory where it is, instead of demanding the exact string or returning silence.</p>
+<h3 style="margin-top:26px">The watchlist stays home</h3>
+<p>The operator keeps a <b>watchlist</b> — terms, names, infrastructure — and the Wire matches it against what flows past. The matching happens <b>locally, on the operator's own seat</b>: the list itself never leaves the machine. Only matches travel, and a match is a lead with its source attached, not a verdict.</p>
+<h3 style="margin-top:26px">Pulse — watches that report to cases</h3>
+<p>A <b>Pulse</b> watch keeps a topic under observation on a three-hour cadence, with a check at the greeting besides. Its hits do not pile up in a notification tray: they land on the <b>reference shelf</b> of the case the watch is attached to, cited and waiting, where the detectives working that case will find them in context.</p>
+<h3 style="margin-top:26px">A story can become a case</h3>
+<p>When a Wire story earns it, it gives <b>birth to a case</b> — opened with its first lead already cited to the story that raised it, a brief written, and the follow-up tasks staged for the operator's word. The outside world's noise becomes the case system's evidence, with the chain intact from the first step.</p>
+<p>The Wire is the <b>outside-in</b> half of the Row's intelligence — the world's signal, gathered. <a href="/seraph.html" style="color:var(--accent)">Seraph</a> is the <b>inside-out</b> half: your own segment, watched from within. Together, Navi stops guessing — she can tie what the world is shouting about to what is actually exposed, listening, or beaconing on your wire.</p>
+<p><a class="btn solid" href="/casework.html">The Casework group</a><a class="btn" href="/case-files.html">Case Files — where Wire stories land</a></p>
+</section>
+<script>
+(function(){var el=document.getElementById('the-wire-tagline');if(!el)return;var text='The Wire.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+</script>
+</main>

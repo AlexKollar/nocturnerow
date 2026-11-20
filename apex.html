@@ -53,41 +53,27 @@ function quiet(){box.innerHTML='';var a=el('article','post');var p=el('p','excer
 fetch('https://api.github.com/repos/AlexKollar/Apex/releases?per_page=5').then(function(r){if(!r.ok)throw 0;return r.json();}).then(render).catch(quiet);
 })();
 </script>
-<h3 style="margin-top:26px">The product line</h3>
+<h3 style="margin-top:26px">The shape of Apex</h3>
+<p>Apex is the house Navi lives in — a professional-grade, local-first security partner, and one install on your own hardware. Inside, it is organised the way the app itself is organised: named groups, each holding its own instruments, each keeping its own door. This page is the overview; the groups below are the shape.</p>
 <div class="grid">
-<div class="tile"><h3>Apex | Node</h3><p>The install itself — the dashboard, the chat, the chips, the whole mission control, running on the machine in front of you.</p></div>
-<div class="tile"><h3>Apex | DHD</h3><p>The door home. Open it, and your Navi answers from your phone, your work box, anywhere — your Navi, on the go, even when the rig in front of you couldn't run her alone.</p></div>
-<div class="tile"><h3>Apex | Mesh</h3><p>Your machines, pooled. A stronger box answers whole requests for a weaker one, so the fleet thinks at the speed of its best hardware.</p></div>
+<div class="tile" style="border-top:3px solid #b48ead"><h3>Casework</h3><p>The investigation group. Intelligence comes in through the Wire, the work happens in Case Files — a conversation with a file underneath — the Dossier finds the people in the public record, and the Vault keeps every formed document as one file the operator owns.</p>
+<p style="color:var(--muted)">STATUS — SHIPPED · Apex Edge v0.6.8e</p>
+<p><a class="btn solid" href="/casework.html">Enter Casework</a></p>
+<p><a class="btn sm" href="/the-wire.html">The Wire</a><a class="btn sm" href="/case-files.html">Case Files</a><a class="btn sm" href="/the-dossier.html">The Dossier</a><a class="btn sm" href="/vault.html">Vault</a></p></div>
+<div class="tile" style="border-top:3px solid #38bdf8"><h3>Network</h3><p>The reach group. The Mesh pairs her operator's own machines; Federation joins other networks under their own terms — admission, never transitive trust; FediChat carries the conversation across the road; and DHD is the pocket door back into all of it.</p>
+<p style="color:var(--muted)">STATUS — SHIPPED · Apex Edge v0.6.8e</p>
+<p><a class="btn solid" href="/network.html">Enter the Network group</a></p>
+<p><a class="btn sm" href="/federation.html">Federation</a><a class="btn sm" href="/fedichat.html">FediChat</a><a class="btn sm" href="/mesh.html">Mesh</a><a class="btn sm" href="/dhd.html">DHD</a></p></div>
+<div class="tile" style="border-top:3px solid #e9a13b"><h3>SIEM — Seraph &amp; Throne</h3><p>The security line — a configuration of Apex, not a separate product. Navi becomes Seraph, the watcher: passive sight over one segment, detections in her own voice. Throne is her seat beside her operator, the SOC where those detections get judged — designed, named, and still on the horizon.</p>
+<p style="color:var(--muted)">STATUS — Seraph SHIPPED · Apex Edge v0.6.8e · Throne ON THE HORIZON (v3)</p>
+<p><a class="btn solid" href="/siem.html">Enter the SIEM line</a></p>
+<p><a class="btn sm" href="/seraph.html">Seraph — the watcher</a><a class="btn sm" href="/throne.html">Throne — the SOC</a></p></div>
+<div class="tile"><h3>Navi's Tools</h3><p>Hers, in her place: the group Navi keeps for herself — Chips, the cartridges she runs with her own hands; ChipDeck, the deck she carries on every screen; and RAG, the library she reasons over. They live on her page, the way she does.</p>
+<p style="color:var(--muted)">STATUS — SHIPPED · Apex Edge v0.6.8e</p>
+<p><a class="btn solid" href="/navi.html">Navi's Tools — on her page</a></p>
+<p><a class="btn sm" href="/nur.html">The cartridge shelf</a></p></div>
 </div>
-<h3 style="margin-top:26px">The Mesh, drawn</h3>
-<p>One federation, drawn in full on its own page: Pia asks in teal, the fleet answers in amber, and Node № 004 is still empty — maybe yours.</p>
-<p><a class="btn solid" href="/mesh.html">Explore the Mesh →</a></p>
-<h3 style="margin-top:26px">Inside Apex</h3>
-<p>One install, several instruments. Apex grew past a single tool a while ago — this is what is actually inside the box now.</p>
-<h3 style="margin-top:22px">The instruments</h3>
-<div class="grid">
-<div class="tile"><h3>Mission control</h3><p>A dashboard that treats your machine like it matters: chat, memory, chips, servers, one glance.</p></div>
-<div class="tile"><h3>Case Files</h3><p>Investigations kept properly — findings, leads, observables, entities and events, each filed to its named part of the one case file. Navi answers first, then offers to file; never the other way round.</p></div>
-<div class="tile"><h3>The Wire</h3><p>Threat intelligence she actually reads — advisories, exploits and watchlists pulled from their own sources and cited. Never vibes.</p></div>
-<div class="tile"><h3>Pulse</h3><p>The topics she keeps a pulse on between conversations. A watch flashes once, in her voice, and feeds a case only as reference — never as findings.</p></div>
-<div class="tile"><h3>The Dossier</h3><p>The OSINT kit: public records on people, usernames, emails, phones and photos — passive, keyless first, cited, and honest about absence. Hits are leads, never findings.</p></div>
-<div class="tile"><h3>Chips</h3><p>Cartridge-style tools Navi runs herself, installed from GitHub in the open.</p></div>
-</div>
-<h3 style="margin-top:22px">The company</h3>
-<div class="grid">
-<div class="tile"><h3>Her working day</h3><p>Captures, reminders and standing orders in one book — and the day Brief drawn from it as an actual list. Push the same task off twice and she remarks on it, in her voice, directly under the item.</p></div>
-<div class="tile"><h3>FediChat</h3><p>The operators' room: a signed, hash-chained chat across the Mesh, where Navi sits in as a member of the room, not its moderator.</p></div>
-<div class="tile"><h3>The Vault</h3><p>Your files and notes live in a self-contained workspace of their own — with a focus mode that gives the editor the whole window when the work gets serious.</p></div>
-<div class="tile"><h3>Local voice</h3><p>On-device speech in and out. Nothing phoned home.</p></div>
-</div>
-<h3 style="margin-top:22px">The road</h3>
-<div class="grid">
-<div class="tile"><h3>Navi Mesh</h3><p>Pooled inference across your own machines — a stronger box answers whole requests for a weaker one.</p></div>
-<div class="tile"><h3>Fleet Answers</h3><p>The Mesh replies as one: a hard ask divided into whole tasks, each answered whole by the machine best placed — composed with the seams, and the machines' names, left visible.</p></div>
-<div class="tile"><h3>Sync</h3><p>One Navi, all the screens: account-level convergence in seconds — chats, cases, the deck, her memories, her Soul. Your hand overrides a round in flight, and a cleared thread stays cleared.</p></div>
-<div class="tile"><h3>A door you control</h3><p>Remote access on your terms, with its own certificate story — described here, addressed nowhere.</p></div>
-<div class="tile"><h3>Builds, not big bangs</h3><p>An updater that patches in small, verified builds — and a gate that refuses to ship on a story.</p></div>
-</div>
+<p style="margin-top:22px">And at the foot of the rail sits <b>Utilities</b> — the housekeeping group: settings, the updater, the quiet machinery that keeps the house running. It lives inside Apex, deliberately unglamorous — plumbing, not story, and the house would flood without it.</p>
 <div class="stats"><h3>What it weighs</h3>
 <p>The whale stays put, the minnow patches.</p>
 <ul>

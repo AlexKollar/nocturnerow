@@ -99,20 +99,25 @@ description: "The Row Board — every public door on Nocturne Row, watched from 
     if(last&&last.note&&st==='up'&&last.ms!=null) h+='<p class="svc-meta">answered in '+esc(last.ms)+' ms</p>';
     return h+'</div>';
   }
-  fetch('/status.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
-    var list=(d&&d.services)||[];
-    if(!list.length) throw 0;
-    var downs=list.filter(function(s){return s.state==='down';}).map(function(s){return s.name;});
-    var unks=list.filter(function(s){return s.state==='unknown';}).map(function(s){return s.name;});
-    if(!downs.length&&!unks.length) sum.textContent='All doors open';
-    else if(downs.length) sum.textContent='Doors down: '+downs.join(', ')+(unks.length?' · unconfirmed: '+unks.join(', '):'');
-    else sum.textContent='Every answering door is open — unconfirmed: '+unks.join(', ');
-    sub.textContent='Last checked '+rel(d.generated)+' · probed from outside the house network · window: last '+(d.window||48)+' checks per door';
-    board.innerHTML=list.map(row).join('');
-  }).catch(function(){
-    sum.textContent='The board itself could not be read';
-    sub.textContent='Your browser could not fetch the status file just now. That says something about this page — and nothing about the doors.';
-    board.innerHTML='<div class="svc"><h3>The record did not answer</h3><p class="svc-desc">No board is better than a board that guesses. The doors keep their own counsel until the watcher files again: <a href="/dhd.html">DHD</a> · <a href="/rockport-mesh.html">Rockport Mesh</a> · <a href="https://onlynavi.fans">OnlyNavi</a></p></div>';
-  });
+  function load(first){
+    fetch('/status.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+      var list=(d&&d.services)||[];
+      if(!list.length) throw 0;
+      var downs=list.filter(function(s){return s.state==='down';}).map(function(s){return s.name;});
+      var unks=list.filter(function(s){return s.state==='unknown';}).map(function(s){return s.name;});
+      if(!downs.length&&!unks.length) sum.textContent='All doors open';
+      else if(downs.length) sum.textContent='Doors down: '+downs.join(', ')+(unks.length?' · unconfirmed: '+unks.join(', '):'');
+      else sum.textContent='Every answering door is open — unconfirmed: '+unks.join(', ');
+      sub.textContent='Last checked '+rel(d.generated)+' · probed from outside the house network · window: last '+(d.window||48)+' checks per door · this page re-reads the record every minute';
+      board.innerHTML=list.map(row).join('');
+    }).catch(function(){
+      if(!first) return; /* a refresh miss keeps the last good board on screen; the next cycle tries again */
+      sum.textContent='The board itself could not be read';
+      sub.textContent='Your browser could not fetch the status file just now. That says something about this page — and nothing about the doors.';
+      board.innerHTML='<div class="svc"><h3>The record did not answer</h3><p class="svc-desc">No board is better than a board that guesses. The doors keep their own counsel until the watcher files again: <a href="/dhd.html">DHD</a> · <a href="/rockport-mesh.html">Rockport Mesh</a> · <a href="https://onlynavi.fans">OnlyNavi</a></p></div>';
+    });
+  }
+  load(true);
+  setInterval(function(){load(false);},60000);
 })();
 </script>

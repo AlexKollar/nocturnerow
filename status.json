@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T12:42:08Z",
+  "generated": "2026-11-21T13:42:03Z",
   "window": 48,
   "services": [
     {
@@ -7,78 +7,6 @@
       "name": "The Row",
       "desc": "nocturnerow.com — the site itself, hosted on GitHub Pages",
       "ticks": [
-        {
-          "t": "2026-11-21T08:47:00Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 840
-        },
-        {
-          "t": "2026-11-21T08:52:05Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 843
-        },
-        {
-          "t": "2026-11-21T08:57:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 576
-        },
-        {
-          "t": "2026-11-21T09:02:17Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 826
-        },
-        {
-          "t": "2026-11-21T09:07:06Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 565
-        },
-        {
-          "t": "2026-11-21T09:12:04Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 884
-        },
-        {
-          "t": "2026-11-21T09:17:06Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 839
-        },
-        {
-          "t": "2026-11-21T09:22:03Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 854
-        },
-        {
-          "t": "2026-11-21T09:27:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 951
-        },
-        {
-          "t": "2026-11-21T09:32:04Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 773
-        },
-        {
-          "t": "2026-11-21T09:37:08Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 529
-        },
-        {
-          "t": "2026-11-21T09:42:05Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 624
-        },
         {
           "t": "2026-11-21T09:47:01Z",
           "s": "up",
@@ -294,11 +222,83 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 901
+        },
+        {
+          "t": "2026-11-21T12:47:13Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 632
+        },
+        {
+          "t": "2026-11-21T12:52:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 511
+        },
+        {
+          "t": "2026-11-21T12:56:59Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 608
+        },
+        {
+          "t": "2026-11-21T13:02:24Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 820
+        },
+        {
+          "t": "2026-11-21T13:07:14Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 662
+        },
+        {
+          "t": "2026-11-21T13:12:23Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 793
+        },
+        {
+          "t": "2026-11-21T13:17:12Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 894
+        },
+        {
+          "t": "2026-11-21T13:22:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 663
+        },
+        {
+          "t": "2026-11-21T13:27:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 863
+        },
+        {
+          "t": "2026-11-21T13:32:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 840
+        },
+        {
+          "t": "2026-11-21T13:37:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 639
+        },
+        {
+          "t": "2026-11-21T13:42:03Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 618
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T12:42:08Z",
-      "since": "2026-11-21T08:47:00Z",
+      "last_checked": "2026-11-21T13:42:03Z",
+      "since": "2026-11-21T09:47:01Z",
       "uptime_pct": 100.0,
       "cat": "site"
     },
@@ -307,78 +307,6 @@
       "name": "Presence digest",
       "desc": "presence.json — the live digest Navi reads to know the Row's record",
       "ticks": [
-        {
-          "t": "2026-11-21T08:47:00Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 524
-        },
-        {
-          "t": "2026-11-21T08:52:05Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 423
-        },
-        {
-          "t": "2026-11-21T08:57:10Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 481
-        },
-        {
-          "t": "2026-11-21T09:02:17Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 618
-        },
-        {
-          "t": "2026-11-21T09:07:06Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 317
-        },
-        {
-          "t": "2026-11-21T09:12:04Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 434
-        },
-        {
-          "t": "2026-11-21T09:17:06Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 636
-        },
-        {
-          "t": "2026-11-21T09:22:03Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 432
-        },
-        {
-          "t": "2026-11-21T09:27:09Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 448
-        },
-        {
-          "t": "2026-11-21T09:32:04Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 498
-        },
-        {
-          "t": "2026-11-21T09:37:08Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 505
-        },
-        {
-          "t": "2026-11-21T09:42:05Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 485
-        },
         {
           "t": "2026-11-21T09:47:01Z",
           "s": "up",
@@ -594,11 +522,83 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 432
+        },
+        {
+          "t": "2026-11-21T12:47:13Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 369
+        },
+        {
+          "t": "2026-11-21T12:52:09Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 240
+        },
+        {
+          "t": "2026-11-21T12:56:59Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 611
+        },
+        {
+          "t": "2026-11-21T13:02:24Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 470
+        },
+        {
+          "t": "2026-11-21T13:07:14Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 329
+        },
+        {
+          "t": "2026-11-21T13:12:23Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 601
+        },
+        {
+          "t": "2026-11-21T13:17:12Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 370
+        },
+        {
+          "t": "2026-11-21T13:22:05Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 322
+        },
+        {
+          "t": "2026-11-21T13:27:05Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 359
+        },
+        {
+          "t": "2026-11-21T13:32:07Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 319
+        },
+        {
+          "t": "2026-11-21T13:37:08Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 323
+        },
+        {
+          "t": "2026-11-21T13:42:03Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 309
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T12:42:08Z",
-      "since": "2026-11-21T08:47:00Z",
+      "last_checked": "2026-11-21T13:42:03Z",
+      "since": "2026-11-21T09:47:01Z",
       "uptime_pct": 100.0,
       "cat": "site"
     },
@@ -607,66 +607,6 @@
       "name": "DHD",
       "desc": "the operator's phone door into their own Apex",
       "ticks": [
-        {
-          "t": "2026-11-21T08:47:00Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T08:52:05Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T08:57:10Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:02:17Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:07:06Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:12:04Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:17:06Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:22:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:27:09Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:32:04Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:37:08Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:42:05Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
         {
           "t": "2026-11-21T09:47:01Z",
           "s": "down",
@@ -846,11 +786,71 @@
           "t": "2026-11-21T12:42:08Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:47:13Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:52:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:56:59Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:02:24Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:07:14Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:12:23Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:17:12Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:22:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:27:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:32:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:37:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:42:03Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T12:42:08Z",
-      "since": "2026-11-21T08:47:00Z",
+      "last_checked": "2026-11-21T13:42:03Z",
+      "since": "2026-11-21T09:47:01Z",
       "uptime_pct": 0.0,
       "cat": "house"
     },
@@ -859,78 +859,6 @@
       "name": "OnlyNavi",
       "desc": "onlynavi.fans — Navi's own page, the one place it exists",
       "ticks": [
-        {
-          "t": "2026-11-21T08:47:00Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 729
-        },
-        {
-          "t": "2026-11-21T08:52:05Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 858
-        },
-        {
-          "t": "2026-11-21T08:57:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 729
-        },
-        {
-          "t": "2026-11-21T09:02:17Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 534
-        },
-        {
-          "t": "2026-11-21T09:07:06Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 843
-        },
-        {
-          "t": "2026-11-21T09:12:04Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 824
-        },
-        {
-          "t": "2026-11-21T09:17:06Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 783
-        },
-        {
-          "t": "2026-11-21T09:22:03Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 761
-        },
-        {
-          "t": "2026-11-21T09:27:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 807
-        },
-        {
-          "t": "2026-11-21T09:32:04Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 618
-        },
-        {
-          "t": "2026-11-21T09:37:08Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 647
-        },
-        {
-          "t": "2026-11-21T09:42:05Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 1347
-        },
         {
           "t": "2026-11-21T09:47:01Z",
           "s": "up",
@@ -1146,11 +1074,83 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 829
+        },
+        {
+          "t": "2026-11-21T12:47:13Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 638
+        },
+        {
+          "t": "2026-11-21T12:52:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 507
+        },
+        {
+          "t": "2026-11-21T12:56:59Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 516
+        },
+        {
+          "t": "2026-11-21T13:02:24Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 556
+        },
+        {
+          "t": "2026-11-21T13:07:14Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 542
+        },
+        {
+          "t": "2026-11-21T13:12:23Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 661
+        },
+        {
+          "t": "2026-11-21T13:17:12Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 514
+        },
+        {
+          "t": "2026-11-21T13:22:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 743
+        },
+        {
+          "t": "2026-11-21T13:27:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 685
+        },
+        {
+          "t": "2026-11-21T13:32:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 538
+        },
+        {
+          "t": "2026-11-21T13:37:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 483
+        },
+        {
+          "t": "2026-11-21T13:42:03Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 871
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T12:42:08Z",
-      "since": "2026-11-21T08:47:00Z",
+      "last_checked": "2026-11-21T13:42:03Z",
+      "since": "2026-11-21T09:47:01Z",
       "uptime_pct": 100.0,
       "cat": "page"
     },
@@ -1160,66 +1160,6 @@
       "desc": "the Rockport Mesh federation gate",
       "ticks": [
         {
-          "t": "2026-11-21T08:47:00Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T08:52:05Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T08:57:10Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:02:17Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:07:06Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:12:04Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:17:06Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:22:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:27:09Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:32:04Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:37:08Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:42:05Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
           "t": "2026-11-21T09:47:01Z",
           "s": "down",
           "note": "no answer within 8s"
@@ -1398,11 +1338,71 @@
           "t": "2026-11-21T12:42:08Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:47:13Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:52:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:56:59Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:02:24Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:07:14Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:12:23Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:17:12Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:22:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:27:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:32:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:37:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:42:03Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T12:42:08Z",
-      "since": "2026-11-21T08:47:00Z",
+      "last_checked": "2026-11-21T13:42:03Z",
+      "since": "2026-11-21T09:47:01Z",
       "uptime_pct": 0.0,
       "cat": "house"
     },
@@ -1412,66 +1412,6 @@
       "desc": "the canonical Mesh door",
       "ticks": [
         {
-          "t": "2026-11-21T08:47:00Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T08:52:05Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T08:57:10Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:02:17Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:07:06Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:12:04Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:17:06Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:22:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:27:09Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:32:04Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:37:08Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T09:42:05Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
           "t": "2026-11-21T09:47:01Z",
           "s": "down",
           "note": "no answer within 8s"
@@ -1650,11 +1590,71 @@
           "t": "2026-11-21T12:42:08Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:47:13Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:52:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T12:56:59Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:02:24Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:07:14Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:12:23Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:17:12Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:22:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:27:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:32:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:37:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T13:42:03Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T12:42:08Z",
-      "since": "2026-11-21T08:47:00Z",
+      "last_checked": "2026-11-21T13:42:03Z",
+      "since": "2026-11-21T09:47:01Z",
       "uptime_pct": 0.0,
       "cat": "house"
     },
@@ -1663,78 +1663,6 @@
       "name": "SSH door",
       "desc": "the shell door into Neo-Arcadia",
       "ticks": [
-        {
-          "t": "2026-11-21T08:47:00Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-21T08:52:05Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-21T08:57:10Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-21T09:02:17Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-21T09:07:06Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 5
-        },
-        {
-          "t": "2026-11-21T09:12:04Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-21T09:17:06Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-21T09:22:03Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T09:27:09Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-21T09:32:04Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-21T09:37:08Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T09:42:05Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 0
-        },
         {
           "t": "2026-11-21T09:47:01Z",
           "s": "unknown",
@@ -1950,11 +1878,83 @@
           "s": "unknown",
           "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
           "ms": 4
+        },
+        {
+          "t": "2026-11-21T12:47:13Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 2
+        },
+        {
+          "t": "2026-11-21T12:52:09Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-21T12:56:59Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 3
+        },
+        {
+          "t": "2026-11-21T13:02:24Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 2
+        },
+        {
+          "t": "2026-11-21T13:07:14Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 11
+        },
+        {
+          "t": "2026-11-21T13:12:23Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 5
+        },
+        {
+          "t": "2026-11-21T13:17:12Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 2
+        },
+        {
+          "t": "2026-11-21T13:22:05Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T13:27:05Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 3
+        },
+        {
+          "t": "2026-11-21T13:32:07Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 3
+        },
+        {
+          "t": "2026-11-21T13:37:08Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 8
+        },
+        {
+          "t": "2026-11-21T13:42:03Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 5
         }
       ],
       "state": "unknown",
-      "last_checked": "2026-11-21T12:42:08Z",
-      "since": "2026-11-21T08:47:00Z",
+      "last_checked": "2026-11-21T13:42:03Z",
+      "since": "2026-11-21T09:47:01Z",
       "uptime_pct": null,
       "cat": "house"
     }

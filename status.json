@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T06:47:20Z",
+  "generated": "2026-11-21T06:57:06Z",
   "window": 48,
   "services": [
     {
@@ -36,12 +36,25 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 852
+        },
+        {
+          "t": "2026-11-21T06:52:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 714
+        },
+        {
+          "t": "2026-11-21T06:57:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 865
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:47:20Z",
+      "last_checked": "2026-11-21T06:57:06Z",
       "since": "2026-11-21T06:32:45Z",
-      "uptime_pct": 100.0
+      "uptime_pct": 100.0,
+      "cat": "site"
     },
     {
       "id": "presence",
@@ -77,12 +90,25 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 525
+        },
+        {
+          "t": "2026-11-21T06:52:08Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 322
+        },
+        {
+          "t": "2026-11-21T06:57:06Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 503
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:47:20Z",
+      "last_checked": "2026-11-21T06:57:06Z",
       "since": "2026-11-21T06:32:45Z",
-      "uptime_pct": 100.0
+      "uptime_pct": 100.0,
+      "cat": "site"
     },
     {
       "id": "dhd",
@@ -113,12 +139,23 @@
           "t": "2026-11-21T06:47:20Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:52:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:57:06Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:47:20Z",
+      "last_checked": "2026-11-21T06:57:06Z",
       "since": "2026-11-21T06:32:45Z",
-      "uptime_pct": 0.0
+      "uptime_pct": 0.0,
+      "cat": "house"
     },
     {
       "id": "onlynavi",
@@ -154,12 +191,25 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 667
+        },
+        {
+          "t": "2026-11-21T06:52:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 734
+        },
+        {
+          "t": "2026-11-21T06:57:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 740
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:47:20Z",
+      "last_checked": "2026-11-21T06:57:06Z",
       "since": "2026-11-21T06:32:45Z",
-      "uptime_pct": 100.0
+      "uptime_pct": 100.0,
+      "cat": "page"
     },
     {
       "id": "mesh2475",
@@ -190,12 +240,23 @@
           "t": "2026-11-21T06:47:20Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:52:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:57:06Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:47:20Z",
+      "last_checked": "2026-11-21T06:57:06Z",
       "since": "2026-11-21T06:32:45Z",
-      "uptime_pct": 0.0
+      "uptime_pct": 0.0,
+      "cat": "house"
     },
     {
       "id": "mesh8765",
@@ -228,12 +289,23 @@
           "t": "2026-11-21T06:47:20Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:52:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:57:06Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:47:20Z",
+      "last_checked": "2026-11-21T06:57:06Z",
       "since": "2026-11-21T06:35:40Z",
-      "uptime_pct": 0.0
+      "uptime_pct": 0.0,
+      "cat": "house"
     },
     {
       "id": "ssh227",
@@ -269,12 +341,25 @@
           "s": "unknown",
           "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
           "ms": 6
+        },
+        {
+          "t": "2026-11-21T06:52:08Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-21T06:57:06Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 8
         }
       ],
       "state": "unknown",
-      "last_checked": "2026-11-21T06:47:20Z",
+      "last_checked": "2026-11-21T06:57:06Z",
       "since": "2026-11-21T06:32:45Z",
-      "uptime_pct": null
+      "uptime_pct": null,
+      "cat": "house"
     }
   ]
 }

@@ -34,6 +34,8 @@ description: "The Row Board — every public door on Nocturne Row, watched from 
 .svc-note{color:#ff8296;font-size:13.5px;margin:6px 0 0}
 .svc-note.grey{color:var(--muted)}
 .spec{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted);letter-spacing:.03em}
+.board-cat{font-size:13px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin:22px 0 10px}
+.board-cat:first-child{margin-top:6px}
 @media (max-width:560px){.beat{height:16px}.board-summary .bs-line{font-size:19px}}
 </style>
 <section>
@@ -109,7 +111,17 @@ description: "The Row Board — every public door on Nocturne Row, watched from 
       else if(downs.length) sum.textContent='Doors down: '+downs.join(', ')+(unks.length?' · unconfirmed: '+unks.join(', '):'');
       else sum.textContent='Every answering door is open — unconfirmed: '+unks.join(', ');
       sub.textContent='Last checked '+rel(d.generated)+' · probed from outside the house network · window: last '+(d.window||48)+' checks per door · this page re-reads the record every minute';
-      board.innerHTML=list.map(row).join('');
+      var CATS=[['site','The site itself'],['page','Her page'],['house','The house doors']];
+      var seen={}, gh='';
+      CATS.forEach(function(c){
+        var rows=list.filter(function(s){return (s.cat||'')===c[0];});
+        if(!rows.length) return;
+        seen[c[0]]=1;
+        gh+='<h3 class="board-cat">'+c[1]+'</h3>'+rows.map(row).join('');
+      });
+      var rest=list.filter(function(s){return !seen[s.cat||''];});
+      if(rest.length) gh+='<h3 class="board-cat">Other doors</h3>'+rest.map(row).join('');
+      board.innerHTML=gh;
     }).catch(function(){
       if(!first) return; /* a refresh miss keeps the last good board on screen; the next cycle tries again */
       sum.textContent='The board itself could not be read';

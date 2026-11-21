@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T06:57:06Z",
+  "generated": "2026-11-21T07:42:11Z",
   "window": 48,
   "services": [
     {
@@ -48,10 +48,64 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 865
+        },
+        {
+          "t": "2026-11-21T07:02:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 692
+        },
+        {
+          "t": "2026-11-21T07:07:02Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 571
+        },
+        {
+          "t": "2026-11-21T07:12:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 902
+        },
+        {
+          "t": "2026-11-21T07:17:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 927
+        },
+        {
+          "t": "2026-11-21T07:22:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 897
+        },
+        {
+          "t": "2026-11-21T07:27:14Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 713
+        },
+        {
+          "t": "2026-11-21T07:32:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 983
+        },
+        {
+          "t": "2026-11-21T07:37:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 778
+        },
+        {
+          "t": "2026-11-21T07:42:11Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 642
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:57:06Z",
+      "last_checked": "2026-11-21T07:42:11Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 100.0,
       "cat": "site"
@@ -102,10 +156,64 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 503
+        },
+        {
+          "t": "2026-11-21T07:02:09Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 487
+        },
+        {
+          "t": "2026-11-21T07:07:02Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 488
+        },
+        {
+          "t": "2026-11-21T07:12:07Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 485
+        },
+        {
+          "t": "2026-11-21T07:17:06Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 495
+        },
+        {
+          "t": "2026-11-21T07:22:05Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 400
+        },
+        {
+          "t": "2026-11-21T07:27:14Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 548
+        },
+        {
+          "t": "2026-11-21T07:32:05Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 534
+        },
+        {
+          "t": "2026-11-21T07:37:09Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 588
+        },
+        {
+          "t": "2026-11-21T07:42:11Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 442
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:57:06Z",
+      "last_checked": "2026-11-21T07:42:11Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 100.0,
       "cat": "site"
@@ -149,10 +257,55 @@
           "t": "2026-11-21T06:57:06Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:02:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:07:02Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:12:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:17:06Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:22:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:27:14Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:32:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:37:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:42:11Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:57:06Z",
+      "last_checked": "2026-11-21T07:42:11Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 0.0,
       "cat": "house"
@@ -203,10 +356,64 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 740
+        },
+        {
+          "t": "2026-11-21T07:02:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 622
+        },
+        {
+          "t": "2026-11-21T07:07:02Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 617
+        },
+        {
+          "t": "2026-11-21T07:12:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 714
+        },
+        {
+          "t": "2026-11-21T07:17:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 542
+        },
+        {
+          "t": "2026-11-21T07:22:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 673
+        },
+        {
+          "t": "2026-11-21T07:27:14Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 751
+        },
+        {
+          "t": "2026-11-21T07:32:05Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 718
+        },
+        {
+          "t": "2026-11-21T07:37:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 827
+        },
+        {
+          "t": "2026-11-21T07:42:11Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 651
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:57:06Z",
+      "last_checked": "2026-11-21T07:42:11Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 100.0,
       "cat": "page"
@@ -250,10 +457,55 @@
           "t": "2026-11-21T06:57:06Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:02:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:07:02Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:12:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:17:06Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:22:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:27:14Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:32:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:37:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:42:11Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:57:06Z",
+      "last_checked": "2026-11-21T07:42:11Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 0.0,
       "cat": "house"
@@ -299,10 +551,55 @@
           "t": "2026-11-21T06:57:06Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:02:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:07:02Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:12:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:17:06Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:22:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:27:14Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:32:05Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:37:09Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T07:42:11Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:57:06Z",
+      "last_checked": "2026-11-21T07:42:11Z",
       "since": "2026-11-21T06:35:40Z",
       "uptime_pct": 0.0,
       "cat": "house"
@@ -353,10 +650,64 @@
           "s": "unknown",
           "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
           "ms": 8
+        },
+        {
+          "t": "2026-11-21T07:02:09Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T07:07:02Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 5
+        },
+        {
+          "t": "2026-11-21T07:12:07Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 2
+        },
+        {
+          "t": "2026-11-21T07:17:06Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-21T07:22:05Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 9
+        },
+        {
+          "t": "2026-11-21T07:27:14Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-21T07:32:05Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 5
+        },
+        {
+          "t": "2026-11-21T07:37:09Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 6
+        },
+        {
+          "t": "2026-11-21T07:42:11Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
+          "ms": 1
         }
       ],
       "state": "unknown",
-      "last_checked": "2026-11-21T06:57:06Z",
+      "last_checked": "2026-11-21T07:42:11Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": null,
       "cat": "house"

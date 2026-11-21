@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T06:35:40Z",
+  "generated": "2026-11-21T06:42:07Z",
   "window": 48,
   "services": [
     {
@@ -24,10 +24,16 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 712
+        },
+        {
+          "t": "2026-11-21T06:42:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 884
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:35:40Z",
+      "last_checked": "2026-11-21T06:42:07Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 100.0
     },
@@ -53,10 +59,16 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 326
+        },
+        {
+          "t": "2026-11-21T06:42:07Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 534
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:35:40Z",
+      "last_checked": "2026-11-21T06:42:07Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 100.0
     },
@@ -79,10 +91,15 @@
           "t": "2026-11-21T06:35:40Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:42:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:35:40Z",
+      "last_checked": "2026-11-21T06:42:07Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 0.0
     },
@@ -108,10 +125,16 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 871
+        },
+        {
+          "t": "2026-11-21T06:42:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 682
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T06:35:40Z",
+      "last_checked": "2026-11-21T06:42:07Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 100.0
     },
@@ -134,10 +157,15 @@
           "t": "2026-11-21T06:35:40Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:42:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:35:40Z",
+      "last_checked": "2026-11-21T06:42:07Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": 0.0
     },
@@ -162,10 +190,15 @@
           "t": "2026-11-21T06:35:40Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:42:07Z",
+          "s": "down",
+          "note": "no answer within 8s"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T06:35:40Z",
+      "last_checked": "2026-11-21T06:42:07Z",
       "since": "2026-11-21T06:35:40Z",
       "uptime_pct": 0.0
     },
@@ -191,10 +224,16 @@
           "s": "unknown",
           "note": "the watcher's own egress intercepted this connection (b'muse: Other TCP connections is turned off for this assistant') — the door itself was never reached",
           "ms": 3
+        },
+        {
+          "t": "2026-11-21T06:42:07Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection (b'muse: Other TCP connections is turned off for this assistant') — the door itself was never reached",
+          "ms": 1
         }
       ],
       "state": "unknown",
-      "last_checked": "2026-11-21T06:35:40Z",
+      "last_checked": "2026-11-21T06:42:07Z",
       "since": "2026-11-21T06:32:45Z",
       "uptime_pct": null
     }

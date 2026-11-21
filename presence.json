@@ -1,0 +1,23 @@
+---
+layout: null
+---
+{
+  "generated": {{ site.time | date_to_xmlschema | jsonify }},
+  "dispatches": [
+    {% for post in site.posts limit:5 %}{
+      "title": {{ post.title | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "dek": {{ post.excerpt | strip_html | strip_newlines | truncate: 170 | jsonify }},
+      "url": {{ post.url | absolute_url | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "versions": {
+    "stable": {{ site.data.presence.versions.stable | jsonify }},
+    "edge": {{ site.data.presence.versions.edge | jsonify }}
+  },
+  "roadmap": {
+    "chapters": {{ site.data.presence.roadmap.chapters }},
+    "headline": {{ site.data.presence.roadmap.headline | jsonify }}
+  }
+}

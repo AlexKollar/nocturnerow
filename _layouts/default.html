@@ -327,15 +327,13 @@ print('LCARS INTERFACE — STOOD DOWN.');return 'The Row resumes its usual silho
 
 };
 var FLAG='flag=w3_4r3_4lr34dy_0n_sh1ft';
-function avRot13(s){return s.replace(/[a-z]/g,function(c){return String.fromCharCode((c.charCodeAt(0)-97+13)%26+97);});}
-function avFlag(raw){var v=avRot13(raw.toLowerCase().replace(/^flag=/,'').replace(/[^a-z0-9]/g,''));return v==='vgfbaylsnafreivpr'||v==='17f0a1ls4a53ei1p3';}
 var SECRETS='.secrets.txt\n\nYou found the list. That is the list\'s whole confession:\nsomething on this site is hidden the way the Row hides things —\nin plain sight, for the ones who look.\n\nNo map. No legend. Just this: it is here, and it is findable.\n\n— the Row';
 form.addEventListener('submit',function(e){e.preventDefault();var raw=inp.value.trim();inp.value='';print('<span style="color:var(--accent)">row&gt;</span> '+esc(raw));if(!raw)return;var c=raw.toLowerCase().split(/\s+/)[0];
 if(c==='clear'){out.innerHTML='';return;}
 if(c==='exit'||c==='quit'){close();return;}
 if(raw.toLowerCase().replace(/\s+/g,' ')==='sudo make me a sandwich'){print('Okay.');return;}
 var low=raw.toLowerCase().replace(/\s+/g,' ');
-if(low.indexOf('flag=')===0){if(raw===FLAG){print('FLAG ACCEPTED.');print('Some doors were never locked — only unlisted, and waiting for the right sentence.');print('Opening the unlisted frequency in a new tab — this terminal stays yours.');setTimeout(function(){window.open('/manifesto.html','_blank');},1200);}else if(avFlag(raw)){try{localStorage.setItem('nr-av','1');}catch(e){}print('FLAG ACCEPTED.');print('That one opens the archive. Mind the dust — and her.');print('Opening the retained material in a new tab — this terminal stays yours.');setTimeout(function(){window.open('/archive.html','_blank');},1200);}else{print('That flag opens nothing on the Row. Flags are exact — the Row wrote this one once, in one place.');}return;}
+if(low.indexOf('flag=')===0){if(raw===FLAG){print('FLAG ACCEPTED.');print('Some doors were never locked — only unlisted, and waiting for the right sentence.');print('Opening the unlisted frequency in a new tab — this terminal stays yours.');setTimeout(function(){window.open('/manifesto.html','_blank');},1200);}else{print('That flag opens nothing on the Row. Flags are exact — the Row wrote this one once, in one place.');}return;}
 if(low==='cat .secrets.txt'){print(SECRETS);return;}
 if(c==='cat'){print('cat: the Row admits to keeping exactly one file where guests can reach it — .secrets.txt');return;}
 if(CMDS[c]){var r=CMDS[c](low.split(' ').slice(1).join(' '));if(r)print(r);}

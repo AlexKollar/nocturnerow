@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T16:02:13Z",
+  "generated": "2026-11-21T16:07:07Z",
   "window": 48,
   "services": [
     {
@@ -7,12 +7,6 @@
       "name": "The Row",
       "desc": "nocturnerow.com — the site itself, hosted on GitHub Pages",
       "ticks": [
-        {
-          "t": "2026-11-21T12:07:01Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 878
-        },
         {
           "t": "2026-11-21T12:12:03Z",
           "s": "up",
@@ -294,11 +288,17 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 501
+        },
+        {
+          "t": "2026-11-21T16:07:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 799
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:02:13Z",
-      "since": "2026-11-21T12:07:01Z",
+      "last_checked": "2026-11-21T16:07:07Z",
+      "since": "2026-11-21T12:12:03Z",
       "uptime_pct": 100.0,
       "cat": "site"
     },
@@ -307,12 +307,6 @@
       "name": "Presence digest",
       "desc": "presence.json — the live digest Navi reads to know the Row's record",
       "ticks": [
-        {
-          "t": "2026-11-21T12:07:01Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 572
-        },
         {
           "t": "2026-11-21T12:12:03Z",
           "s": "up",
@@ -594,11 +588,17 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 327
+        },
+        {
+          "t": "2026-11-21T16:07:07Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 327
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:02:13Z",
-      "since": "2026-11-21T12:07:01Z",
+      "last_checked": "2026-11-21T16:07:07Z",
+      "since": "2026-11-21T12:12:03Z",
       "uptime_pct": 100.0,
       "cat": "site"
     },
@@ -607,11 +607,6 @@
       "name": "DHD",
       "desc": "the operator's phone door into their own Apex",
       "ticks": [
-        {
-          "t": "2026-11-21T12:07:01Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
         {
           "t": "2026-11-21T12:12:03Z",
           "s": "down",
@@ -853,12 +848,18 @@
           "t": "2026-11-21T16:02:13Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T16:07:07Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 566
         }
       ],
-      "state": "down",
-      "last_checked": "2026-11-21T16:02:13Z",
-      "since": "2026-11-21T16:02:13Z",
-      "uptime_pct": 14.6,
+      "state": "up",
+      "last_checked": "2026-11-21T16:07:07Z",
+      "since": "2026-11-21T16:07:07Z",
+      "uptime_pct": 16.7,
       "cat": "house"
     },
     {
@@ -866,12 +867,6 @@
       "name": "OnlyNavi",
       "desc": "onlynavi.fans — Navi's own page, the one place it exists",
       "ticks": [
-        {
-          "t": "2026-11-21T12:07:01Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 619
-        },
         {
           "t": "2026-11-21T12:12:03Z",
           "s": "up",
@@ -1153,11 +1148,17 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 652
+        },
+        {
+          "t": "2026-11-21T16:07:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 471
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:02:13Z",
-      "since": "2026-11-21T12:07:01Z",
+      "last_checked": "2026-11-21T16:07:07Z",
+      "since": "2026-11-21T12:12:03Z",
       "uptime_pct": 100.0,
       "cat": "page"
     },
@@ -1167,11 +1168,6 @@
       "desc": "the Rockport Mesh federation gate",
       "ticks": [
         {
-          "t": "2026-11-21T12:07:01Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
           "t": "2026-11-21T12:12:03Z",
           "s": "down",
           "note": "no answer within 8s"
@@ -1405,11 +1401,16 @@
           "t": "2026-11-21T16:02:13Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T16:07:07Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T16:02:13Z",
-      "since": "2026-11-21T12:07:01Z",
+      "last_checked": "2026-11-21T16:07:07Z",
+      "since": "2026-11-21T12:12:03Z",
       "uptime_pct": 0.0,
       "cat": "house"
     },
@@ -1419,11 +1420,6 @@
       "desc": "the canonical Mesh door",
       "ticks": [
         {
-          "t": "2026-11-21T12:07:01Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
           "t": "2026-11-21T12:12:03Z",
           "s": "down",
           "note": "no answer within 8s"
@@ -1657,11 +1653,16 @@
           "t": "2026-11-21T16:02:13Z",
           "s": "down",
           "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T16:07:07Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
         }
       ],
       "state": "down",
-      "last_checked": "2026-11-21T16:02:13Z",
-      "since": "2026-11-21T12:07:01Z",
+      "last_checked": "2026-11-21T16:07:07Z",
+      "since": "2026-11-21T12:12:03Z",
       "uptime_pct": 0.0,
       "cat": "house"
     },
@@ -1670,12 +1671,6 @@
       "name": "SSH door",
       "desc": "the shell door into Neo-Arcadia",
       "ticks": [
-        {
-          "t": "2026-11-21T12:07:01Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 1
-        },
         {
           "t": "2026-11-21T12:12:03Z",
           "s": "unknown",
@@ -1957,12 +1952,18 @@
           "s": "down",
           "note": "connected, but no banner arrived — not speaking SSH",
           "ms": 0
+        },
+        {
+          "t": "2026-11-21T16:07:07Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
         }
       ],
-      "state": "down",
-      "last_checked": "2026-11-21T16:02:13Z",
-      "since": "2026-11-21T16:02:13Z",
-      "uptime_pct": 50.0,
+      "state": "up",
+      "last_checked": "2026-11-21T16:07:07Z",
+      "since": "2026-11-21T16:07:07Z",
+      "uptime_pct": 60.0,
       "cat": "house"
     }
   ]

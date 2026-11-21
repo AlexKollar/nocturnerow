@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T16:07:07Z",
+  "generated": "2026-11-21T16:20:53Z",
   "window": 48,
   "services": [
     {
@@ -7,36 +7,6 @@
       "name": "The Row",
       "desc": "nocturnerow.com — the site itself, hosted on GitHub Pages",
       "ticks": [
-        {
-          "t": "2026-11-21T12:12:03Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 1258
-        },
-        {
-          "t": "2026-11-21T12:17:11Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 706
-        },
-        {
-          "t": "2026-11-21T12:22:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 693
-        },
-        {
-          "t": "2026-11-21T12:27:03Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 799
-        },
-        {
-          "t": "2026-11-21T12:32:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 631
-        },
         {
           "t": "2026-11-21T12:37:10Z",
           "s": "up",
@@ -294,11 +264,41 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 799
+        },
+        {
+          "t": "2026-11-21T16:12:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 839
+        },
+        {
+          "t": "2026-11-21T16:16:29Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 763
+        },
+        {
+          "t": "2026-11-21T16:17:10Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 767
+        },
+        {
+          "t": "2026-11-21T16:18:58Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 1034
+        },
+        {
+          "t": "2026-11-21T16:20:53Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 684
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:07:07Z",
-      "since": "2026-11-21T12:12:03Z",
+      "last_checked": "2026-11-21T16:20:53Z",
+      "since": "2026-11-21T12:37:10Z",
       "uptime_pct": 100.0,
       "cat": "site"
     },
@@ -307,36 +307,6 @@
       "name": "Presence digest",
       "desc": "presence.json — the live digest Navi reads to know the Row's record",
       "ticks": [
-        {
-          "t": "2026-11-21T12:12:03Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 278
-        },
-        {
-          "t": "2026-11-21T12:17:11Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 466
-        },
-        {
-          "t": "2026-11-21T12:22:09Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 422
-        },
-        {
-          "t": "2026-11-21T12:27:03Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 302
-        },
-        {
-          "t": "2026-11-21T12:32:07Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 335
-        },
         {
           "t": "2026-11-21T12:37:10Z",
           "s": "up",
@@ -594,11 +564,41 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 327
+        },
+        {
+          "t": "2026-11-21T16:12:06Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 380
+        },
+        {
+          "t": "2026-11-21T16:16:29Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 309
+        },
+        {
+          "t": "2026-11-21T16:17:10Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 534
+        },
+        {
+          "t": "2026-11-21T16:18:58Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 279
+        },
+        {
+          "t": "2026-11-21T16:20:53Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 353
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:07:07Z",
-      "since": "2026-11-21T12:12:03Z",
+      "last_checked": "2026-11-21T16:20:53Z",
+      "since": "2026-11-21T12:37:10Z",
       "uptime_pct": 100.0,
       "cat": "site"
     },
@@ -607,31 +607,6 @@
       "name": "DHD",
       "desc": "the operator's phone door into their own Apex",
       "ticks": [
-        {
-          "t": "2026-11-21T12:12:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:17:11Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:22:09Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:27:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:32:07Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
         {
           "t": "2026-11-21T12:37:10Z",
           "s": "down",
@@ -854,12 +829,42 @@
           "s": "up",
           "note": "HTTP 200 — the door answered",
           "ms": 566
+        },
+        {
+          "t": "2026-11-21T16:12:06Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 697
+        },
+        {
+          "t": "2026-11-21T16:16:29Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 549
+        },
+        {
+          "t": "2026-11-21T16:17:10Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 706
+        },
+        {
+          "t": "2026-11-21T16:18:58Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 645
+        },
+        {
+          "t": "2026-11-21T16:20:53Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 700
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:07:07Z",
+      "last_checked": "2026-11-21T16:20:53Z",
       "since": "2026-11-21T16:07:07Z",
-      "uptime_pct": 16.7,
+      "uptime_pct": 27.1,
       "cat": "house"
     },
     {
@@ -867,36 +872,6 @@
       "name": "OnlyNavi",
       "desc": "onlynavi.fans — Navi's own page, the one place it exists",
       "ticks": [
-        {
-          "t": "2026-11-21T12:12:03Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 481
-        },
-        {
-          "t": "2026-11-21T12:17:11Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 582
-        },
-        {
-          "t": "2026-11-21T12:22:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 605
-        },
-        {
-          "t": "2026-11-21T12:27:03Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 606
-        },
-        {
-          "t": "2026-11-21T12:32:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 498
-        },
         {
           "t": "2026-11-21T12:37:10Z",
           "s": "up",
@@ -1154,11 +1129,41 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 471
+        },
+        {
+          "t": "2026-11-21T16:12:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 621
+        },
+        {
+          "t": "2026-11-21T16:16:29Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 913
+        },
+        {
+          "t": "2026-11-21T16:17:10Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 534
+        },
+        {
+          "t": "2026-11-21T16:18:58Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 515
+        },
+        {
+          "t": "2026-11-21T16:20:53Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 423
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:07:07Z",
-      "since": "2026-11-21T12:12:03Z",
+      "last_checked": "2026-11-21T16:20:53Z",
+      "since": "2026-11-21T12:37:10Z",
       "uptime_pct": 100.0,
       "cat": "page"
     },
@@ -1168,31 +1173,6 @@
       "desc": "the Rockport Mesh federation gate",
       "ticks": [
         {
-          "t": "2026-11-21T12:12:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:17:11Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:22:09Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:27:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:32:07Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
           "t": "2026-11-21T12:37:10Z",
           "s": "down",
           "note": "no answer within 8s"
@@ -1406,12 +1386,37 @@
           "t": "2026-11-21T16:07:07Z",
           "s": "down",
           "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:12:06Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:16:29Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:17:10Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:18:58Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:20:53Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
         }
       ],
-      "state": "down",
-      "last_checked": "2026-11-21T16:07:07Z",
-      "since": "2026-11-21T12:12:03Z",
-      "uptime_pct": 0.0,
+      "state": "up",
+      "last_checked": "2026-11-21T16:20:53Z",
+      "since": "2026-11-21T16:18:58Z",
+      "uptime_pct": 4.2,
       "cat": "house"
     },
     {
@@ -1420,31 +1425,6 @@
       "desc": "the canonical Mesh door",
       "ticks": [
         {
-          "t": "2026-11-21T12:12:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:17:11Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:22:09Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:27:03Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
-          "t": "2026-11-21T12:32:07Z",
-          "s": "down",
-          "note": "no answer within 8s"
-        },
-        {
           "t": "2026-11-21T12:37:10Z",
           "s": "down",
           "note": "no answer within 8s"
@@ -1658,12 +1638,37 @@
           "t": "2026-11-21T16:07:07Z",
           "s": "down",
           "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:12:06Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:16:29Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:17:10Z",
+          "s": "down",
+          "note": "TLS failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+        },
+        {
+          "t": "2026-11-21T16:18:58Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:20:53Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
         }
       ],
-      "state": "down",
-      "last_checked": "2026-11-21T16:07:07Z",
-      "since": "2026-11-21T12:12:03Z",
-      "uptime_pct": 0.0,
+      "state": "up",
+      "last_checked": "2026-11-21T16:20:53Z",
+      "since": "2026-11-21T16:18:58Z",
+      "uptime_pct": 4.2,
       "cat": "house"
     },
     {
@@ -1671,36 +1676,6 @@
       "name": "SSH door",
       "desc": "the shell door into Neo-Arcadia",
       "ticks": [
-        {
-          "t": "2026-11-21T12:12:03Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T12:17:11Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T12:22:09Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 8
-        },
-        {
-          "t": "2026-11-21T12:27:03Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 12
-        },
-        {
-          "t": "2026-11-21T12:32:07Z",
-          "s": "unknown",
-          "note": "the watcher's own egress intercepted this connection — the door itself was never reached",
-          "ms": 3
-        },
         {
           "t": "2026-11-21T12:37:10Z",
           "s": "unknown",
@@ -1958,12 +1933,42 @@
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:12:06Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:16:29Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:17:10Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:18:58Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:20:53Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:07:07Z",
+      "last_checked": "2026-11-21T16:20:53Z",
       "since": "2026-11-21T16:07:07Z",
-      "uptime_pct": 60.0,
+      "uptime_pct": 80.0,
       "cat": "house"
     }
   ]

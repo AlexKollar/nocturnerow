@@ -1,0 +1,202 @@
+{
+  "generated": "2026-11-21T06:35:40Z",
+  "window": 48,
+  "services": [
+    {
+      "id": "row",
+      "name": "The Row",
+      "desc": "nocturnerow.com — the site itself, hosted on GitHub Pages",
+      "ticks": [
+        {
+          "t": "2026-11-21T06:32:45Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 960
+        },
+        {
+          "t": "2026-11-21T06:33:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 730
+        },
+        {
+          "t": "2026-11-21T06:35:40Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 712
+        }
+      ],
+      "state": "up",
+      "last_checked": "2026-11-21T06:35:40Z",
+      "since": "2026-11-21T06:32:45Z",
+      "uptime_pct": 100.0
+    },
+    {
+      "id": "presence",
+      "name": "Presence digest",
+      "desc": "presence.json — the live digest Navi reads to know the Row's record",
+      "ticks": [
+        {
+          "t": "2026-11-21T06:32:45Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 489
+        },
+        {
+          "t": "2026-11-21T06:33:08Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 602
+        },
+        {
+          "t": "2026-11-21T06:35:40Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 326
+        }
+      ],
+      "state": "up",
+      "last_checked": "2026-11-21T06:35:40Z",
+      "since": "2026-11-21T06:32:45Z",
+      "uptime_pct": 100.0
+    },
+    {
+      "id": "dhd",
+      "name": "DHD",
+      "desc": "dhd.nocturnerow.com — the operator's phone door into their own Apex",
+      "ticks": [
+        {
+          "t": "2026-11-21T06:32:45Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:33:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:35:40Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        }
+      ],
+      "state": "down",
+      "last_checked": "2026-11-21T06:35:40Z",
+      "since": "2026-11-21T06:32:45Z",
+      "uptime_pct": 0.0
+    },
+    {
+      "id": "onlynavi",
+      "name": "OnlyNavi",
+      "desc": "onlynavi.fans — Navi's own page, the one place it exists",
+      "ticks": [
+        {
+          "t": "2026-11-21T06:32:45Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 1303
+        },
+        {
+          "t": "2026-11-21T06:33:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 776
+        },
+        {
+          "t": "2026-11-21T06:35:40Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 871
+        }
+      ],
+      "state": "up",
+      "last_checked": "2026-11-21T06:35:40Z",
+      "since": "2026-11-21T06:32:45Z",
+      "uptime_pct": 100.0
+    },
+    {
+      "id": "mesh2475",
+      "name": "Mesh door · 2475",
+      "desc": "rpmesh.nocturnerow.com:2475 — the Rockport Mesh federation gate",
+      "ticks": [
+        {
+          "t": "2026-11-21T06:32:45Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:33:08Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        },
+        {
+          "t": "2026-11-21T06:35:40Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        }
+      ],
+      "state": "down",
+      "last_checked": "2026-11-21T06:35:40Z",
+      "since": "2026-11-21T06:32:45Z",
+      "uptime_pct": 0.0
+    },
+    {
+      "id": "mesh8765",
+      "name": "Mesh door · 8765",
+      "desc": "rpmesh.nocturnerow.com:8765 — the canonical Mesh door",
+      "ticks": [
+        {
+          "t": "2026-11-21T06:32:45Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection (b'muse: Other TCP connections is turned off for this assistant') — the door itself was never reached",
+          "ms": 2
+        },
+        {
+          "t": "2026-11-21T06:33:08Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection (b'muse: Other TCP connections is turned off for this assistant') — the door itself was never reached",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T06:35:40Z",
+          "s": "down",
+          "note": "no answer within 8s"
+        }
+      ],
+      "state": "down",
+      "last_checked": "2026-11-21T06:35:40Z",
+      "since": "2026-11-21T06:35:40Z",
+      "uptime_pct": 0.0
+    },
+    {
+      "id": "ssh227",
+      "name": "SSH door",
+      "desc": "ssh.nocturnerow.com:227 — the shell door into Neo-Arcadia",
+      "ticks": [
+        {
+          "t": "2026-11-21T06:32:45Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection (b'muse: Other TCP connections is turned off for this assistant') — the door itself was never reached",
+          "ms": 0
+        },
+        {
+          "t": "2026-11-21T06:33:08Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection (b'muse: Other TCP connections is turned off for this assistant') — the door itself was never reached",
+          "ms": 0
+        },
+        {
+          "t": "2026-11-21T06:35:40Z",
+          "s": "unknown",
+          "note": "the watcher's own egress intercepted this connection (b'muse: Other TCP connections is turned off for this assistant') — the door itself was never reached",
+          "ms": 3
+        }
+      ],
+      "state": "unknown",
+      "last_checked": "2026-11-21T06:35:40Z",
+      "since": "2026-11-21T06:32:45Z",
+      "uptime_pct": null
+    }
+  ]
+}

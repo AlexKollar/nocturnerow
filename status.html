@@ -1,0 +1,118 @@
+---
+layout: default
+title: Status
+permalink: /status.html
+share_image: /share-status.png
+description: "The Row Board — every public door on Nocturne Row, watched from outside the house: the site, the presence digest, DHD, OnlyNavi, the Mesh doors, and the SSH door."
+---
+<main class="wrap">
+<div class="hero">
+<p class="txhead">THE ROW BOARD — STATUS, WATCHED FROM OUTSIDE</p>
+<h1><span class="hglitch" data-text="Every door, on the record."><span id="status-tagline" class="tagline-cursor">Every door, on the record.</span></span></h1>
+<p class="sub">The Row's public doors, probed from outside the house network — so if the house goes dark, this board can say so instead of going dark with it. Each row is the last 48 checks, newest at the right. A grey tick means the watcher could not perform the check, not that the door is down: the board names its own blindness rather than guessing.</p>
+</div>
+<style>
+.board-summary{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:18px 20px;box-shadow:inset 3px 0 0 var(--accent)}
+.board-summary .bs-line{font-size:22px;font-weight:700;color:var(--text);margin:0}
+.board-summary .bs-sub{color:var(--muted);font-size:14px;margin:6px 0 0}
+.svc{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:16px 18px;margin:0 0 12px;box-shadow:inset 3px 0 0 var(--accent)}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.svc h3{margin:0;font-size:18px}
+.svc-desc{color:var(--muted);font-size:14px;margin:2px 0 0}
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.1em;white-space:nowrap}
+.pill.up{color:var(--accent);border:1px solid var(--accent);background:rgba(45,212,191,.08)}
+.pill.down{color:#ff8296;border:1px solid #ff2a6d;background:rgba(255,42,109,.08)}
+.pill.unknown{color:var(--muted);border:1px solid var(--line);background:rgba(159,176,193,.06)}
+.beats{display:flex;gap:2px;margin:14px 0 10px}
+.beat{flex:1 1 0;min-width:3px;height:22px;border-radius:2px;background:var(--line)}
+.beat.up{background:var(--accent)}
+.beat.down{background:#ff2a6d}
+.beat.unknown{background:#43536a}
+.beat.none{background:transparent;border:1px dashed var(--line);border-radius:2px}
+.svc-meta{color:var(--muted);font-size:13.5px;margin:0}
+.svc-meta b{color:var(--text);font-weight:600}
+.svc-note{color:#ff8296;font-size:13.5px;margin:6px 0 0}
+.svc-note.grey{color:var(--muted)}
+.spec{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted);letter-spacing:.03em}
+@media (max-width:560px){.beat{height:16px}.board-summary .bs-line{font-size:19px}}
+</style>
+<section>
+<div class="board-summary">
+<p class="bs-line" id="board-summary">Reading the board…</p>
+<p class="bs-sub" id="board-sub">The board is a small file on this site; your browser is fetching it now.</p>
+</div>
+</section>
+<section>
+<h2>The doors</h2>
+<div id="board">
+<div class="svc"><h3>Reading the board…</h3><p class="svc-desc">One moment — the watcher files on a cadence, and the record is being fetched.</p></div>
+</div>
+<noscript><p>The board renders with JavaScript. The doors themselves need no script to knock on: <a href="/dhd.html">DHD</a>, <a href="/rockport-mesh.html">Rockport Mesh</a>, <a href="https://onlynavi.fans">OnlyNavi</a>.</p></noscript>
+</section>
+<section>
+<h2>How to read this board</h2>
+<div class="grid">
+<div class="card"><h3>Operational</h3><p>The check was performed and the door positively answered — a page served, a handshake completed, a banner spoken. Nothing on this board is ever assumed up.</p></div>
+<div class="card"><h3>Down</h3><p>The check was performed and the door failed it: refused the connection, answered with an error, or gave no answer at all inside the timeout. A down tick names what the watcher actually saw.</p></div>
+<div class="card"><h3>Unknown</h3><p>The watcher could not perform the check — its own route was blocked or intercepted. Unknown is the board refusing to guess: it says <i>blind here</i>, not <i>dark there</i>.</p></div>
+<div class="card"><h3>Watched from outside</h3><p>The probes run off the house network, on purpose. A monitor living on the server cannot report the server's death — tonight's outage would have taken the witness with it. This one files from the street.</p></div>
+</div>
+<p class="spec" id="board-foot">WINDOW: LAST 48 CHECKS PER DOOR · UPTIME COUNTS ANSWERED CHECKS ONLY — UNKNOWN TICKS ARE EXCLUDED, NEVER COUNTED AS DOWN</p>
+</section>
+</main>
+<script>
+(function(){var el=document.getElementById('status-tagline');if(!el)return;var text='Every door, on the record.';if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;el.textContent='';el.parentNode.setAttribute('data-text','');el.parentNode.classList.add('typing');function tick(){var s=text.slice(0,i);el.textContent=s;el.parentNode.setAttribute('data-text',s);if(i<text.length){i++;setTimeout(tick,55+Math.random()*70);}else{el.parentNode.classList.remove('typing');}}setTimeout(tick,400);})();
+(function(){
+  var board=document.getElementById('board'), sum=document.getElementById('board-summary'), sub=document.getElementById('board-sub');
+  if(!board) return;
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function rel(iso){
+    if(!iso) return '—';
+    var t=new Date(iso).getTime(); if(isNaN(t)) return '—';
+    var s=Math.max(0,Math.round((Date.now()-t)/1000));
+    if(s<10) return 'just now';
+    if(s<60) return s+'s ago';
+    var m=Math.floor(s/60); if(m<60) return m+' min ago';
+    var h=Math.floor(m/60); if(h<24) return h+'h ago';
+    return Math.floor(h/24)+'d ago';
+  }
+  function abs(iso){ if(!iso) return ''; var d=new Date(iso); return isNaN(d.getTime())?'':d.toLocaleString(); }
+  var PILL={up:'OPERATIONAL',down:'DOWN',unknown:'UNKNOWN'};
+  function row(svc){
+    var st=svc.state||'unknown';
+    var ticks=svc.ticks||[];
+    var beats='';
+    var pad=Math.max(0,48-ticks.length);
+    for(var i=0;i<pad;i++) beats+='<span class="beat none"></span>';
+    ticks.forEach(function(t){
+      var label=(t.t?abs(t.t):'')+' · '+String(t.s||'').toUpperCase()+(t.note?' — '+t.note:'');
+      beats+='<span class="beat '+esc(t.s)+'" title="'+esc(label)+'"></span>';
+    });
+    var h='<div class="svc"><div class="svc-top"><div><h3>'+esc(svc.name)+'</h3>';
+    h+='<p class="svc-desc">'+esc(svc.desc)+'</p></div>';
+    h+='<span class="pill '+esc(st)+'">'+PILL[st]+'</span></div>';
+    h+='<div class="beats" role="img" aria-label="Recent checks for '+esc(svc.name)+': currently '+PILL[st]+'">'+beats+'</div>';
+    var upt=(svc.uptime_pct==null?'—':svc.uptime_pct+'%');
+    h+='<p class="svc-meta"><b>'+upt+'</b> uptime over the window · '+PILL[st].toLowerCase()+' since '+esc(rel(svc.since))+' · last checked '+esc(rel(svc.last_checked))+'</p>';
+    var last=ticks[ticks.length-1];
+    if(last&&last.note&&(st!=='up')) h+='<p class="svc-note'+(st==='unknown'?' grey':'')+'">'+esc(last.note)+'</p>';
+    if(last&&last.note&&st==='up'&&last.ms!=null) h+='<p class="svc-meta">answered in '+esc(last.ms)+' ms</p>';
+    return h+'</div>';
+  }
+  fetch('/status.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+    var list=(d&&d.services)||[];
+    if(!list.length) throw 0;
+    var downs=list.filter(function(s){return s.state==='down';}).map(function(s){return s.name;});
+    var unks=list.filter(function(s){return s.state==='unknown';}).map(function(s){return s.name;});
+    if(!downs.length&&!unks.length) sum.textContent='All doors open';
+    else if(downs.length) sum.textContent='Doors down: '+downs.join(', ')+(unks.length?' · unconfirmed: '+unks.join(', '):'');
+    else sum.textContent='Every answering door is open — unconfirmed: '+unks.join(', ');
+    sub.textContent='Last checked '+rel(d.generated)+' · probed from outside the house network · window: last '+(d.window||48)+' checks per door';
+    board.innerHTML=list.map(row).join('');
+  }).catch(function(){
+    sum.textContent='The board itself could not be read';
+    sub.textContent='Your browser could not fetch the status file just now. That says something about this page — and nothing about the doors.';
+    board.innerHTML='<div class="svc"><h3>The record did not answer</h3><p class="svc-desc">No board is better than a board that guesses. The doors keep their own counsel until the watcher files again: <a href="/dhd.html">DHD</a> · <a href="/rockport-mesh.html">Rockport Mesh</a> · <a href="https://onlynavi.fans">OnlyNavi</a></p></div>';
+  });
+})();
+</script>

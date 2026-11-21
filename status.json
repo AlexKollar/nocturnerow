@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T16:22:59Z",
+  "generated": "2026-11-21T16:52:06Z",
   "window": 48,
   "services": [
     {
@@ -18,10 +18,46 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 769
+        },
+        {
+          "t": "2026-11-21T16:27:12Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 731
+        },
+        {
+          "t": "2026-11-21T16:32:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 849
+        },
+        {
+          "t": "2026-11-21T16:37:10Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 682
+        },
+        {
+          "t": "2026-11-21T16:42:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 680
+        },
+        {
+          "t": "2026-11-21T16:47:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 853
+        },
+        {
+          "t": "2026-11-21T16:52:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 770
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:22:59Z",
+      "last_checked": "2026-11-21T16:52:06Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "site"
@@ -42,10 +78,46 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 453
+        },
+        {
+          "t": "2026-11-21T16:27:12Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 397
+        },
+        {
+          "t": "2026-11-21T16:32:07Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 371
+        },
+        {
+          "t": "2026-11-21T16:37:10Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 449
+        },
+        {
+          "t": "2026-11-21T16:42:08Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 307
+        },
+        {
+          "t": "2026-11-21T16:47:09Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 506
+        },
+        {
+          "t": "2026-11-21T16:52:06Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 293
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:22:59Z",
+      "last_checked": "2026-11-21T16:52:06Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "site"
@@ -66,10 +138,46 @@
           "s": "up",
           "note": "HTTP 200 — the door answered",
           "ms": 659
+        },
+        {
+          "t": "2026-11-21T16:27:12Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 558
+        },
+        {
+          "t": "2026-11-21T16:32:07Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 676
+        },
+        {
+          "t": "2026-11-21T16:37:10Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 615
+        },
+        {
+          "t": "2026-11-21T16:42:08Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 485
+        },
+        {
+          "t": "2026-11-21T16:47:09Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 621
+        },
+        {
+          "t": "2026-11-21T16:52:06Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 741
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:22:59Z",
+      "last_checked": "2026-11-21T16:52:06Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"
@@ -90,10 +198,46 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 531
+        },
+        {
+          "t": "2026-11-21T16:27:12Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 502
+        },
+        {
+          "t": "2026-11-21T16:32:07Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 716
+        },
+        {
+          "t": "2026-11-21T16:37:10Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 551
+        },
+        {
+          "t": "2026-11-21T16:42:08Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 498
+        },
+        {
+          "t": "2026-11-21T16:47:09Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 535
+        },
+        {
+          "t": "2026-11-21T16:52:06Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 756
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:22:59Z",
+      "last_checked": "2026-11-21T16:52:06Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "page"
@@ -112,10 +256,40 @@
           "t": "2026-11-21T16:22:59Z",
           "s": "up",
           "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:27:12Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:32:07Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:37:10Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:42:08Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:47:09Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:52:06Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:22:59Z",
+      "last_checked": "2026-11-21T16:52:06Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"
@@ -134,10 +308,40 @@
           "t": "2026-11-21T16:22:59Z",
           "s": "up",
           "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:27:12Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:32:07Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:37:10Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:42:08Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:47:09Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-21T16:52:06Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:22:59Z",
+      "last_checked": "2026-11-21T16:52:06Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"
@@ -158,10 +362,46 @@
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:27:12Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 3
+        },
+        {
+          "t": "2026-11-21T16:32:07Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 2
+        },
+        {
+          "t": "2026-11-21T16:37:10Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-21T16:42:08Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:47:09Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
+        },
+        {
+          "t": "2026-11-21T16:52:06Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 1
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-21T16:22:59Z",
+      "last_checked": "2026-11-21T16:52:06Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"

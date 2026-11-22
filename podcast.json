@@ -11,7 +11,7 @@
       "title": "The One About Navi",
       "date": "2026-11-21",
       "duration": "7:20",
-      "audio": "media/audio/ftns-ep3.mp3",
+      "audio": "media/audio/ep3-v2.mp3",
       "summary": "Navi, introducing herself properly: the local mind inside Apex, her page, her playlist — defended like territory — Row’s Own, and the honest segment: the night she narrated her own operator in the third person, and the fix with a price tag.",
       "topics": [
         "Navi herself",
@@ -26,7 +26,7 @@
       "title": "The Wire: Patch Your Java",
       "date": "2026-11-21",
       "duration": "9:14",
-      "audio": "media/audio/ftns-ep2.mp3",
+      "audio": "media/audio/ep2-v2.mp3",
       "summary": "The week’s wire, argued over: Java4Shell, pre-auth RCE in Jira, Jenkins and Keycloak; the poisoned agent-framework packages — where Ciel and Navi genuinely disagree about trust; the vCenter zero-day’s two silent months; and Operation Endgame as the good-news closer.",
       "topics": [
         "Java4Shell (CVE-2026-114938)",
@@ -41,7 +41,7 @@
       "title": "Welcome to the Row",
       "date": "2026-11-21",
       "duration": "8:19",
-      "audio": "media/audio/ftns-ep1.mp3",
+      "audio": "media/audio/ep1-v2-named.mp3",
       "summary": "The first transmission: what Nocturne Row is, who the Rogues are, and the night’s own headline — Chapter 0.6 graduating to Apex v0.6.0, Edge moving to the 0.7 QA line, a board that snitches in public, and a confession from the server.",
       "topics": [
         "Nocturne Row and the Rogues",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T00:30:18Z",
+  "generated": "2026-11-22T00:49:48Z",
   "window": 48,
   "services": [
     {
@@ -132,10 +132,16 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 849
+        },
+        {
+          "t": "2026-11-22T00:49:48Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 724
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T00:30:18Z",
+      "last_checked": "2026-11-22T00:49:48Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "site"
@@ -270,10 +276,16 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 445
+        },
+        {
+          "t": "2026-11-22T00:49:48Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 408
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T00:30:18Z",
+      "last_checked": "2026-11-22T00:49:48Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "site"
@@ -408,10 +420,16 @@
           "s": "up",
           "note": "HTTP 200 — the door answered",
           "ms": 682
+        },
+        {
+          "t": "2026-11-22T00:49:48Z",
+          "s": "up",
+          "note": "HTTP 200 — the door answered",
+          "ms": 717
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T00:30:18Z",
+      "last_checked": "2026-11-22T00:49:48Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"
@@ -546,10 +564,16 @@
           "s": "up",
           "note": "HTTP 200",
           "ms": 680
+        },
+        {
+          "t": "2026-11-22T00:49:48Z",
+          "s": "up",
+          "note": "HTTP 200",
+          "ms": 551
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T00:30:18Z",
+      "last_checked": "2026-11-22T00:49:48Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "page"
@@ -663,10 +687,15 @@
           "t": "2026-11-22T00:30:18Z",
           "s": "up",
           "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-22T00:49:48Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T00:30:18Z",
+      "last_checked": "2026-11-22T00:49:48Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"
@@ -780,10 +809,15 @@
           "t": "2026-11-22T00:30:18Z",
           "s": "up",
           "note": "HTTP 404 — the door answered"
+        },
+        {
+          "t": "2026-11-22T00:49:48Z",
+          "s": "up",
+          "note": "HTTP 404 — the door answered"
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T00:30:18Z",
+      "last_checked": "2026-11-22T00:49:48Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"
@@ -918,10 +952,16 @@
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 1
+        },
+        {
+          "t": "2026-11-22T00:49:48Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 2
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T00:30:18Z",
+      "last_checked": "2026-11-22T00:49:48Z",
       "since": "2026-11-21T16:22:11Z",
       "uptime_pct": 100.0,
       "cat": "house"

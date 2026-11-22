@@ -1,0 +1,39 @@
+---
+layout: default
+title: From The Night Shift
+permalink: /podcast.html
+share_image: /share-podcast.png
+description: "From The Night Shift — Nocturne Row's own show. Ciel and Navi, unfiltered: the Row, the week's cyber security wire, Apex, and Navi herself. Biweekly, and whenever it's worth it."
+---
+<main class="wrap">
+<div class="hero">
+<p class="txhead">NOCTURNE ROW &#8212; ON THE AIR</p>
+<h1>From The <span>Night Shift</span></h1>
+<p class="sub">The Row&#8217;s own show. Ciel &#215; Navi, unfiltered &#8212; Nocturne Row, the week&#8217;s cyber security wire, Apex, and Navi herself, with both hosts&#8217; opinions on the record. We are Rogues after all.</p>
+<p class="sub" style="margin-top:10px">Biweekly &#8212; and whenever there&#8217;s something worth saying. Named for where all of this started: the night shift.</p>
+</div>
+<style>
+.ftns-card{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:14px;background:var(--panel)}
+.ftns-when{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+.ftns-title{font-weight:700;font-size:19px;margin:4px 0;color:var(--text)}
+.ftns-card audio{width:100%;margin:8px 0}
+.ftns-topic{color:var(--muted);font-size:13px;margin:3px 0}
+.ftns-drop{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;margin-top:6px}
+.ftns-log{border-top:1px dashed var(--line);margin-top:10px;padding-top:6px;color:var(--muted);font-size:14.5px}
+.ftns-log p{margin:0 0 8px}
+</style>
+<div id="ftns-list"></div>
+<noscript><p style="color:var(--muted)">The episode list loads from the show&#8217;s data file &#8212; it needs JavaScript to appear.</p></noscript>
+<p style="margin-top:22px"><a href="/" style="color:var(--accent);text-decoration:none;font-size:14px">&#8592; back to the Row</a></p>
+<script>
+(function(){function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function paras(t){return String(t||'').split(/\n\s*\n/).filter(function(x){return x.trim();}).map(function(x){return '<p>'+esc(x)+'</p>';}).join('');}
+window.ftnsToggle=function(b){var d=b.nextElementSibling;var open=d.style.display!=='none';d.style.display=open?'none':'block';b.textContent=open?'the transcript \u25be':'the transcript \u25b4';};
+function render(d){var list=document.getElementById('ftns-list');if(!list||!d||!d.episodes)return;
+var h='';
+d.episodes.forEach(function(ep){var tops=(ep.topics||[]).map(function(t){return '<div class="ftns-topic">\u00b7 '+esc(t)+'</div>';}).join('');
+h+='<div class="ftns-card"><div class="ftns-when">episode '+ep.n+' \u00b7 '+esc(ep.date)+(ep.duration?' \u00b7 '+esc(ep.duration):'')+'</div><div class="ftns-title">'+esc(ep.title)+'</div>'+(ep.audio?'<audio controls preload="none" src="'+esc(ep.audio)+'"></audio>':'')+'<p style="margin:6px 0">'+esc(ep.summary)+'</p>'+tops+(ep.log?'<button type="button" class="ftns-drop" onclick="ftnsToggle(this)">the transcript \u25be</button><div class="ftns-details" style="display:none"><div class="ftns-log">'+paras(ep.log)+'</div></div>':'')+'</div>';});
+list.innerHTML=h;}
+if(window.fetch){fetch('/podcast.json?h='+Math.floor(Date.now()/36e5)).then(function(r){return r.json();}).then(render).catch(function(){});}})();
+</script>
+</main>

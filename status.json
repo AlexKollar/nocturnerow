@@ -1,1090 +1,204 @@
 {
-  "generated": "2026-11-22T01:02:22Z",
+  "generated": "2026-11-22T01:05:59Z",
   "window": 48,
   "services": [
     {
       "id": "row",
       "name": "The Row",
       "desc": "nocturnerow.com — the site itself, hosted on GitHub Pages",
+      "cat": "site",
       "ticks": [
         {
-          "t": "2026-11-21T16:22:11Z",
+          "t": "2026-11-22T01:03:39Z",
           "s": "up",
-          "note": "HTTP 200",
-          "ms": 927
+          "note": "200 - OK",
+          "ms": 221
         },
         {
-          "t": "2026-11-21T16:22:59Z",
+          "t": "2026-11-22T01:04:39Z",
           "s": "up",
-          "note": "HTTP 200",
-          "ms": 769
+          "note": "200 - OK",
+          "ms": 151
         },
         {
-          "t": "2026-11-21T16:27:12Z",
+          "t": "2026-11-22T01:05:39Z",
           "s": "up",
-          "note": "HTTP 200",
-          "ms": 731
-        },
-        {
-          "t": "2026-11-21T16:32:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 849
-        },
-        {
-          "t": "2026-11-21T16:37:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 682
-        },
-        {
-          "t": "2026-11-21T16:42:08Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 680
-        },
-        {
-          "t": "2026-11-21T16:47:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 853
-        },
-        {
-          "t": "2026-11-21T16:52:06Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 770
-        },
-        {
-          "t": "2026-11-21T16:57:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 684
-        },
-        {
-          "t": "2026-11-21T17:02:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 954
-        },
-        {
-          "t": "2026-11-21T17:07:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 617
-        },
-        {
-          "t": "2026-11-21T17:12:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 812
-        },
-        {
-          "t": "2026-11-21T17:17:05Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 637
-        },
-        {
-          "t": "2026-11-21T17:22:08Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 719
-        },
-        {
-          "t": "2026-11-21T17:29:37Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 576
-        },
-        {
-          "t": "2026-11-21T17:32:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 538
-        },
-        {
-          "t": "2026-11-21T17:37:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 842
-        },
-        {
-          "t": "2026-11-21T17:42:04Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 454
-        },
-        {
-          "t": "2026-11-21T17:47:11Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 716
-        },
-        {
-          "t": "2026-11-21T20:27:51Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 727
-        },
-        {
-          "t": "2026-11-22T00:30:18Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 849
-        },
-        {
-          "t": "2026-11-22T00:49:48Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 724
-        },
-        {
-          "t": "2026-11-22T00:52:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 642
-        },
-        {
-          "t": "2026-11-22T00:57:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 636
-        },
-        {
-          "t": "2026-11-22T01:02:22Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 509
+          "note": "200 - OK",
+          "ms": 170
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T01:02:22Z",
-      "since": "2026-11-21T16:22:11Z",
-      "uptime_pct": 100.0,
-      "cat": "site"
+      "last_checked": "2026-11-22T01:05:39Z",
+      "since": "2026-11-22T01:03:39Z",
+      "uptime_pct": 100.0
     },
     {
       "id": "presence",
       "name": "Presence digest",
       "desc": "presence.json — the live digest Navi reads to know the Row's record",
+      "cat": "site",
       "ticks": [
         {
-          "t": "2026-11-21T16:22:11Z",
+          "t": "2026-11-22T01:05:51Z",
           "s": "up",
           "note": "HTTP 200 · valid JSON",
-          "ms": 481
+          "ms": 126
         },
         {
-          "t": "2026-11-21T16:22:59Z",
+          "t": "2026-11-22T01:05:59Z",
           "s": "up",
           "note": "HTTP 200 · valid JSON",
-          "ms": 453
-        },
-        {
-          "t": "2026-11-21T16:27:12Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 397
-        },
-        {
-          "t": "2026-11-21T16:32:07Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 371
-        },
-        {
-          "t": "2026-11-21T16:37:10Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 449
-        },
-        {
-          "t": "2026-11-21T16:42:08Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 307
-        },
-        {
-          "t": "2026-11-21T16:47:09Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 506
-        },
-        {
-          "t": "2026-11-21T16:52:06Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 293
-        },
-        {
-          "t": "2026-11-21T16:57:09Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 438
-        },
-        {
-          "t": "2026-11-21T17:02:09Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 343
-        },
-        {
-          "t": "2026-11-21T17:07:10Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 318
-        },
-        {
-          "t": "2026-11-21T17:12:09Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 367
-        },
-        {
-          "t": "2026-11-21T17:17:05Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 329
-        },
-        {
-          "t": "2026-11-21T17:22:08Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 308
-        },
-        {
-          "t": "2026-11-21T17:29:37Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 329
-        },
-        {
-          "t": "2026-11-21T17:32:07Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 284
-        },
-        {
-          "t": "2026-11-21T17:37:10Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 305
-        },
-        {
-          "t": "2026-11-21T17:42:04Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 300
-        },
-        {
-          "t": "2026-11-21T17:47:11Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 320
-        },
-        {
-          "t": "2026-11-21T20:27:51Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 327
-        },
-        {
-          "t": "2026-11-22T00:30:18Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 445
-        },
-        {
-          "t": "2026-11-22T00:49:48Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 408
-        },
-        {
-          "t": "2026-11-22T00:52:10Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 299
-        },
-        {
-          "t": "2026-11-22T00:57:07Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 332
-        },
-        {
-          "t": "2026-11-22T01:02:22Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 386
+          "ms": 162
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T01:02:22Z",
-      "since": "2026-11-21T16:22:11Z",
-      "uptime_pct": 100.0,
-      "cat": "site"
+      "last_checked": "2026-11-22T01:05:59Z",
+      "since": "2026-11-22T01:05:51Z",
+      "uptime_pct": 100.0
     },
     {
       "id": "dhd",
       "name": "DHD",
       "desc": "the operator's phone door into their own Apex",
+      "cat": "house",
       "ticks": [
         {
-          "t": "2026-11-21T16:22:11Z",
+          "t": "2026-11-22T01:03:39Z",
           "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 615
+          "note": "200 - OK",
+          "ms": 60
         },
         {
-          "t": "2026-11-21T16:22:59Z",
+          "t": "2026-11-22T01:04:39Z",
           "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 659
+          "note": "200 - OK",
+          "ms": 24
         },
         {
-          "t": "2026-11-21T16:27:12Z",
+          "t": "2026-11-22T01:05:39Z",
           "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 558
-        },
-        {
-          "t": "2026-11-21T16:32:07Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 676
-        },
-        {
-          "t": "2026-11-21T16:37:10Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 615
-        },
-        {
-          "t": "2026-11-21T16:42:08Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 485
-        },
-        {
-          "t": "2026-11-21T16:47:09Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 621
-        },
-        {
-          "t": "2026-11-21T16:52:06Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 741
-        },
-        {
-          "t": "2026-11-21T16:57:09Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 705
-        },
-        {
-          "t": "2026-11-21T17:02:09Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 659
-        },
-        {
-          "t": "2026-11-21T17:07:10Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 655
-        },
-        {
-          "t": "2026-11-21T17:12:09Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 597
-        },
-        {
-          "t": "2026-11-21T17:17:05Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 643
-        },
-        {
-          "t": "2026-11-21T17:22:08Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 618
-        },
-        {
-          "t": "2026-11-21T17:29:37Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 728
-        },
-        {
-          "t": "2026-11-21T17:32:07Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 9104
-        },
-        {
-          "t": "2026-11-21T17:37:10Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 526
-        },
-        {
-          "t": "2026-11-21T17:42:04Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 588
-        },
-        {
-          "t": "2026-11-21T17:47:11Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 492
-        },
-        {
-          "t": "2026-11-21T20:27:51Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 719
-        },
-        {
-          "t": "2026-11-22T00:30:18Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 682
-        },
-        {
-          "t": "2026-11-22T00:49:48Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 717
-        },
-        {
-          "t": "2026-11-22T00:52:10Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 640
-        },
-        {
-          "t": "2026-11-22T00:57:07Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 607
-        },
-        {
-          "t": "2026-11-22T01:02:22Z",
-          "s": "up",
-          "note": "HTTP 200 — the door answered",
-          "ms": 698
+          "note": "200 - OK",
+          "ms": 76
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T01:02:22Z",
-      "since": "2026-11-21T16:22:11Z",
-      "uptime_pct": 100.0,
-      "cat": "house"
+      "last_checked": "2026-11-22T01:05:39Z",
+      "since": "2026-11-22T01:03:39Z",
+      "uptime_pct": 100.0
     },
     {
       "id": "onlynavi",
       "name": "OnlyNavi",
       "desc": "onlynavi.fans — Navi's own page, the one place it exists",
+      "cat": "page",
       "ticks": [
         {
-          "t": "2026-11-21T16:22:11Z",
+          "t": "2026-11-22T01:03:39Z",
           "s": "up",
-          "note": "HTTP 200",
-          "ms": 562
+          "note": "200 - OK",
+          "ms": 263
         },
         {
-          "t": "2026-11-21T16:22:59Z",
+          "t": "2026-11-22T01:04:39Z",
           "s": "up",
-          "note": "HTTP 200",
-          "ms": 531
+          "note": "200 - OK",
+          "ms": 181
         },
         {
-          "t": "2026-11-21T16:27:12Z",
+          "t": "2026-11-22T01:05:39Z",
           "s": "up",
-          "note": "HTTP 200",
-          "ms": 502
-        },
-        {
-          "t": "2026-11-21T16:32:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 716
-        },
-        {
-          "t": "2026-11-21T16:37:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 551
-        },
-        {
-          "t": "2026-11-21T16:42:08Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 498
-        },
-        {
-          "t": "2026-11-21T16:47:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 535
-        },
-        {
-          "t": "2026-11-21T16:52:06Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 756
-        },
-        {
-          "t": "2026-11-21T16:57:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 789
-        },
-        {
-          "t": "2026-11-21T17:02:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 575
-        },
-        {
-          "t": "2026-11-21T17:07:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 570
-        },
-        {
-          "t": "2026-11-21T17:12:09Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 756
-        },
-        {
-          "t": "2026-11-21T17:17:05Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 539
-        },
-        {
-          "t": "2026-11-21T17:22:08Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 647
-        },
-        {
-          "t": "2026-11-21T17:29:37Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 794
-        },
-        {
-          "t": "2026-11-21T17:32:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 544
-        },
-        {
-          "t": "2026-11-21T17:37:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 510
-        },
-        {
-          "t": "2026-11-21T17:42:04Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 764
-        },
-        {
-          "t": "2026-11-21T17:47:11Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 496
-        },
-        {
-          "t": "2026-11-21T20:27:51Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 776
-        },
-        {
-          "t": "2026-11-22T00:30:18Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 680
-        },
-        {
-          "t": "2026-11-22T00:49:48Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 551
-        },
-        {
-          "t": "2026-11-22T00:52:10Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 1361
-        },
-        {
-          "t": "2026-11-22T00:57:07Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 762
-        },
-        {
-          "t": "2026-11-22T01:02:22Z",
-          "s": "up",
-          "note": "HTTP 200",
-          "ms": 589
+          "note": "200 - OK",
+          "ms": 233
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T01:02:22Z",
-      "since": "2026-11-21T16:22:11Z",
-      "uptime_pct": 100.0,
-      "cat": "page"
+      "last_checked": "2026-11-22T01:05:39Z",
+      "since": "2026-11-22T01:03:39Z",
+      "uptime_pct": 100.0
     },
     {
       "id": "mesh2475",
       "name": "Mesh door · 2475",
       "desc": "the Rockport Mesh federation gate",
+      "cat": "house",
       "ticks": [
         {
-          "t": "2026-11-21T16:22:11Z",
+          "t": "2026-11-22T01:03:39Z",
           "s": "up",
-          "note": "HTTP 404 — the door answered"
+          "note": "404 - Not Found",
+          "ms": 82
         },
         {
-          "t": "2026-11-21T16:22:59Z",
+          "t": "2026-11-22T01:04:39Z",
           "s": "up",
-          "note": "HTTP 404 — the door answered"
+          "note": "404 - Not Found",
+          "ms": 20
         },
         {
-          "t": "2026-11-21T16:27:12Z",
+          "t": "2026-11-22T01:05:39Z",
           "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:32:07Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:37:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:42:08Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:47:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:52:06Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:57:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:02:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:07:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:12:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:17:05Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:22:08Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:29:37Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:32:07Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:37:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:42:04Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:47:11Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T20:27:51Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:30:18Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:49:48Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:52:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:57:07Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T01:02:22Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
+          "note": "404 - Not Found",
+          "ms": 72
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T01:02:22Z",
-      "since": "2026-11-21T16:22:11Z",
-      "uptime_pct": 100.0,
-      "cat": "house"
+      "last_checked": "2026-11-22T01:05:39Z",
+      "since": "2026-11-22T01:03:39Z",
+      "uptime_pct": 100.0
     },
     {
       "id": "mesh8765",
       "name": "Mesh door · 8765",
       "desc": "the canonical Mesh door",
+      "cat": "house",
       "ticks": [
         {
-          "t": "2026-11-21T16:22:11Z",
+          "t": "2026-11-22T01:03:39Z",
           "s": "up",
-          "note": "HTTP 404 — the door answered"
+          "note": "404 - Not Found",
+          "ms": 77
         },
         {
-          "t": "2026-11-21T16:22:59Z",
+          "t": "2026-11-22T01:04:39Z",
           "s": "up",
-          "note": "HTTP 404 — the door answered"
+          "note": "404 - Not Found",
+          "ms": 16
         },
         {
-          "t": "2026-11-21T16:27:12Z",
+          "t": "2026-11-22T01:05:39Z",
           "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:32:07Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:37:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:42:08Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:47:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:52:06Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T16:57:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:02:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:07:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:12:09Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:17:05Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:22:08Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:29:37Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:32:07Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:37:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:42:04Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T17:47:11Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-21T20:27:51Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:30:18Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:49:48Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:52:10Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T00:57:07Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
-        },
-        {
-          "t": "2026-11-22T01:02:22Z",
-          "s": "up",
-          "note": "HTTP 404 — the door answered"
+          "note": "404 - Not Found",
+          "ms": 16
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T01:02:22Z",
-      "since": "2026-11-21T16:22:11Z",
-      "uptime_pct": 100.0,
-      "cat": "house"
+      "last_checked": "2026-11-22T01:05:39Z",
+      "since": "2026-11-22T01:03:39Z",
+      "uptime_pct": 100.0
     },
     {
       "id": "ssh227",
       "name": "SSH door",
       "desc": "the shell door into Neo-Arcadia",
+      "cat": "house",
       "ticks": [
         {
-          "t": "2026-11-21T16:22:11Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T16:22:59Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T16:27:12Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-21T16:32:07Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-21T16:37:10Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 4
-        },
-        {
-          "t": "2026-11-21T16:42:08Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T16:47:09Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T16:52:06Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T16:57:09Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T17:02:09Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T17:07:10Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T17:12:09Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T17:17:05Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 0
-        },
-        {
-          "t": "2026-11-21T17:22:08Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 0
-        },
-        {
-          "t": "2026-11-21T17:29:37Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-21T17:32:07Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 0
-        },
-        {
-          "t": "2026-11-21T17:37:10Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 0
-        },
-        {
-          "t": "2026-11-21T17:42:04Z",
+          "t": "2026-11-22T01:05:51Z",
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 5
         },
         {
-          "t": "2026-11-21T17:47:11Z",
+          "t": "2026-11-22T01:05:59Z",
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 4
-        },
-        {
-          "t": "2026-11-21T20:27:51Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 9
-        },
-        {
-          "t": "2026-11-22T00:30:18Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 1
-        },
-        {
-          "t": "2026-11-22T00:49:48Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-22T00:52:10Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-22T00:57:07Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 4
-        },
-        {
-          "t": "2026-11-22T01:02:22Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 0
+          "ms": 3
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T01:02:22Z",
-      "since": "2026-11-21T16:22:11Z",
-      "uptime_pct": 100.0,
-      "cat": "house"
+      "last_checked": "2026-11-22T01:05:59Z",
+      "since": "2026-11-22T01:05:51Z",
+      "uptime_pct": 100.0
     }
   ]
 }

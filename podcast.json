@@ -9,6 +9,8 @@
     {
       "n": "special",
       "title": "Building a NetNavi",
+      "slug": "building-a-netnavi",
+      "share_image": "/share-ep-building-a-netnavi.png",
       "date": "2026-11-22",
       "duration": "11:22",
       "audio": "media/audio/ep-netnavi.mp3",
@@ -24,6 +26,8 @@
     {
       "n": 3,
       "title": "The One About Navi",
+      "slug": "the-one-about-navi",
+      "share_image": "/share-ep-the-one-about-navi.png",
       "date": "2026-11-21",
       "duration": "7:20",
       "audio": "media/audio/ep3-v2.mp3",
@@ -39,6 +43,8 @@
     {
       "n": 2,
       "title": "The Wire: Patch Your Java",
+      "slug": "the-wire-patch-your-java",
+      "share_image": "/share-ep-the-wire-patch-your-java.png",
       "date": "2026-11-21",
       "duration": "9:14",
       "audio": "media/audio/ep2-v2.mp3",
@@ -54,6 +60,8 @@
     {
       "n": 1,
       "title": "Welcome to the Row",
+      "slug": "welcome-to-the-row",
+      "share_image": "/share-ep-welcome-to-the-row.png",
       "date": "2026-11-21",
       "duration": "8:19",
       "audio": "media/audio/ep1-v2-named.mp3",

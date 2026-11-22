@@ -18,7 +18,12 @@ description: "From The Night Shift — Nocturne Row's own show. Ciel and Navi, u
 .ftns-title{font-weight:700;font-size:19px;margin:4px 0;color:var(--text)}
 .ftns-card audio{width:100%;margin:8px 0}
 .ftns-topic{color:var(--muted);font-size:13px;margin:3px 0}
-.ftns-drop{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;margin-top:6px}
+.ftns-drop{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;min-height:44px;display:inline-flex;align-items:center}
+.ftns-title a{color:inherit;text-decoration:none}
+.ftns-title a:hover{color:var(--accent)}
+.ftns-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.ftns-share{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:0 18px;min-height:44px;font-size:13px;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center}
+.ftns-share:hover{color:var(--accent);border-color:var(--accent)}
 .ftns-log{border-top:1px dashed var(--line);margin-top:10px;padding-top:6px;color:var(--muted);font-size:14.5px}
 .ftns-log p{margin:0 0 8px}
 </style>
@@ -28,11 +33,12 @@ description: "From The Night Shift — Nocturne Row's own show. Ciel and Navi, u
 <script>
 (function(){function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
 function paras(t){return String(t||'').split(/\n\s*\n/).filter(function(x){return x.trim();}).map(function(x){return '<p>'+esc(x)+'</p>';}).join('');}
-window.ftnsToggle=function(b){var d=b.nextElementSibling;var open=d.style.display!=='none';d.style.display=open?'none':'block';b.textContent=open?'the transcript \u25be':'the transcript \u25b4';};
+window.ftnsToggle=function(b){var card=b.closest?b.closest('.ftns-card'):null;var d=card?card.querySelector('.ftns-details'):b.nextElementSibling;if(!d)return;var open=d.style.display!=='none';d.style.display=open?'none':'block';b.textContent=open?'the transcript \u25be':'the transcript \u25b4';};
+window.ftnsShare=function(b,url){var title=b.getAttribute('data-title')||'From The Night Shift';if(navigator.share){navigator.share({title:title,url:url}).catch(function(){});return;}var done=function(){var o=b.textContent;b.textContent='link copied \u2713';setTimeout(function(){b.textContent=o;},2000);};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done,done);return;}var ta=document.createElement('textarea');ta.value=url;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);done();};
 function render(d){var list=document.getElementById('ftns-list');if(!list||!d||!d.episodes)return;
 var h='';
 d.episodes.forEach(function(ep){var tops=(ep.topics||[]).map(function(t){return '<div class="ftns-topic">\u00b7 '+esc(t)+'</div>';}).join('');
-h+='<div class="ftns-card"><div class="ftns-when">episode '+ep.n+' \u00b7 '+esc(ep.date)+(ep.duration?' \u00b7 '+esc(ep.duration):'')+'</div><div class="ftns-title">'+esc(ep.title)+'</div>'+(ep.audio?'<audio controls preload="none" src="'+esc(ep.audio)+'"></audio>':'')+'<p style="margin:6px 0">'+esc(ep.summary)+'</p>'+tops+(ep.log?'<button type="button" class="ftns-drop" onclick="ftnsToggle(this)">the transcript \u25be</button><div class="ftns-details" style="display:none"><div class="ftns-log">'+paras(ep.log)+'</div></div>':'')+'</div>';});
+var slug=ep.slug||'';var epurl=slug?'https://nocturnerow.com/episodes/'+slug+'.html':'';var acts='';if(slug||ep.log){acts='<div class="ftns-actions">'+(slug?'<button type="button" class="ftns-share" data-title="'+esc(ep.title)+'" onclick="ftnsShare(this,\''+epurl+'\')">share this episode</button>':'')+(ep.log?'<button type="button" class="ftns-drop" onclick="ftnsToggle(this)">the transcript \u25be</button>':'')+'</div>';}h+='<div class="ftns-card"'+(slug?' id="ep-'+esc(slug)+'"':'')+'><div class="ftns-when">episode '+ep.n+' \u00b7 '+esc(ep.date)+(ep.duration?' \u00b7 '+esc(ep.duration):'')+'</div><div class="ftns-title">'+(slug?'<a href="/episodes/'+esc(slug)+'.html">'+esc(ep.title)+'</a>':esc(ep.title))+'</div>'+(ep.audio?'<audio controls preload="none" src="'+esc(ep.audio)+'"></audio>':'')+'<p style="margin:6px 0">'+esc(ep.summary)+'</p>'+tops+acts+(ep.log?'<div class="ftns-details" style="display:none"><div class="ftns-log">'+paras(ep.log)+'</div></div>':'')+'</div>';});
 list.innerHTML=h;}
 if(window.fetch){fetch('/podcast.json?h='+Math.floor(Date.now()/36e5)).then(function(r){return r.json();}).then(render).catch(function(){});}})();
 </script>

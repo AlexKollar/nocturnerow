@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T05:49:39Z",
+  "generated": "2026-11-22T05:53:52Z",
   "window": 48,
   "services": [
     {
@@ -7,37 +7,8 @@
       "name": "The Row",
       "desc": "nocturnerow.com — the site itself, hosted on GitHub Pages",
       "cat": "site",
+      "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T05:01:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 189
-        },
-        {
-          "t": "2026-11-22T05:02:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 165
-        },
-        {
-          "t": "2026-11-22T05:03:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 207
-        },
-        {
-          "t": "2026-11-22T05:04:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 163
-        },
-        {
-          "t": "2026-11-22T05:05:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 215
-        },
         {
           "t": "2026-11-22T05:06:39Z",
           "s": "up",
@@ -295,11 +266,41 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 355
+        },
+        {
+          "t": "2026-11-22T05:49:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 146
+        },
+        {
+          "t": "2026-11-22T05:50:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 186
+        },
+        {
+          "t": "2026-11-22T05:51:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 135
+        },
+        {
+          "t": "2026-11-22T05:52:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 150
+        },
+        {
+          "t": "2026-11-22T05:53:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 189
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T05:48:39Z",
-      "since": "2026-11-22T05:01:39Z",
+      "last_checked": "2026-11-22T05:53:39Z",
+      "since": "2026-11-22T05:06:39Z",
       "uptime_pct": 100.0
     },
     {
@@ -307,37 +308,8 @@
       "name": "Presence digest",
       "desc": "presence.json — the live digest Navi reads to know the Row's record",
       "cat": "site",
+      "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T04:59:39Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 162
-        },
-        {
-          "t": "2026-11-22T05:00:44Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 216
-        },
-        {
-          "t": "2026-11-22T05:01:49Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 111
-        },
-        {
-          "t": "2026-11-22T05:02:49Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 141
-        },
-        {
-          "t": "2026-11-22T05:03:54Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 158
-        },
         {
           "t": "2026-11-22T05:04:59Z",
           "s": "up",
@@ -595,11 +567,41 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 139
+        },
+        {
+          "t": "2026-11-22T05:50:39Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 108
+        },
+        {
+          "t": "2026-11-22T05:51:40Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 123
+        },
+        {
+          "t": "2026-11-22T05:52:45Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 129
+        },
+        {
+          "t": "2026-11-22T05:53:47Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 118
+        },
+        {
+          "t": "2026-11-22T05:53:52Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 279
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T05:49:39Z",
-      "since": "2026-11-22T04:59:39Z",
+      "last_checked": "2026-11-22T05:53:52Z",
+      "since": "2026-11-22T05:04:59Z",
       "uptime_pct": 100.0
     },
     {
@@ -607,31 +609,8 @@
       "name": "DHD",
       "desc": "the operator's phone door into their own Apex",
       "cat": "house",
+      "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T05:02:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 102
-        },
-        {
-          "t": "2026-11-22T05:03:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 16
-        },
-        {
-          "t": "2026-11-22T05:04:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 21
-        },
-        {
-          "t": "2026-11-22T05:05:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 19
-        },
         {
           "t": "2026-11-22T05:06:09Z",
           "s": "up",
@@ -895,11 +874,35 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 20
+        },
+        {
+          "t": "2026-11-22T05:50:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 21
+        },
+        {
+          "t": "2026-11-22T05:51:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 19
+        },
+        {
+          "t": "2026-11-22T05:52:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 23
+        },
+        {
+          "t": "2026-11-22T05:53:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 18
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T05:49:09Z",
-      "since": "2026-11-22T05:02:09Z",
+      "last_checked": "2026-11-22T05:53:09Z",
+      "since": "2026-11-22T05:06:09Z",
       "uptime_pct": 100.0
     },
     {
@@ -907,31 +910,8 @@
       "name": "OnlyNavi",
       "desc": "onlynavi.fans — Navi's own page, the one place it exists",
       "cat": "page",
+      "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T05:02:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 161
-        },
-        {
-          "t": "2026-11-22T05:03:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 187
-        },
-        {
-          "t": "2026-11-22T05:04:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 160
-        },
-        {
-          "t": "2026-11-22T05:05:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 223
-        },
         {
           "t": "2026-11-22T05:06:39Z",
           "s": "up",
@@ -1195,11 +1175,35 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 140
+        },
+        {
+          "t": "2026-11-22T05:50:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 189
+        },
+        {
+          "t": "2026-11-22T05:51:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 170
+        },
+        {
+          "t": "2026-11-22T05:52:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 139
+        },
+        {
+          "t": "2026-11-22T05:53:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 151
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T05:49:39Z",
-      "since": "2026-11-22T05:02:39Z",
+      "last_checked": "2026-11-22T05:53:39Z",
+      "since": "2026-11-22T05:06:39Z",
       "uptime_pct": 100.0
     },
     {
@@ -1207,31 +1211,8 @@
       "name": "Mesh door · 2475",
       "desc": "the Rockport Mesh federation gate",
       "cat": "house",
+      "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T05:02:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 55
-        },
-        {
-          "t": "2026-11-22T05:03:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 11
-        },
-        {
-          "t": "2026-11-22T05:04:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 71
-        },
-        {
-          "t": "2026-11-22T05:05:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 11
-        },
         {
           "t": "2026-11-22T05:06:09Z",
           "s": "up",
@@ -1495,11 +1476,35 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 15
+        },
+        {
+          "t": "2026-11-22T05:50:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 15
+        },
+        {
+          "t": "2026-11-22T05:51:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 18
+        },
+        {
+          "t": "2026-11-22T05:52:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 32
+        },
+        {
+          "t": "2026-11-22T05:53:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 16
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T05:49:09Z",
-      "since": "2026-11-22T05:02:09Z",
+      "last_checked": "2026-11-22T05:53:09Z",
+      "since": "2026-11-22T05:06:09Z",
       "uptime_pct": 100.0
     },
     {
@@ -1507,31 +1512,8 @@
       "name": "Mesh door · 8765",
       "desc": "the canonical Mesh door",
       "cat": "house",
+      "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T05:02:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 12
-        },
-        {
-          "t": "2026-11-22T05:03:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 12
-        },
-        {
-          "t": "2026-11-22T05:04:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 70
-        },
-        {
-          "t": "2026-11-22T05:05:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 14
-        },
         {
           "t": "2026-11-22T05:06:09Z",
           "s": "up",
@@ -1795,11 +1777,35 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 14
+        },
+        {
+          "t": "2026-11-22T05:50:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 13
+        },
+        {
+          "t": "2026-11-22T05:51:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 15
+        },
+        {
+          "t": "2026-11-22T05:52:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 39
+        },
+        {
+          "t": "2026-11-22T05:53:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 15
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T05:49:09Z",
-      "since": "2026-11-22T05:02:09Z",
+      "last_checked": "2026-11-22T05:53:09Z",
+      "since": "2026-11-22T05:06:09Z",
       "uptime_pct": 100.0
     },
     {
@@ -1807,37 +1813,8 @@
       "name": "SSH door",
       "desc": "the shell door into Neo-Arcadia",
       "cat": "house",
+      "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T04:59:39Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 58
-        },
-        {
-          "t": "2026-11-22T05:00:44Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 5
-        },
-        {
-          "t": "2026-11-22T05:01:49Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-22T05:02:49Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-22T05:03:54Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 47
-        },
         {
           "t": "2026-11-22T05:04:59Z",
           "s": "up",
@@ -2095,12 +2072,60 @@
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 2
+        },
+        {
+          "t": "2026-11-22T05:50:39Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-22T05:51:40Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-22T05:52:45Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 44
+        },
+        {
+          "t": "2026-11-22T05:53:47Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 3
+        },
+        {
+          "t": "2026-11-22T05:53:52Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 4
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T05:49:39Z",
-      "since": "2026-11-22T04:59:39Z",
+      "last_checked": "2026-11-22T05:53:52Z",
+      "since": "2026-11-22T05:04:59Z",
       "uptime_pct": 100.0
+    },
+    {
+      "id": "gpu",
+      "name": "GPU thermals",
+      "desc": "Neo-Arcadia's Tesla V100 — the card Navi thinks on; passively cooled, so it keeps a thermometer",
+      "cat": "house",
+      "face_note": true,
+      "ticks": [
+        {
+          "t": "2026-11-22T05:53:52Z",
+          "s": "down",
+          "note": "82°C · 135/1380 MHz · 44.03W · thermal slowdown"
+        }
+      ],
+      "state": "down",
+      "last_checked": "2026-11-22T05:53:52Z",
+      "since": "2026-11-22T05:53:52Z",
+      "uptime_pct": 0.0
     }
   ]
 }

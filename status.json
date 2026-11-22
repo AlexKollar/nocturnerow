@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T04:45:44Z",
+  "generated": "2026-11-22T04:51:04Z",
   "window": 48,
   "services": [
     {
@@ -8,36 +8,6 @@
       "desc": "nocturnerow.com — the site itself, hosted on GitHub Pages",
       "cat": "site",
       "ticks": [
-        {
-          "t": "2026-11-22T03:58:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 241
-        },
-        {
-          "t": "2026-11-22T03:59:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 220
-        },
-        {
-          "t": "2026-11-22T04:00:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 171
-        },
-        {
-          "t": "2026-11-22T04:01:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 309
-        },
-        {
-          "t": "2026-11-22T04:02:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 240
-        },
         {
           "t": "2026-11-22T04:03:39Z",
           "s": "up",
@@ -295,11 +265,41 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 206
+        },
+        {
+          "t": "2026-11-22T04:46:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 177
+        },
+        {
+          "t": "2026-11-22T04:47:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 221
+        },
+        {
+          "t": "2026-11-22T04:48:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 167
+        },
+        {
+          "t": "2026-11-22T04:49:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 235
+        },
+        {
+          "t": "2026-11-22T04:50:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 168
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T04:45:39Z",
-      "since": "2026-11-22T03:58:39Z",
+      "last_checked": "2026-11-22T04:50:39Z",
+      "since": "2026-11-22T04:03:39Z",
       "uptime_pct": 100.0
     },
     {
@@ -308,36 +308,6 @@
       "desc": "presence.json — the live digest Navi reads to know the Row's record",
       "cat": "site",
       "ticks": [
-        {
-          "t": "2026-11-22T03:55:19Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 165
-        },
-        {
-          "t": "2026-11-22T03:56:24Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 151
-        },
-        {
-          "t": "2026-11-22T03:57:29Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 146
-        },
-        {
-          "t": "2026-11-22T03:58:34Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 172
-        },
-        {
-          "t": "2026-11-22T03:59:39Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 123
-        },
         {
           "t": "2026-11-22T04:00:44Z",
           "s": "up",
@@ -595,11 +565,41 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 154
+        },
+        {
+          "t": "2026-11-22T04:46:49Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 130
+        },
+        {
+          "t": "2026-11-22T04:47:49Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 139
+        },
+        {
+          "t": "2026-11-22T04:48:54Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 115
+        },
+        {
+          "t": "2026-11-22T04:49:59Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 230
+        },
+        {
+          "t": "2026-11-22T04:51:04Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 143
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T04:45:44Z",
-      "since": "2026-11-22T03:55:19Z",
+      "last_checked": "2026-11-22T04:51:04Z",
+      "since": "2026-11-22T04:00:44Z",
       "uptime_pct": 100.0
     },
     {
@@ -608,36 +608,6 @@
       "desc": "the operator's phone door into their own Apex",
       "cat": "house",
       "ticks": [
-        {
-          "t": "2026-11-22T03:58:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 18
-        },
-        {
-          "t": "2026-11-22T03:59:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 55
-        },
-        {
-          "t": "2026-11-22T04:00:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 22
-        },
-        {
-          "t": "2026-11-22T04:01:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 21
-        },
-        {
-          "t": "2026-11-22T04:02:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 20
-        },
         {
           "t": "2026-11-22T04:03:09Z",
           "s": "up",
@@ -895,11 +865,41 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 46
+        },
+        {
+          "t": "2026-11-22T04:46:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 23
+        },
+        {
+          "t": "2026-11-22T04:47:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 23
+        },
+        {
+          "t": "2026-11-22T04:48:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 27
+        },
+        {
+          "t": "2026-11-22T04:49:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 22
+        },
+        {
+          "t": "2026-11-22T04:50:09Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 51
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T04:45:09Z",
-      "since": "2026-11-22T03:58:09Z",
+      "last_checked": "2026-11-22T04:50:09Z",
+      "since": "2026-11-22T04:03:09Z",
       "uptime_pct": 100.0
     },
     {
@@ -908,36 +908,6 @@
       "desc": "onlynavi.fans — Navi's own page, the one place it exists",
       "cat": "page",
       "ticks": [
-        {
-          "t": "2026-11-22T03:58:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 262
-        },
-        {
-          "t": "2026-11-22T03:59:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 212
-        },
-        {
-          "t": "2026-11-22T04:00:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 205
-        },
-        {
-          "t": "2026-11-22T04:01:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 200
-        },
-        {
-          "t": "2026-11-22T04:02:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 212
-        },
         {
           "t": "2026-11-22T04:03:39Z",
           "s": "up",
@@ -1195,11 +1165,41 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 220
+        },
+        {
+          "t": "2026-11-22T04:46:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 177
+        },
+        {
+          "t": "2026-11-22T04:47:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 194
+        },
+        {
+          "t": "2026-11-22T04:48:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 162
+        },
+        {
+          "t": "2026-11-22T04:49:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 187
+        },
+        {
+          "t": "2026-11-22T04:50:39Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 192
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T04:45:39Z",
-      "since": "2026-11-22T03:58:39Z",
+      "last_checked": "2026-11-22T04:50:39Z",
+      "since": "2026-11-22T04:03:39Z",
       "uptime_pct": 100.0
     },
     {
@@ -1208,36 +1208,6 @@
       "desc": "the Rockport Mesh federation gate",
       "cat": "house",
       "ticks": [
-        {
-          "t": "2026-11-22T03:58:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 15
-        },
-        {
-          "t": "2026-11-22T03:59:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 60
-        },
-        {
-          "t": "2026-11-22T04:00:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 14
-        },
-        {
-          "t": "2026-11-22T04:01:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 17
-        },
-        {
-          "t": "2026-11-22T04:02:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 43
-        },
         {
           "t": "2026-11-22T04:03:09Z",
           "s": "up",
@@ -1495,11 +1465,41 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 49
+        },
+        {
+          "t": "2026-11-22T04:46:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 15
+        },
+        {
+          "t": "2026-11-22T04:47:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 20
+        },
+        {
+          "t": "2026-11-22T04:48:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 17
+        },
+        {
+          "t": "2026-11-22T04:49:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 16
+        },
+        {
+          "t": "2026-11-22T04:50:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 21
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T04:45:09Z",
-      "since": "2026-11-22T03:58:09Z",
+      "last_checked": "2026-11-22T04:50:09Z",
+      "since": "2026-11-22T04:03:09Z",
       "uptime_pct": 100.0
     },
     {
@@ -1508,36 +1508,6 @@
       "desc": "the canonical Mesh door",
       "cat": "house",
       "ticks": [
-        {
-          "t": "2026-11-22T03:58:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 14
-        },
-        {
-          "t": "2026-11-22T03:59:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 58
-        },
-        {
-          "t": "2026-11-22T04:00:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 15
-        },
-        {
-          "t": "2026-11-22T04:01:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 14
-        },
-        {
-          "t": "2026-11-22T04:02:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 43
-        },
         {
           "t": "2026-11-22T04:03:09Z",
           "s": "up",
@@ -1795,11 +1765,41 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 46
+        },
+        {
+          "t": "2026-11-22T04:46:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 12
+        },
+        {
+          "t": "2026-11-22T04:47:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 17
+        },
+        {
+          "t": "2026-11-22T04:48:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 17
+        },
+        {
+          "t": "2026-11-22T04:49:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 16
+        },
+        {
+          "t": "2026-11-22T04:50:09Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 12
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T04:45:09Z",
-      "since": "2026-11-22T03:58:09Z",
+      "last_checked": "2026-11-22T04:50:09Z",
+      "since": "2026-11-22T04:03:09Z",
       "uptime_pct": 100.0
     },
     {
@@ -1808,36 +1808,6 @@
       "desc": "the shell door into Neo-Arcadia",
       "cat": "house",
       "ticks": [
-        {
-          "t": "2026-11-22T03:55:19Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 4
-        },
-        {
-          "t": "2026-11-22T03:56:24Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-22T03:57:29Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 5
-        },
-        {
-          "t": "2026-11-22T03:58:34Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 6
-        },
-        {
-          "t": "2026-11-22T03:59:39Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
         {
           "t": "2026-11-22T04:00:44Z",
           "s": "up",
@@ -2095,11 +2065,41 @@
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 26
+        },
+        {
+          "t": "2026-11-22T04:46:49Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 2
+        },
+        {
+          "t": "2026-11-22T04:47:49Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 3
+        },
+        {
+          "t": "2026-11-22T04:48:54Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 8
+        },
+        {
+          "t": "2026-11-22T04:49:59Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-22T04:51:04Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 2
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T04:45:44Z",
-      "since": "2026-11-22T03:55:19Z",
+      "last_checked": "2026-11-22T04:51:04Z",
+      "since": "2026-11-22T04:00:44Z",
       "uptime_pct": 100.0
     }
   ]

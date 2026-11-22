@@ -14,6 +14,7 @@ description: "Nocturne Row — a small security group building sharp, accountabl
 <div class="rs"><span class="k">FEDERATION</span><b>Rockport Mesh</b> — founded 14 Nov 2026 · <a href="/rockport-mesh.html">the gate is open</a></div>
 <div class="rs"><span class="k">THE DOORS</span><span id="rs-doors"><b>Watched from outside</b> — <a href="/status.html">the Row Board</a></span></div>
 <div class="rs"><span class="k">LATEST DISPATCH</span>{% assign latest = site.posts.first %}<a href="{{ latest.url }}">{{ latest.title }}</a></div>
+<div class="rs"><span class="k">LATEST EPISODE</span><span id="rs-episode"><a href="/podcast.html">From The Night Shift</a></span></div>
 </div>
 <script>
 (function(){
@@ -24,6 +25,11 @@ description: "Nocturne Row — a small security group building sharp, accountabl
     if(st&&v.stable) st.textContent=v.stable;
     if(ed&&v.edge) ed.textContent=v.edge;
     if(ln&&v.edge) ln.href='https://github.com/AlexKollar/Apex/releases/tag/'+v.edge;
+  }).catch(function(){});
+  fetch('/podcast.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+    var el=document.getElementById('rs-episode'); if(!el||!d.episodes||!d.episodes.length) return;
+    var ep=d.episodes[0];
+    el.innerHTML='<a href="/podcast.html">Episode '+ep.n+' \u2014 '+String(ep.title).replace(/</g,'&lt;')+'</a>';
   }).catch(function(){});
   fetch('/status.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
     var el=document.getElementById('rs-doors'); if(!el) return;
@@ -113,11 +119,6 @@ description: "Nocturne Row — a small security group building sharp, accountabl
 <a href="/nur.html"><img src="/navi-syskit.png" alt="Navi Syskit cartridge"></a>
 </div>
 <p style="margin-top:10px"><a class="btn solid" href="/nur.html">Browse the NUR →</a></p>
-</section>
-<section id="podcast">
-<h2>From The Night Shift</h2>
-<p style="color:var(--muted)">The Row&#8217;s own show &#8212; <b>Ciel and Navi</b>, unfiltered: Nocturne Row, the week&#8217;s cyber security wire, Apex, and Navi herself, with both hosts&#8217; opinions on the record. Biweekly, and whenever there&#8217;s something worth saying. Named for where all of this started.</p>
-<p style="margin-top:10px"><a class="btn solid" href="/podcast.html">Listen &#8594;</a></p>
 </section>
 <section id="notes">
 <h2>Dispatches</h2>

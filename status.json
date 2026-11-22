@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T17:42:04Z",
+  "generated": "2026-11-22T17:47:29Z",
   "window": 48,
   "services": [
     {
@@ -9,35 +9,6 @@
       "cat": "site",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T16:33:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 148
-        },
-        {
-          "t": "2026-11-22T16:34:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 369
-        },
-        {
-          "t": "2026-11-22T16:35:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 180
-        },
-        {
-          "t": "2026-11-22T16:36:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 218
-        },
-        {
-          "t": "2026-11-22T16:44:31Z",
-          "s": "unknown",
-          "note": "getaddrinfo EAI_AGAIN nocturnerow.com"
-        },
         {
           "t": "2026-11-22T16:45:01Z",
           "s": "down",
@@ -277,12 +248,42 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 216
+        },
+        {
+          "t": "2026-11-22T17:42:43Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 154
+        },
+        {
+          "t": "2026-11-22T17:43:43Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 188
+        },
+        {
+          "t": "2026-11-22T17:44:43Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 180
+        },
+        {
+          "t": "2026-11-22T17:45:43Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 180
+        },
+        {
+          "t": "2026-11-22T17:46:43Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 203
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:41:43Z",
+      "last_checked": "2026-11-22T17:46:43Z",
       "since": "2026-11-22T17:17:43Z",
-      "uptime_pct": 61.7
+      "uptime_pct": 62.5
     },
     {
       "id": "presence",
@@ -291,36 +292,6 @@
       "cat": "site",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T16:25:09Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 131
-        },
-        {
-          "t": "2026-11-22T16:26:14Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 207
-        },
-        {
-          "t": "2026-11-22T16:27:19Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 121
-        },
-        {
-          "t": "2026-11-22T16:28:19Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 122
-        },
-        {
-          "t": "2026-11-22T16:29:24Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 176
-        },
         {
           "t": "2026-11-22T16:30:29Z",
           "s": "up",
@@ -565,10 +536,40 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 126
+        },
+        {
+          "t": "2026-11-22T17:43:09Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 258
+        },
+        {
+          "t": "2026-11-22T17:44:14Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 135
+        },
+        {
+          "t": "2026-11-22T17:45:19Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 115
+        },
+        {
+          "t": "2026-11-22T17:46:24Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 146
+        },
+        {
+          "t": "2026-11-22T17:47:29Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 123
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:42:04Z",
+      "last_checked": "2026-11-22T17:47:29Z",
       "since": "2026-11-22T17:17:42Z",
       "uptime_pct": 72.9
     },
@@ -579,35 +580,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T16:33:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 27
-        },
-        {
-          "t": "2026-11-22T16:34:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 25
-        },
-        {
-          "t": "2026-11-22T16:35:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 20
-        },
-        {
-          "t": "2026-11-22T16:36:09Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 52
-        },
-        {
-          "t": "2026-11-22T16:44:32Z",
-          "s": "unknown",
-          "note": "getaddrinfo EAI_AGAIN dhd.nocturnerow.com"
-        },
         {
           "t": "2026-11-22T16:45:02Z",
           "s": "down",
@@ -847,12 +819,42 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 18
+        },
+        {
+          "t": "2026-11-22T17:42:45Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 17
+        },
+        {
+          "t": "2026-11-22T17:43:45Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 19
+        },
+        {
+          "t": "2026-11-22T17:44:45Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 17
+        },
+        {
+          "t": "2026-11-22T17:45:45Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 21
+        },
+        {
+          "t": "2026-11-22T17:46:45Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 21
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:41:45Z",
+      "last_checked": "2026-11-22T17:46:45Z",
       "since": "2026-11-22T17:17:45Z",
-      "uptime_pct": 61.7
+      "uptime_pct": 62.5
     },
     {
       "id": "onlynavi",
@@ -861,35 +863,6 @@
       "cat": "page",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T16:33:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 173
-        },
-        {
-          "t": "2026-11-22T16:34:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 377
-        },
-        {
-          "t": "2026-11-22T16:35:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 220
-        },
-        {
-          "t": "2026-11-22T16:36:39Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 213
-        },
-        {
-          "t": "2026-11-22T16:44:33Z",
-          "s": "unknown",
-          "note": "getaddrinfo EAI_AGAIN onlynavi.fans"
-        },
         {
           "t": "2026-11-22T16:45:03Z",
           "s": "down",
@@ -1129,12 +1102,42 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 168
+        },
+        {
+          "t": "2026-11-22T17:42:46Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 218
+        },
+        {
+          "t": "2026-11-22T17:43:46Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 291
+        },
+        {
+          "t": "2026-11-22T17:44:46Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 159
+        },
+        {
+          "t": "2026-11-22T17:45:46Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 193
+        },
+        {
+          "t": "2026-11-22T17:46:46Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 165
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:41:46Z",
+      "last_checked": "2026-11-22T17:46:46Z",
       "since": "2026-11-22T17:17:46Z",
-      "uptime_pct": 61.7
+      "uptime_pct": 62.5
     },
     {
       "id": "mesh2475",
@@ -1143,35 +1146,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T16:33:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 17
-        },
-        {
-          "t": "2026-11-22T16:34:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 14
-        },
-        {
-          "t": "2026-11-22T16:35:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 15
-        },
-        {
-          "t": "2026-11-22T16:36:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 40
-        },
-        {
-          "t": "2026-11-22T16:44:34Z",
-          "s": "unknown",
-          "note": "getaddrinfo EAI_AGAIN rpmesh.nocturnerow.com"
-        },
         {
           "t": "2026-11-22T16:45:04Z",
           "s": "down",
@@ -1412,12 +1386,42 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 13
+        },
+        {
+          "t": "2026-11-22T17:42:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 13
+        },
+        {
+          "t": "2026-11-22T17:43:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 11
+        },
+        {
+          "t": "2026-11-22T17:44:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 16
+        },
+        {
+          "t": "2026-11-22T17:45:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 17
+        },
+        {
+          "t": "2026-11-22T17:46:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 72
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:41:46Z",
+      "last_checked": "2026-11-22T17:46:46Z",
       "since": "2026-11-22T17:16:46Z",
-      "uptime_pct": 63.8
+      "uptime_pct": 64.6
     },
     {
       "id": "mesh8765",
@@ -1426,35 +1430,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T16:33:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 18
-        },
-        {
-          "t": "2026-11-22T16:34:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 13
-        },
-        {
-          "t": "2026-11-22T16:35:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 12
-        },
-        {
-          "t": "2026-11-22T16:36:09Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 39
-        },
-        {
-          "t": "2026-11-22T16:44:35Z",
-          "s": "unknown",
-          "note": "getaddrinfo EAI_AGAIN rpmesh.nocturnerow.com"
-        },
         {
           "t": "2026-11-22T16:45:05Z",
           "s": "down",
@@ -1695,12 +1670,42 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 15
+        },
+        {
+          "t": "2026-11-22T17:42:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 16
+        },
+        {
+          "t": "2026-11-22T17:43:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 16
+        },
+        {
+          "t": "2026-11-22T17:44:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 19
+        },
+        {
+          "t": "2026-11-22T17:45:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 13
+        },
+        {
+          "t": "2026-11-22T17:46:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 15
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:41:46Z",
+      "last_checked": "2026-11-22T17:46:46Z",
       "since": "2026-11-22T17:16:46Z",
-      "uptime_pct": 63.8
+      "uptime_pct": 64.6
     },
     {
       "id": "ssh227",
@@ -1709,36 +1714,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-22T16:25:09Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-22T16:26:14Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-22T16:27:19Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 2
-        },
-        {
-          "t": "2026-11-22T16:28:19Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 4
-        },
-        {
-          "t": "2026-11-22T16:29:24Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 8
-        },
         {
           "t": "2026-11-22T16:30:29Z",
           "s": "up",
@@ -1983,10 +1958,40 @@
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 30
+        },
+        {
+          "t": "2026-11-22T17:43:09Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-22T17:44:14Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 4
+        },
+        {
+          "t": "2026-11-22T17:45:19Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 7
+        },
+        {
+          "t": "2026-11-22T17:46:24Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 5
+        },
+        {
+          "t": "2026-11-22T17:47:29Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 5
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:42:04Z",
+      "last_checked": "2026-11-22T17:47:29Z",
       "since": "2026-11-22T17:17:42Z",
       "uptime_pct": 72.9
     },
@@ -1997,31 +2002,6 @@
       "cat": "house",
       "face_note": true,
       "ticks": [
-        {
-          "t": "2026-11-22T16:25:09Z",
-          "s": "down",
-          "note": "82°C · 1215/1380 MHz · 56.96W · engine on CPU fallback · thermal slowdown"
-        },
-        {
-          "t": "2026-11-22T16:26:14Z",
-          "s": "down",
-          "note": "82°C · 1215/1380 MHz · 56.86W · engine on CPU fallback · thermal slowdown"
-        },
-        {
-          "t": "2026-11-22T16:27:19Z",
-          "s": "down",
-          "note": "82°C · 1215/1380 MHz · 56.67W · engine on CPU fallback · thermal slowdown"
-        },
-        {
-          "t": "2026-11-22T16:28:19Z",
-          "s": "up",
-          "note": "80°C · 1245/1380 MHz · 56.67W · engine on CPU fallback"
-        },
-        {
-          "t": "2026-11-22T16:29:24Z",
-          "s": "up",
-          "note": "79°C · 1245/1380 MHz · 54.63W · engine on CPU fallback"
-        },
         {
           "t": "2026-11-22T16:30:29Z",
           "s": "unknown",
@@ -2236,12 +2216,37 @@
           "t": "2026-11-22T17:42:04Z",
           "s": "up",
           "note": "64°C · 1245/1380 MHz · 45.96W · engine on CPU fallback"
+        },
+        {
+          "t": "2026-11-22T17:43:09Z",
+          "s": "up",
+          "note": "62°C · 1245/1380 MHz · 45.19W · engine on CPU fallback"
+        },
+        {
+          "t": "2026-11-22T17:44:14Z",
+          "s": "up",
+          "note": "61°C · 1245/1380 MHz · 44.61W · engine on CPU fallback"
+        },
+        {
+          "t": "2026-11-22T17:45:19Z",
+          "s": "up",
+          "note": "59°C · 1245/1380 MHz · 43.64W · engine on CPU fallback"
+        },
+        {
+          "t": "2026-11-22T17:46:24Z",
+          "s": "up",
+          "note": "57°C · 1245/1380 MHz · 42.77W · engine on CPU fallback"
+        },
+        {
+          "t": "2026-11-22T17:47:29Z",
+          "s": "up",
+          "note": "55°C · 1245/1380 MHz · 41.90W · engine on CPU fallback"
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-22T17:42:04Z",
+      "last_checked": "2026-11-22T17:47:29Z",
       "since": "2026-11-22T17:31:29Z",
-      "uptime_pct": 83.9
+      "uptime_pct": 93.5
     }
   ]
 }

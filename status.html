@@ -98,7 +98,8 @@ description: "The Row Board — every public door on Nocturne Row, watched from 
     h+='<p class="svc-meta"><b>'+upt+'</b> uptime over the window · '+PILL[st].toLowerCase()+' since '+esc(rel(svc.since))+' · last checked '+esc(rel(svc.last_checked))+'</p>';
     var last=ticks[ticks.length-1];
     if(last&&last.note&&(st!=='up')) h+='<p class="svc-note'+(st==='unknown'?' grey':'')+'">'+esc(last.note)+'</p>';
-    if(last&&last.note&&st==='up'&&last.ms!=null) h+='<p class="svc-meta">answered in '+esc(last.ms)+' ms</p>';
+    if(last&&last.note&&st==='up'&&svc.face_note) h+='<p class="svc-meta">'+esc(last.note)+'</p>';
+    else if(last&&last.note&&st==='up'&&last.ms!=null) h+='<p class="svc-meta">answered in '+esc(last.ms)+' ms</p>';
     return h+'</div>';
   }
   function load(first){

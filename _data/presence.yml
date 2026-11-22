@@ -1,6 +1,6 @@
 versions:
   stable: "v0.6.0"
-  edge: "v0.7.5e"
+  edge: "v0.7.6e"
 roadmap:
   chapters: 31
   headline: "31 chapters told; Chapter 0.6 has graduated to v0.6.0, Edge runs the 0.7 QA line — and the Row is on the air."

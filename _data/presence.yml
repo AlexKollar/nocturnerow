@@ -1,6 +1,6 @@
 versions:
-  stable: "v0.5.15"
-  edge: "v0.6.29e"
+  stable: "v0.6.0"
+  edge: "v0.6.31e"
 roadmap:
   chapters: 29
   headline: "29 chapters told; Chapter 0.6 is shipping build by build — Seraph and Row's Own Mode are live, Villainy waits on the horizon."

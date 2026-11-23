@@ -1,6 +1,6 @@
 versions:
   stable: "v0.8.0"
-  edge: "v0.8.1e"
+  edge: "v0.8.2e"
 roadmap:
-  chapters: 41
-  headline: "41 chapters told; Edge runs the 0.8 line — its first build gives the War Room its fifth chair — and the Row is on the air."
+  chapters: 42
+  headline: "42 chapters told; Edge runs the 0.8 line — its second build makes deletions actually delete, on the pulse and in the vault — and the Row is on the air."

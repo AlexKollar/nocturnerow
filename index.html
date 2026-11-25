@@ -13,6 +13,7 @@ description: "Nocturne Row — a small security group building sharp, accountabl
 <div class="rs"><span class="k">EDGE</span><b id="rs-edge">v0.8.4e</b> — <a id="rs-edge-link" href="https://github.com/AlexKollar/Apex/releases/tag/v0.8.4e">the house-training — Seraph's mute, a Clear that obliterates, the DHD door unwedged, deletions that leave the backup</a></div>
 <div class="rs"><span class="k">FEDERATION</span><b>Rockport Mesh</b> — founded 14 Nov 2026 · <a href="/rockport-mesh.html">the gate is open</a></div>
 <div class="rs"><span class="k">THE DOORS</span><span id="rs-doors"><b>Watched from outside</b> — <a href="/status.html">the Row Board</a></span></div>
+<div class="rs"><span class="k">THE CITY</span><span id="rs-city"><b>Rockport</b> — live in 2475 · <a href="https://rockport.nocturnerow.com:4043/">enter the city</a></span></div>
 <div class="rs"><span class="k">LATEST DISPATCH</span>{% assign latest = site.posts.first %}<a href="{{ latest.url }}">{{ latest.title }}</a></div>
 <div class="rs"><span class="k">LATEST EPISODE</span><span id="rs-episode"><a href="/podcast.html">From The Night Shift</a></span></div>
 </div>
@@ -41,6 +42,10 @@ description: "Nocturne Row — a small security group building sharp, accountabl
     else if(unks.length) line='<b>Every answering door is open</b> · unconfirmed: '+unks.map(esc).join(', ');
     else line='<b>All doors open</b>';
     el.innerHTML=line+' — <a href="/status.html">the Row Board</a>';
+    var city=document.getElementById('rs-city');
+    if(city){ var rp=null; for(var i=0;i<list.length;i++){ if(list[i].id==='rockport'){ rp=list[i]; break; } }
+      if(rp){ if(rp.state==='down') city.innerHTML='<b>Rockport</b> — the city is dark tonight · <a href="/status.html">the Row Board</a>';
+        else city.innerHTML='<b>Rockport</b> — operational · live in 2475 · <a href="https://rockport.nocturnerow.com:4043/">enter the city</a>'; } }
   }).catch(function(){});
 })();
 </script>

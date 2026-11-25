@@ -16,6 +16,8 @@ description: "The Row Board — every public door on Nocturne Row, watched from 
 .board-summary .bs-line{font-size:22px;font-weight:700;color:var(--text);margin:0}
 .board-summary .bs-sub{color:var(--muted);font-size:14px;margin:6px 0 0}
 #rockport-box .svc{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent),0 0 18px rgba(45,212,191,.12)}
+.rp-enter{display:inline-flex;align-items:center;min-height:44px;padding:0 22px;margin-top:14px;border:1px solid var(--accent);border-radius:999px;color:var(--accent);text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.02em}
+.rp-enter:hover{background:var(--accent);color:#06251f}
 .svc{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:16px 18px;margin:0 0 12px;box-shadow:inset 3px 0 0 var(--accent)}
 .svc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
 .svc h3{margin:0;font-size:18px}
@@ -121,7 +123,7 @@ description: "The Row Board — every public door on Nocturne Row, watched from 
       sub.textContent='Last checked '+rel(d.generated)+' · probed from outside the house network · window: last '+(d.window||48)+' checks per door · this page re-reads the record every minute';
       var rp=null; list=list.filter(function(s){ if(s.id==='rockport'){ rp=s; return false; } return true; });
       var rb=document.getElementById('rockport-box');
-      if(rb&&rp) rb.innerHTML=row(rp)+'<p class="svc-meta" style="margin:0 0 12px"><a href="https://rockport.nocturnerow.com:4043/">Enter the city \u2192</a></p>';
+      if(rb&&rp){rb.innerHTML=row(rp);var rcard=rb.querySelector('.svc');if(rcard){var ra=document.createElement('a');ra.className='rp-enter';ra.href='https://rockport.nocturnerow.com:4043/';ra.textContent='Enter the city \u2192';rcard.appendChild(ra);}}
       var CATS=[['site','The site itself'],['page','Her page'],['house','The house doors']];
       var seen={}, gh='';
       CATS.forEach(function(c){

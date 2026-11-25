@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T15:42:40Z",
+  "generated": "2026-11-25T15:44:43Z",
   "window": 48,
   "services": [
     {
@@ -9,18 +9,6 @@
       "cat": "site",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-25T14:55:13Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 388
-        },
-        {
-          "t": "2026-11-25T14:56:13Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 165
-        },
         {
           "t": "2026-11-25T14:57:13Z",
           "s": "up",
@@ -296,11 +284,23 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 140
+        },
+        {
+          "t": "2026-11-25T15:43:00Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 501
+        },
+        {
+          "t": "2026-11-25T15:44:00Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 127
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:42:13Z",
-      "since": "2026-11-25T14:55:13Z",
+      "last_checked": "2026-11-25T15:44:00Z",
+      "since": "2026-11-25T14:57:13Z",
       "uptime_pct": 100.0
     },
     {
@@ -310,18 +310,6 @@
       "cat": "site",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-25T14:53:46Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 115
-        },
-        {
-          "t": "2026-11-25T14:54:49Z",
-          "s": "up",
-          "note": "HTTP 200 · valid JSON",
-          "ms": 114
-        },
         {
           "t": "2026-11-25T14:55:50Z",
           "s": "up",
@@ -597,11 +585,23 @@
           "s": "up",
           "note": "HTTP 200 · valid JSON",
           "ms": 117
+        },
+        {
+          "t": "2026-11-25T15:43:40Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 108
+        },
+        {
+          "t": "2026-11-25T15:44:43Z",
+          "s": "up",
+          "note": "HTTP 200 · valid JSON",
+          "ms": 108
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:42:40Z",
-      "since": "2026-11-25T14:53:46Z",
+      "last_checked": "2026-11-25T15:44:43Z",
+      "since": "2026-11-25T14:55:50Z",
       "uptime_pct": 100.0
     },
     {
@@ -611,18 +611,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-25T14:55:15Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 18
-        },
-        {
-          "t": "2026-11-25T14:56:15Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 22
-        },
         {
           "t": "2026-11-25T14:57:15Z",
           "s": "up",
@@ -898,11 +886,23 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 19
+        },
+        {
+          "t": "2026-11-25T15:43:01Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 103
+        },
+        {
+          "t": "2026-11-25T15:44:01Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 16
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:42:15Z",
-      "since": "2026-11-25T14:55:15Z",
+      "last_checked": "2026-11-25T15:44:01Z",
+      "since": "2026-11-25T14:57:15Z",
       "uptime_pct": 100.0
     },
     {
@@ -912,18 +912,6 @@
       "cat": "page",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-25T14:55:16Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 288
-        },
-        {
-          "t": "2026-11-25T14:56:16Z",
-          "s": "up",
-          "note": "200 - OK",
-          "ms": 240
-        },
         {
           "t": "2026-11-25T14:57:16Z",
           "s": "up",
@@ -1199,11 +1187,23 @@
           "s": "up",
           "note": "200 - OK",
           "ms": 155
+        },
+        {
+          "t": "2026-11-25T15:43:02Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 551
+        },
+        {
+          "t": "2026-11-25T15:44:02Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 212
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:42:16Z",
-      "since": "2026-11-25T14:55:16Z",
+      "last_checked": "2026-11-25T15:44:02Z",
+      "since": "2026-11-25T14:57:16Z",
       "uptime_pct": 100.0
     },
     {
@@ -1213,24 +1213,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-25T14:54:46Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 15
-        },
-        {
-          "t": "2026-11-25T14:55:46Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 15
-        },
-        {
-          "t": "2026-11-25T14:56:46Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 13
-        },
         {
           "t": "2026-11-25T14:57:46Z",
           "s": "up",
@@ -1500,11 +1482,29 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 10
+        },
+        {
+          "t": "2026-11-25T15:42:46Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 17
+        },
+        {
+          "t": "2026-11-25T15:43:02Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 185
+        },
+        {
+          "t": "2026-11-25T15:44:02Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 13
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:41:46Z",
-      "since": "2026-11-25T14:54:46Z",
+      "last_checked": "2026-11-25T15:44:02Z",
+      "since": "2026-11-25T14:57:46Z",
       "uptime_pct": 100.0
     },
     {
@@ -1514,24 +1514,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-25T14:54:47Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 14
-        },
-        {
-          "t": "2026-11-25T14:55:47Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 17
-        },
-        {
-          "t": "2026-11-25T14:56:47Z",
-          "s": "up",
-          "note": "404 - Not Found",
-          "ms": 12
-        },
         {
           "t": "2026-11-25T14:57:47Z",
           "s": "up",
@@ -1801,11 +1783,29 @@
           "s": "up",
           "note": "404 - Not Found",
           "ms": 15
+        },
+        {
+          "t": "2026-11-25T15:42:47Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 14
+        },
+        {
+          "t": "2026-11-25T15:43:03Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 81
+        },
+        {
+          "t": "2026-11-25T15:44:03Z",
+          "s": "up",
+          "note": "404 - Not Found",
+          "ms": 10
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:41:47Z",
-      "since": "2026-11-25T14:54:47Z",
+      "last_checked": "2026-11-25T15:44:03Z",
+      "since": "2026-11-25T14:57:47Z",
       "uptime_pct": 100.0
     },
     {
@@ -1815,18 +1815,6 @@
       "cat": "house",
       "face_note": false,
       "ticks": [
-        {
-          "t": "2026-11-25T14:53:46Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 3
-        },
-        {
-          "t": "2026-11-25T14:54:49Z",
-          "s": "up",
-          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
-          "ms": 4
-        },
         {
           "t": "2026-11-25T14:55:50Z",
           "s": "up",
@@ -2102,11 +2090,48 @@
           "s": "up",
           "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
           "ms": 3
+        },
+        {
+          "t": "2026-11-25T15:43:40Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 3
+        },
+        {
+          "t": "2026-11-25T15:44:43Z",
+          "s": "up",
+          "note": "banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20",
+          "ms": 2
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:42:40Z",
-      "since": "2026-11-25T14:53:46Z",
+      "last_checked": "2026-11-25T15:44:43Z",
+      "since": "2026-11-25T14:55:50Z",
+      "uptime_pct": 100.0
+    },
+    {
+      "id": "rockport",
+      "name": "Rockport",
+      "desc": "rockport.nocturnerow.com — the game: a Nocturne Row world, live in 2475",
+      "cat": "house",
+      "face_note": false,
+      "ticks": [
+        {
+          "t": "2026-11-25T15:43:04Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 343
+        },
+        {
+          "t": "2026-11-25T15:44:04Z",
+          "s": "up",
+          "note": "200 - OK",
+          "ms": 38
+        }
+      ],
+      "state": "up",
+      "last_checked": "2026-11-25T15:44:04Z",
+      "since": "2026-11-25T15:43:04Z",
       "uptime_pct": 100.0
     },
     {
@@ -2116,16 +2141,6 @@
       "cat": "house",
       "face_note": true,
       "ticks": [
-        {
-          "t": "2026-11-25T14:53:46Z",
-          "s": "up",
-          "note": "44°C · 1245/1380 MHz · 38.38W · engine on CPU fallback"
-        },
-        {
-          "t": "2026-11-25T14:54:49Z",
-          "s": "up",
-          "note": "43°C · 1245/1380 MHz · 38.38W · engine on CPU fallback"
-        },
         {
           "t": "2026-11-25T14:55:50Z",
           "s": "up",
@@ -2355,11 +2370,21 @@
           "t": "2026-11-25T15:42:40Z",
           "s": "up",
           "note": "43°C · 1245/1380 MHz · 38.12W · engine on CPU fallback"
+        },
+        {
+          "t": "2026-11-25T15:43:40Z",
+          "s": "up",
+          "note": "43°C · 1245/1380 MHz · 38.12W · engine on CPU fallback"
+        },
+        {
+          "t": "2026-11-25T15:44:43Z",
+          "s": "up",
+          "note": "43°C · 1245/1380 MHz · 38.12W · engine on CPU fallback"
         }
       ],
       "state": "up",
-      "last_checked": "2026-11-25T15:42:40Z",
-      "since": "2026-11-25T14:53:46Z",
+      "last_checked": "2026-11-25T15:44:43Z",
+      "since": "2026-11-25T14:55:50Z",
       "uptime_pct": 100.0
     }
   ]

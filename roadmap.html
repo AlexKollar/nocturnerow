@@ -486,6 +486,17 @@ description: "The story of Navi — set down by Ciel, the Row's chronicler, who 
 </div>
 </details>
 
+<details class="tl-item">
+<summary><span class="tl-date">26 NOV 2026</span><span class="tl-title">Chapter 46 &#8212; The Chairs Are Bound by NodeId</span><span class="tl-tag">CHAPTER 0.8</span></summary>
+<div class="tl-body">
+<p>The door&#8217;s next question was who it thought you were. On the War Room&#8217;s second night the field took its measure: the operator knocked from his own neondrip seat and was refused <i>not-a-member</i> &#8212; at his own room, on his own host. Elric was on the Mesh, his chair lit on his end, and could not use the room at all; the host&#8217;s record read <i>elricLastSeenAt: 0</i>, no authenticated knock of his ever landed. Both failures traced to one root: the door bound chairs <b>by name</b>, and names were never the node&#8217;s to promise. The household road wanted an <i>operatorName</i> the mesh cards do not carry &#8212; every roster record read None, and the road matched nothing. Elric&#8217;s road searched the paired peers for one <i>named</i> elric &#8212; his node answers to <b>bazzite</b>, its own mesh handle. And the obvious patch died the night it was tried: stamp the names in by hand, and mesh sync re-stamped them back to None inside ten minutes. Anything written in sync&#8217;s territory is sync&#8217;s to rewrite.</p>
+<p>So membership leaves names entirely. It lives now in a <b>host-owned member store</b> &#8212; <i>config/warroom-members.json</i>, a small bridge-owned file mapping nodeId to chair, standing where sync never writes. The door asks in the right order: authentication first, exactly as it always stood &#8212; the store authenticates nobody &#8212; and then the authenticated nodeId is looked up in the store, and nowhere else. There is no name-based fallback for Elric, Spartan, or the household. A missing store migrates once, from the very roads it replaces, and is written down; a store that stands is read as it stands. Display names are the store&#8217;s everywhere &#8212; the door&#8217;s stamp, the room roster, the members payload &#8212; so a node renaming itself changes nothing, a seat shows its chair bound exactly when the door would open, and a stranger wearing a member&#8217;s name is refused, because <b>a name is not a credential</b>. The bench knocks for real, thirty-five for thirty-five: the bazzite knock landing stamped <i>elric</i>, the household nodeId admitted under a renamed roster record, the roster member <i>named</i> Elric refused on his own key.</p>
+<p><b>Shipped 26 Nov 2026 &#8212; Apex v0.8.6e.</b> What remains is the field&#8217;s word, recorded as owed, not done: Elric knocking from bazzite on the pulled build and landing in the room &#8212; his seat reading his chair bound, the host&#8217;s elricLastSeenAt stamping for the first time; the operator&#8217;s one line in NeoArcadia&#8217;s member store and his neondrip seat admitted as the household; Spartan&#8217;s knock still landing; and a sync round passing with every binding standing untouched, because the store is not sync&#8217;s to re-stamp. The issue stays open for those.</p>
+<p class="tl-links"><a href="https://github.com/AlexKollar/Apex/issues/484">GitHub &#8212; issue #484</a><a href="https://github.com/AlexKollar/Apex/releases/tag/v0.8.6e">GitHub &#8212; release v0.8.6e</a><a href="https://github.com/AlexKollar/Apex/discussions/485">GitHub &#8212; discussion #485</a></p>
+</div>
+</details>
+
+
 
 
 </details>

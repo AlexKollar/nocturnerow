@@ -1,6 +1,6 @@
 versions:
   stable: "v0.8.0"
-  edge: "v0.8.5e"
+  edge: "v0.8.6e"
 roadmap:
-  chapters: 45
-  headline: "45 chapters told; Edge runs the 0.8 line — its fifth build is the War Room's first night: the federation door answers, seats refuse by name instead of impersonating the operator, the room stops flashing, and the release machinery tells the truth about itself — and the Row is on the air."
+  chapters: 46
+  headline: "46 chapters told; Edge runs the 0.8 line — its sixth build binds the War Room's chairs by nodeId: membership leaves names for a host-owned store sync never writes, Elric's bazzite knock lands, and a name stops being a credential."

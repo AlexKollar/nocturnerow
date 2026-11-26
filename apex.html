@@ -28,7 +28,59 @@ description: "Apex | Powered by Navi — a local-first AI partner for security w
 <div class="sc-phone"><img src="/apex-mobile.jpg" alt="Apex on the phone — the same Navi, answered through the door from anywhere"></div>
 </div>
 <p class="sc-cap">One Navi, every screen you own.</p>
-<p style="text-align:center;margin:2px 0 28px"><a class="btn solid" href="https://github.com/AlexKollar/Apex/releases/download/v0.8.0/apex-0.8.0-linux.zip"><svg width="19" height="19" viewBox="0 0 24 24" style="vertical-align:-4px;margin-right:8px" aria-hidden="true"><ellipse cx="5" cy="13" rx="1.7" ry="4.2" fill="#0b0f14" transform="rotate(14 5 13)"/><ellipse cx="19" cy="13" rx="1.7" ry="4.2" fill="#0b0f14" transform="rotate(-14 19 13)"/><ellipse cx="12" cy="12.6" rx="7" ry="9.2" fill="#0b0f14"/><ellipse cx="12" cy="15.8" rx="4.1" ry="5.4" fill="#ffffff"/><circle cx="9.4" cy="7.2" r="1.7" fill="#ffffff"/><circle cx="14.6" cy="7.2" r="1.7" fill="#ffffff"/><circle cx="9.4" cy="7.4" r="0.85" fill="#0b0f14"/><circle cx="14.6" cy="7.4" r="0.85" fill="#0b0f14"/><path d="M9.8 9.4 L14.2 9.4 L12 11.8 Z" fill="#f59e0b"/><ellipse cx="8.4" cy="21.6" rx="2.3" ry="1.05" fill="#f59e0b"/><ellipse cx="15.6" cy="21.6" rx="2.3" ry="1.05" fill="#f59e0b"/></svg>Download for Linux — v0.8.0</a></p>
+<style>
+.ax-lineup{margin:6px auto 30px;text-align:center}
+.ax-lineup-h{font-size:19px;letter-spacing:.3em;color:var(--text);margin:0 0 6px;font-weight:600}
+.ax-lineup-sub{color:var(--muted);font-size:15px;margin:0 auto 18px;max-width:560px}
+.ax-stack{display:flex;flex-direction:column;gap:12px;max-width:520px;margin:0 auto}
+.ax-btn{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 22px;border-radius:14px;min-height:56px;font-size:17px;letter-spacing:.02em;text-decoration:none;background:var(--accent);border:1px solid var(--accent);color:#06251f;font-weight:700;box-shadow:0 0 18px rgba(45,212,191,.35)}
+.ax-btn:hover{box-shadow:0 0 26px rgba(45,212,191,.55);text-decoration:none}
+.ax-mark{width:24px;height:24px;flex:none}
+.ax-drop{position:relative}
+.ax-drop-btn{width:100%;cursor:pointer;font:inherit}
+.ax-caret{font-size:13px;opacity:.75}
+.ax-menu{display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:30;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(0,0,0,.45);text-align:left}
+.ax-drop.open .ax-menu{display:block}
+.ax-menu[hidden]{display:none}
+.ax-menu a{display:flex;align-items:baseline;gap:10px;padding:10px 12px;border-radius:9px;color:var(--text);text-decoration:none;font-size:15px}
+.ax-menu a span{color:var(--muted);font-size:13px}
+.ax-menu a strong span{color:inherit;font-size:inherit}
+.ax-menu a:hover{background:rgba(45,212,191,.12);text-decoration:none}
+@media (max-width:640px){.ax-btn{font-size:16px}}
+</style>
+<div class="ax-lineup">
+<h3 class="ax-lineup-h">THE INSTALLER LINEUP</h3>
+<p class="ax-lineup-sub">One house, two doors &mdash; Stable for the steady, Edge for the current. When a build ships, its button lights up.</p>
+<div class="ax-stack">
+<div class="ax-drop">
+<button class="ax-btn ax-drop-btn" type="button" aria-haspopup="true" aria-expanded="false"><svg width="21" height="21" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="5" cy="13" rx="1.7" ry="4.2" fill="#0b0f14" transform="rotate(14 5 13)"/><ellipse cx="19" cy="13" rx="1.7" ry="4.2" fill="#0b0f14" transform="rotate(-14 19 13)"/><ellipse cx="12" cy="12.6" rx="7" ry="9.2" fill="#0b0f14"/><ellipse cx="12" cy="15.8" rx="4.1" ry="5.4" fill="#ffffff"/><circle cx="9.4" cy="7.2" r="1.7" fill="#ffffff"/><circle cx="14.6" cy="7.2" r="1.7" fill="#ffffff"/><circle cx="9.4" cy="7.4" r="0.85" fill="#0b0f14"/><circle cx="14.6" cy="7.4" r="0.85" fill="#0b0f14"/><path d="M9.8 9.4 L14.2 9.4 L12 11.8 Z" fill="#f59e0b"/><ellipse cx="8.4" cy="21.6" rx="2.3" ry="1.05" fill="#f59e0b"/><ellipse cx="15.6" cy="21.6" rx="2.3" ry="1.05" fill="#f59e0b"/></svg>Apex for Linux &mdash; Stable <span id="ax-stable-ver">v0.8.0</span><span class="ax-caret" aria-hidden="true">&#9662;</span></button>
+<div class="ax-menu" hidden>
+<a id="ax-stable-zip" href="https://github.com/AlexKollar/Apex/releases/download/v0.8.0/apex-0.8.0-linux.zip"><strong>Stable &mdash; <span class="ax-v" data-v="stable">v0.8.0</span></strong> <span>The graduated line. Recommended.</span></a>
+<a id="ax-edge-zip" href="https://github.com/AlexKollar/Apex/releases/download/v0.8.6e/apex-0.8.6e-linux.zip"><strong>Edge &mdash; <span class="ax-v" data-v="edge">v0.8.6e</span></strong> <span>Chapter 0.8 &mdash; the newest build.</span></a>
+<a href="https://github.com/AlexKollar/Apex/releases"><strong>All releases</strong> <span>Every build, on GitHub.</span></a>
+</div>
+</div>
+<a class="ax-btn" id="ax-edge-btn" href="https://github.com/AlexKollar/Apex/releases/download/v0.8.6e/apex-0.8.6e-linux.zip"><svg class="ax-mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="7" width="38" height="34" rx="7" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M13 19l7 5-7 5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 31h12" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></svg>Apex Edge &mdash; <span class="ax-v" data-v="edge">v0.8.6e</span></a>
+<a class="ax-btn" href="https://github.com/AlexKollar/Apex/wiki"><svg class="ax-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 6h19a9 9 0 0 1 9 9v27H19a9 9 0 0 0-9 9z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M10 42V6" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M17 15h13M17 22h13" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>Install Guide &mdash; the Wiki</a>
+</div>
+</div>
+<script>
+(function(){
+var drop=document.querySelector('.ax-drop');if(!drop)return;
+var btn=drop.querySelector('.ax-drop-btn'),menu=drop.querySelector('.ax-menu');
+function close(){menu.hidden=true;drop.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+btn.addEventListener('click',function(e){e.stopPropagation();if(menu.hidden){menu.hidden=false;drop.classList.add('open');btn.setAttribute('aria-expanded','true');}else{close();}});
+document.addEventListener('click',close);
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+fetch('/presence.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+var v=(d&&d.versions)||{};
+function zip(tag){return 'https://github.com/AlexKollar/Apex/releases/download/'+tag+'/apex-'+tag.replace(/^v/,'')+'-linux.zip';}
+if(v.stable){var s=document.getElementById('ax-stable-ver');if(s)s.textContent=v.stable;var sz=document.getElementById('ax-stable-zip');if(sz)sz.href=zip(v.stable);}
+if(v.edge){var ez=document.getElementById('ax-edge-zip');if(ez)ez.href=zip(v.edge);var eb=document.getElementById('ax-edge-btn');if(eb)eb.href=zip(v.edge);}
+document.querySelectorAll('.ax-v').forEach(function(el){var k=el.getAttribute('data-v');if(v[k])el.textContent=v[k];});
+}).catch(function(){});
+})();
+</script>
 <h3 style="margin-top:26px">Signals — live from the wire</h3>
 <p>Apex's latest releases, pulled straight from GitHub as you read this page. No rebuild, no middleman — the wire speaks for itself.</p>
 <div class="posts" id="signals"><article class="post"><p class="excerpt">Listening…</p></article></div>

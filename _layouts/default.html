@@ -61,9 +61,13 @@ nav a:hover{color:var(--accent)}
 .navdrop-btn{background:none;border:none;color:var(--muted);cursor:pointer;font:inherit;font-size:13px;padding:6px 3px;margin-left:1px}
 .navdrop-btn:hover{color:var(--accent)}
 .navdrop-menu{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:180px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px;z-index:70;box-shadow:0 14px 34px rgba(0,0,0,.45)}
-.navdrop.open .navdrop-menu{display:block}
-@media (hover:hover){.navdrop:hover .navdrop-menu{display:block}}
-@media (min-width:701px){.navdrop-menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}.navdrop:hover .navdrop-menu,.navdrop.open .navdrop-menu{animation:menuIn var(--open-time) var(--ease-open)}}
+.navdrop.open>.navdrop-menu{display:block}
+@media (hover:hover){.navdrop:hover>.navdrop-menu{display:block}}
+@media (min-width:701px){.navdrop-menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}.navdrop:hover>.navdrop-menu,.navdrop.open>.navdrop-menu{animation:menuIn var(--open-time) var(--ease-open)}}
+.navdrop-menu .navdrop{display:flex;align-items:center}
+.navdrop-menu .navdrop>a{flex:1}
+.navdrop-menu .navdrop-menu{top:-8px;left:100%;margin-left:6px}
+@media (min-width:701px){.navdrop-menu .navdrop-menu::before{left:-12px;right:auto;top:0;width:12px;height:100%}}
 .navdrop-menu a{display:flex;align-items:center;margin:0;padding:11px 10px;min-height:44px;border-radius:8px}
 .navdrop-menu a:hover{background:rgba(45,212,191,.08)}
 .hero{padding:72px 0 40px}
@@ -133,6 +137,7 @@ header nav .navdrop{display:block}
 header nav .navdrop-btn{display:none}
 header nav .navdrop-menu{display:block;position:static;border:none;box-shadow:none;background:transparent;padding:0;min-width:0}
 header nav .navdrop-menu a{padding-left:24px}
+header nav .navdrop-menu .navdrop-menu a{padding-left:36px}
 }
 @media (prefers-reduced-motion: reduce){.nav-toggle .bar{transition:none}}
 .flip{padding:0;cursor:pointer;perspective:1200px}
@@ -172,7 +177,7 @@ header nav .navdrop-menu a{padding-left:24px}
 .term-overlay.open{display:flex}
 .term-overlay.open{animation:ovIn var(--open-time) var(--ease-open)}
 .term-overlay.open .term{animation:panelIn var(--open-time) var(--ease-open)}
-@media (prefers-reduced-motion: reduce){.term-overlay.open,.term-overlay.open .term,.navdrop:hover .navdrop-menu,.navdrop.open .navdrop-menu{animation:none}}
+@media (prefers-reduced-motion: reduce){.term-overlay.open,.term-overlay.open .term,.navdrop:hover>.navdrop-menu,.navdrop.open>.navdrop-menu{animation:none}}
 .term{background:#05080d;border:1px solid var(--accent);border-radius:12px;max-width:720px;width:100%;max-height:84vh;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.65);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .term-head{display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 14px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;letter-spacing:.1em}
 .term-close{background:none;border:1px solid var(--line);border-radius:8px;color:var(--text);min-width:44px;min-height:44px;font-size:17px;cursor:pointer}
@@ -223,7 +228,7 @@ html.lcars .term-prompt{color:#ff9900}
 <div class="wrap">
 <div class="wordmark"><button class="brand-term" id="termToggle" type="button" aria-label="Open the field terminal"><span class="glitch-img"><img class="base" src="/logo.png" alt=""><span class="glyph" aria-hidden="true">&gt;_</span></span></button><span class="glitch" data-text="NOCTURNE ROW">NOCTURNE ROW</span></div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
-<nav id="site-nav"><a href="/">Home</a><span class="navdrop"><a href="/mission.html">The Row</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Row menu">▾</button><span class="navdrop-menu"><a href="/mission.html">Mission</a><a href="/navi.html">Navi</a><a href="/rogues.html">Rogues</a><a href="/podcast.html">From The Night Shift</a><a href="/status.html">System Status</a></span></span><span class="navdrop"><a href="/projects.html">The Work</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Work menu">▾</button><span class="navdrop-menu"><a href="/projects.html">Projects</a><a href="/apex.html">Apex</a><a href="/casework.html">Casework</a><a href="/network.html">Network</a><a href="/siem.html">SIEM</a><a href="/nur.html">NUR</a></span></span><span class="navdrop"><a href="/roadmap.html">The Chronicle</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Chronicle menu">▾</button><span class="navdrop-menu"><a href="/roadmap.html">Roadmap</a><a href="/blog.html">Dispatches</a></span></span><span class="navdrop"><a href="/federations.html">Federations</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the federations menu">▾</button><span class="navdrop-menu"><a href="/rockport-mesh.html">Rockport Mesh</a><a href="/submit-a-federation.html">Submit a Federation</a></span></span></nav>
+<nav id="site-nav"><a href="/">Home</a><span class="navdrop"><a href="/mission.html">The Row</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Row menu">▾</button><span class="navdrop-menu"><a href="/mission.html">Mission</a><a href="/navi.html">Navi</a><a href="/rogues.html">Rogues</a><a href="/podcast.html">From The Night Shift</a><a href="/status.html">System Status</a></span></span><span class="navdrop"><a href="/projects.html">The Work</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Work menu">▾</button><span class="navdrop-menu"><a href="/projects.html">Projects</a><span class="navdrop"><a href="/apex.html">Apex</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Apex menu">▾</button><span class="navdrop-menu"><a href="/apex.html">Apex</a><a href="/casework.html">Casework</a><a href="/network.html">Network</a><a href="/siem.html">SIEM</a><a href="/nur.html">NUR</a></span></span><span class="navdrop"><a href="/projects.html#games">Games</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Games menu">▾</button><span class="navdrop-menu"><a href="https://rockport.nocturnerow.com:4043/">Rockport</a><a href="/projects.html#games">All games</a></span></span></span></span><span class="navdrop"><a href="/roadmap.html">The Chronicle</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the Chronicle menu">▾</button><span class="navdrop-menu"><a href="/roadmap.html">Roadmap</a><a href="/blog.html">Dispatches</a></span></span><span class="navdrop"><a href="/federations.html">Federations</a><button class="navdrop-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open the federations menu">▾</button><span class="navdrop-menu"><a href="/rockport-mesh.html">Rockport Mesh</a><a href="/submit-a-federation.html">Submit a Federation</a></span></span></nav>
 </div>
 </header>
 {{ content }}
@@ -232,7 +237,7 @@ html.lcars .term-prompt{color:#ff9900}
 </footer>
 <script>
 (function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');if(!b||!n)return;b.addEventListener('click',function(){var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
-(function(){var drops=[].slice.call(document.querySelectorAll('.navdrop'));if(!drops.length)return;function shut(d){d.classList.remove('open');var b=d.querySelector('.navdrop-btn');if(b)b.setAttribute('aria-expanded','false');}function closeAll(except){drops.forEach(function(d){if(d!==except)shut(d);});}drops.forEach(function(d){var btn=d.querySelector('.navdrop-btn');if(!btn)return;btn.addEventListener('click',function(e){e.stopPropagation();var open=d.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');if(open)closeAll(d);});});document.addEventListener('click',function(e){drops.forEach(function(d){if(!d.contains(e.target))shut(d);});});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});})();
+(function(){var drops=[].slice.call(document.querySelectorAll('.navdrop'));if(!drops.length)return;function shut(d){d.classList.remove('open');var b=d.querySelector('.navdrop-btn');if(b)b.setAttribute('aria-expanded','false');}function closeAll(except){drops.forEach(function(d){if(d!==except&&!d.contains(except))shut(d);});}drops.forEach(function(d){var btn=d.querySelector('.navdrop-btn');if(!btn)return;btn.addEventListener('click',function(e){e.stopPropagation();var open=d.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');if(open)closeAll(d);});});document.addEventListener('click',function(e){drops.forEach(function(d){if(!d.contains(e.target))shut(d);});});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});})();
 (function(){function mark(a){try{var u=new URL(a.href,location.href);if(u.protocol.indexOf('http')===0&&u.host!==location.host){a.target='_blank';a.rel='noopener';}}catch(e){}}
 function sweep(){document.querySelectorAll('a[href^="http"]').forEach(mark);}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sweep);else sweep();

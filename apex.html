@@ -32,7 +32,9 @@ description: "Apex | Powered by Navi — a local-first AI partner for security w
 .ax-lineup{margin:6px auto 30px;text-align:center}
 .ax-lineup-h{font-size:19px;letter-spacing:.3em;color:var(--text);margin:0 0 6px;font-weight:600}
 .ax-lineup-sub{color:var(--muted);font-size:15px;margin:0 auto 18px;max-width:560px}
-.ax-stack{display:flex;flex-direction:column;gap:12px;max-width:520px;margin:0 auto}
+.ax-stack{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:12px;width:fit-content;max-width:100%;margin:0 auto}
+.ax-stack>.ax-btn,.ax-stack>.ax-drop{flex:1 1 0}
+.ax-btn{white-space:nowrap}
 .ax-btn{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 22px;border-radius:14px;min-height:56px;font-size:17px;letter-spacing:.02em;text-decoration:none;background:var(--accent);border:1px solid var(--accent);color:#06251f;font-weight:700;box-shadow:0 0 18px rgba(45,212,191,.35)}
 a.ax-btn:hover{box-shadow:0 0 26px rgba(45,212,191,.55);text-decoration:none}
 .ax-btn.is-soon{background:var(--panel);border:1px solid var(--line);color:var(--muted);opacity:.75;cursor:default;box-shadow:none;font-weight:600}
@@ -49,7 +51,7 @@ a.ax-btn:hover{box-shadow:0 0 26px rgba(45,212,191,.55);text-decoration:none}
 .ax-menu a span,.ax-menu .ax-soon-row span{color:var(--muted);font-size:13px}
 .ax-menu a:hover{background:rgba(45,212,191,.12);text-decoration:none}
 .ax-menu .ax-soon-row{opacity:.55}
-@media (max-width:640px){.ax-btn{font-size:16px}}
+@media (max-width:640px){.ax-btn{font-size:16px;white-space:normal}.ax-stack{flex-direction:column;width:100%}}
 </style>
 <div class="ax-lineup">
 <h3 class="ax-lineup-h">THE INSTALLER LINEUP</h3>
